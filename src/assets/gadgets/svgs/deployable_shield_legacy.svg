@@ -1,0 +1,33 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+  stroke="#ffffff"
+>
+  <g fill="#000000">
+    <path d="M25 10 96 18 104 18 175 10 175 65 104 73 96 73 25 65Z" />
+    <path d="M23 64 96 72 104 72 177 64 177 121 104 129 96 129 23 121Z" />
+    <path d="M96 18V129M104 18V129" />
+    <path d="M20 120 94 128 106 128 180 120 180 182 106 190 94 190 20 182Z" />
+    <path d="M94 128V190M106 128V190" />
+  </g>
+  <path id="line_1.1" stroke-width="0.5" d="M41 12V66M48 13V67" />
+  <use id="line_1.2" href="#line_1.1" transform="translate(35 3.8)" />
+  <use href="#line_1.2" transform="translate(200) scale(-1 1)" />
+  <use href="#line_1.1" transform="translate(200) scale(-1 1)" />
+  <path id="line_2.1" stroke-width="0.5" d="M37 66V122M44 66V123" />
+  <use id="line_2.2" href="#line_2.1" transform="translate(35, 3.8)" />
+  <use href="#line_2.2" transform="translate(200) scale(-1 1)" />
+  <use href="#line_2.1" transform="translate(200) scale(-1 1)" />
+  <path id="dot_line_3_1.1" stroke-width="0.5" d="M29 22A1 1 0 0029 24 1 1 0 0029 22M29 36A1 1 0 0029 38 1 1 0 0029 36M29 50A1 1 0 0029 52 1 1 0 0029 50" />
+  <use id="dot_line_middle_1" href="#dot_line_3_1.1" transform="translate(71 8)" />
+  <use href="#dot_line_3_1.1" transform="translate(200) scale(-1 1)" />
+  <use id="dot_line_3_2.1" href="#dot_line_3_1.1" transform="translate(-2, 55)" />
+  <use href="#dot_line_middle_1" transform="translate(0 55)" />
+  <use href="#dot_line_3_2.1" transform="translate(200) scale(-1 1)" />
+  <path id="dot_line_4" stroke-width="0.5" d="M24 130A1 1 0 0024 132 1 1 0 0024 130M24 143A1 1 0 0024 145 1 1 0 0024 143M24 156A1 1 0 0024 158 1 1 0 0024 156M24 169A1 1 0 0024 171 1 1 0 0024 169" />
+  <use href="#dot_line_4" transform="translate(76 8)" />
+  <use href="#dot_line_4" transform="translate(200) scale(-1 1)" />
+</svg>

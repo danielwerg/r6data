@@ -1,0 +1,41 @@
+import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import type { Operator } from '../types';
+
+export const wamai = {
+  slug: 'wamai',
+  name: 'Wamai',
+  side: 'defense',
+  icon: {
+    toSVG: async () => getOperatorSVGString('/icons/svgs/wamai.svg'),
+    png: getOperatorAssetURL('/icons/pngs/wamai.png')
+  },
+  iconOfficial:
+    'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1vQZ4WsAjhc6M7qNOS4ahQ/92fc4d89632fb87aec0f102d7adbfe26/Y4S4_BADGE_Wamai_L.png',
+  card: getOperatorAssetURL('/cards/wamai.webp'),
+  cardOfficial:
+    'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2ZSUcKWczIo1w2WwzNan5B/98938e59a958117b46901c57fce98ae7/r6-operators-list-wamai_358318.png',
+  figure: getOperatorAssetURL('/figures/wamai.webp'),
+  figureOfficial:
+    'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6S1qFckDJGp8NyVztOpbCE/86eaaab66472038666289cc2aefe3949/r6-operator-wamai_358316.png',
+  body: getOperatorAssetURL('/bodies/wamai.png'),
+  ratings: { health: 2, speed: 2 },
+  specialties: ['anti-gadget', 'trapper'],
+  season: { id: 16 },
+  weapons: { primary: ['aug_a2', 'mp5k'], secondary: ['keratos_.357', 'p12'] },
+  gadgets: { secondary: ['impact_grenade', 'proximity_alarm'] },
+  uniqueAbility: {
+    slug: 'mag-net_system',
+    name: 'Mag-net System',
+    type: 'recharge_count',
+    startingAmount: 1,
+    description:
+      'Throwable device that captures incoming grenades and projectiles and detonates them after a delay.',
+    info: '1 Mag-NET recharges over time, up to a maximum of 6.',
+    icon: {
+      toSVG: null,
+      png: getOperatorAssetURL('/abilities/pngs/mag-net_system.png')
+    },
+    iconOfficial:
+      'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1IKNZzLv63AJd9vlbXj3Bo/883371432ffb22e5bf35bc82dd706384/Mag-net_System.png'
+  }
+} satisfies Operator;

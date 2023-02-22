@@ -1,0 +1,17 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+  stroke="#ffffff"
+>
+  <path fill="#000" d="M48 72A1 1 0 0048 32 1 1 0 0048 72M48 67A1 1 0 0148 37 1 1 0 0148 67" />
+  <ellipse fill="#000000" cx="100" cy="105" rx="71 " />
+  <path fill="#000000" d="M140 38 150 42 149 45 139 41" />
+  <g fill="#000000">
+    <path d="M67 38V34Q100 16 132 34V38Z" />
+    <path d="M67 30V38H132V30L142 34Q142 40 141 47 100 52 59 47 58 41 58 34Z" />
+  </g>
+  <path stroke-width="0.5" d="M29 105Q100 125 171 105" />
+</svg>

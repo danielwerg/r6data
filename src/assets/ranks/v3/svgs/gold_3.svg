@@ -1,0 +1,55 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="500"
+  height="500"
+  viewBox="0 0 500 500"
+>
+  <g
+    fill="none"
+    stroke-width="10"
+    stroke-linejoin="round"
+  >
+    <path stroke="#c8c8c8" d="M391 111c5.5 0 10 4.5 10 10v22c0 5.5-4.5 10-10 10h-282c-5.5 0-10-4.5-10-10v-22c0-5.5 4.5-10 10-10z" />
+    <path stroke="#231F20" opacity="0.25" d="M174 111h32M234 111h32M294 111h32" />
+    <g stroke="#c8c8c8">
+      <path d="M191 134v-23l-11-17 25-14 6 3-20 28" />
+      <path stroke="#ffffff" d="M250 134v-24l-28-40 28-16 28 16-28 40" />
+      <path d="M309 134v-23l11-17-25-14-6 3 20 28" />
+    </g>
+    <path id="path-1" d="M384 145v308l-134-31-134 31v-308Z" />
+    <use fill="#b89f26" href="#path-1" />
+    <path fill="#faf25d" d="M384 438v15l-134-31-134 31v-15l134-31Z" />
+    <clipPath id="shadow-clip-1">
+      <path d="M128 378l92 51-30 7L128 401ZM372 378l-92 51 30 7L372 401Z" />
+    </clipPath>
+    <use href="#path-1" clip-path="url(#shadow-clip-1)" fill="#000000" opacity="0.25" />
+    <path fill="#231F20" opacity="0.25" d="M128 202v10h-12v-10zM384 202v10h-12v-10z" />
+    <path id="path-2" d="M372 144v236l-122 71-122-71v-236Z" />
+    <use href="#path-2" fill="#e6c616" />
+    <path fill="#b89f26" d="M372 144v38h-244v-38Z" />
+    <path fill="#fae155" opacity="0.25" d="M128 144h16v38h-16ZM356 144h16v38h-16Z" />
+    <clipPath id="shadow-clip-2">
+      <path d="M128 182h16v197l31 30h-47ZM190 167l10-6 10 6v265h-20ZM240 167l10-6 10 6v290h-20ZM291 167l10-6 10 6v265h-20ZM356 182h16v227h-47l31-30Z" />
+    </clipPath>
+    <use href="#path-2" clip-path="url(#shadow-clip-2)" fill="#fff684" />
+    <path stroke="#231F20" opacity="0.25" d="M178 197h-8q-6 0-6-6v-26q0-12 12-12h148q12 0 12 12v26q0 6-6 6h-8" />
+    <path stroke="#c8c8c8" d="M178 176h-8q-6 0-6-6V144q0-12 12-12H324q12 0 12 12V170q0 6-6 6h-8" />
+    <path fill="#fff684" d="M128 380 250 455 372 380 250 451Z" />
+    <g>
+      <path fill="#231F20" opacity="0.25" d="M128 377l122-73 122 73-122-61Z" />
+      <path id="stripe1" d="M128 344l122-73 122 73v33l-122-73-122 73Z" />
+      <clipPath id="shadow-clip-4">
+        <path d="M136 339l8-5v34l-8 5ZM364 339l-8-5v34l8 5Z" />
+      </clipPath>
+      <use href="#stripe1" fill="#b89f26" />
+      <use href="#stripe1" clip-path="url(#shadow-clip-4)" fill="#fae155" />
+      <path fill="#ffffff" d="M128 377l122-73 122 73-122-69Z" />
+    </g>
+  </g>
+  <g>
+    <path fill="#000000" opacity="0.25" d="M317 319v37l-67 39-67-39V319Z" />
+    <path fill="#000000" d="M323 144v191l-73 42-73-42V144Z" />
+    <path fill="#ffffff" d="M212 201v93h-18v-93Zm47 0v93h-18v-93Zm47 0v93h-18v-93Z" />
+    <path fill="#ffffff" d="M177 315l73 42 73-42v10l-73 42-73-42Z" />
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 200"
+  fill="none"
+  stroke="#ffffff"
+>
+  <style>#optic { color: #ff0b2f }</style>
+  <g fill="#000000">
+    <path d="M55 32V18Q76 6 101 18V32ZM57 32V36H99V32" />
+    <path d="M39 55V34L45 18H53V36H103V18H111L117 34V55Q77 36 39 56" />
+    <path stroke-width="0.5" d="M39 34l14-6M39 42l14-6M103 28l14 6M103 36l14 6" />
+    <path d="M135 77H139V113H135M139 73H151Q157 95 151 117H139Z" />
+    <path d="M121 60H142L153 65V71H135V156H104V144A60 60 0 00121 60" />
+    <path stroke-width="0.5" d="M142 60l7 11M132 60l7 11" />
+    <path d="M52 147V167H104V147" />
+    <path fill-rule="evenodd" d="M21 97A1 1 0 00135 97 1 1 0 0021 97M34 97A1 1 0 00122 97 1 1 0 0034 97" />
+  </g>
+  <g id="optic">
+    <ellipse fill="currentColor" stroke="none" cx="78" cy="97" rx="0.5" />
+  </g>
+  <path fill="#000000" fill-rule="evenodd" stroke="none" d="M112 154A1 1 0 00176 154 1 1 0 00112 154" />
+  <path stroke-width="0.5" d="M115 154A1 1 0 00173 154 1 1 0 00115 154M124 154A1 1 0 00164 154 1 1 0 00124 154" />
+  <path stroke-width="2" d="M144 154 128 166" />
+  <g fill="#000000" id="tooth5">
+    <path id="tooth" d="M138.95 122.16 140 122 142 119 146 119 148 122 149.05 122.16" />
+    <use href="#tooth" transform="rotate(18 144 154)" />
+    <use href="#tooth" transform="rotate(36 144 154)" />
+    <use href="#tooth" transform="rotate(54 144 154)" />
+    <use href="#tooth" transform="rotate(72 144 154)" />
+  </g>
+  <use href="#tooth5" transform="rotate(90 144 154)" />
+  <use href="#tooth5" transform="rotate(180 144 154)" />
+  <use href="#tooth5" transform="rotate(270 144 154)" />
+</svg>
+
+<!-- #ff0b2f #0bad56 #ebfd52 -->

@@ -1,0 +1,36 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+  stroke="#ffffff"
+>
+  <path fill="#000000" d="M78 10A1 1 0 0078 62 1 1 0 0078 10M78 16A1 1 0 0178 56 1 1 0 0178 16" />
+  <path fill="#000000" d="M106 44H135V49H106Z" />
+  <path fill="#000000" d="M106 13H133V39Q133 42 135 43V44H92L98 24Z" />
+  <path fill="#000000" d="M129 13V19H107Q104 18 106 22C113 33 94 37 92 39L83 50V140H95V144H80V49L92 34 100 17Q102 13 106 13Z" />
+  <path fill="#000000" d="M129 13H133L142 16A1 1 0 00143 25L133 31V13" />
+  <path fill="#000000" d="M142 16A1 1 0 00143 25 1 1 0 00142 16" />
+  <path d="M129 13H134Q136 13 136 20.5A1 1 0 00149 20.5" />
+  <g stroke-width="0.5">
+    <ellipse cx="102" cy="26" rx="3" />
+    <ellipse cx="127" cy="24" rx="2" />
+  </g>
+  <path fill="#000000" d="M143 49 148 53V69L143 73V167L148 171V187L143 191H98L93 187V171L98 167V73L93 69V53L98 49ZM98 73H143M98 167H143" />
+  <g stroke-width="0.5">
+    <path id="Y" d="M104 49 109 53V69L104 73M114 49 109 53V69L114 73" />
+    <use href="#Y" transform="translate(23)" />
+    <use href="#Y" transform="translate(0, 118)" />
+    <use href="#Y" transform="translate(23, 118)" />
+    <g id="half_circle_3">
+      <path id="half_circle" d="M98 85A1 1 0 0198 100" />
+      <use href="#half_circle" transform="translate(0, 27)" />
+      <use href="#half_circle" transform="translate(0, 54)" />
+    </g>
+    <use href="#half_circle_3" transform="translate(241) scale(-1, 1)" />
+  </g>
+  <ellipse id="circle" cx="120" cy="92.5" rx="7.5" />
+  <use href="#circle" transform="translate(0, 27)" />
+  <use href="#circle" transform="translate(0, 54)" />
+</svg>

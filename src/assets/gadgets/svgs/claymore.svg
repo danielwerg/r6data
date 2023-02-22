@@ -1,0 +1,24 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+  stroke="#ffffff"
+>
+  <rect fill="#000000" x="14" y="27" width="170" height="89" rx="6" />
+  <path d="M14 108Q99 112 184 108" />
+  <path fill="#000000" d="M130 14 138 22V27H61V22L69 14H89V16H110V14Z*" />
+  <path d="M69 14 76 22H123L130 14" />
+  <rect fill="#000000" x="76" y="22" width="47" height="43" />
+  <path d="M83 22V65M116 22V65" />
+  <path d="M81 65V73H118V65" />
+  <path d="M76 39H71V51H76M123 39H128V51H123" />
+  <ellipse cx="99.5" cy="43" rx="11" />
+  <ellipse fill="#ffffff" cx="96" cy="40" rx="3.5" />
+  <g id="leg" fill="#000000">
+    <path d="M50 120 84 176 83 185 77 179 47 128ZM44 120 10 176 11 185 17 179 47 128Z" />
+    <ellipse cx="47" cy="122" rx="6" />
+  </g>
+  <use href="#leg" transform="translate(104)" />
+</svg>

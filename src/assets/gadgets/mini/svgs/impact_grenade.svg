@@ -1,0 +1,17 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="100"
+  height="100"
+  viewBox="0 0 100 100"
+  fill="none"
+  stroke="#ffffff"
+>
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="100" height="100"  />
+      <path fill="black" d="M10 54Q51 73 90 54L90 57Q51 76 10 58" />
+    </mask>
+  </defs>
+  <path fill="#ffffff" stroke="none" d="M11 53A1 1 0 0089 53 1 1 0 0011 53" mask="url(#mask)" />
+  <path fill="#ffffff" d="M32 19 31 11 35 8 37 11H43Q50 8 57 11H63L65 8 69 11 68 19" />
+</svg>

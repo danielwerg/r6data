@@ -1,0 +1,11 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="100"
+  height="100"
+  viewBox="0 0 100 100"
+  fill="none"
+  stroke="#ffffff"
+>
+  <path fill="#ffffff" d="M11 25 16 21H25V25H75V21H84L89 25V75L84 79H75V75H25V79H16L11 75ZM31 50A1 1 0 0069 50 1 1 0 0031 50M15 29A1 1 0 0023 29 1 1 0 0015 29M77 29A1 1 0 0085 29 1 1 0 0077 29M15 71A1 1 0 0023 71 1 1 0 0015 71M77 71A1 1 0 0085 71 1 1 0 0077 71" />
+  <ellipse fill="#ffffff" cx="50" cy="50" rx="11" />
+</svg>

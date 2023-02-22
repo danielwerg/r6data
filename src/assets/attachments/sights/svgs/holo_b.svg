@@ -1,0 +1,24 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 200"
+  fill="none"
+  stroke="#ffffff"
+>
+  <style>#optic { color: #ff0b2f }</style>
+  <path fill="#000000" fill-rule="evenodd" d="M43 30Q43 11 62 11H138Q157 11 157 30V94L167 102V181Q167 189 159 189H41Q33 189 33 181V102L43 94ZM58 48Q58 33 73 33H127Q142 33 142 48V96Q142 111 127 111H73Q58 111 58 96Z" />
+  <g id="optic">
+    <ellipse fill="currentColor" stroke="none" cx="100" cy="72" rx="1" />
+    <path stroke="currentColor" d="M95 80A10 10 0 0192 68M95 64A8 8 0 01105 64M105 80A10 10 90 00108 68" />
+    <path stroke="currentColor" stroke-width="1.5" d="M100 59V62M88 72H91M112 72H109" />
+    <path fill="currentColor" stroke="none" d="M98 83 100 79 102 83Z" />
+  </g>
+  <g stroke-width="0.5">
+    <path d="M37 188V104L48 96V30Q48 16 62 16H138Q152 16 152 30V96L162 104V189" />
+    <ellipse cx="49" cy="121" rx="4" />
+    <ellipse cx="151" cy="121" rx="4" />
+    <ellipse cx="49" cy="181" rx="4" />
+    <ellipse cx="151" cy="181" rx="4" />
+    <path d="M51 130H65L92 160 86 170H51ZM71 125A3.5 3.5 0 0173 119H127A3.5 3.5 0 01129 125L103 152A4 4 0 0197 152ZM135 130H149V170H114L108 160Z" />
+    <path d="M60 155H74M126 155H140M133 148V162" />
+  </g>
+</svg>

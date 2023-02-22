@@ -1,0 +1,48 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+  stroke="#ffffff"
+>
+  <g fill="#000000" stroke-width="0.5">
+    <path d="M44 88 38 88A1 1 0 0138 82L45 82 46 84ZM45 85.5 44 83.5 38 83.5A1 1 0 0038 87L45 87" />
+    <path d="M54 78V72H55V73H61V78" />
+    <path d="M61 78V74H63Q63 77 75 77V78" />
+    <path d="M120 80 128 77H136V78H137V77H139V78H140V77H148L157 80" />
+    <path d="M175 79 177 77 178 73H179V75H180V73H181V75H182V73H183V79M177 77H183" />
+    <path d="M185 83H188Q190 88 188 93H185" />
+    <path d="M183 97 175 101H169V100H168V101H166V100H165V101H159L151 97" />
+    <path d="M87 97 88 100V106L85 110H72L69 108H65Q63.578 107.937 63 107L58 102V97ZM78 97 77 98 74 98Q73 101 75 105 72 104 71 98A5 5 0 0065 104L72.5 108 84.5 108 86 106 86 100 85 97Z" />
+  </g>
+  <path fill="#000000" d="M113 78 120 80H157L162 79H185V97H63L46 84V81L49 78Z" />
+  <path fill="#000000" d="M63 97 63 100 24 127Q23.104 127.635 22 126L11 110Q10.149 108.613 11 108L28 98 31 98 43 90 46 84Z" />
+  <g stroke-width="0.5">
+    <g id="line7">
+      <path id="line" d="M18 112l6.478 9.431M25.638 123.016 26.949 124.928" />
+      <use href="#line" transform="translate(1 -0.7)" />
+      <use href="#line" transform="translate(2 -1.4)" />
+      <use href="#line" transform="translate(3 -2.1)" />
+      <use href="#line" transform="translate(4 -2.8)" />
+      <use href="#line" transform="translate(5 -3.5)" />
+      <use href="#line" transform="translate(6 -4.2)" />
+    </g>
+    <use href="#line7" transform="translate(7 -4.9)" />
+    <use href="#line7" transform="translate(14 -9.8)" />
+    <path d="M40.926 91.396 43 93Q44 94 45 93L50.53 87.465" />
+    <path d="M49.5 86.68 49.5 81H113L120 83H157L162 82H185" />
+    <path d="M78 78 82 88 95 90 98 97" />
+    <ellipse cx="51.5" cy="101.5" rx="1.5" />
+    <ellipse cx="50" cy="92" rx="1" />
+    <g stroke-linejoin="round">
+      <path d="M61 85 69 88V89L61 92Z" />
+      <path fill="#ffff" d="M59 88H69V89H59Z" />
+    </g>
+    <path fill="#000000" d="M76 82H81V85H76L75 84 75 83Z" />
+    <path d="M147 88V91H129V88Z" />
+    <path id="ahole" d="M168 82H171V93H168Z" />
+    <use href="#ahole" transform="translate(5)" />
+    <use href="#ahole" transform="translate(10)" />
+  </g>
+</svg>

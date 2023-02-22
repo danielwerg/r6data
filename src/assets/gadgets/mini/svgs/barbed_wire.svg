@@ -1,0 +1,21 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="100"
+  height="100"
+  viewBox="0 0 100 100"
+  fill="none"
+  stroke="#ffffff"
+>
+  <ellipse stroke-width="2" cx="32" cy="50" rx="21" />
+  <ellipse stroke-width="2" cx="66" cy="50" rx="21" />
+  <path id="wire" fill="#ffffff" stroke-width="0" d="M13 37 12 33 15 37 20 39 16 39 17 43 14 39 10 38Z" />
+  <use href="#wire" transform="rotate(72 32 50)" />
+  <use href="#wire" transform="rotate(144 32 50)" />
+  <use href="#wire" transform="rotate(216 32 50)" />
+  <use href="#wire" transform="rotate(288 32 50)" />
+  <use id="wire2" href="#wire" transform="translate(34 21) rotate(40 66 50)" />
+  <use href="#wire2" transform="rotate(72 66 50)" />
+  <use href="#wire2" transform="rotate(144 66 50)" />
+  <use href="#wire2" transform="rotate(216 66 50)" />
+  <use href="#wire2" transform="rotate(288 66 50)" />
+</svg>
