@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const doc = {
   slug: 'doc',
@@ -22,8 +28,52 @@ export const doc = {
   specialties: ['support'],
   season: { id: 0 },
   weapons: {
-    primary: ['mp5', 'p90', 'sg-cqb'],
-    secondary: ['p9', 'lfp586', 'bailiff_410']
+    primary: [
+      {
+        slug: 'sg-cqb',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: ['vertical_grip'],
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'mp5',
+        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'p90',
+        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p9',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'lfp586',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'bailiff_410',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['bulletproof_camera', 'barbed_wire'] },
   uniqueAbility: {
