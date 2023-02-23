@@ -1,6 +1,6 @@
 {
   "name": "r6data",
-  "version": "0.0.0",
+  "version": "0.0.0-alpha.1",
   "author": "Daniel Werg",
   "description": "Data for r6api.js",
   "license": "MIT",
