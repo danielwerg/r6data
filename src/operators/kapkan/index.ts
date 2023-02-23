@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const kapkan = {
   slug: 'kapkan',
@@ -21,7 +27,40 @@ export const kapkan = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-entry', 'trapper'],
   season: { id: 0 },
-  weapons: { primary: ['9x19vsn', 'sasg-12'], secondary: ['pmm', 'gsh-18'] },
+  weapons: {
+    primary: [
+      {
+        slug: '9x19vsn',
+        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'sasg-12',
+        sights: COMMON_1X_SIGHTS,
+        barrels: ['suppressor'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'pmm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gsh-18',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['impact_grenade', 'nitro_cell'] },
   uniqueAbility: {
     slug: 'entry_denial_device',
