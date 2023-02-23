@@ -19,8 +19,52 @@ export const recruitAttack = {
   specialties: ['support'],
   season: { id: 0 },
   weapons: {
-    primary: ['l85a2', 'mk_14_ebr', 'm249'],
-    secondary: ['p12', 'super_shorty', 'c75_auto']
+    primary: [
+      {
+        slug: 'l85a2',
+        sights: ['holo_a'],
+        barrels: ['flash_hider'],
+        grips: ['vertical_grip'],
+        underBarrels: null
+      },
+      {
+        slug: 'mk_14_ebr',
+        sights: ['scope_3.0x'],
+        barrels: ['muzzle_brake'],
+        grips: ['vertical_grip'],
+        underBarrels: null
+      },
+      {
+        slug: 'm249',
+        sights: ['reflex_a'],
+        barrels: ['compensator'],
+        grips: ['vertical_grip'],
+        underBarrels: null
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p12',
+        sights: null,
+        barrels: ['suppressor'],
+        grips: null,
+        underBarrels: null
+      },
+      {
+        slug: 'super_shorty',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'c75_auto',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ]
   },
   gadgets: {
     primary: [

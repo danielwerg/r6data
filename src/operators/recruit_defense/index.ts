@@ -18,7 +18,40 @@ export const recruitDefense = {
   ratings: { health: 2, speed: 2 },
   specialties: ['support'],
   season: { id: 0 },
-  weapons: { primary: ['mp5k', 'm870'], secondary: ['p9', 'smg-11'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'mp5k',
+        sights: ['holo_a'],
+        barrels: ['flash_hider'],
+        grips: null,
+        underBarrels: null
+      },
+      {
+        slug: 'm870',
+        sights: ['reflex_a'],
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p9',
+        sights: null,
+        barrels: ['muzzle_brake'],
+        grips: null,
+        underBarrels: null
+      },
+      {
+        slug: 'smg-11',
+        sights: ['red_dot_a'],
+        barrels: ['compensator'],
+        grips: ['vertical_grip'],
+        underBarrels: null
+      }
+    ]
+  },
   gadgets: {
     primary: ['nitro_cell', 'impact_grenade', 'proximity_alarm'],
     secondary: ['bulletproof_camera', 'barbed_wire', 'deployable_shield']
