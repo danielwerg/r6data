@@ -83,9 +83,9 @@ export * from './types';
 
 export const MINI_OPERATORS = [
   recruitDefense,
-  recruitAttack
-  // smoke,
-  // mute,
+  recruitAttack,
+  smoke,
+  mute
   // sledge,
   // thatcher,
   // castle,
