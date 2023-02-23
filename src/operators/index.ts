@@ -85,10 +85,10 @@ export const MINI_OPERATORS = [
   recruitDefense,
   recruitAttack,
   smoke,
-  mute
+  mute,
   // sledge,
   // thatcher,
-  // castle,
+  castle
   // pulse,
   // ash,
   // thermite,
