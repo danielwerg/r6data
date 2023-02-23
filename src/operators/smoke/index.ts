@@ -22,8 +22,78 @@ export const smoke = {
   specialties: ['anti-entry', 'trapper'],
   season: { id: 0 },
   weapons: {
-    primary: ['m590a1', 'fmg-9'],
-    secondary: ['p226_mk_25', 'smg-11']
+    primary: [
+      {
+        slug: 'fmg-9',
+        sights: [
+          'holo_a',
+          'holo_b',
+          'holo_c',
+          'holo_d',
+          'red_dot_a',
+          'red_dot_b',
+          'red_dot_c',
+          'reflex_a',
+          'reflex_b',
+          'reflex_c',
+          'scope_1.5x'
+        ],
+        barrels: [],
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm590a1',
+        sights: [
+          'holo_a',
+          'holo_b',
+          'holo_c',
+          'holo_d',
+          'red_dot_a',
+          'red_dot_b',
+          'red_dot_c',
+          'reflex_a',
+          'reflex_b',
+          'reflex_c'
+        ],
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p226_mk_25',
+        sights: null,
+        barrels: ['muzzle_brake', 'suppressor'],
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'smg-11',
+        sights: [
+          'holo_a',
+          'holo_b',
+          'holo_c',
+          'holo_d',
+          'red_dot_a',
+          'red_dot_b',
+          'red_dot_c',
+          'reflex_a',
+          'reflex_b',
+          'reflex_c'
+        ],
+        barrels: [
+          'flash_hider',
+          'compensator',
+          'muzzle_brake',
+          'suppressor',
+          'extended_barrel'
+        ],
+        grips: ['vertical_grip', 'angled_grip'],
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['deployable_shield', 'barbed_wire'] },
   uniqueAbility: {
