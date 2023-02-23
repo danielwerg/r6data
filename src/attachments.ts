@@ -115,7 +115,8 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a 1x dot sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/red_dot_handgun.svg'),
+      toSVG: async () =>
+        getAttachmentSVGString('/sights/svgs/red_dot_handgun.svg'),
       png: getAttachmentAssetURL('/sights/pngs/red_dot_handgun.png')
     }
   },
@@ -225,7 +226,8 @@ export const SIGHTS = [
     magnification: 2.5,
     description: 'Provides a 2.5x magnification for long distance engagements.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/scope_2.5x_a.svg'),
+      toSVG: async () =>
+        getAttachmentSVGString('/sights/svgs/scope_2.5x_a.svg'),
       png: getAttachmentAssetURL('/sights/pngs/scope_2.5x_a.png')
     }
   },
@@ -235,7 +237,8 @@ export const SIGHTS = [
     magnification: 2.5,
     description: 'Provides a 2.5x magnification for long distance engagements.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/scope_2.5x_b.svg'),
+      toSVG: async () =>
+        getAttachmentSVGString('/sights/svgs/scope_2.5x_b.svg'),
       png: getAttachmentAssetURL('/sights/pngs/scope_2.5x_b.png')
     }
   },
@@ -307,7 +310,8 @@ export const BARRELS = [
     description:
       'Reduces speed at which the muzzle moves upwards while shooting.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/barrels/svgs/flash_hidder.svg'),
+      toSVG: async () =>
+        getAttachmentSVGString('/barrels/svgs/flash_hidder.svg'),
       png: getAttachmentAssetURL('/barrels/pngs/flash_hidder.png')
     }
   },
@@ -316,7 +320,8 @@ export const BARRELS = [
     name: 'Compensator',
     description: 'Reduces horizontal movement while shooting.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/barrels/svgs/compensator.svg'),
+      toSVG: async () =>
+        getAttachmentSVGString('/barrels/svgs/compensator.svg'),
       png: getAttachmentAssetURL('/barrels/pngs/compensator.png')
     }
   },
@@ -325,7 +330,8 @@ export const BARRELS = [
     name: 'Muzzle Brake',
     description: 'Reduces the overall weapon kick of single shot firing.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/barrels/svgs/muzzle_brake.svg'),
+      toSVG: async () =>
+        getAttachmentSVGString('/barrels/svgs/muzzle_brake.svg'),
       png: getAttachmentAssetURL('/barrels/pngs/muzzle_brake.png')
     }
   },
@@ -345,7 +351,8 @@ export const BARRELS = [
     description:
       'Reduces the rate of damage drop off, allowing you to deal more damage at long range. Increases weapon damage by 15%',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/barrels/svgs/extended_barrel.svg'),
+      toSVG: async () =>
+        getAttachmentSVGString('/barrels/svgs/extended_barrel.svg'),
       png: getAttachmentAssetURL('/barrels/pngs/extended_barrel.png')
     }
   }
@@ -366,7 +373,8 @@ export const GRIPS = [
     description:
       'Reduces speed at which the muzzle moves upwards while shooting.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/grips/svgs/vertical_grip.svg'),
+      toSVG: async () =>
+        getAttachmentSVGString('/grips/svgs/vertical_grip.svg'),
       png: getAttachmentAssetURL('/grips/pngs/vertical_grip.png')
     }
   },
