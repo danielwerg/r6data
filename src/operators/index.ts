@@ -92,8 +92,8 @@ export const MINI_OPERATORS = [
   pulse,
   // ash,
   // thermite,
-  doc
-  // rook,
+  doc,
+  rook
   // twitch,
   // montagne,
   // kapkan,

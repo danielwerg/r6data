@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const rook = {
   slug: 'rook',
@@ -21,7 +27,47 @@ export const rook = {
   ratings: { health: 3, speed: 1 },
   specialties: ['support'],
   season: { id: 0 },
-  weapons: { primary: ['mp5', 'p90', 'sg-cqb'], secondary: ['p9', 'lfp586'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'p90',
+        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'mp5',
+        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x', 'scope_2.0x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'sg-cqb',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: ['vertical_grip'],
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'lfp586',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'p9',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['proximity_alarm', 'impact_grenade'] },
   uniqueAbility: {
     slug: 'armor_pack',
