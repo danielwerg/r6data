@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const smoke = {
   slug: 'smoke',
@@ -25,37 +31,14 @@ export const smoke = {
     primary: [
       {
         slug: 'fmg-9',
-        sights: [
-          'holo_a',
-          'holo_b',
-          'holo_c',
-          'holo_d',
-          'red_dot_a',
-          'red_dot_b',
-          'red_dot_c',
-          'reflex_a',
-          'reflex_b',
-          'reflex_c',
-          'scope_1.5x'
-        ],
+        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x'],
         barrels: [],
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'm590a1',
-        sights: [
-          'holo_a',
-          'holo_b',
-          'holo_c',
-          'holo_d',
-          'red_dot_a',
-          'red_dot_b',
-          'red_dot_c',
-          'reflex_a',
-          'reflex_b',
-          'reflex_c'
-        ],
+        sights: COMMON_1X_SIGHTS,
         barrels: null,
         grips: null,
         underBarrels: ['laser']
@@ -65,32 +48,15 @@ export const smoke = {
       {
         slug: 'p226_mk_25',
         sights: null,
-        barrels: ['muzzle_brake', 'suppressor'],
+        barrels: COMMON_BARRELS_HANDGUN,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'smg-11',
-        sights: [
-          'holo_a',
-          'holo_b',
-          'holo_c',
-          'holo_d',
-          'red_dot_a',
-          'red_dot_b',
-          'red_dot_c',
-          'reflex_a',
-          'reflex_b',
-          'reflex_c'
-        ],
-        barrels: [
-          'flash_hider',
-          'compensator',
-          'muzzle_brake',
-          'suppressor',
-          'extended_barrel'
-        ],
-        grips: ['vertical_grip', 'angled_grip'],
+        sights: COMMON_1X_SIGHTS,
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
         underBarrels: ['laser']
       }
     ]
