@@ -1,5 +1,10 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN
+} from '../constants';
 
 export const bandit = {
   slug: 'bandit',
@@ -21,7 +26,33 @@ export const bandit = {
   ratings: { health: 1, speed: 3 },
   specialties: ['anti-entry', 'anti-gadget'],
   season: { id: 0 },
-  weapons: { primary: ['mp7', 'm870'], secondary: ['p12'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'mp7',
+        sights: COMMON_1X_SIGHTS,
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm870',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p12',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['barbed_wire', 'nitro_cell'] },
   uniqueAbility: {
     slug: 'shock_wire',
