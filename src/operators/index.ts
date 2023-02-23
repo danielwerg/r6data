@@ -96,8 +96,8 @@ export const MINI_OPERATORS = [
   rook,
   // twitch,
   // montagne,
-  kapkan
-  // tachanka,
+  kapkan,
+  tachanka
   // glaz,
   // fuze,
   // jager,
