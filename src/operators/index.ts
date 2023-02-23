@@ -1,8 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-import type { Operator, OperatorGadgets, OperatorWeapons } from './types';
-import type { Season } from '../types';
+import type { Operator } from './types';
 import { getNextPriceDropSeasons, getPrices } from '../utils';
 import { SEASONS } from '../seasons';
 import { type Gadget, GADGETS } from '../gadgets';
@@ -10,6 +9,7 @@ import { type Weapon, WEAPONS } from '../weapons';
 /** --- */
 import { recruitDefense } from './recruit_defense';
 import { recruitAttack } from './recruit_attack';
+import type { Season } from '../types';
 import { smoke } from './smoke';
 import { mute } from './mute';
 import { sledge } from './sledge';
@@ -83,92 +83,75 @@ export * from './types';
 
 export const MINI_OPERATORS = [
   recruitDefense,
-  recruitAttack,
-  smoke,
-  mute,
-  sledge,
-  thatcher,
-  castle,
-  pulse,
-  ash,
-  thermite,
-  doc,
-  rook,
-  twitch,
-  montagne,
-  kapkan,
-  tachanka,
-  glaz,
-  fuze,
-  jager,
-  bandit,
-  blitz,
-  iq,
-  frost,
-  buck,
-  valkyrie,
-  blackbeard,
-  caveira,
-  capitao,
-  echo,
-  hibana,
-  mira,
-  jackal,
-  lesion,
-  ying,
-  ela,
-  zofia,
-  vigil,
-  dokkaebi,
-  lion,
-  finka,
-  maestro,
-  alibi,
-  clash,
-  maverick,
-  kaid,
-  nomad,
-  mozzie,
-  gridlock,
-  warden,
-  nokk,
-  goyo,
-  amaru,
-  wamai,
-  kali,
-  oryx,
-  iana,
-  melusi,
-  ace,
-  zero,
-  aruni,
-  flores,
-  thunderbird,
-  osa,
-  thorn,
-  azami,
-  sens,
-  grim,
-  solis,
-  brava
+  recruitAttack
+  // smoke,
+  // mute,
+  // sledge,
+  // thatcher,
+  // castle,
+  // pulse,
+  // ash,
+  // thermite,
+  // doc,
+  // rook,
+  // twitch,
+  // montagne,
+  // kapkan,
+  // tachanka,
+  // glaz,
+  // fuze,
+  // jager,
+  // bandit,
+  // blitz,
+  // iq,
+  // frost,
+  // buck,
+  // valkyrie,
+  // blackbeard,
+  // caveira,
+  // capitao,
+  // echo,
+  // hibana,
+  // mira,
+  // jackal,
+  // lesion,
+  // ying,
+  // ela,
+  // zofia,
+  // vigil,
+  // dokkaebi,
+  // lion,
+  // finka,
+  // maestro,
+  // alibi,
+  // clash,
+  // maverick,
+  // kaid,
+  // nomad,
+  // mozzie,
+  // gridlock,
+  // warden,
+  // nokk,
+  // goyo,
+  // amaru,
+  // wamai,
+  // kali,
+  // oryx,
+  // iana,
+  // melusi,
+  // ace,
+  // zero,
+  // aruni,
+  // flores,
+  // thunderbird,
+  // osa,
+  // thorn,
+  // azami,
+  // sens,
+  // grim,
+  // solis,
+  // brava
 ];
-
-export interface FindMatchFromKeysOptions<T, B> {
-  keys: T;
-  array: B[];
-}
-const findMatchFromKeys = <
-  T extends OperatorWeapons | OperatorGadgets,
-  B extends Weapon | Gadget
->({
-  keys,
-  array
-}: FindMatchFromKeysOptions<T, B>) =>
-  Object.entries(keys)
-    .map(([key, value]: [string, string[]]) => ({
-      [key]: value.map(slug => array.find(object => object.slug === slug))
-    }))
-    .reduce((acc, cur) => ({ ...acc, ...cur }), {}) as Record<keyof T, B[]>;
 
 export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {
   const notes = readFileSync(
@@ -180,14 +163,25 @@ export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {
     ...operator,
     // NOTE: `as TYPE` need to prevent ts(7056) error
     season: SEASONS.find(season => season.id === operator.season.id)! as Season,
-    weapons: findMatchFromKeys({
-      keys: operator.weapons,
-      array: WEAPONS as Weapon[]
-    }),
-    gadgets: findMatchFromKeys({
-      keys: operator.gadgets,
-      array: GADGETS as Gadget[]
-    }),
+    weapons: {
+      primary: operator.weapons.primary.map(({ slug, ...attachments }) => ({
+        ...(WEAPONS as Weapon[]).find(weapon => weapon.slug === slug)!,
+        ...attachments
+      })),
+      secondary: operator.weapons.secondary.map(({ slug, ...attachments }) => ({
+        ...(WEAPONS as Weapon[]).find(weapon => weapon.slug === slug)!,
+        ...attachments
+      }))
+    },
+    gadgets: {
+      /** `undefined` unless for recruits */
+      primary: operator.gadgets.primary?.map(slug => ({
+        ...(GADGETS as Gadget[]).find(gadget => gadget.slug === slug)!
+      })),
+      secondary: operator.gadgets.secondary.map(slug => ({
+        ...(GADGETS as Gadget[]).find(gadget => gadget.slug === slug)!
+      }))
+    },
     ...(!operator.slug.includes('recruit') && {
       /** `undefined` for recruits */
       price: getPrices(SEASONS, operator.season.id)

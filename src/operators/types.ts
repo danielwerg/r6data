@@ -135,8 +135,11 @@ export interface OperatorWeapons {
   secondary: OperatorWeapon[];
 }
 
-export interface OperatorWeapon {
+export interface OperatorWeapon extends OperatorWeaponAttachments {
   slug: WeaponSlug;
+}
+
+export interface OperatorWeaponAttachments {
   sights: SightSlug[] | null;
   barrels: BarrelSlug[] | null;
   grips: GripSlug[] | null;
