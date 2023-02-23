@@ -97,10 +97,10 @@ export const MINI_OPERATORS = [
   // twitch,
   // montagne,
   kapkan,
-  tachanka
+  tachanka,
   // glaz,
   // fuze,
-  // jager,
+  jager
   // bandit,
   // blitz,
   // iq,
