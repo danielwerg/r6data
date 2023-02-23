@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const frost = {
   slug: 'frost',
@@ -22,8 +28,38 @@ export const frost = {
   specialties: ['anti-entry', 'trapper'],
   season: { id: 1 },
   weapons: {
-    primary: ['super_90', '9mm_c1'],
-    secondary: ['mk1_9mm', 'ita12s']
+    primary: [
+      {
+        slug: 'super_90',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: '9mm_c1',
+        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'mk1_9mm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'ita12s',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['bulletproof_camera', 'deployable_shield'] },
   uniqueAbility: {
