@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>R6 Data</h1>
+  <h1>R6Data</h1>
   <h3>📊 Data for <a href="https://github.com/danielwerg/r6api.js">r6api.js</a> and similar projects</h3>
   <p>
     <a href="https://github.com/danielwerg/r6data/blob/master/license"><img
