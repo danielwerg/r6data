@@ -1,5 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import { COMMON_1X_SIGHTS, COMMON_BARRELS } from '../constants';
 
 export const clash = {
   slug: 'clash',
@@ -22,8 +23,39 @@ export const clash = {
   specialties: ['intel', 'crowd_control'],
   season: { id: 11 },
   weapons: {
-    primary: ['cce_shield'],
-    secondary: ['super_shorty', 'spsmg9', 'p-10c']
+    primary: [
+      {
+        slug: 'cce_shield',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ],
+    secondary: [
+      {
+        slug: 'super_shorty',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'spsmg9',
+        sights: COMMON_1X_SIGHTS,
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'p-10c',
+        // NOTE: Forced red_dot_handgun
+        sights: null,
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['barbed_wire', 'impact_grenade'] },
   uniqueAbility: {
