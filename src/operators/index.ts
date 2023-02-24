@@ -145,8 +145,8 @@ export const MINI_OPERATORS = [
   // flores,
   thunderbird,
   // osa,
-  thorn
-  // azami,
+  thorn,
+  azami
   // sens,
   // grim,
   // solis,
