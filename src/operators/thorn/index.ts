@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const thorn = {
   slug: 'thorn',
@@ -22,8 +28,38 @@ export const thorn = {
   specialties: ['anti-entry', 'trapper'],
   season: { id: 24 },
   weapons: {
-    primary: ['uzk50gi', 'm870'],
-    secondary: ['1911_tacops', 'c75_auto']
+    primary: [
+      {
+        slug: 'uzk50gi',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm870',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: '1911_tacops',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'c75_auto',
+        sights: null,
+        barrels: ['suppressor'],
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['deployable_shield', 'barbed_wire'] },
   uniqueAbility: {
