@@ -1,5 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import { COMMON_1X_SIGHTS, COMMON_BARRELS } from '../constants';
 
 export const caveira = {
   slug: 'caveira',
@@ -21,7 +22,34 @@ export const caveira = {
   ratings: { health: 1, speed: 3 },
   specialties: ['intel', 'crowd_control'],
   season: { id: 3 },
-  weapons: { primary: ['m12', 'spas-15'], secondary: ['luison'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'm12',
+        sights: COMMON_1X_SIGHTS,
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'spas-15',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'luison',
+        sights: null,
+        // NOTE: Forced suppressor
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['proximity_alarm', 'impact_grenade'] },
   uniqueAbility: {
     slug: 'silent_step',

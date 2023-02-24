@@ -106,9 +106,9 @@ export const MINI_OPERATORS = [
   // iq,
   frost,
   // buck,
-  valkyrie
+  valkyrie,
   // blackbeard,
-  // caveira,
+  caveira
   // capitao,
   // echo,
   // hibana,
