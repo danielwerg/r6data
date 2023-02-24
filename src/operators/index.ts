@@ -132,9 +132,9 @@ export const MINI_OPERATORS = [
   // gridlock,
   warden,
   // nokk,
-  goyo
+  goyo,
   // amaru,
-  // wamai,
+  wamai
   // kali,
   // oryx,
   // iana,

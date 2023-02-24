@@ -1,5 +1,10 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN
+} from '../constants';
 
 export const wamai = {
   slug: 'wamai',
@@ -21,7 +26,40 @@ export const wamai = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-gadget', 'trapper'],
   season: { id: 16 },
-  weapons: { primary: ['aug_a2', 'mp5k'], secondary: ['keratos_.357', 'p12'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'aug_a2',
+        sights: COMMON_1X_SIGHTS,
+        barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'mp5k',
+        sights: COMMON_1X_SIGHTS,
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'keratos_.357',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'p12',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['impact_grenade', 'proximity_alarm'] },
   uniqueAbility: {
     slug: 'mag-net_system',
