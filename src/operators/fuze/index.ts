@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const fuze = {
   slug: 'fuze',
@@ -22,8 +28,57 @@ export const fuze = {
   specialties: ['anti-gadget'],
   season: { id: 0 },
   weapons: {
-    primary: ['ballistic_shield', '6p41', 'ak-12'],
-    secondary: ['pmm', 'gsh-18']
+    primary: [
+      {
+        slug: 'ballistic_shield',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      },
+      {
+        slug: '6p41',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'ak-12',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'pmm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gsh-18',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: {
     secondary: ['breach_charge', 'hard_breach_charge', 'smoke_grenade']

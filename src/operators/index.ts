@@ -100,7 +100,7 @@ export const MINI_OPERATORS = [
   kapkan,
   tachanka,
   glaz,
-  // fuze,
+  fuze,
   jager,
   bandit,
   // blitz,
