@@ -96,7 +96,7 @@ export const MINI_OPERATORS = [
   doc,
   rook,
   twitch,
-  // montagne,
+  montagne,
   kapkan,
   tachanka,
   // glaz,
