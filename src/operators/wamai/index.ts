@@ -3,7 +3,7 @@ import type { Operator } from '../types';
 import {
   COMMON_1X_SIGHTS,
   COMMON_BARRELS,
-  COMMON_BARRELS_HANDGUN
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN
 } from '../constants';
 
 export const wamai = {
@@ -47,14 +47,14 @@ export const wamai = {
       {
         slug: 'keratos_.357',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'p12',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
       }

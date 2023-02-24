@@ -2,7 +2,7 @@ import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_1X_SIGHTS,
-  COMMON_BARRELS_HANDGUN,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
 
@@ -48,7 +48,7 @@ export const ela = {
         slug: 'rg15',
         // NOTE: Forced red_dot_handgun
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
       }

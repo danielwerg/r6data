@@ -2,7 +2,7 @@ import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_1X_SIGHTS,
-  COMMON_BARRELS_HANDGUN,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
 
@@ -55,7 +55,7 @@ export const maestro = {
       {
         slug: 'keratos_.357',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
       }
