@@ -1,5 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import { COMMON_BARRELS, COMMON_GRIPS, COMMON_SIGHTS_1X } from '../constants';
 
 export const solis = {
   slug: 'solis',
@@ -21,7 +22,33 @@ export const solis = {
   ratings: { health: 2, speed: 2 },
   specialties: ['intel', 'support'],
   season: { id: 28 },
-  weapons: { primary: ['p90', 'ita12l'], secondary: ['smg-11'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'p90',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'ita12l',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'smg-11',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['impact_grenade', 'bulletproof_camera'] },
   uniqueAbility: {
     slug: 'spec-io_electro-sensor',

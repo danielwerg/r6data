@@ -146,10 +146,10 @@ export const MINI_OPERATORS = [
   thunderbird,
   // osa,
   thorn,
-  azami
+  azami,
   // sens,
   // grim,
-  // solis,
+  solis
   // brava
 ];
 
