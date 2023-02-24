@@ -46,6 +46,7 @@ export const maestro = {
     secondary: [
       {
         slug: 'bailiff_410',
+        // NOTE: Forced red_dot_handgun
         sights: null,
         barrels: null,
         grips: null,
