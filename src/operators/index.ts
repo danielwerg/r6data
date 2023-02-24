@@ -112,9 +112,9 @@ export const MINI_OPERATORS = [
   // capitao,
   echo,
   // hibana,
-  mira
+  mira,
   // jackal,
-  // lesion,
+  lesion
   // ying,
   // ela,
   // zofia,

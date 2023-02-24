@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const lesion = {
   slug: 'lesion',
@@ -21,7 +27,33 @@ export const lesion = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-entry', 'trapper'],
   season: { id: 7 },
-  weapons: { primary: ['six12_sd', 't-5_smg'], secondary: ['q-929'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'six12_sd',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 't-5_smg',
+        sights: COMMON_1X_SIGHTS,
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'q-929',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['impact_grenade', 'bulletproof_camera'] },
   uniqueAbility: {
     slug: 'gu_mines',
