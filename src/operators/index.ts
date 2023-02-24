@@ -88,7 +88,7 @@ export const MINI_OPERATORS = [
   smoke,
   mute,
   sledge,
-  // thatcher,
+  thatcher,
   castle,
   pulse,
   // ash,
