@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const mira = {
   slug: 'mira',
@@ -22,8 +28,38 @@ export const mira = {
   specialties: ['intel', 'support'],
   season: { id: 5 },
   weapons: {
-    primary: ['vector_.45_acp', 'ita12l'],
-    secondary: ['usp40', 'ita12s']
+    primary: [
+      {
+        slug: 'vector_.45_acp',
+        sights: COMMON_1X_SIGHTS,
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'ita12l',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'usp40',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'ita12s',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['proximity_alarm', 'nitro_cell'] },
   uniqueAbility: {
