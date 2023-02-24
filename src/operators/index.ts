@@ -149,8 +149,8 @@ export const MINI_OPERATORS = [
   azami,
   // sens,
   // grim,
-  solis
-  // brava
+  solis,
+  brava
 ];
 
 export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {
