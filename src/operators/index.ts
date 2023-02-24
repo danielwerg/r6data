@@ -141,9 +141,9 @@ export const MINI_OPERATORS = [
   melusi,
   // ace,
   // zero,
-  aruni
+  aruni,
   // flores,
-  // thunderbird,
+  thunderbird
   // osa,
   // thorn,
   // azami,
