@@ -95,7 +95,7 @@ export const MINI_OPERATORS = [
   thermite,
   doc,
   rook,
-  // twitch,
+  twitch,
   // montagne,
   kapkan,
   tachanka,
