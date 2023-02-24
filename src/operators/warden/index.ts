@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const warden = {
   slug: 'warden',
@@ -21,7 +27,41 @@ export const warden = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-gadget', 'intel'],
   season: { id: 14 },
-  weapons: { primary: ['m590a1', 'mpx'], secondary: ['p-10c', 'smg-12'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'm590a1',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'mpx',
+        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p-10c',
+        // NOTE: Forced red_dot_handgun
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'smg-12',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['deployable_shield', 'nitro_cell'] },
   uniqueAbility: {
     slug: 'glance_smart_glasses',

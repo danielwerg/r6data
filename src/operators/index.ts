@@ -128,9 +128,9 @@ export const MINI_OPERATORS = [
   // maverick,
   kaid,
   // nomad,
-  mozzie
+  mozzie,
   // gridlock,
-  // warden,
+  warden
   // nokk,
   // goyo,
   // amaru,
