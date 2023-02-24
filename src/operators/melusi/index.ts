@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const melusi = {
   slug: 'melusi',
@@ -21,7 +27,34 @@ export const melusi = {
   ratings: { health: 3, speed: 1 },
   specialties: ['intel', 'crowd_control'],
   season: { id: 18 },
-  weapons: { primary: ['mp5', 'super_90'], secondary: ['rg15'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'mp5',
+        sights: COMMON_1X_SIGHTS,
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'super_90',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'rg15',
+        // NOTE: Forced red_dot_handgun
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['bulletproof_camera', 'impact_grenade'] },
   uniqueAbility: {
     slug: 'banshee_sonic_defense',
