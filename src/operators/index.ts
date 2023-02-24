@@ -91,7 +91,7 @@ export const MINI_OPERATORS = [
   thatcher,
   castle,
   pulse,
-  // ash,
+  ash,
   // thermite,
   doc,
   rook,

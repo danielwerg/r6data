@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const ash = {
   slug: 'ash',
@@ -21,7 +27,40 @@ export const ash = {
   ratings: { health: 1, speed: 3 },
   specialties: ['breach', 'front-line'],
   season: { id: 0 },
-  weapons: { primary: ['g36c', 'r4-c'], secondary: ['5.7_usg', 'm45_meusoc'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'g36c',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'r4-c',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: '5.7_usg',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm45_meusoc',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['breach_charge', 'claymore'] },
   uniqueAbility: {
     slug: 'breaching_rounds',
