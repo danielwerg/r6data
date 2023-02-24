@@ -92,7 +92,7 @@ export const MINI_OPERATORS = [
   castle,
   pulse,
   ash,
-  // thermite,
+  thermite,
   doc,
   rook,
   // twitch,
