@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const aruni = {
   slug: 'aruni',
@@ -21,7 +27,33 @@ export const aruni = {
   ratings: { health: 3, speed: 1 },
   specialties: ['anti-entry', 'anti-gadget'],
   season: { id: 20 },
-  weapons: { primary: ['p10_roni', 'mk_14_ebr'], secondary: ['prb92'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'p10_roni',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'mk_14_ebr',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'prb92',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['barbed_wire', 'bulletproof_camera'] },
   uniqueAbility: {
     slug: 'surya_gate',

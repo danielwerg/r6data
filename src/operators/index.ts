@@ -138,10 +138,10 @@ export const MINI_OPERATORS = [
   // kali,
   oryx,
   // iana,
-  melusi
+  melusi,
   // ace,
   // zero,
-  // aruni,
+  aruni
   // flores,
   // thunderbird,
   // osa,
