@@ -1,5 +1,10 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_1X_SIGHTS,
+  COMMON_BARRELS_HANDGUN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const ela = {
   slug: 'ela',
@@ -21,7 +26,34 @@ export const ela = {
   ratings: { health: 2, speed: 2 },
   specialties: ['crowd_control', 'trapper'],
   season: { id: 7 },
-  weapons: { primary: ['scorpion_evo_3_a1', 'fo-12'], secondary: ['rg15'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'scorpion_evo_3_a1',
+        sights: COMMON_1X_SIGHTS,
+        barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'fo-12',
+        sights: COMMON_1X_SIGHTS,
+        barrels: ['suppressor', 'extended_barrel'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'rg15',
+        // NOTE: Forced red_dot_handgun
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['barbed_wire', 'deployable_shield'] },
   uniqueAbility: {
     slug: 'grzmot_mine',

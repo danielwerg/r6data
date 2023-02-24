@@ -114,9 +114,9 @@ export const MINI_OPERATORS = [
   // hibana,
   mira,
   // jackal,
-  lesion
+  lesion,
   // ying,
-  // ela,
+  ela
   // zofia,
   // vigil,
   // dokkaebi,
