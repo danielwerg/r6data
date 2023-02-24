@@ -1,5 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import { COMMON_1X_SIGHTS, COMMON_BARRELS, COMMON_GRIPS } from '../constants';
 
 export const kaid = {
   slug: 'kaid',
@@ -22,8 +23,39 @@ export const kaid = {
   specialties: ['anti-entry', 'anti-gadget'],
   season: { id: 12 },
   weapons: {
-    primary: ['aug_a3', 'tcsg12'],
-    secondary: ['.44_mag_semi-auto', 'lfp586']
+    primary: [
+      {
+        slug: 'aug_a3',
+        sights: COMMON_1X_SIGHTS,
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'tcsg12',
+        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x', 'scope_2.0x'],
+        barrels: ['suppressor'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: '.44_mag_semi-auto',
+        // NOTE: Forced scope_3.0x_.44_mag
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'lfp586',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['nitro_cell', 'barbed_wire'] },
   uniqueAbility: {

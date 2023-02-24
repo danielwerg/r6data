@@ -124,9 +124,9 @@ export const MINI_OPERATORS = [
   // finka,
   maestro,
   alibi,
-  clash
+  clash,
   // maverick,
-  // kaid,
+  kaid
   // nomad,
   // mozzie,
   // gridlock,
