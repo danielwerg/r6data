@@ -99,7 +99,7 @@ export const MINI_OPERATORS = [
   montagne,
   kapkan,
   tachanka,
-  // glaz,
+  glaz,
   // fuze,
   jager,
   bandit,

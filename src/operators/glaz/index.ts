@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const glaz = {
   slug: 'glaz',
@@ -21,7 +27,50 @@ export const glaz = {
   ratings: { health: 1, speed: 3 },
   specialties: ['intel', 'support'],
   season: { id: 0 },
-  weapons: { primary: ['ots-03'], secondary: ['pmm', 'gonne-6', 'bearing_9'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'ots-03',
+        sights: [
+          'red_dot_a',
+          'red_dot_b',
+          'red_dot_c',
+          'holo_a',
+          'holo_b',
+          'holo_c',
+          'holo_d',
+          'reflex_a',
+          'reflex_b'
+        ],
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'pmm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gonne-6',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      },
+      {
+        slug: 'bearing_9',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['smoke_grenade', 'frag_grenade', 'claymore'] },
   uniqueAbility: {
     slug: 'flip_sight',
