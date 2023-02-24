@@ -1,5 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import { COMMON_1X_SIGHTS, COMMON_BARRELS, COMMON_GRIPS } from '../constants';
 
 export const vigil = {
   slug: 'vigil',
@@ -21,7 +22,46 @@ export const vigil = {
   ratings: { health: 1, speed: 3 },
   specialties: ['anti-gadget', 'crowd_control'],
   season: { id: 8 },
-  weapons: { primary: ['k1a', 'bosg.12.2'], secondary: ['c75_auto', 'smg-12'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'k1a',
+        sights: COMMON_1X_SIGHTS,
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'bosg.12.2',
+        sights: [
+          ...COMMON_1X_SIGHTS,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: null,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'c75_auto',
+        sights: null,
+        barrels: ['suppressor'],
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'smg-12',
+        sights: COMMON_1X_SIGHTS,
+        barrels: null,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['bulletproof_camera', 'impact_grenade'] },
   uniqueAbility: {
     slug: 'erc-7',
