@@ -195,10 +195,12 @@ export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {
       }))
     },
     gadgets: {
-      /** `undefined` unless for recruits */
-      primary: operator.gadgets.primary?.map(slug => ({
-        ...(GADGETS as Gadget[]).find(gadget => gadget.slug === slug)!
-      })),
+      ...(operator.gadgets.primary && {
+        /** `undefined` unless for recruits */
+        primary: operator.gadgets.primary.map(slug => ({
+          ...(GADGETS as Gadget[]).find(gadget => gadget.slug === slug)!
+        }))
+      }),
       secondary: operator.gadgets.secondary.map(slug => ({
         ...(GADGETS as Gadget[]).find(gadget => gadget.slug === slug)!
       }))
