@@ -1,5 +1,10 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const sledge = {
   slug: 'sledge',
@@ -22,8 +27,31 @@ export const sledge = {
   specialties: ['anti-gadget', 'breach'],
   season: { id: 0 },
   weapons: {
-    primary: ['l85a2', 'm590a1'],
-    secondary: ['p226_mk_25', 'smg-11']
+    primary: [
+      {
+        slug: 'l85a2',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm590a1',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p226_mk_25',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: {
     secondary: ['frag_grenade', 'stun_grenade', 'impact_emp_grenade']
