@@ -63,6 +63,6 @@ export const getSVGString = async (path: string) =>
   fs.readFile(join(__dirname, './assets', path), 'utf8');
 
 export const getAssetURL = (path: string) =>
-  `https://raw.githubusercontent.com/danielwerg/r6data/master/assets${path}`;
+  `https://raw.githubusercontent.com/danielwerg/r6data/master/src/assets${path}`;
 
 export const getISODate = (date: string) => new Date(date).toISOString();
