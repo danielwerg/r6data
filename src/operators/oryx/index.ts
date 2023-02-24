@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_1X_SIGHTS,
+  COMMON_SIGHTS_1X,
   COMMON_BARRELS,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
@@ -31,14 +31,14 @@ export const oryx = {
     primary: [
       {
         slug: 't-5_smg',
-        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x'],
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
         barrels: COMMON_BARRELS,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'spas-12',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: null,
         grips: null,
         underBarrels: ['laser']

@@ -1,6 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
-import { COMMON_1X_SIGHTS, COMMON_BARRELS } from '../constants';
+import { COMMON_SIGHTS_1X, COMMON_BARRELS } from '../constants';
 
 export const clash = {
   slug: 'clash',
@@ -35,14 +35,14 @@ export const clash = {
     secondary: [
       {
         slug: 'super_shorty',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: null,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'spsmg9',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: COMMON_BARRELS,
         grips: null,
         underBarrels: ['laser']

@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_1X_SIGHTS,
+  COMMON_SIGHTS_1X,
   COMMON_BARRELS,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
@@ -31,14 +31,14 @@ export const mute = {
     primary: [
       {
         slug: 'mp5k',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: COMMON_BARRELS,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'm590a1',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: null,
         grips: null,
         underBarrels: ['laser']
@@ -54,7 +54,7 @@ export const mute = {
       },
       {
         slug: 'smg-11',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: COMMON_BARRELS,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']

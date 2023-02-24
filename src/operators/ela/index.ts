@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_1X_SIGHTS,
+  COMMON_SIGHTS_1X,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
@@ -30,14 +30,14 @@ export const ela = {
     primary: [
       {
         slug: 'scorpion_evo_3_a1',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'fo-12',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: ['suppressor', 'extended_barrel'],
         grips: COMMON_GRIPS,
         underBarrels: ['laser']

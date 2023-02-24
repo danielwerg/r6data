@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_1X_SIGHTS,
+  COMMON_SIGHTS_1X,
   COMMON_BARRELS,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
@@ -31,14 +31,14 @@ export const echo = {
     primary: [
       {
         slug: 'supernova',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: ['suppressor'],
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'mp5sd',
-        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x'],
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
         // NOTE: Forced suppressor
         barrels: null,
         grips: COMMON_GRIPS,
@@ -55,7 +55,7 @@ export const echo = {
       },
       {
         slug: 'bearing_9',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: COMMON_BARRELS,
         grips: null,
         underBarrels: ['laser']

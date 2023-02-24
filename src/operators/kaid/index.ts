@@ -1,6 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
-import { COMMON_1X_SIGHTS, COMMON_BARRELS, COMMON_GRIPS } from '../constants';
+import { COMMON_SIGHTS_1X, COMMON_BARRELS, COMMON_GRIPS } from '../constants';
 
 export const kaid = {
   slug: 'kaid',
@@ -26,14 +26,14 @@ export const kaid = {
     primary: [
       {
         slug: 'aug_a3',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: COMMON_BARRELS,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'tcsg12',
-        sights: [...COMMON_1X_SIGHTS, 'scope_1.5x', 'scope_2.0x'],
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
         barrels: ['suppressor'],
         grips: COMMON_GRIPS,
         underBarrels: ['laser']

@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_1X_SIGHTS,
+  COMMON_SIGHTS_1X,
   COMMON_BARRELS,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
@@ -31,14 +31,14 @@ export const tachanka = {
     primary: [
       {
         slug: 'dp27',
-        sights: [...COMMON_1X_SIGHTS, 'reflex_d'],
+        sights: [...COMMON_SIGHTS_1X, 'reflex_d'],
         barrels: null,
         grips: null,
         underBarrels: null
       },
       {
         slug: '9x19vsn',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: COMMON_BARRELS,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
@@ -61,7 +61,7 @@ export const tachanka = {
       },
       {
         slug: 'bearing_9',
-        sights: COMMON_1X_SIGHTS,
+        sights: COMMON_SIGHTS_1X,
         barrels: COMMON_BARRELS,
         grips: null,
         underBarrels: ['laser']
