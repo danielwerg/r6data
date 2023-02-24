@@ -122,8 +122,8 @@ export const MINI_OPERATORS = [
   // dokkaebi,
   // lion,
   // finka,
-  maestro
-  // alibi,
+  maestro,
+  alibi
   // clash,
   // maverick,
   // kaid,
