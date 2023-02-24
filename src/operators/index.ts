@@ -118,11 +118,11 @@ export const MINI_OPERATORS = [
   // ying,
   ela,
   // zofia,
-  vigil
+  vigil,
   // dokkaebi,
   // lion,
   // finka,
-  // maestro,
+  maestro
   // alibi,
   // clash,
   // maverick,
