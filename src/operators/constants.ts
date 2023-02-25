@@ -26,6 +26,13 @@ export const COMMON_BARRELS_HANDGUN_OR_MARKSMAN = [
   'suppressor'
 ] satisfies BarrelSlug[];
 
+export const COMMON_BARRELS_NO_EXTENDED_BARREL = [
+  'flash_hider',
+  'compensator',
+  'muzzle_brake',
+  'suppressor'
+] satisfies BarrelSlug[];
+
 export const COMMON_GRIPS = [
   'vertical_grip',
   'angled_grip'

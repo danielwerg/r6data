@@ -3,6 +3,7 @@ import type { Operator } from '../types';
 import {
   COMMON_BARRELS,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
@@ -38,7 +39,7 @@ export const iq = {
           'scope_2.5x_a',
           'scope_2.5x_b'
         ],
-        barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
         // NOTE: forced vertical grip
         grips: null,
         underBarrels: ['laser']
@@ -53,7 +54,7 @@ export const iq = {
       {
         slug: 'g8a1',
         sights: COMMON_SIGHTS_1X,
-        barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       }

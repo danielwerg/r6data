@@ -3,7 +3,8 @@ import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS
+  COMMON_GRIPS,
+  COMMON_BARRELS_NO_EXTENDED_BARREL
 } from '../constants';
 
 export const ela = {
@@ -31,7 +32,7 @@ export const ela = {
       {
         slug: 'scorpion_evo_3_a1',
         sights: COMMON_SIGHTS_1X,
-        barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       },

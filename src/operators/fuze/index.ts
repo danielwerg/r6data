@@ -1,8 +1,8 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
@@ -45,7 +45,7 @@ export const fuze = {
           'scope_2.5x_a',
           'scope_2.5x_b'
         ],
-        barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       },
@@ -58,7 +58,7 @@ export const fuze = {
           'scope_2.5x_a',
           'scope_2.5x_b'
         ],
-        barrels: ['flash_hider', 'compensator', 'muzzle_brake', 'suppressor'],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       }
