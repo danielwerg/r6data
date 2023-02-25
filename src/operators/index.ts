@@ -148,7 +148,7 @@ export const MINI_OPERATORS = [
   // osa,
   thorn,
   azami,
-  // sens,
+  sens,
   grim,
   solis,
   brava
