@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const grim = {
   slug: 'grim',
@@ -21,7 +27,33 @@ export const grim = {
   ratings: { health: 1, speed: 3 },
   specialties: ['front-line', 'map_control'],
   season: { id: 27 },
-  weapons: { primary: ['552_commando', 'sg-cqb'], secondary: ['p229'] },
+  weapons: {
+    primary: [
+      {
+        slug: '552_commando',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'sg-cqb',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: ['vertical_grip'],
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p229',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['breach_charge', 'claymore'] },
   uniqueAbility: {
     slug: 'kawan_hive_launcher',
