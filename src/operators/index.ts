@@ -110,7 +110,7 @@ export const MINI_OPERATORS = [
   valkyrie,
   blackbeard,
   caveira,
-  // capitao,
+  capitao,
   echo,
   // hibana,
   mira,
