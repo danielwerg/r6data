@@ -1,5 +1,10 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const buck = {
   slug: 'buck',
@@ -21,7 +26,49 @@ export const buck = {
   ratings: { health: 2, speed: 2 },
   specialties: ['breach', 'support'],
   season: { id: 1 },
-  weapons: { primary: ['c8-sfw', 'camrs'], secondary: ['mk1_9mm', 'gonne-6'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'c8-sfw',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        grips: null,
+        // NOTE: forced under-barrel shotgun
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'camrs',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b',
+          'scope_3.0x'
+        ],
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        // NOTE: forced under-barrel shotgun
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'mk1_9mm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gonne-6',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ]
+  },
   gadgets: { secondary: ['stun_grenade', 'hard_breach_charge'] },
   uniqueAbility: {
     slug: 'skeleton_key',
