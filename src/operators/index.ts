@@ -134,7 +134,7 @@ export const MINI_OPERATORS = [
   warden,
   // nokk,
   goyo,
-  // amaru,
+  amaru,
   wamai,
   kali,
   oryx,
