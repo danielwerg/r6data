@@ -1,5 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import { COMMON_BARRELS, COMMON_GRIPS, COMMON_SIGHTS_1X } from '../constants';
 
 export const zero = {
   slug: 'zero',
@@ -21,7 +22,42 @@ export const zero = {
   ratings: { health: 1, speed: 3 },
   specialties: ['anti-gadget', 'intel'],
   season: { id: 19 },
-  weapons: { primary: ['sc3000k', 'mp7'], secondary: ['5.7_usg', 'gonne-6'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'sc3000k',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'mp7',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        // NOTE: Forced vertical grip
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: '5.7_usg',
+        sights: null,
+        // NOTE: Forced suppressor
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gonne-6',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['hard_breach_charge', 'claymore'] },
   uniqueAbility: {
     slug: 'argus_launcher',

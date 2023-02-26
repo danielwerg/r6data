@@ -141,7 +141,7 @@ export const MINI_OPERATORS = [
   // iana,
   melusi,
   // ace,
-  // zero,
+  zero,
   aruni,
   flores,
   thunderbird,
