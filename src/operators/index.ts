@@ -138,7 +138,7 @@ export const MINI_OPERATORS = [
   wamai,
   // kali,
   oryx,
-  // iana,
+  iana,
   melusi,
   ace,
   zero,
