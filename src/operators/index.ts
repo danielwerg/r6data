@@ -140,7 +140,7 @@ export const MINI_OPERATORS = [
   oryx,
   // iana,
   melusi,
-  // ace,
+  ace,
   zero,
   aruni,
   flores,
