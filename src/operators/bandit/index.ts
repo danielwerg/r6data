@@ -32,6 +32,7 @@ export const bandit = {
         slug: 'mp7',
         sights: COMMON_SIGHTS_1X,
         barrels: COMMON_BARRELS,
+        // NOTE: Forced vertical grip
         grips: null,
         underBarrels: ['laser']
       },
