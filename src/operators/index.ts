@@ -143,7 +143,7 @@ export const MINI_OPERATORS = [
   // ace,
   // zero,
   aruni,
-  // flores,
+  flores,
   thunderbird,
   osa,
   thorn,

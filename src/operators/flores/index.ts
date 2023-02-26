@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const flores = {
   slug: 'flores',
@@ -21,7 +27,40 @@ export const flores = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-gadget', 'intel'],
   season: { id: 21 },
-  weapons: { primary: ['ar33', 'sr-25'], secondary: ['gsh-18'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'ar33',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'sr-25',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b',
+          'scope_3.0x'
+        ],
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'gsh-18',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['stun_grenade', 'claymore'] },
   uniqueAbility: {
     slug: 'rce-ratero_charge',
