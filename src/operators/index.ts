@@ -136,7 +136,7 @@ export const MINI_OPERATORS = [
   goyo,
   // amaru,
   wamai,
-  // kali,
+  kali,
   oryx,
   iana,
   melusi,

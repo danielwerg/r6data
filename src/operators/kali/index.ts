@@ -1,5 +1,10 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const kali = {
   slug: 'kali',
@@ -22,8 +27,40 @@ export const kali = {
   specialties: ['anti-gadget', 'support'],
   season: { id: 16 },
   weapons: {
-    primary: ['csrx_300'],
-    secondary: ['spsmg9', 'c75_auto', 'p226_mk_25']
+    primary: [
+      {
+        slug: 'csrx_300',
+        // NOTE: Forced 'scope_5.0x' and 'scope_12.0x'
+        sights: null,
+        barrels: null,
+        grips: null,
+        // NOTE: Forced launcher for LV Lances
+        underBarrels: null
+      }
+    ],
+    secondary: [
+      {
+        slug: 'spsmg9',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'c75_auto',
+        sights: null,
+        barrels: ['suppressor'],
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'p226_mk_25',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['claymore', 'breach_charge'] },
   uniqueAbility: {
