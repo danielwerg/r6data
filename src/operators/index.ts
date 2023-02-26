@@ -126,7 +126,7 @@ export const MINI_OPERATORS = [
   maestro,
   alibi,
   clash,
-  // maverick,
+  maverick,
   kaid,
   nomad,
   mozzie,
