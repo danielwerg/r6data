@@ -130,7 +130,7 @@ export const MINI_OPERATORS = [
   kaid,
   // nomad,
   mozzie,
-  // gridlock,
+  gridlock,
   warden,
   nokk,
   goyo,
