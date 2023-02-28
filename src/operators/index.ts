@@ -116,7 +116,7 @@ export const MINI_OPERATORS = [
   mira,
   // jackal,
   lesion,
-  // ying,
+  ying,
   ela,
   zofia,
   vigil,
