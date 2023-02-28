@@ -118,7 +118,7 @@ export const MINI_OPERATORS = [
   lesion,
   // ying,
   ela,
-  // zofia,
+  zofia,
   vigil,
   dokkaebi,
   lion,
