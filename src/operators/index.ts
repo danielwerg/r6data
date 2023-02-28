@@ -121,7 +121,7 @@ export const MINI_OPERATORS = [
   // zofia,
   vigil,
   // dokkaebi,
-  // lion,
+  lion,
   finka,
   maestro,
   alibi,
