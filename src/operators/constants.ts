@@ -21,14 +21,14 @@ export const COMMON_BARRELS_ALL = [
   'extended_barrel'
 ] satisfies BarrelSlug[];
 
-export const COMMON_BARRELS_HANDGUN_OR_MARKSMAN = [
+export const COMMON_BARRELS_NO_EXTENDED_BARREL = [
+  'flash_hider',
+  'compensator',
   'muzzle_brake',
   'suppressor'
 ] satisfies BarrelSlug[];
 
-export const COMMON_BARRELS_NO_EXTENDED_BARREL = [
-  'flash_hider',
-  'compensator',
+export const COMMON_BARRELS_HANDGUN_OR_MARKSMAN = [
   'muzzle_brake',
   'suppressor'
 ] satisfies BarrelSlug[];
