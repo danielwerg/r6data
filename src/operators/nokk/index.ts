@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS,
+  COMMON_BARRELS_ALL,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_SIGHTS_1X
 } from '../constants';
@@ -31,7 +31,7 @@ export const nokk = {
       {
         slug: 'fmg-9',
         sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: null,
         underBarrels: ['laser']
       },

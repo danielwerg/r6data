@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS,
+  COMMON_BARRELS_ALL,
   COMMON_BARRELS_NO_EXTENDED_BARREL,
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
@@ -54,7 +54,7 @@ export const amaru = {
       {
         slug: 'smg-11',
         sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       },

@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS,
+  COMMON_BARRELS_ALL,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_BARRELS_NO_EXTENDED_BARREL,
   COMMON_GRIPS,
@@ -40,7 +40,7 @@ export const jackal = {
       {
         slug: 'pdw9',
         sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       },

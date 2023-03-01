@@ -1,6 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
-import { COMMON_SIGHTS_1X, COMMON_BARRELS } from '../constants';
+import { COMMON_SIGHTS_1X, COMMON_BARRELS_ALL } from '../constants';
 
 export const caveira = {
   slug: 'caveira',
@@ -27,7 +27,7 @@ export const caveira = {
       {
         slug: 'm12',
         sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: null,
         underBarrels: ['laser']
       },

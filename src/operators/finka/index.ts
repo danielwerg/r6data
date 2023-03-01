@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS,
+  COMMON_BARRELS_ALL,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_BARRELS_NO_EXTENDED_BARREL,
   COMMON_GRIPS,
@@ -33,7 +33,7 @@ export const finka = {
       {
         slug: 'spear_.308',
         sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       },

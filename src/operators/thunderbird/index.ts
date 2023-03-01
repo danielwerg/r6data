@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS,
+  COMMON_BARRELS_ALL,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
@@ -32,7 +32,7 @@ export const thunderbird = {
       {
         slug: 'spear_.308',
         sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       },
@@ -48,7 +48,7 @@ export const thunderbird = {
       {
         slug: 'bearing_9',
         sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: null,
         underBarrels: ['laser']
       },

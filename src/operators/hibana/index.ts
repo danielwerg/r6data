@@ -1,7 +1,7 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS,
+  COMMON_BARRELS_ALL,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_BARRELS_NO_EXTENDED_BARREL,
   COMMON_GRIPS,
@@ -62,7 +62,7 @@ export const hibana = {
       {
         slug: 'bearing_9',
         sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: null,
         underBarrels: ['laser']
       }

@@ -1,6 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
-import { COMMON_SIGHTS_1X, COMMON_BARRELS } from '../constants';
+import { COMMON_SIGHTS_1X, COMMON_BARRELS_ALL } from '../constants';
 
 export const clash = {
   slug: 'clash',
@@ -43,7 +43,7 @@ export const clash = {
       {
         slug: 'spsmg9',
         sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: null,
         underBarrels: ['laser']
       },
@@ -51,7 +51,7 @@ export const clash = {
         slug: 'p-10c',
         // NOTE: Forced red_dot_handgun
         sights: null,
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: null,
         underBarrels: ['laser']
       }

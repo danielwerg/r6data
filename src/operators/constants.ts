@@ -13,7 +13,7 @@ export const COMMON_SIGHTS_1X = [
   'reflex_c'
 ] satisfies SightSlug[];
 
-export const COMMON_BARRELS = [
+export const COMMON_BARRELS_ALL = [
   'flash_hider',
   'compensator',
   'muzzle_brake',

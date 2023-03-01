@@ -1,6 +1,10 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
-import { COMMON_BARRELS, COMMON_GRIPS, COMMON_SIGHTS_1X } from '../constants';
+import {
+  COMMON_BARRELS_ALL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const solis = {
   slug: 'solis',
@@ -27,7 +31,7 @@ export const solis = {
       {
         slug: 'p90',
         sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: null,
         underBarrels: ['laser']
       },
@@ -43,7 +47,7 @@ export const solis = {
       {
         slug: 'smg-11',
         sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS,
+        barrels: COMMON_BARRELS_ALL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
       }
