@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const ying = {
   slug: 'ying',
@@ -21,7 +27,39 @@ export const ying = {
   ratings: { health: 2, speed: 2 },
   specialties: ['front-line', 'map_control'],
   season: { id: 7 },
-  weapons: { primary: ['t-95_lsw', 'six12'], secondary: ['q-929'] },
+  weapons: {
+    primary: [
+      {
+        slug: 't-95_lsw',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'six12',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'q-929',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['smoke_grenade', 'hard_breach_charge'] },
   uniqueAbility: {
     slug: 'candela',

@@ -1,5 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import { COMMON_BARRELS_HANDGUN_OR_MARKSMAN } from '../constants';
 
 export const blitz = {
   slug: 'blitz',
@@ -21,7 +22,26 @@ export const blitz = {
   ratings: { health: 2, speed: 2 },
   specialties: ['front-line', 'map_control'],
   season: { id: 0 },
-  weapons: { primary: ['g52-tactical_shield'], secondary: ['p12'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'g52-tactical_shield',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p12',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['smoke_grenade', 'breach_charge'] },
   uniqueAbility: {
     slug: 'flash_shield',

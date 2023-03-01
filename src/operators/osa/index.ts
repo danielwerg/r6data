@@ -1,5 +1,12 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const osa = {
   slug: 'osa',
@@ -21,7 +28,39 @@ export const osa = {
   ratings: { health: 3, speed: 1 },
   specialties: ['intel', 'support'],
   season: { id: 23 },
-  weapons: { primary: ['556xi', 'pdw9'], secondary: ['pmm'] },
+  weapons: {
+    primary: [
+      {
+        slug: '556xi',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'pdw9',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'pmm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['smoke_grenade', 'claymore', 'impact_emp_grenade'] },
   uniqueAbility: {
     slug: 'talon-8_clear_shield',

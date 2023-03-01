@@ -1,5 +1,12 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const iq = {
   slug: 'iq',
@@ -21,7 +28,47 @@ export const iq = {
   ratings: { health: 1, speed: 3 },
   specialties: ['intel', 'support'],
   season: { id: 0 },
-  weapons: { primary: ['aug_a2', '552_commando', 'g8a1'], secondary: ['p12'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'aug_a2',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        // NOTE: forced vertical grip
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: '552_commando',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'g8a1',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p12',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['breach_charge', 'claymore'] },
   uniqueAbility: {
     slug: 'electronics_detector',

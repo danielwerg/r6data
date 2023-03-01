@@ -1,5 +1,12 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const finka = {
   slug: 'finka',
@@ -22,8 +29,52 @@ export const finka = {
   specialties: ['front-line', 'support'],
   season: { id: 9 },
   weapons: {
-    primary: ['spear_.308', '6p41', 'sasg-12'],
-    secondary: ['pmm', 'gsh-18', 'gonne-6']
+    primary: [
+      {
+        slug: 'spear_.308',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: COMMON_BARRELS,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: '6p41',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'sasg-12',
+        sights: COMMON_SIGHTS_1X,
+        barrels: ['suppressor'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'pmm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gsh-18',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gonne-6',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ]
   },
   gadgets: { secondary: ['smoke_grenade', 'stun_grenade'] },
   uniqueAbility: {

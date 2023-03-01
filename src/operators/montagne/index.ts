@@ -1,5 +1,6 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import { COMMON_BARRELS_HANDGUN_OR_MARKSMAN } from '../constants';
 
 export const montagne = {
   slug: 'montagne',
@@ -21,7 +22,33 @@ export const montagne = {
   ratings: { health: 3, speed: 1 },
   specialties: ['intel', 'support'],
   season: { id: 0 },
-  weapons: { primary: ['le_roc_shield'], secondary: ['p9', 'lfp586'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'le_roc_shield',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p9',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'lfp586',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: {
     secondary: ['smoke_grenade', 'hard_breach_charge', 'impact_emp_grenade']
   },

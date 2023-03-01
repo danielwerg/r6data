@@ -1,5 +1,12 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const hibana = {
   slug: 'hibana',
@@ -22,8 +29,44 @@ export const hibana = {
   specialties: ['breach', 'front-line'],
   season: { id: 4 },
   weapons: {
-    primary: ['type-89', 'supernova'],
-    secondary: ['p229', 'bearing_9']
+    primary: [
+      {
+        slug: 'type-89',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'supernova',
+        sights: COMMON_SIGHTS_1X,
+        barrels: ['suppressor'],
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p229',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'bearing_9',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['stun_grenade', 'breach_charge'] },
   uniqueAbility: {

@@ -1,5 +1,10 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const dokkaebi = {
   slug: 'dokkaebi',
@@ -22,8 +27,58 @@ export const dokkaebi = {
   specialties: ['intel', 'map_control'],
   season: { id: 8 },
   weapons: {
-    primary: ['mk_14_ebr', 'bosg.12.2'],
-    secondary: ['smg-12', 'c75_auto', 'gonne-6']
+    primary: [
+      {
+        slug: 'mk_14_ebr',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b',
+          'scope_3.0x'
+        ],
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'bosg.12.2',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: null,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'smg-12',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'c75_auto',
+        sights: null,
+        barrels: ['suppressor'],
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gonne-6',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ]
   },
   gadgets: {
     secondary: ['smoke_grenade', 'stun_grenade', 'impact_emp_grenade']

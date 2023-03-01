@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const ace = {
   slug: 'ace',
@@ -21,7 +27,33 @@ export const ace = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-gadget', 'breach'],
   season: { id: 18 },
-  weapons: { primary: ['ak-12', 'm1014'], secondary: ['p9'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'ak-12',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm1014',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p9',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['breach_charge', 'claymore'] },
   uniqueAbility: {
     slug: 's.e.l.m.a._aqua_breacher',
