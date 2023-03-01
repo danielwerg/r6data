@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const capitao = {
   slug: 'capitao',
@@ -21,7 +27,46 @@ export const capitao = {
   ratings: { health: 3, speed: 1 },
   specialties: ['front-line', 'map_control'],
   season: { id: 3 },
-  weapons: { primary: ['para-308', 'm249'], secondary: ['prb92', 'gonne-6'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'para-308',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm249',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: ['flash_hider', 'compensator', 'muzzle_brake'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'prb92',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gonne-6',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ]
+  },
   gadgets: { secondary: ['claymore', 'hard_breach_charge'] },
   uniqueAbility: {
     slug: 'tactical_crossbow',

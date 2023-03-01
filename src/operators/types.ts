@@ -1,4 +1,10 @@
 import type {
+  BarrelSlug,
+  GripSlug,
+  SightSlug,
+  UnderBarrelSlug
+} from '../attachments';
+import type {
   GadgetSlug,
   NonNullableSVGandPNG,
   OperatorSide,
@@ -125,8 +131,19 @@ export interface OperatorSeason {
 }
 
 export interface OperatorWeapons {
-  primary: WeaponSlug[];
-  secondary: WeaponSlug[];
+  primary: OperatorWeapon[];
+  secondary: OperatorWeapon[];
+}
+
+export interface OperatorWeapon extends OperatorWeaponAttachments {
+  slug: WeaponSlug;
+}
+
+export interface OperatorWeaponAttachments {
+  sights: SightSlug[] | null;
+  barrels: BarrelSlug[] | null;
+  grips: GripSlug[] | null;
+  underBarrels: UnderBarrelSlug[] | null;
 }
 
 export interface OperatorGadgets {

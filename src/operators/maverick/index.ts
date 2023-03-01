@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const maverick = {
   slug: 'maverick',
@@ -21,7 +27,40 @@ export const maverick = {
   ratings: { health: 1, speed: 3 },
   specialties: ['breach', 'front-line'],
   season: { id: 11 },
-  weapons: { primary: ['ar-15.50', 'm4'], secondary: ['1911_tacops'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'ar-15.50',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b',
+          'scope_3.0x'
+        ],
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm4',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: '1911_tacops',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['stun_grenade', 'claymore'] },
   uniqueAbility: {
     slug: 'breaching_torch',

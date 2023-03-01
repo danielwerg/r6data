@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL
+} from '../constants';
 
 export const wamai = {
   slug: 'wamai',
@@ -21,7 +27,40 @@ export const wamai = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-gadget', 'trapper'],
   season: { id: 16 },
-  weapons: { primary: ['aug_a2', 'mp5k'], secondary: ['keratos_.357', 'p12'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'aug_a2',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'mp5k',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'keratos_.357',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'p12',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['impact_grenade', 'proximity_alarm'] },
   uniqueAbility: {
     slug: 'mag-net_system',

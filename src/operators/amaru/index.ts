@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const amaru = {
   slug: 'amaru',
@@ -22,8 +28,51 @@ export const amaru = {
   specialties: ['front-line', 'map_control'],
   season: { id: 15 },
   weapons: {
-    primary: ['g8a1', 'supernova'],
-    secondary: ['smg-11', 'ita12s', 'gonne-6']
+    primary: [
+      {
+        slug: 'g8a1',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'supernova',
+        sights: COMMON_SIGHTS_1X,
+        barrels: ['suppressor'],
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'smg-11',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'ita12s',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gonne-6',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ]
   },
   gadgets: { secondary: ['hard_breach_charge', 'stun_grenade'] },
   uniqueAbility: {

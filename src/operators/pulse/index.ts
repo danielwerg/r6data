@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const pulse = {
   slug: 'pulse',
@@ -22,8 +28,38 @@ export const pulse = {
   specialties: ['intel', 'support'],
   season: { id: 0 },
   weapons: {
-    primary: ['ump45', 'm1014'],
-    secondary: ['5.7_usg', 'm45_meusoc']
+    primary: [
+      {
+        slug: 'm1014',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'ump45',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'm45_meusoc',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: '5.7_usg',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['barbed_wire', 'nitro_cell'] },
   uniqueAbility: {

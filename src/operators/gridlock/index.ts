@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const gridlock = {
   slug: 'gridlock',
@@ -22,8 +28,57 @@ export const gridlock = {
   specialties: ['support', 'map_control'],
   season: { id: 13 },
   weapons: {
-    primary: ['f90', 'm249_saw'],
-    secondary: ['super_shorty', 'sdp_9mm', 'gonne-6']
+    primary: [
+      {
+        slug: 'f90',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm249_saw',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: ['flash_hider', 'compensator', 'muzzle_brake'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'super_shorty',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'sdp_9mm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'gonne-6',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      }
+    ]
   },
   gadgets: {
     secondary: ['smoke_grenade', 'breach_charge', 'impact_emp_grenade']

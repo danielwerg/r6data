@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const thatcher = {
   slug: 'thatcher',
@@ -21,7 +27,46 @@ export const thatcher = {
   ratings: { health: 3, speed: 1 },
   specialties: ['anti-gadget', 'support'],
   season: { id: 0 },
-  weapons: { primary: ['ar33', 'l85a2', 'm590a1'], secondary: ['p226_mk_25'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'ar33',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b'
+        ],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'l85a2',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm590a1',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p226_mk_25',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['breach_charge', 'claymore'] },
   uniqueAbility: {
     slug: 'emp_grenade',

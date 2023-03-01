@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const smoke = {
   slug: 'smoke',
@@ -22,8 +28,38 @@ export const smoke = {
   specialties: ['anti-entry', 'trapper'],
   season: { id: 0 },
   weapons: {
-    primary: ['m590a1', 'fmg-9'],
-    secondary: ['p226_mk_25', 'smg-11']
+    primary: [
+      {
+        slug: 'fmg-9',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: [],
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm590a1',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p226_mk_25',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'smg-11',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['deployable_shield', 'barbed_wire'] },
   uniqueAbility: {

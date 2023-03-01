@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_BARRELS_NO_EXTENDED_BARREL
+} from '../constants';
 
 export const maestro = {
   slug: 'maestro',
@@ -22,8 +28,39 @@ export const maestro = {
   specialties: ['anti-gadget', 'intel'],
   season: { id: 10 },
   weapons: {
-    primary: ['alda_5.56', 'acs12'],
-    secondary: ['keratos_.357', 'bailiff_410']
+    primary: [
+      {
+        slug: 'alda_5.56',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: ['vertical_grip'],
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'acs12',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: null,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'bailiff_410',
+        // NOTE: Forced red_dot_handgun
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'keratos_.357',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['barbed_wire', 'impact_grenade'] },
   uniqueAbility: {

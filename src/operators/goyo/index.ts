@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const goyo = {
   slug: 'goyo',
@@ -21,7 +27,33 @@ export const goyo = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-entry', 'trapper'],
   season: { id: 15 },
-  weapons: { primary: ['vector_.45_acp', 'tcsg12'], secondary: ['p229'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'vector_.45_acp',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'tcsg12',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: ['suppressor'],
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p229',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['proximity_alarm', 'nitro_cell'] },
   uniqueAbility: {
     slug: 'volcan_shield',

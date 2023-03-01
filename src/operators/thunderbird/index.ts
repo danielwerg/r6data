@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const thunderbird = {
   slug: 'thunderbird',
@@ -22,8 +28,38 @@ export const thunderbird = {
   specialties: ['support'],
   season: { id: 22 },
   weapons: {
-    primary: ['spear_.308', 'spas-15'],
-    secondary: ['bearing_9', 'q-929']
+    primary: [
+      {
+        slug: 'spear_.308',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'spas-15',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'bearing_9',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'q-929',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['impact_grenade', 'nitro_cell'] },
   uniqueAbility: {

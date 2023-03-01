@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const mute = {
   slug: 'mute',
@@ -21,7 +27,40 @@ export const mute = {
   ratings: { health: 3, speed: 1 },
   specialties: ['anti-gadget', 'crowd_control'],
   season: { id: 0 },
-  weapons: { primary: ['mp5k', 'm590a1'], secondary: ['p226_mk_25', 'smg-11'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'mp5k',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'm590a1',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p226_mk_25',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'smg-11',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['bulletproof_camera', 'nitro_cell'] },
   uniqueAbility: {
     slug: 'signal_disruptor',

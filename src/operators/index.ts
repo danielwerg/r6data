@@ -1,15 +1,16 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-import type { Operator, OperatorGadgets, OperatorWeapons } from './types';
-import type { Season } from '../types';
+import type { Operator, OperatorWeaponAttachments } from './types';
 import { getNextPriceDropSeasons, getPrices } from '../utils';
 import { SEASONS } from '../seasons';
 import { type Gadget, GADGETS } from '../gadgets';
 import { type Weapon, WEAPONS } from '../weapons';
+import { BARRELS, GRIPS, SIGHTS, UNDER_BARRELS } from '../attachments';
 /** --- */
 import { recruitDefense } from './recruit_defense';
 import { recruitAttack } from './recruit_attack';
+import type { Season } from '../types';
 import { smoke } from './smoke';
 import { mute } from './mute';
 import { sledge } from './sledge';
@@ -153,41 +154,57 @@ export const MINI_OPERATORS = [
   brava
 ];
 
-export interface FindMatchFromKeysOptions<T, B> {
-  keys: T;
-  array: B[];
-}
-const findMatchFromKeys = <
-  T extends OperatorWeapons | OperatorGadgets,
-  B extends Weapon | Gadget
->({
-  keys,
-  array
-}: FindMatchFromKeysOptions<T, B>) =>
-  Object.entries(keys)
-    .map(([key, value]: [string, string[]]) => ({
-      [key]: value.map(slug => array.find(object => object.slug === slug))
-    }))
-    .reduce((acc, cur) => ({ ...acc, ...cur }), {}) as Record<keyof T, B[]>;
-
 export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {
   const notes = readFileSync(
     join(__dirname, `./${operator.slug}/notes.md`),
     'utf8'
   );
 
+  const matchAttachments = (attachments: OperatorWeaponAttachments) => ({
+    sights:
+      attachments.sights?.map(sightSlug =>
+        SIGHTS.find(({ slug }) => slug === sightSlug)
+      ) ?? null,
+    barrels:
+      attachments.barrels?.map(barrelSlug =>
+        BARRELS.find(({ slug }) => slug === barrelSlug)
+      ) ?? null,
+    grips:
+      attachments.grips?.map(gripSlug =>
+        GRIPS.find(({ slug }) => slug === gripSlug)
+      ) ?? null,
+    underbarrels:
+      attachments.underBarrels?.map(underbarrelSlug =>
+        // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+        UNDER_BARRELS.find(({ slug }) => slug === underbarrelSlug)
+      ) ?? null
+  });
+
   return {
     ...operator,
     // NOTE: `as TYPE` need to prevent ts(7056) error
     season: SEASONS.find(season => season.id === operator.season.id)! as Season,
-    weapons: findMatchFromKeys({
-      keys: operator.weapons,
-      array: WEAPONS as Weapon[]
-    }),
-    gadgets: findMatchFromKeys({
-      keys: operator.gadgets,
-      array: GADGETS as Gadget[]
-    }),
+    weapons: {
+      primary: operator.weapons.primary.map(({ slug, ...attachments }) => ({
+        ...(WEAPONS as Weapon[]).find(weapon => weapon.slug === slug)!,
+        ...matchAttachments(attachments)
+      })),
+      secondary: operator.weapons.secondary.map(({ slug, ...attachments }) => ({
+        ...(WEAPONS as Weapon[]).find(weapon => weapon.slug === slug)!,
+        ...matchAttachments(attachments)
+      }))
+    },
+    gadgets: {
+      ...(operator.gadgets.primary && {
+        /** `undefined` unless for recruits */
+        primary: operator.gadgets.primary.map(slug => ({
+          ...(GADGETS as Gadget[]).find(gadget => gadget.slug === slug)!
+        }))
+      }),
+      secondary: operator.gadgets.secondary.map(slug => ({
+        ...(GADGETS as Gadget[]).find(gadget => gadget.slug === slug)!
+      }))
+    },
     ...(!operator.slug.includes('recruit') && {
       /** `undefined` for recruits */
       price: getPrices(SEASONS, operator.season.id)

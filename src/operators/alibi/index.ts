@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const alibi = {
   slug: 'alibi',
@@ -22,8 +28,39 @@ export const alibi = {
   specialties: ['intel', 'trapper'],
   season: { id: 10 },
   weapons: {
-    primary: ['mx4_storm', 'acs12'],
-    secondary: ['keratos_.357', 'bailiff_410']
+    primary: [
+      {
+        slug: 'mx4_storm',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'acs12',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        barrels: null,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'keratos_.357',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'bailiff_410',
+        // NOTE: Forced red_dot_handgun
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['impact_grenade', 'deployable_shield'] },
   uniqueAbility: {

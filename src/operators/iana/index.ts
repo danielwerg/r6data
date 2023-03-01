@@ -1,5 +1,12 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_BARRELS_NO_EXTENDED_BARREL,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const iana = {
   slug: 'iana',
@@ -21,7 +28,33 @@ export const iana = {
   ratings: { health: 2, speed: 2 },
   specialties: ['front-line', 'intel'],
   season: { id: 17 },
-  weapons: { primary: ['arx200', 'g36c'], secondary: ['mk1_9mm'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'arx200',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'g36c',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'mk1_9mm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['frag_grenade', 'smoke_grenade'] },
   uniqueAbility: {
     slug: 'gemini_replicator',

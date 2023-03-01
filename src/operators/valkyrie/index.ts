@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const valkyrie = {
   slug: 'valkyrie',
@@ -21,7 +27,33 @@ export const valkyrie = {
   ratings: { health: 2, speed: 2 },
   specialties: ['intel', 'support'],
   season: { id: 2 },
-  weapons: { primary: ['mpx', 'spas-12'], secondary: ['d-50'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'mpx',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'spas-12',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'd-50',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['impact_grenade', 'nitro_cell'] },
   uniqueAbility: {
     slug: 'black_eye',

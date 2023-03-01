@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const echo = {
   slug: 'echo',
@@ -22,8 +28,39 @@ export const echo = {
   specialties: ['intel', 'crowd_control'],
   season: { id: 4 },
   weapons: {
-    primary: ['mp5sd', 'supernova'],
-    secondary: ['p229', 'bearing_9']
+    primary: [
+      {
+        slug: 'supernova',
+        sights: COMMON_SIGHTS_1X,
+        barrels: ['suppressor'],
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'mp5sd',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        // NOTE: Forced suppressor
+        barrels: null,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p229',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'bearing_9',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['impact_grenade', 'deployable_shield'] },
   uniqueAbility: {

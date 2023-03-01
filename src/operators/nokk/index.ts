@@ -1,5 +1,10 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const nokk = {
   slug: 'nokk',
@@ -21,7 +26,40 @@ export const nokk = {
   ratings: { health: 2, speed: 2 },
   specialties: ['front-line', 'map_control'],
   season: { id: 14 },
-  weapons: { primary: ['fmg-9', 'six12_sd'], secondary: ['5.7_usg', 'd-50'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'fmg-9',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS_ALL,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'six12_sd',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: '5.7_usg',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'd-50',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: {
     secondary: ['frag_grenade', 'hard_breach_charge', 'impact_emp_grenade']
   },

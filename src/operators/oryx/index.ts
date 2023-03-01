@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const oryx = {
   slug: 'oryx',
@@ -22,8 +28,39 @@ export const oryx = {
   specialties: ['support'],
   season: { id: 17 },
   weapons: {
-    primary: ['t-5_smg', 'spas-12'],
-    secondary: ['bailiff_410', 'usp40']
+    primary: [
+      {
+        slug: 't-5_smg',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'spas-12',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'bailiff_410',
+        // NOTE: Forced red_dot_handgun
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'usp40',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['barbed_wire', 'proximity_alarm'] },
   uniqueAbility: {

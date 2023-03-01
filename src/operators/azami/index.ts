@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const azami = {
   slug: 'azami',
@@ -21,7 +27,33 @@ export const azami = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-entry', 'support'],
   season: { id: 25 },
-  weapons: { primary: ['9x19vsn', 'acs12'], secondary: ['d-50'] },
+  weapons: {
+    primary: [
+      {
+        slug: '9x19vsn',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'acs12',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: null,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'd-50',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['impact_grenade', 'barbed_wire'] },
   uniqueAbility: {
     slug: 'kiba_barrier',

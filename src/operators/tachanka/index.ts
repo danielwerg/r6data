@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const tachanka = {
   slug: 'tachanka',
@@ -22,8 +28,45 @@ export const tachanka = {
   specialties: ['anti-entry', 'crowd_control'],
   season: { id: 0 },
   weapons: {
-    primary: ['dp27', '9x19vsn'],
-    secondary: ['gsh-18', 'pmm', 'bearing_9']
+    primary: [
+      {
+        slug: 'dp27',
+        sights: [...COMMON_SIGHTS_1X, 'reflex_d'],
+        barrels: null,
+        grips: null,
+        underBarrels: null
+      },
+      {
+        slug: '9x19vsn',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'gsh-18',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'pmm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'bearing_9',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
   },
   gadgets: { secondary: ['barbed_wire', 'impact_grenade'] },
   uniqueAbility: {

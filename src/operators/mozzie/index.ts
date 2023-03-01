@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const mozzie = {
   slug: 'mozzie',
@@ -21,7 +27,33 @@ export const mozzie = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-gadget', 'intel'],
   season: { id: 13 },
-  weapons: { primary: ['commando_9', 'p10_roni'], secondary: ['sdp_9mm'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'commando_9',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'p10_roni',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'sdp_9mm',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['barbed_wire', 'nitro_cell'] },
   uniqueAbility: {
     slug: 'pest_launcher',

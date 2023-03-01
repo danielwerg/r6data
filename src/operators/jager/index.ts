@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_SIGHTS_1X,
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS
+} from '../constants';
 
 export const jager = {
   slug: 'jager',
@@ -21,7 +27,33 @@ export const jager = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-gadget', 'support'],
   season: { id: 0 },
-  weapons: { primary: ['m870', '416-c_carbine'], secondary: ['p12'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'm870',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: '416-c_carbine',
+        sights: COMMON_SIGHTS_1X,
+        barrels: COMMON_BARRELS_ALL,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p12',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['bulletproof_camera', 'barbed_wire'] },
   uniqueAbility: {
     slug: 'active_defense_system',

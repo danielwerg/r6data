@@ -1,5 +1,11 @@
 import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
 import type { Operator } from '../types';
+import {
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+  COMMON_GRIPS,
+  COMMON_SIGHTS_1X
+} from '../constants';
 
 export const twitch = {
   slug: 'twitch',
@@ -21,7 +27,54 @@ export const twitch = {
   ratings: { health: 2, speed: 2 },
   specialties: ['anti-gadget', 'intel'],
   season: { id: 0 },
-  weapons: { primary: ['f2', '417', 'sg-cqb'], secondary: ['p9', 'lfp586'] },
+  weapons: {
+    primary: [
+      {
+        slug: 'f2',
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        barrels: COMMON_BARRELS_ALL,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: '417',
+        sights: [
+          ...COMMON_SIGHTS_1X,
+          'scope_1.5x',
+          'scope_2.0x',
+          'scope_2.5x_a',
+          'scope_2.5x_b',
+          'scope_3.0x'
+        ],
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: COMMON_GRIPS,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'sg-cqb',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: ['vertical_grip'],
+        underBarrels: ['laser']
+      }
+    ],
+    secondary: [
+      {
+        slug: 'p9',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: 'lfp586',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      }
+    ]
+  },
   gadgets: { secondary: ['smoke_grenade', 'claymore'] },
   uniqueAbility: {
     slug: 'shock_drones',
