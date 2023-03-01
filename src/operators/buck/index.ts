@@ -33,7 +33,7 @@ export const buck = {
         sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
         barrels: COMMON_BARRELS,
         grips: null,
-        // NOTE: forced under-barrel shotgun
+        // NOTE: Forced under-barrel shotgun
         underBarrels: ['laser']
       },
       {
@@ -48,7 +48,7 @@ export const buck = {
         ],
         barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
-        // NOTE: forced under-barrel shotgun
+        // NOTE: Forced under-barrel shotgun
         underBarrels: ['laser']
       }
     ],

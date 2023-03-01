@@ -40,7 +40,7 @@ export const iq = {
           'scope_2.5x_b'
         ],
         barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
-        // NOTE: forced vertical grip
+        // NOTE: Forced vertical grip
         grips: null,
         underBarrels: ['laser']
       },
