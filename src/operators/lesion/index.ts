@@ -32,6 +32,7 @@ export const lesion = {
       {
         slug: 'six12_sd',
         sights: COMMON_SIGHTS_1X,
+        // NOTE: Forced suppressor
         barrels: null,
         grips: null,
         underBarrels: ['laser']
