@@ -22,8 +22,8 @@
     "svg2png": "ts-node scripts/svg2png.ts",
     "preversion": "npm run build",
     "postversion": "git push --follow-tags",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
+    "lint": "eslint src scripts",
+    "lint:fix": "eslint src scripts --fix",
     "prepare": "npm run build:prepare"
   },
   "prettier": "@danielwerg/prettier-config",
