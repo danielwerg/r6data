@@ -21,6 +21,9 @@ Each ARGUS Camera can fire an unlimited amount of projectiles, which can be used
   - In order to switch the view on an ARGUS Camera you must press the prompted key.
   - Each ARGUS Camera can view both side of the wall in a 180 degree span.
   - ARGUS Cameras after launch will drill into any surface immediately upon impact.
+  - The camera won't pierce the surface automatically.
+  - The piercing action can only be initiated by Zero and only when controlling a deployed Argus Camera.
+  - Once the camera has pierced a surface, any living attacker can swap sides.
   - ARGUS Cameras can be destroyed by any source of damage on either side of the wall.
   - When destroyed, an ARGUS Camera will not leave behind any openings but rather what appears to be scratches on the surface of both sides.
   - Any ARGUS Cameras will give a static screen if caught within any of Mute's Signal Jammers and using any means of the camera will be rendered useless, including the laser function.
