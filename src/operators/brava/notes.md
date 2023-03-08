@@ -7,7 +7,7 @@ Brava's unique gadget is the Kludge Drone, a remote drone equipped with a electr
 Defender Gadgets that can be hacked include:
 
 - Alibi's Prismas (Converted)
-- Aruni's Surya Gates (Converted)
+- Aruni's Surya Gates (Deactivated) <!-- NOTE: https://www.ubisoft.com/en-gb/game/rainbow-six/siege/news-updates/1xLJqGTce4nquXpg4cZYDC -->
 - Bandit's Shock Wires (Destroyed)
 - Echo's Yokai Drone (Converted)
 - Ela's Grzmot Mines (Converted)
