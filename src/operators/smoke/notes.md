@@ -7,6 +7,7 @@ Smoke is equipped with three Compound Z8 Remote Gas Grenades, remotely detonated
 - Gas Grenades are thrown by Smoke and stick onto surfaces they touch. Once activated, the Grenade will release a toxic gas cloud that is 5 meters in diameter.
   - Gas Grenades have a light throwing profile similar to Impact Grenades.
   - Gas Grenades can be detonated anywhere at any time. However, the only exception is if a Gas Grenade is still deployed after Smoke dies.
+  - The gas cloud is 3.6m in a diameter.
   - The gas cloud primarily spreads parallel to the surface that the grenade is attached to. The cloud will not spread perpendicularly, and will not spread to areas behind it. The surface area of the gas cloud is similar to an actual Smoke Grenade.
   - Like normal smoke grenades, the Gas Grenade will only let pinging target the gas cloud.
   - The Gas Grenade is an electronic gadget, and can thus be:
