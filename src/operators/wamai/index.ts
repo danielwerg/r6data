@@ -38,7 +38,7 @@ export const wamai = {
       },
       {
         slug: 'mp5k',
-        sights: COMMON_SIGHTS_1X,
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
         barrels: COMMON_BARRELS_ALL,
         grips: null,
         underBarrels: ['laser']
