@@ -25,6 +25,8 @@ Mozzie is armed with the Pest Launcher, a slingshot that launches small robots c
   - A hacked drone is unaffected by Barbed Wire or Mute's Signal Disruptors.
   - A hacked drone cannot be destroyed by electricity from Bandit's Shock Wires or Kaid's Electroclaws.
   - If Mozzie hacks Twitch's Shock Drones, he is capable of using the laser to destroy Attacker gadgets and harass Attackers.
+  - If Mozzie hacks Brava's Kludge Drones, he is capable of using the drone to target attacker's gadgets, causing them to self destruct, or turn their effects against attackers.
+    - Any gadgets or observation tools (such as Echo's Yokai Drones, Maestro's Evil Eyes) that was hacked by Brava, but was 'hacked' again by Mozzie using Kludge Drones, the tool will return to their original owners control instead of Mozzie.
   - Nobody can pick up hacked drones.
 - Though other Defenders can view the camera feed from hacked drones, Mozzie is the only Defender that can control the hacked drones.
 - If Dokkaebi hacks a Defender's phone, Attackers will regain access to the camera feed of a hacked drone, but the drone will remain under Mozzie's control.
@@ -49,3 +51,4 @@ Mozzie is armed with the Pest Launcher, a slingshot that launches small robots c
 - Kali's LV Lances can destroy both Pests and hacked drones.
 - The latter applies to Flores' RCE-RATERO Drones, if they aren't captured.
 - Nøkk's HEL will remove her image from Mozzie's stolen drones. The hacked drones can still detect when she is nearby, however.
+- Brava's Kludge Drone can hack the pest, as well as any previously hacked drones to turn its effects against Mozzie.

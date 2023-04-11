@@ -20,6 +20,8 @@ Mute is equipped with four GC90 "Moni" Signal Disruptors, jamming communications
   - Twitch's Shock Drones are also affected inside the Disruptor's effective range, and they cannot fire their laser when jammed.
   - Flores' RCE-RATERO stops working if it is caught inside the Disruptor's radius, which will also prevent the drone from entering its bulletproof armor state.
     - If the Signal Jammer is destroyed, the RCE-RATERO will not resume its timer. Instead, it will immediately enter its bulletproof state and soon explode.
+    - Brava's Kludge Drones are jammed when inside the Disruptor's range, taking them out of her control.
+      - If the first Kludge Drone is jammed, however, the second one can save it by hacking the Signal Disruptor that jammed the first one.
 - Claymores placed within the Disruptors' effective range are disabled and cannot be triggered.
 - The following remotely detonated attacker gadgets cannot be activated if they are placed within the effective range of a Signal Disruptor:
   - Breach Charges
@@ -62,3 +64,4 @@ Mute is equipped with four GC90 "Moni" Signal Disruptors, jamming communications
 - Kali's LV Lances will bypass the Signal Disruptor and destroy them along with any other possible gadgets.
 - Zero's Argus Camera lasers can destroy Signal Disruptors.
 - Flores' RCE-RATERO Drones can destroy Signal Disruptors if not disabled before detonating.
+- Brava's Kludge Drones can hack Signal Disruptors, turning them against the defenders and for the attackers.

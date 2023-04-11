@@ -26,13 +26,12 @@ Jackal's unique gadget is the Eyenox Model III, which can track enemy footprints
   - Caveira will not create footprints while her Silent Step is active.
 - Footprints are color-coded depending on their recency, starting in red at 0 seconds, becoming yellow at 20, light green at 45, light blue at 65, and disappear at 90.
 - The death of a Defender will result in the immediate disappearance of all footprints from that Defender.
-<!-- Too hard to maintain and hard to remember anyway
 - There are four types of footprints, with each Operator having one of the four:
-  - Type A: Mute, Doc, Valkyrie, Mira
-  - Type B: Smoke, Castle, Pulse, Rook, Maestro, Clash, Mozzie, Warden
-  - Type C: Jäger, Bandit, Frost, Caveira, Echo, Lesion, Ela, Vigil, Alibi, Melusi
-  - Type D: Kapkan, Tachanka, Recruit, Kaid, Goyo, Wamai
-- When playing Article 5, White Masks do not leave footprints behind, except for Bombers who leave Type D footprints. Jackal can still activate his ability and keep his visor on during the Hunt, but it is purposeless once the Bombers are eliminated. -->
+  - Type A: Mute, Doc, Valkyrie, Mira, Azami
+  - Type B: Smoke, Castle, Pulse, Rook, Maestro, Clash, Mozzie, Warden, Oryx
+  - Type C: Jäger, Bandit, Frost, Caveira, Echo, Lesion, Ela, Vigil, Alibi, Melusi, Aruni
+  - Type D: Recruit, Kapkan, Tachanka, Kaid, Goyo, Wamai, Thunderbird, Thorn, Solis
+- When playing Article 5, White Masks do not leave footprints behind, except for Bombers who leave Type D footprints. Jackal can still activate his ability and keep his visor on during the Hunt, but it is purposeless once the Bombers are eliminated.
 
 ### Strategies/Synergies
 

@@ -17,6 +17,8 @@ Echo's unique gadgets are two hovering drones called Yokai, which can stick to f
       - IQ can also detect Echo's PDA whenever Echo is using the PDA.
     - Disabled by Thatcher's EMP Grenades for 15 seconds or Impact EMP Grenades for 9 seconds; the Yokai will drop to the ground if it was attached to the ceiling when it was hit by the EMP. Vision on the drone will be disrupted and movement will be impaired.
     - Destroyed by Twitch's Shock Drones.
+    - Hacked by Brava's Kludge Drones.
+      - When hacked Yokai drones are recaptured by Mozzie's Pest or Mozzie operated Kludge Drones, Echo will regain control of the drone.
 - On the ground, Echo can move the Yokai drone horizontally in all four directions, but cannot use its ultrasonic bursts.
   - The Yokai drones are small enough to be able to fit through drone holes.
   - On the ground, the Yokai have the ability to launch itself vertically upwards. During the upward ascent, if the Yokai comes into contact with a flat ceiling (and certain slanted surfaces), it will attach and secure itself, and enter the ceiling mode.
