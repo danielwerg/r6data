@@ -38,7 +38,7 @@ export const tachanka = {
       },
       {
         slug: '9x19vsn',
-        sights: COMMON_SIGHTS_1X,
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
         barrels: COMMON_BARRELS_ALL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
@@ -73,10 +73,10 @@ export const tachanka = {
     slug: 'shumikha_launcher',
     name: 'Shumikha Launcher',
     type: 'count',
-    startingAmount: 14,
+    startingAmount: 20,
     description:
       'Launches incendiary grenades that create a fire on detonation.',
-    info: null,
+    info: 'Magazine size: 5',
     icon: {
       toSVG: null,
       png: getOperatorAssetURL('/abilities/pngs/shumikha_launcher.png')

@@ -31,7 +31,7 @@ export const kapkan = {
     primary: [
       {
         slug: '9x19vsn',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        sights: COMMON_SIGHTS_1X,
         barrels: COMMON_BARRELS_ALL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']

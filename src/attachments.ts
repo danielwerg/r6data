@@ -349,7 +349,7 @@ export const BARRELS = [
     slug: 'extended_barrel',
     name: 'Extended Barrel',
     description:
-      'Reduces the rate of damage drop off, allowing you to deal more damage at long range. Increases weapon damage by 15%',
+      'Reduces the rate of damage drop off, allowing you to deal more damage at long range. Increases weapon damage by 12%',
     icon: {
       toSVG: async () =>
         getAttachmentSVGString('/barrels/svgs/extended_barrel.svg'),

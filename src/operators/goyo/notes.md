@@ -9,6 +9,7 @@ Goyo's unique gadget is the Volcán Canister. The canister explodes when fired u
   - Canisters cannot be placed on Deployable Shields.
 - The Volcán Canister will detonate if its red explosive canister is hit by gunfire, explosives, or melee attacks. The rest of the canister is bulletproof but is still susceptible to explosives.
 - If Canister's are placed close enough together and one detonates, a chain reaction will occur and detonate all Canisters within the firsts area of effect.
+- The fire is 4.05m in diameter.
 - The fire deals 12 points of damage per tick and inflicts three ticks of damage per second (36 DPS). It lasts 20 seconds before dissipating. Neither the explosion nor the fire damage any gadgets, friendly or not.
 - When detonated, the canister creates a small explosive which will make a small hole if planted on a soft wall. It will not deal explosive damage or destroy friendly gadgets.
   - A large area of flames will spread on the side of the wall the canister was planted on while a smaller area of flames will spread through the hole on the other side of the wall. This allows for area denial in multiple rooms with a single canister.

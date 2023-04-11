@@ -19,7 +19,7 @@ Capitão's unique gadget is a Tactical Crossbow that can fire Asphyxiating Bolts
   - The fire lasts around 10 seconds before dissipating.
   - The fire always spreads at ground level. If an Asphyxiating Bolt hits the ceiling, it will drop down and spread fire after it hits the ground.
   - Despite visual appearances implying otherwise, the Asphyxiating Bolts damages only Operators and the Hostage, not any surrounding gadget caught in its area of effect.
-- Micro Smoke Grenades create a smokescreen at the area of impact. They cover a much wider area than a regular Smoke Grenade being 5 meters in diameter.
+- Micro Smoke Grenades create a smokescreen at the area of impact. They cover a much wider area than a regular Smoke Grenade being 5 meters in diameter and last 11 seconds, similar to regular smoke grenades.
 
 ### Strategies/Synergies
 

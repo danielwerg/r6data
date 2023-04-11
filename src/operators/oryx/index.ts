@@ -31,7 +31,7 @@ export const oryx = {
     primary: [
       {
         slug: 't-5_smg',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        sights: COMMON_SIGHTS_1X,
         barrels: COMMON_BARRELS_ALL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']
