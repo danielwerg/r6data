@@ -13,7 +13,7 @@ Lesion comes equipped with his Gu Mines; auto-cloaking poison mines that, once t
   - Mines are retrievable, even after being deployed.
   - Gu Mines have a throwing profile similar to Impact Grenades. When a mine hits a wall or a ceiling, it falls nearly directly down but with a slight bounce.
 - Getting affected by a Gu Mine causes a queasy visual distortion on the peripherals of the screen and does damage over time as the needle remains inserted in the victim's leg. They can either fight through the disorientation and take the damage, or they can follow the on-screen prompt to remove the needle from their leg, lowering their gun and leaving themselves vulnerable for a couple seconds in the process.
-- Getting stung by the needles deals no damage, but it is followed by 4 damage periodically (2 seconds). Until removed, the needle will continue to deal its periodic damage.
+- Getting stung by the needles deals no damage, but it is followed by 6 damage periodically (2 seconds). Until removed, the needle will continue to deal its periodic damage.
   - While poisoned, an Operator cannot sprint.
     - An Operator can still prone, walk, crouch, and use their ability.
   - If another Gu Mine is triggered while one is already stuck, it will only refresh the poison timer. It will not increase the poison damage nor increase the number of needles that need to be pulled out.
