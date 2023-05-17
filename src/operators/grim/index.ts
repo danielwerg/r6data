@@ -51,10 +51,18 @@ export const grim = {
         barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
+      },
+      {
+        slug: 'bailiff_410',
+        // NOTE: Forced red_dot_handgun
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
       }
     ]
   },
-  gadgets: { secondary: ['breach_charge', 'claymore'] },
+  gadgets: { secondary: ['breach_charge', 'claymore', 'hard_breach_charge'] },
   uniqueAbility: {
     slug: 'kawan_hive_launcher',
     name: 'Kawan Hive Launcher',

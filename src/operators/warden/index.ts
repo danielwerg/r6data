@@ -62,7 +62,9 @@ export const warden = {
       }
     ]
   },
-  gadgets: { secondary: ['deployable_shield', 'nitro_cell'] },
+  gadgets: {
+    secondary: ['deployable_shield', 'nitro_cell', 'observation_blocker']
+  },
   uniqueAbility: {
     slug: 'glance_smart_glasses',
     name: 'Glance Smart Glasses',

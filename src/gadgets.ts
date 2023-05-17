@@ -110,6 +110,20 @@ export const GADGETS = [
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2TsFLmb2O6LRZpbxzkZDck/c9146913388a9567500b704c95600621/Proximity_alarm.png'
   },
   {
+    slug: 'observation_blocker',
+    name: 'Observation Blocker',
+    side: 'defense',
+    amount: 3,
+    description:
+      'Projects a screen that blocks the line of sight of opponent Observation Tools.',
+    notes: 'Maximum width: 5m, height: 2.2m',
+    icon: {
+      toSVG: async () => getGadgetSVGString('/svgs/observation_blocker.svg'),
+      png: getGadgetAssetURL('/pngs/observation_blocker.png')
+    },
+    iconOfficial: null
+  },
+  {
     slug: 'frag_grenade',
     name: 'Frag Grenade',
     side: 'attack',

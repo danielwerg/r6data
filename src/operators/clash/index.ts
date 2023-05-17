@@ -57,7 +57,9 @@ export const clash = {
       }
     ]
   },
-  gadgets: { secondary: ['barbed_wire', 'impact_grenade'] },
+  gadgets: {
+    secondary: ['barbed_wire', 'impact_grenade', 'observation_blocker']
+  },
   uniqueAbility: {
     slug: 'cce_shield',
     name: 'CCE Shield',

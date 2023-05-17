@@ -20,6 +20,7 @@ The following Defender Gadgets can be hacked by Brava, converting them to Attack
 - Thorn's Razorbloom Shells
 - Valkyrie's Black Eyes
 - Wamai's Mag-NETs
+- Fenrir's F-Natt Dread Mine (when activated)
 - Defender's Bulletproof Cameras
 - Any default cameras on a stage
 - Any drones or Attacker gadgets that Mozzie has hacked with a hacked Kludge drone
@@ -30,6 +31,7 @@ Additionally, the following devices will be destroyed after a short delay once h
 - Kaid's Electroclaws
 - Smoke's Gas Grenades
 - Thunderbird's Kona Stations
+- Fenrir's F-Natt Dread Mine (when deactivated)
 - Defender's C4s
 
 ### Strategies/Synergies

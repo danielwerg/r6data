@@ -51,7 +51,8 @@ export type SeasonSlug =
   | 'vector_glare'
   | 'brutal_swarm'
   | 'solar_raid'
-  | 'commanding_force';
+  | 'commanding_force'
+  | 'dread_factor';
 
 export type GadgetSlug =
   | 'deployable_shield'
@@ -60,6 +61,7 @@ export type GadgetSlug =
   | 'barbed_wire'
   | 'bulletproof_camera'
   | 'proximity_alarm'
+  | 'observation_blocker'
   | 'frag_grenade'
   | 'smoke_grenade'
   | 'stun_grenade'

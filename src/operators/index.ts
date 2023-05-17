@@ -78,6 +78,7 @@ import { sens } from './sens';
 import { grim } from './grim';
 import { solis } from './solis';
 import { brava } from './brava';
+import { fenrir } from './fenrir';
 
 export * from './utils';
 export * from './types';
@@ -151,7 +152,8 @@ export const MINI_OPERATORS = [
   sens,
   grim,
   solis,
-  brava
+  brava,
+  fenrir
 ];
 
 export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {
