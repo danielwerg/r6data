@@ -41,3 +41,4 @@ Kapkan comes equipped with his homemade EDD MKII Tripwires, special mines that c
 - Zero's Argus Camera lasers will destroy an EDD with ease.
 - Kali's LV Lances will destroy EDDs.
 - Flores' RCE-RATERO Drone will also destroy EDDs.
+- Brava's Kludge Drone will convert EDDs against Kapkan or other defenders, so defender should pay attention whether the EDDs is converted or not.

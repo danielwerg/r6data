@@ -29,6 +29,7 @@ Frost comes equipped with three Sterling MK2 LHTs, nicknamed "Welcome Mats." The
   - However, if the Gu Mine is activated first, the Welcome Mat will then down the Attacker and cancel out the poison effects.
 - As Frost's Welcome Mat places enemies in a downed state, Caveira will be able to interrogate them.
 - Oryx can perform his dash on an unsuspecting enemy; if they land on a mat, it would instantly down them, allowing for him to quickly kill them.
+- Thorn's Razorbloom Shells can be placed near the welcome mat, the timer will kill them without manual trigger.
 
 ### Counters
 
