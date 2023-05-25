@@ -3,7 +3,8 @@ import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
   COMMON_GRIPS,
-  COMMON_BARRELS_ALL
+  COMMON_BARRELS_ALL,
+  COMMON_BARRELS_HANDGUN_OR_MARKSMAN
 } from '../constants';
 
 export const fenrir = {
@@ -49,6 +50,13 @@ export const fenrir = {
         // NOTE: Forced red_dot_handgun
         sights: null,
         barrels: null,
+        grips: null,
+        underBarrels: ['laser']
+      },
+      {
+        slug: '5.7_usg',
+        sights: null,
+        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
       }
