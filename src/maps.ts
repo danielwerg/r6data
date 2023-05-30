@@ -198,11 +198,14 @@ export const MINI_MAPS = [
     slug: 'consulate',
     name: 'Consulate',
     release: { season: { id: 0 }, date: getISODate('2015-12-01') },
+    reworks: [
+      { type: 'full', season: { id: 30 }, date: getISODate('2023-05-30') }
+    ],
     playlists: ['ranked', 'unranked', 'casual'],
     bombSites: [
       '2F Consul Office / 2F Meeting Room',
-      '1F Lobby / 1F Press Room',
-      'B Archives / 1F Tellers',
+      '1F Exposition Room / 1F Piano Room',
+      'B Servers / 1F Tellers',
       'B Cafeteria / B Garage'
     ],
     thumbnail: getMapAssetURL('/thumbnails/consulate.webp'),

@@ -338,5 +338,16 @@ export const SEASONS = [
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3NK3eIKNUG118nXBY0Zskj/e682ab5abf93e5e4ba66de44b3ce1ed8/Y8S1_CommandingForce_IMG_MainKeyArt.jpg',
     releaseDate: getISODate('2023-03-07')
+  },
+  {
+    id: 30,
+    shorthand: 'Y8S2',
+    slug: 'dread_factor',
+    name: 'Dread Factor',
+    hexColorCode: '#6432ef',
+    thumbnail: getSeasonAssetURL('/y8s2.jpg'),
+    thumbnailOfficial:
+      'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4lkN2v7mOSsyHfr1vDdVM7/4f9323bed51c81e1db1bd8ce0f2c34f9/R6S_Live_Y8S2_DreadFactor.jpg',
+    releaseDate: getISODate('2023-05-30')
   }
 ] satisfies Season[];

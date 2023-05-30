@@ -68,7 +68,9 @@ export const rook = {
       }
     ]
   },
-  gadgets: { secondary: ['proximity_alarm', 'impact_grenade'] },
+  gadgets: {
+    secondary: ['proximity_alarm', 'impact_grenade', 'observation_blocker']
+  },
   uniqueAbility: {
     slug: 'armor_pack',
     name: 'Armor Pack',

@@ -61,7 +61,7 @@ export const smoke = {
       }
     ]
   },
-  gadgets: { secondary: ['deployable_shield', 'barbed_wire'] },
+  gadgets: { secondary: ['barbed_wire', 'observation_blocker'] },
   uniqueAbility: {
     slug: 'remote_gas_grenade',
     name: 'Remote Gas Grenade',

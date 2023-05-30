@@ -54,7 +54,7 @@ export const jager = {
       }
     ]
   },
-  gadgets: { secondary: ['bulletproof_camera', 'barbed_wire'] },
+  gadgets: { secondary: ['bulletproof_camera', 'observation_blocker'] },
   uniqueAbility: {
     slug: 'active_defense_system',
     name: 'Active Defense System',

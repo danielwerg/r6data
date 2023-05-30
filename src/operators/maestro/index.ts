@@ -62,7 +62,9 @@ export const maestro = {
       }
     ]
   },
-  gadgets: { secondary: ['barbed_wire', 'impact_grenade'] },
+  gadgets: {
+    secondary: ['barbed_wire', 'impact_grenade', 'observation_blocker']
+  },
   uniqueAbility: {
     slug: 'evil_eye',
     name: 'Evil Eye',

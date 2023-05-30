@@ -55,7 +55,9 @@ export const ela = {
       }
     ]
   },
-  gadgets: { secondary: ['barbed_wire', 'deployable_shield'] },
+  gadgets: {
+    secondary: ['barbed_wire', 'deployable_shield', 'observation_blocker']
+  },
   uniqueAbility: {
     slug: 'grzmot_mine',
     name: 'Grzmot Mine',

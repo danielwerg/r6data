@@ -54,7 +54,9 @@ export const goyo = {
       }
     ]
   },
-  gadgets: { secondary: ['proximity_alarm', 'nitro_cell'] },
+  gadgets: {
+    secondary: ['proximity_alarm', 'bulletproof_camera', 'impact_grenade']
+  },
   uniqueAbility: {
     slug: 'volcan_shield',
     name: 'Volcan Shield',

@@ -61,7 +61,9 @@ export const pulse = {
       }
     ]
   },
-  gadgets: { secondary: ['barbed_wire', 'nitro_cell'] },
+  gadgets: {
+    secondary: ['nitro_cell', 'deployable_shield', 'observation_blocker']
+  },
   uniqueAbility: {
     slug: 'heartbeat_sensor',
     name: 'Heartbeat Sensor',

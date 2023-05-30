@@ -27,6 +27,7 @@ Mira can punch her Black Mirrors through walls, reinforced or not, to create a o
 - Mira can deploy a Black Mirror on a reinforced section of a wall and leave the neighbouring section unreinforced, creating opportunities for easy penetration kills. Blasting holes on the unreinforced section can also allow Nitro Cells to be thrown through.
 - Mira works well with Operators like Mute, Bandit and Kaid, as their gadgets are able to prevent Attacker gadgets from destroying the Black Mirrors if deployed on a reinforced wall.
 - If it is impossible to destroy fusing hard breach gadget on Black Mirror it is adviced to shot the canister to minimize the breach.
+- Azami's Kiba Barrier can be placed on a nearby soft wall to prevent getting shot.
 
 ### Counters
 

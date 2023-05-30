@@ -62,7 +62,7 @@ export const alibi = {
       }
     ]
   },
-  gadgets: { secondary: ['impact_grenade', 'deployable_shield'] },
+  gadgets: { secondary: ['proximity_alarm', 'observation_blocker'] },
   uniqueAbility: {
     slug: 'prisma',
     name: 'Prisma',

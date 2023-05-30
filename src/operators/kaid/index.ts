@@ -61,7 +61,7 @@ export const kaid = {
       }
     ]
   },
-  gadgets: { secondary: ['nitro_cell', 'barbed_wire'] },
+  gadgets: { secondary: ['nitro_cell', 'barbed_wire', 'observation_blocker'] },
   uniqueAbility: {
     slug: 'rtila_electroclaw',
     name: '"Rtila" Electroclaw',
