@@ -370,7 +370,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 22 }, date: getISODate('2021-06-14') }
     ],
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch'],
+    playlists: ['casual', 'deathmatch'],
     bombSites: [
       '3F Packaging Room / 2F Meth Lab',
       '2F Football Bedroom / 2F Football Office',
