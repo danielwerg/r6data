@@ -210,7 +210,7 @@ export const MINI_MAPS = [
     ],
     thumbnail: getMapAssetURL('/thumbnails/consulate.webp'),
     thumbnailOfficial:
-      'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6PR2sBla9E6TNurVUfJ0mc/860cab16eb1d4cd27ea356a1c3fe9591/r6-maps-consulate.jpg',
+      'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6PR2sBla9E6TNurVUfJ0mc/9a58f08dca1c465787e5a1b6cf6a136b/CONSULATE_REWORK_PREVIEW_03_960x540.jpg',
     background: getMapAssetURL('/backgrounds/consulate.webp'),
     backgroundOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4jQ6tmpMAn8fwTFxi39UnJ/6c22d8a53198534ca923dea8942724db/r6s-maps-header-consulate.jpg',
