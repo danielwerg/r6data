@@ -96,7 +96,7 @@ export const GADGETS = [
   },
   {
     slug: 'proximity_alarm',
-    name: 'Proxmityi Alarm',
+    name: 'Proximity Alarm',
     side: 'defense',
     amount: 2,
     description:
