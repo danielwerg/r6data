@@ -1,0 +1,12 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  fill="#ffffff"
+  stroke="none"
+>
+  <path d="M98 103H146V16H423l-70 72L366 100V341l-24-24V107l-24-20H264V103H312V148H98Z" />
+  <path d="M108 168H302V434H110Z" />
+  <path d="M94 454H316V496H94Z" />
+</svg>

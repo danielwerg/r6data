@@ -27,8 +27,9 @@ export const GADGETS = [
       'Bulletproof shield that\'s deployed on the ground or attached to doorframes to provide protective cover.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/deployable_shield.svg'),
-      png: getGadgetAssetURL('/pngs/deployable_shield.png')
+      toSVG: async () =>
+        getGadgetSVGString('/simple/svgs/deployable_shield.svg'),
+      png: getGadgetAssetURL('/simple/pngs/deployable_shield.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/W0WE0X2VQlxwWIAFCJ6Jm/523650a39de5a23dd9520d7299c9e25a/Deployable_Shield.png'
@@ -42,8 +43,8 @@ export const GADGETS = [
       'Throwable C4 that sticks to surfaces and is manually detonated to create a large explosion.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/nitro_cell.svg'),
-      png: getGadgetAssetURL('/pngs/nitro_cell.png')
+      toSVG: async () => getGadgetSVGString('/simple/svgs/nitro_cell.svg'),
+      png: getGadgetAssetURL('/simple/pngs/nitro_cell.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4pBSTw9U6l9GRnT12G6Xln/e0991bc03b48d217f510af8b611c8828/Nitro_Cell.png'
@@ -57,8 +58,8 @@ export const GADGETS = [
       'Explosive grenade that detonates on impact to create entryways or line of sight in breakable surfaces.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/impact_grenade.svg'),
-      png: getGadgetAssetURL('/pngs/impact_grenade.png')
+      toSVG: async () => getGadgetSVGString('/simple/svgs/impact_grenade.svg'),
+      png: getGadgetAssetURL('/simple/pngs/impact_grenade.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7iJK9B1Vr3PDO3rGftU00l/c3d8edc5564a80580e4ac2f9a4fc3937/Impact_Grenade.png'
@@ -72,8 +73,8 @@ export const GADGETS = [
       'Non-damaging razor wire that slows opponents and creates noise when walked through.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/barbed_wire.svg'),
-      png: getGadgetAssetURL('/pngs/barbed_wire.png')
+      toSVG: async () => getGadgetSVGString('/simple/svgs/barbed_wire.svg'),
+      png: getGadgetAssetURL('/simple/pngs/barbed_wire.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7igaibxuCcSpWDkZensEJS/bfa2cef52f3d860b7a06c2b4d7a6340e/Barbed_wire.png'
@@ -88,8 +89,9 @@ export const GADGETS = [
     notes:
       'EMP bursts has 1 charge and infinite reload with 8 seconds cooldown.',
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/bulletproof_camera.svg'),
-      png: getGadgetAssetURL('/pngs/bulletproof_camera.png')
+      toSVG: async () =>
+        getGadgetSVGString('/simple/svgs/bulletproof_camera.svg'),
+      png: getGadgetAssetURL('/simple/pngs/bulletproof_camera.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/gZuOXvuTu2i8hQX0B6auy/259f379a6283bae618443d722a896f1a/Bulletproof_camera.png'
@@ -103,8 +105,8 @@ export const GADGETS = [
       'Sensor that sticks to surfaces and sounds an alarm when it detects nearby opponents.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/proximity_alarm.svg'),
-      png: getGadgetAssetURL('/pngs/proximity_alarm.png')
+      toSVG: async () => getGadgetSVGString('/simple/svgs/proximity_alarm.svg'),
+      png: getGadgetAssetURL('/simple/pngs/proximity_alarm.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2TsFLmb2O6LRZpbxzkZDck/c9146913388a9567500b704c95600621/Proximity_alarm.png'
@@ -118,8 +120,9 @@ export const GADGETS = [
       'Projects a screen that blocks the line of sight of opponent Observation Tools.',
     notes: 'Maximum width: 5m, height: 2.2m',
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/observation_blocker.svg'),
-      png: getGadgetAssetURL('/pngs/observation_blocker.png')
+      toSVG: async () =>
+        getGadgetSVGString('/simple/svgs/observation_blocker.svg'),
+      png: getGadgetAssetURL('/simple/pngs/observation_blocker.png')
     },
     iconOfficial: null
   },
@@ -131,8 +134,8 @@ export const GADGETS = [
     description: 'Explosive grenade that detonates shortly after being thrown.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/frag_grenade.svg'),
-      png: getGadgetAssetURL('/pngs/frag_grenade.png')
+      toSVG: async () => getGadgetSVGString('/simple/svgs/frag_grenade.svg'),
+      png: getGadgetAssetURL('/simple/pngs/frag_grenade.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4GZsPHbm9H0k5EWz7TMkwO/33b9007bc6ee03dab15cfa15eb69e096/Frag_Grenade.png'
@@ -146,8 +149,8 @@ export const GADGETS = [
       'Non-damaging grenade that produces smoke shortly after being thrown to cover advances.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/smoke_grenade.svg'),
-      png: getGadgetAssetURL('/pngs/smoke_grenade.png')
+      toSVG: async () => getGadgetSVGString('/simple/svgs/smoke_grenade.svg'),
+      png: getGadgetAssetURL('/simple/pngs/smoke_grenade.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3LaxoSLC49T5vgKnUAlTLT/c47c4636845a04478432c48be8c29aee/Smoke_Grenade.png'
@@ -161,8 +164,8 @@ export const GADGETS = [
       'Non-damaging grenade that produces a flash explosion shortly after being thrown to disorient opponents.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/stun_grenade.svg'),
-      png: getGadgetAssetURL('/pngs/stun_grenade.png')
+      toSVG: async () => getGadgetSVGString('/simple/svgs/stun_grenade.svg'),
+      png: getGadgetAssetURL('/simple/pngs/stun_grenade.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3XnK8s1iQJQu5cfr6UyQfK/429480b96d6d6d6b830c32c75d2608f5/Stun_Grenade.png'
@@ -176,8 +179,8 @@ export const GADGETS = [
       'Explosive trap that\'s deployed on the ground and is useful against roaming Defenders.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/claymore.svg'),
-      png: getGadgetAssetURL('/pngs/claymore.png')
+      toSVG: async () => getGadgetSVGString('/simple/svgs/claymore.svg'),
+      png: getGadgetAssetURL('/simple/pngs/claymore.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4T4H5EJgUxorucGVtU2pkm/74fef324b89c220ce6426e8097f915b9/Claymore.png'
@@ -191,8 +194,9 @@ export const GADGETS = [
       'Explosive device that automatically detonates to create entryways in breakable and reinforced surfaces.',
     notes: 'Takes 2 seconds to deploy on a wall and 4 seconds to detonate.',
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/hard_breach_charge.svg'),
-      png: getGadgetAssetURL('/pngs/hard_breach_charge.png')
+      toSVG: async () =>
+        getGadgetSVGString('/simple/svgs/hard_breach_charge.svg'),
+      png: getGadgetAssetURL('/simple/pngs/hard_breach_charge.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3OvnVPWY1UyrDE913kU0a1/eae4b2a1584234ea2ff4ad6481239f3b/SecondaryBreacher.png'
@@ -206,8 +210,8 @@ export const GADGETS = [
       'Explosive device that\'s deployed on breakable surfaces and is manually detonated to create an entryway.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/breach_charge.svg'),
-      png: getGadgetAssetURL('/pngs/breach_charge.png')
+      toSVG: async () => getGadgetSVGString('/simple/svgs/breach_charge.svg'),
+      png: getGadgetAssetURL('/simple/pngs/breach_charge.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1OgTMhyF1FBsSAo4njk26m/9881001e9db03a4806b2eea6007e4a1a/Breach_Charge.png'
@@ -222,8 +226,9 @@ export const GADGETS = [
     notes:
       '1.8 meters spherical range, disables electronical gadgets for 9 seconds.',
     icon: {
-      toSVG: async () => getGadgetSVGString('/svgs/emp_impact_grenade.svg'),
-      png: getGadgetAssetURL('/pngs/emp_impact_grenade.png')
+      toSVG: async () =>
+        getGadgetSVGString('/simple/svgs/emp_impact_grenade.svg'),
+      png: getGadgetAssetURL('/simple/pngs/emp_impact_grenade.png')
     },
     iconOfficial: null
   }
