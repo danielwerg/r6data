@@ -1,0 +1,14 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  fill="#ffffff"
+  stroke="none"
+>
+  <path d="M42 72h98v-24l32-32h58v8h52v-8h58l32 32v24h98v206Q256 318 42 278Z" />
+  <path id="leg" d="M110 287 193 485 207 496 210 479 129 287Z" />
+  <use href="#leg" transform="scale(-1, 1) translate(-256, 0)" />
+  <use href="#leg" transform="translate(256, 0)" />
+  <use href="#leg" transform="scale(-1, 1) translate(-512, 0)" />
+</svg>

@@ -1,0 +1,19 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  fill="#ffffff"
+  stroke="none"
+>
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M308 104.69q-8-2.5-8-8v-32h-32v24.36q0 7.05-8 7.05" />
+      <path fill="black" d="M96 256a1 1 0 00320 0 1 1 0 00-320 0" />
+    </mask>
+  </defs>
+  <path fill-rule="evenodd" mask="url(#mask)" d="M16 140C66 139 120 86 120 36H392C392 86 446 140 496 140V372C445 372 392 426 392 476H120C120 426 66 372 16 372Z" />
+  <path fill-rule="evenodd" d="M20 80q0-40 40-40h392q40 0 40 40v352q0 40-40 40h-392q-40 0-40-40ZM36 80q0-24 24-24h392q24 0 24 24v352q0 24-24 24h-392q-24 0-24-24Z" />
+  <path d="M16 80q0-44 44-44v24q-20 0-20 20ZM496 80q0-44-44-44v24q20 0 20 20ZM496 432q0 44-44 44v-24q20 0 20-20ZM16 432q0 44 44 44v-24q-20 0-20-20Z" />
+</svg>
