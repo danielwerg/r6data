@@ -15,9 +15,11 @@ The F-Natt Dread Mine is a throwable device that sticks to walls, so it can be h
   - Disabled by Thatcher's EMP Grenades for 15 seconds
   - Disabled by Impact EMP Grenades for 9 seconds
   - Destroyed by Twitch's Shock Drones
-  - Destroyed by Kali's LV Lances
   - Destroyed by Zero's ARGUS Cameras
-  - Destroyed by Flores' RCE-RATERO Drones
+- When disabled by EMP the bulletproof housing opens which exposes the F-NATT to gunfire and melee.
+- If Fenrir is caught in the radius of the EMP, he cannot activate any F-NATT Dread Mines until it wears off.
+- F-NATT Dread Mines can be destroyed by explosive devices, Frag Grenades, Ash's Breaching Rounds, Zofia's Impact Grenades, Fuze's Cluster Charges, Kali's LV Lances and Flores' RCE-RATERO Drone.
 - Finka's Adrenal Surge can reduce effectiveness of the fear effect.
 - Montagne can trigger Dread Mine and provide the cover for the rest of the team to come in and destroy the F-NATT that have been triggered.
 - Brava's Kludge Drone can hack F-Natt if it's activated otherwise it will be destroyed.
+- Sledge is able to take out a F-NATT Dread Mine in one swing of his Breaching Hammer.
