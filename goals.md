@@ -21,6 +21,8 @@ Find or make svgs (very low priority)
 
 Rework, realign and clean up svgs (very low priority)
 
+---
+
 <details>
 <summary>Completed</summary>
 
