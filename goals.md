@@ -4,7 +4,7 @@ Good place to start contributing!
 
 ## Operator Unique Ability
 
-- icon svg (#9)
+- icon svg ([#9](https://github.com/danielwerg/r6data/issues/9))
 - `isElectronic`?
 <!-- - `subType`? (ex: Brava: `type: 'count'`, `subType: 'recharge_count'`) -->
 
