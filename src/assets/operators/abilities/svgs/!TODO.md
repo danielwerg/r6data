@@ -7,8 +7,6 @@ Update `goals.md` file
 
 sledge
 thatcher
-castle
-pulse
 ash
 thermite
 doc
