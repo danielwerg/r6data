@@ -5,7 +5,7 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
-  class="r6data__ability r6data__ability__dokkaebi r6data__ability__logic_bomb"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__dokkaebi r6data__operator__ability__logic_bomb"
   id="logic_bomb"
 >
   <path d="" />
