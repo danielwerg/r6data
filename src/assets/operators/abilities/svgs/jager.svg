@@ -6,5 +6,20 @@
   fill="#ffffff"
   stroke="none"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M44 119 55 53 120 42 151 101 104 149Z" />
+      <path fill="black" d="M143 105l21 21-36 36-20-20Z" />
+    </mask>
+  </defs>
+  <path fill-rule="evenodd" d="M196 327A1 1 0 00316 327 1 1 0 00196 327M218 327A1 1 0 00294 327 1 1 0 00218 327" />
+  <path fill-rule="evenodd" d="M120 256a1 1 0 00272 0A1 1 0 00120 256M162 282a1 1 0 00188 0 1 1 0 00-188 0" />
+  <g id="leg">
+    <path mask="url(#mask)" d="M16 91a1 1 0 00150 0 1 1 0 00-150 0" />
+    <path d="M135 109l30 30-24 24-30-30Z" />
+  </g>
+  <use href="#leg" transform="rotate(90 256 256)" />
+  <use href="#leg" transform="rotate(180 256 256)" />
+  <use href="#leg" transform="rotate(270 256 256)" />
 </svg>

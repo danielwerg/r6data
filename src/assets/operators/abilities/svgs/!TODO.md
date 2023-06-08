@@ -5,20 +5,16 @@ Delete this file
 
 Update `goals.md` file
 
+M0 512H512V0H0ZM16 16H496V496H16Z
+
 sledge
 thatcher
 ash
 thermite
-doc
-rook
 twitch
 montagne
-kapkan
-tachanka
 glaz
 fuze
-jager
-bandit
 blitz
 iq
 frost
