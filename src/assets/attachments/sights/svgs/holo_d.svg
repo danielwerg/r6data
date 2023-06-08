@@ -3,6 +3,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__holo_d"
+  id="holo_d"
 >
   <style>#optic { color: #ff0b2f }</style>
   <path fill="#000000" d="M50 95V90H46V158H50" />

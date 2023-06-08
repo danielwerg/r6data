@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__stun_grenade"
+  id="stun_grenade"
 >
   <path fill="#000000" d="M78 10A1 1 0 0078 62 1 1 0 0078 10M78 16A1 1 0 0178 56 1 1 0 0178 16" />
   <path fill="#000000" d="M106 44H135V49H106Z" />

@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__gadget r6data__gadget__simple r6data__gadget__simple__bulletproof_camera"
+  id="bulletproof_camera"
 >
   <path d="M16 111l15-15h30v12h-12v296h12v12h-30l-15-15ZM495 111l-15-15h-30v12h12v296h-12v12h30l15-15Z" />
   <path fill-rule="evenodd" d="M65 128q0-20 20-20H427q20 0 20 20V384q0 20-20 20H85q-20 0-20-20ZM115 128H397v30l30 30V354l-30 30H115l-30-30V189l30-30ZM101 193l20-20 25 25h220l25-25 20 20v136l-20 20h-50v-25q0-10-10-10h-150q-10 0-10 10V349h-50l-20-20ZM212 256a1 1 0 0088 0 1 1 0 00-88 0M120 190l30 30-3 3-30-30zM392 190l-30 30 3 3 30-30zM392 338l-30-30 3-3 30 30zM120 338l30-30-3-3-30 30zM223 240a1 1 0 0030 0 1 1 0 00-30 0" />

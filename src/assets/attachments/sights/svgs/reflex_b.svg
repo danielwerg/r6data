@@ -3,6 +3,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__reflex_b"
+  id="reflex_b"
 >
   <style>#optic { color: #0bad56 }</style>
   <path fill="#000000" d="M25 99 37 59A1 1 0 01181 119L170 132l-5-6L175 113A1 1 0 0043 65L33 99" />

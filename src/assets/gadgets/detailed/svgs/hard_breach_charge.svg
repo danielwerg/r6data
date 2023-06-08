@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__hard_breach_charge"
+  id="hard_breach_charge"
 >
   <path stroke-width="2" d="M182 17Q189 17 189 24V176Q189 183 182 183H18Q11 183 11 176V24Q11 17 18 17Z" />
   <path fill="#000000" d="M117.5 15H164Q164 42 191 42V158Q164 158 164 185H36Q36 158 9 158V42Q36 42 36 15H95.5M95 15V32.6Q95 35.8 90 37A61.6 61.6 90 0037.2 98 1.6 1.6 90 00161 98 61.6 61.6 90 00123 41Q118.2 38.9 118 36V15" />

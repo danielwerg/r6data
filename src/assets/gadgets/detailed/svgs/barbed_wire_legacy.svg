@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__barbed_wire_legacy"
+  id="barbed_wire_legacy"
 >
   <path fill="#000000" d="M11 119C13 49 188 61 189 133M189 133C187 203 12 191 11 119M49 119C42 160 148 180 154 133M154 133C161 92 55 72 49 119" />
   <path fill="#000000" d="M49 66C55 19 161 39 154 80M154 80C148 127 42 107 49 66M49 119C42 160 148 180 154 133M154 133C161 92 55 72 49 119" />

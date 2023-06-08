@@ -3,6 +3,8 @@
   width="500"
   height="500"
   viewBox="0 0 500 500"
+  class="r6data__rank r6data__rank__v3 r6data__rank__v3__champions"
+  id="champions"
 >
   <g
     fill="none"
@@ -88,7 +90,7 @@
       <use href="#arrow-1" transform="translate(0, 165)" />
     </g>
   </g>
-  <g id="position-banner" class="position-banner">
+  <g class="r6data__rank__v3__champions__position-banner" id="champions__position-banner">
     <path fill="#000000" d="M116 227H384V363H116Z" />
     <text id="position-value" fill="#ffffff" x="250" y="305" text-anchor="middle" dominant-baseline="middle"  style="font: bold 120px sans-serif"> </text>
   </g>

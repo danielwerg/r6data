@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__barrel r6data__attachment__barrel__extended_barrel"
+  id="extended_barrel"
 >
   <path fill="#000000" d="M27 92H13Q10 92 10 95V105Q10 108 13 108H27" />
   <g stroke-width="0.5">

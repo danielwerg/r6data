@@ -3,6 +3,8 @@
   width="350"
   height="350"
   viewBox="0 0 350 350"
+  class="r6data__operator r6data__operator__icon r6data__operator__icon__brava"
+  id="operator__icon__brava"
 >
   <path opacity="0.4" d="M45 45h260v260H45z" />
   <path fill="#45abf3" d="M73 73h204v44l43-9-43 73V215l7 4-7 4V277H228l9 44-75-44H128l-4 7-4-7H73z" />

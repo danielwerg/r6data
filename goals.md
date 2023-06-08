@@ -19,7 +19,7 @@ Find or make svgs (very low priority)
 
 ## Rank Icons v2
 
-Rework, realign and clean up svgs (very low priority)
+Rework, realign, clean up svgs and add classes and ids (very low priority)
 
 ---
 

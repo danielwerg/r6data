@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__impact_grenade"
+  id="impact_grenade"
 >
   <path fill="#000" d="M48 72A1 1 0 0048 32 1 1 0 0048 72M48 67A1 1 0 0148 37 1 1 0 0148 67" />
   <ellipse fill="#000000" cx="100" cy="105" rx="71 " />

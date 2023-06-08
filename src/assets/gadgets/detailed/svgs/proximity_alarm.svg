@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__proximity_alarm"
+  id="proximity_alarm"
 >
   <path fill="#000000" d="M130 36 162 18C174 11 200 58 188 65L156 83 127 135V172C127 185.9 73 185.9 73 172V135L44 83 12 65C0 58 27 11 39 18L71 36Z" />
   <g stroke-width="0.5">

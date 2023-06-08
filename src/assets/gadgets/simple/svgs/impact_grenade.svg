@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__gadget r6data__gadget__simple r6data__gadget__simple__impact_grenade"
+  id="impact_grenade"
 >
   <path d="M158 66l-13-27 38-19 10 17C230 17 282 17 319 37l10-17 38 19-13 27Z" />
   <defs>

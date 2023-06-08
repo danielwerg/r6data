@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__gadget r6data__gadget__simple r6data__gadget__simple__claymore"
+  id="claymore"
 >
   <path d="M42 72h98v-24l32-32h58v8h52v-8h58l32 32v24h98v206Q256 318 42 278Z" />
   <path id="leg" d="M110 287 193 485 207 496 210 479 129 287Z" />

@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__frag_grenade"
+  id="frag_grenade"
 >
   <path fill="#000000" d="M57 21A1 1 0 0057 88 1 1 0 0057 21M57 27A1 1 0 0157 82 1 1 0 0157 27" />
   <path fill="#000000" d="M89 80 89 66Q89 60 94 60L123 60Q127 60 127 66L127 80" />

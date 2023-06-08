@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__gadget r6data__gadget__simple r6data__gadget__simple__observation_blocker"
+  id="observation_blocker"
 >
   <path d="M45 326V56H467V326H443V90H69V326Z" />
   <path d="M20 368 24 349 69 337 103 353 160 302H174L123 362 187 392 205 436ZM492 368 488 349 443 337 409 353 352 302H338L389 362 325 392 307 436Z" />

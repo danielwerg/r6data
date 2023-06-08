@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__bulletproof_camera"
+  id="bulletproof_camera"
 >
   <path fill="#000000" d="M171 42V38H183L189 44V154L183 160H171V156H29V160H17L11 154V44L17 38H29V42Z" />
   <rect x="23" y="45" width="154" height="107" rx="1" />

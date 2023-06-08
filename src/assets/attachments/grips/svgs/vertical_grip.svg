@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__grip r6data__attachment__grip__vertical_grip"
+  id="vertical_grip"
 >
   <path fill="#000000" d="M55 13H145V30C144 41 128 38 130 55Q136 113 129 170l2 2v12Q100 192 69 184V172L71 170Q66 113 70 55C72 38 56 41 55 30Z" />
   <path d="M55 30Q100 36 145 30M100 58V173M71 170Q100 177 129 170" />

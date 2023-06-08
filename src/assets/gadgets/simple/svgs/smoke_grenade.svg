@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__gadget r6data__gadget__simple r6data__gadget__simple__smoke_grenade"
+  id="smoke_grenade"
 >
   <path d="M98 103H146V16H423l-70 72L366 100V341l-24-24V107l-24-20H264V103H312V148H98Z" />
   <path d="M108 168H302V434H110Z" />

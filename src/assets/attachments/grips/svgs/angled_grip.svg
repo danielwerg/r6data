@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__grip r6data__attachment__grip__angled_grip"
+  id="angled_grip"
 >
   <path fill="#000000" fill-rule="evenodd" d="M10 78H95Q101 78 104 76L120 65Q123 63 126 63H182Q190 63 190 70V89C189 108 177 103 177 100 177 99 177 89 172 89H135L69 129Q67.136 130.389 68 133C69 138 59 140 54 133L23 91Q21 88 18 88H10ZM40 93Q37 88 43 88H84C89 88 90 93 87 95L61 114Q57 117 54 113Z" />
   <ellipse cx="60" cy="128" rx="2.5" />

@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__gadget r6data__gadget__simple r6data__gadget__simple__deployable_shield"
+  id="deployable_shield"
 >
   <path d="M75 16l181 34 181-33v148l-181 38-181-38Z" />
   <path d="M57 181l199 38 199-38v167l-199 38-199-38Z" />

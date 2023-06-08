@@ -4,6 +4,8 @@
   height="100"
   viewBox="0 0 100 100"
   fill="currentColor"
+  class="r6data__loadout r6data__loadout__skins"
+  id="skins"
 >
   <path fill-rule="evenodd" d="M26 7 45 41C57 66 34 74 26 74 18 74-3 66 9 41ZM11 60A17.2 17.2 0 1039 41 17.2 17.2 0 0111 60" />
   <path d="M38 15 48 5Q51 3 54 6L95 47Q98 50 95 53L53 95Q50 97 47 94L33 80ZM33 80C41 78 77 66 38 15" />

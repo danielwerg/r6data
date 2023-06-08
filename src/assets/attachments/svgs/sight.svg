@@ -6,6 +6,8 @@
   fill="none"
   stroke="#ffffff"
   stroke-width="2"
+  class="r6data__attachment r6data__attachment__sight"
+  id="sight"
 >
   <ellipse fill="#ffffff" cx="50" cy="50" rx="1" />
   <g>
