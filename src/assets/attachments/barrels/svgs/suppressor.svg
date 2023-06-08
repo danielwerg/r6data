@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__barrel r6data__attachment__barrel__suppressor"
+  id="suppressor"
 >
   <rect fill="#000000" x="91" y="82" width="99" height="36" rx="3" />
   <rect fill="#000000" x="10" y="80" width="82" height="40" rx="3" />

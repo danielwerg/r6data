@@ -7,6 +7,8 @@
   stroke-width="10"
   stroke-linejoin="round"
   stroke-linecap="round"
+  class="r6data__rank r6data__rank__v3 r6data__rank__v3__unranked"
+  id="unranked"
 >
   <path
     stroke="#c8c8c8"

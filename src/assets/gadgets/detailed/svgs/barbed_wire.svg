@@ -5,12 +5,14 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__barbed_wire"
+  id="barbed_wire"
 >
   <path
     fill="#000000"
     d="M12 101A1 1 0 00112 101 1 1 0 0012 101M18 101A1 1 0 01106 101 1 1 0 0118 101"
   />
-  <!-- <path fill="#000000" d="M93 61.7674A1 1 0 0031 140.2326C46 153 73 156 93 140.2326L89 135.7674C70 150 48 146 35 135.7674A1 1 0 0189 66.2556L93 61.7674Z" /> -->
+  /
   <path
     fill="#000000"
     d="M84 101A1 1 0 00184 101 1 1 0 0084 101M90 101A1 1 0 01178 101 1 1 0 0190 101"
@@ -24,7 +26,6 @@
   <use href="#wire" transform="rotate(144 62 101)" />
   <use href="#wire" transform="rotate(216 62 101)" />
   <use href="#wire" transform="rotate(288 62 101)" />
-  <!-- <use id="wire2" href="#wire" transform="translate(50 48) rotate(40 134 101)" /> -->
   <use
     id="wire2"
     href="#wire"

@@ -3,6 +3,8 @@
   viewBox="0 0 350 350"
   style="enable-background:new 0 0 350 350"
   xml:space="preserve"
+  class="r6data__operator r6data__operator__icon r6data__operator__icon__castle"
+  id="operator__icon__castle"
 >
   <style>.st1{fill:#fff}.st2{fill:#d7542b}</style>
   <path style="opacity:.4" d="M45 45h260v260H45z" />

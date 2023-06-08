@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__grip r6data__attachment__grip__vertical_grip"
+  id="vertical_grip"
 >
   <path
     fill="#000000"

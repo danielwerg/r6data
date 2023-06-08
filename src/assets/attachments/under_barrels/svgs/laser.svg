@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__under_barrel r6data__attachment__under_barrel__laser"
+  id="laser"
 >
   <path fill="#000000" d="M10 84H24V83H53V111H24V110H10Z" />
   <path fill="#000000" stroke-width="0.5" d="M32 78H48V116H31V114H40V80H32Z" />

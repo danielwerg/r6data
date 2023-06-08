@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__deployable_shield_legacy"
+  id="deployable_shield_legacy"
 >
   <g fill="#000000">
     <path d="M25 10 96 18 104 18 175 10 175 65 104 73 96 73 25 65Z" />

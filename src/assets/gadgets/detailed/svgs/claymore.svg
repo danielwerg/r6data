@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__claymore"
+  id="claymore"
 >
   <rect fill="#000000" x="14" y="27" width="170" height="89" rx="6" />
   <path d="M14 108Q99 112 184 108" />

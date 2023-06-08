@@ -6,6 +6,8 @@
   fill="none"
   stroke="#ffffff"
   stroke-width="2"
+  class="r6data__attachment r6data__attachment__under_barrel"
+  id="under_barrel"
 >
   <path d="M13 50 45 50" />
   <ellipse fill="#ffffff" stroke="none" cx="50" cy="50" rx="6" />

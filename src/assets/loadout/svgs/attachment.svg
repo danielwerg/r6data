@@ -4,6 +4,8 @@
   height="100"
   viewBox="0 0 100 100"
   fill="currentColor"
+  class="r6data__loadout r6data__loadout__attachment"
+  id="attachment"
 >
   <path d="M5 31H19L37 60H63L81 31H95V75H5Z" />
   <path d="M23 25H77L59 54H41Z" />

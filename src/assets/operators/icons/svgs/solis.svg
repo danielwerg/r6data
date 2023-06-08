@@ -1,4 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="350"
+  height="350"
+  viewBox="0 0 350 350"
+  class="r6data__operator r6data__operator__icon r6data__operator__icon__solis"
+  id="operator__icon__solis"
+>
   <rect x="45" y="45" width="260" height="260" opacity="0.4" />
   <path
     d="M37 38 124 103 113 73H122L131 82V73H210L206 105 230 73H240L227 103 313 38 249 124 278 112V122L262 140H278V208H252L279 230V240L248 226 313 312 227 248 240 278H229L212 263V278H142L158 233 122 278H112L125 248 37 312 103 227 73 240V230L98 215H73V143H101L73 121V111L104 125Z"

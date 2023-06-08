@@ -1,4 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="350"
+  height="350"
+  viewBox="0 0 350 350"
+  class="r6data__operator r6data__operator__icon r6data__operator__icon__fenrir"
+  id="operator__icon__fenrir"
+>
   <rect x="45" y="45" width="260" height="260" opacity="0.4" />
   <path fill="#4e41a7" d="M73 73H277V277H73Z" />
   <g fill="#ffffff">

@@ -3,6 +3,8 @@
   viewBox="0 0 350 350"
   style="enable-background:new 0 0 350 350"
   xml:space="preserve"
+  class="r6data__operator r6data__operator__icon r6data__operator__icon__thermite"
+  id="operator__icon__thermite"
 >
   <switch>
     <g>

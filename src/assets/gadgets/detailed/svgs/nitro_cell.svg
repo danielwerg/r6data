@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__nitro_cell"
+  id="nitro_cell"
 >
   <g fill="#000000">
     <path d="M71 22H104V188H71Z" />

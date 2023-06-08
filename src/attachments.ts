@@ -263,7 +263,7 @@ export const SIGHTS = [
       png: getAttachmentAssetURL('/sights/pngs/scope_3.0x.png')
     }
   },
-  // NOTE: Glaz sight
+  // NOTE: Glaz's sight
   {
     slug: 'scope_4.0x',
     name: 'Scope 4.0x',
@@ -271,7 +271,7 @@ export const SIGHTS = [
     description: 'Provides a 4.0x magnification for long distance engagements.',
     icon: { toSVG: null, png: null }
   },
-  // NOTE: Kali sight
+  // NOTE: Kali's sight
   {
     slug: 'scope_5.0x',
     name: 'Scope 5.0x',
@@ -279,7 +279,7 @@ export const SIGHTS = [
     description: 'Provides a 5.0x magnification for long distance engagements.',
     icon: { toSVG: null, png: null }
   },
-  // NOTE: Kali sight
+  // NOTE: Kali's sight
   {
     slug: 'scope_12.0x',
     name: 'Scope 12.0x',
@@ -404,8 +404,9 @@ export const UNDER_BARRELS = [
     name: 'Laser',
     description: 'Mountable laser sight that increases hip fire accuracy.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/underBarrels/svgs/laser.svg'),
-      png: getAttachmentAssetURL('/underBarrels/pngs/laser.png')
+      toSVG: async () =>
+        getAttachmentSVGString('/under-barrels/svgs/laser.svg'),
+      png: getAttachmentAssetURL('/under-barrels/pngs/laser.png')
     }
   }
 ] satisfies UnderBarrel[];

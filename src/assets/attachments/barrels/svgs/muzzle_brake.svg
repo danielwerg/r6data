@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__barrel r6data__attachment__barrel__muzzle_brake"
+  id="muzzle_brake"
 >
   <path
     fill="#000000"

@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__gadget r6data__gadget__simple r6data__gadget__simple__stun_grenade"
+  id="stun_grenade"
 >
   <path
     fill-rule="evenodd"

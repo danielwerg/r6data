@@ -4,6 +4,8 @@
   height="100"
   viewBox="0 0 100 100"
   fill="currentColor"
+  class="r6data__loadout r6data__loadout__primary"
+  id="primary"
 >
   <path d="M5 50A1 1 0 0095 50 1 1 0 005 50M35 25H61V75H47V35H35Z" />
 </svg>

@@ -4,6 +4,8 @@
   height="100"
   viewBox="0 0 100 100"
   fill="currentColor"
+  class="r6data__loadout r6data__loadout__charm"
+  id="charm"
 >
   <ellipse cx="50" cy="36" rx="12" />
   <ellipse

@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
+  class="r6data__weapons r6data__weapons__gonne-6"
+  id="gonne-6"
 >
   <g fill="#000000" stroke-width="0.5">
     <path
