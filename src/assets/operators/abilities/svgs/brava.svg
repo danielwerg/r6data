@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__ability r6data__ability__brava r6data__ability__kludge_drone"
+  id="kludge_drone"
 >
   <path d="" />
 </svg>

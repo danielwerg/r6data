@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__ability r6data__ability__mute r6data__ability__signal_disruptor"
+  id="signal_disruptor"
 >
   <g>
     <path d="M84 152c62-122 282-122 344 0-108-95-236-95-344 0" />

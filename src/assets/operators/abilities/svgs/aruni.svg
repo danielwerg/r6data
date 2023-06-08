@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__ability r6data__ability__aruni r6data__ability__surya_gate"
+  id="surya_gate"
 >
   <path d="" />
 </svg>

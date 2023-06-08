@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__ability r6data__ability__bandit r6data__ability__shock_wire"
+  id="shock_wire"
 >
   <path d="M99 106l17-66h22l17 66ZM357 106l17-66h22l17 66Z" />
   <path fill-rule="evenodd" d="M16 122H496V212H16ZM98 157h19v-19h20v19h19v20h-19v19h-20v-19h-19ZM356 157h58v20h-58Z" />

@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__ability r6data__ability__azami r6data__ability__kiba_barrier"
+  id="kiba_barrier"
 >
   <path d="" />
 </svg>

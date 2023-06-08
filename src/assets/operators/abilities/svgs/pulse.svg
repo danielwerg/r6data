@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__ability r6data__ability__pulse r6data__ability__heartbeat_sensor"
+  id="heartbeat_sensor"
 >
   <path fill-rule="evenodd" d="M16 63q0-25 25-25H408V320q0 45 45 45H496V425H16ZM52 86q0-12 12-12h296q12 0 12 12v260q0 12-12 12h-296q-12 0-12-12Z" />
   <path d="M424 38H466l30 30V349H449q-25 0-25-25Z" />

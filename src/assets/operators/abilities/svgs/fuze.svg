@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__ability r6data__ability__fuze r6data__ability__cluster_charge"
+  id="cluster_charge"
 >
   <path d="" />
 </svg>
