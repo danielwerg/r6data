@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="#ffffff"
   stroke="none"
+  class="r6data__action r6data__action__reinforcement"
+  id="reinforcement"
 >
   <path d="M82 26l39 39-15 15-5-5 10-10-34-34Z" />
   <path d="M96 90l-11 11 38 36-16 16-5-5 11-11-38-36 16-16Z" />

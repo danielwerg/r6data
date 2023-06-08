@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="#ffffff"
   stroke="none"
+  class="r6data__action r6data__action__drone"
+  id="drone"
 >
   <path d="M65 78H135V122H65ZM100 118a1 1 0 000-35 1 1 0 000 35M120 90a1 1 0 000-8 1 1 0 000 8" />
   <ellipse cx="98" cy="94" rx="3" />

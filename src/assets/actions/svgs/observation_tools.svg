@@ -5,6 +5,8 @@
   viewBox="0 0 200 200"
   fill="#ffffff"
   stroke="none"
+  class="r6data__action r6data__action__observation_tools"
+  id="observation_tools"
 >
   <path d="M123 43q7 0 7 7V72c0 10-1 17 5 13l40-25c5-3 10 0 10 5V132c0 7-5 7-10 5l-40-25c-6-4-5 3-5 13V151q0 7-7 7H23q-7 0-7-7V49q0-7 7-7ZM43 55q-5 0-5 5V80q0 5 5 5H103q5 1 5-5V60q0-5-5-5Z" />
 </svg>
