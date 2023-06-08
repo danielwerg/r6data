@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__ability r6data__ability__iana r6data__ability__gemini_replicator"
+  id="gemini_replicator"
 >
   <path d="" />
 </svg>
