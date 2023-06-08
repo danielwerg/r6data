@@ -6,6 +6,8 @@
   viewBox="0 0 200 200"
   fill="#ffffff"
   stroke="none"
+  class="r6data__action r6data__action__barricade"
+  id="barricade"
 >
   <path
     d="M15 21 182 6 185 40 15 46ZM26 41a1 1 0 000-7 1 1 0 000 7M175 28a1 1 0 000-7 1 1 0 000 7"

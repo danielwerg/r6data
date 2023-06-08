@@ -6,6 +6,8 @@
   viewBox="0 0 200 200"
   fill="#ffffff"
   stroke="none"
+  class="r6data__action r6data__action__rappel"
+  id="rappel"
 >
   <path
     d="M115 10H121L112 61Q111 71 104 79L68 131C57 150 70 168 67 190H61C64 168 52 145 61 130L104 69Z"
