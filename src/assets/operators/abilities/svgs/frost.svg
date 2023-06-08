@@ -5,7 +5,7 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
-  class="r6data__ability r6data__ability__frost r6data__ability__welcome_mat"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__frost r6data__operator__ability__welcome_mat"
   id="welcome_mat"
 >
   <path d="" />

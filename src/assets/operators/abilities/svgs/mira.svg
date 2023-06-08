@@ -5,7 +5,7 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
-  class="r6data__ability r6data__ability__mira r6data__ability__black_mirror"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__mira r6data__operator__ability__black_mirror"
   id="black_mirror"
 >
   <path d="" />

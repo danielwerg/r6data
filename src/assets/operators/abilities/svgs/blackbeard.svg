@@ -5,7 +5,7 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
-  class="r6data__ability r6data__ability__blackbeard r6data__ability__rifle_shield"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__blackbeard r6data__operator__ability__rifle_shield"
   id="rifle_shield"
 >
   <path d="" />

@@ -5,7 +5,7 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
-  class="r6data__ability r6data__ability__maverick r6data__ability__breaching_torch"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__maverick r6data__operator__ability__breaching_torch"
   id="breaching_torch"
 >
   <path d="" />

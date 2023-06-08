@@ -5,7 +5,7 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
-  class="r6data__ability r6data__ability__twitch r6data__ability__shock_drones"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__twitch r6data__operator__ability__shock_drones"
   id="shock_drones"
 >
   <path d="" />

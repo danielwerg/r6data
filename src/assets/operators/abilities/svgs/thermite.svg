@@ -5,7 +5,7 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
-  class="r6data__ability r6data__ability__thermite r6data__ability__exothermic_charge"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__thermite r6data__operator__ability__exothermic_charge"
   id="exothermic_charge"
 >
   <path d="" />

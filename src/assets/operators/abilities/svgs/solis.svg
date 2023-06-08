@@ -5,7 +5,7 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
-  class="r6data__ability r6data__ability__solis r6data__ability__spec-io_electro-sensor"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__solis r6data__operator__ability__spec-io_electro-sensor"
   id="spec-io_electro-sensor"
 >
   <path d="" />
