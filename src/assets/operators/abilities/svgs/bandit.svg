@@ -6,5 +6,7 @@
   fill="#ffffff"
   stroke="none"
 >
-  <path d="" />
+  <path d="M99 106l17-66h22l17 66ZM357 106l17-66h22l17 66Z" />
+  <path fill-rule="evenodd" d="M16 122H496V212H16ZM98 157h19v-19h20v19h19v20h-19v19h-20v-19h-19ZM356 157h58v20h-58Z" />
+  <path fill-rule="evenodd" d="M49 238H463V472H48ZM324 252 275 334 307 385 182 460 231 372 204 322ZM99 106l17-66h22l17 66ZM357 106l17-66h22l17 66Z" />
 </svg>
