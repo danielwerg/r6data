@@ -8,5 +8,14 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__blitz r6data__operator__ability__flash_shield"
   id="flash_shield"
 >
-  <path d="" />
+  <path id="top-left" d="M78 42l171-26-4 42-122 22Z" />
+  <use href="#top-left" transform="translate(512) scale(-1 1)" />
+  <path d="M85 98 129 160V218L85 231Z" />
+  <path d="M427 110V221L385 212V167Z" />
+  <path d="M85 262 128 273V332L85 388Z" />
+  <path d="M427 268V406L384 347V277Z" />
+  <path d="M105 436 141 406 240 449 250 496Z" />
+  <path d="M428 429l-36-30L273 449l-11 47z" />
+  <path d="M190 207Q156 150 130 115 163 142 217 178L238 167 256 104 274 165 304 175Q389 112 411 93 392 113 328 196L344 230Q406 243 427 245 406 247 344 260L327 298 354 346 302 318 274 328 257 383 241 325 219 316Q124 390 97 413 119 386 190 283L183 266 117 246 184 223M453 177V458" />
+  <path d="M180 246a1 1 0 00166 0 1 1 0 00-166 0" />
 </svg>
