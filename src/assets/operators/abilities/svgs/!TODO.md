@@ -11,10 +11,7 @@ sledge
 thatcher
 ash
 twitch
-montagne
-glaz
 fuze
-iq
 frost
 buck
 valkyrie

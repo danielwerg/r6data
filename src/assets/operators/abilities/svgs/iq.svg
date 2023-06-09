@@ -8,5 +8,11 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__iq r6data__operator__ability__electronics_detector"
   id="electronics_detector"
 >
-  <path d="" />
+  <path id="top" d="M38 197V97q0-16 16-16H458q16 0 16 16V194L452 175V103H60V180Z" />
+  <use href="#top" transform="rotate(180 256 256)" />
+  <path fill-rule="evenodd" d="M16 256C171 94 341 94 496 256 341 418 171 418 16 256M153 256a1 1 0 00206 0 1 1 0 00-206 0" />
+  <path d="M241 347v-77l-23-24 9-8 26 27v82c0 8-12 8-12 0m18 0v-138h12v104l25-25 7 7-32 32v20c0 8-12 8-12 0" />
+  <path fill-rule="evenodd" d="M192 229a1 1 0 0038 0 1 1 0 00-38 0m11 0a1 1 0 0016 0 1 1 0 00-16 0" />
+  <path fill-rule="evenodd" d="M246 196a1 1 0 0038 0 1 1 0 00-38 0m11 0a1 1 0 0016 0 1 1 0 00-16 0" />
+  <path fill-rule="evenodd" d="M290 284a1 1 0 0038 0 1 1 0 00-38 0m11 0a1 1 0 0016 0 1 1 0 00-16 0" />
 </svg>
