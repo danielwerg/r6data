@@ -10,12 +10,10 @@ M0 512H512V0H0ZM16 16H496V496H16Z
 sledge
 thatcher
 ash
-thermite
 twitch
 montagne
 glaz
 fuze
-blitz
 iq
 frost
 buck
