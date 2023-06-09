@@ -8,5 +8,6 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__montagne r6data__operator__ability__extendable_shield"
   id="extendable_shield"
 >
-  <path d="" />
+  <path fill-rule="evenodd" d="M142 159V52c0-14 22-36 36-36H340c14 1 30 22 30 36V158ZM176 70h160v62h-160Z" />
+  <path d="M84 175H428V415C428 460 322 475 256 496 190 475 84 460 84 415Z" />
 </svg>
