@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-The F-Natt Dread Mine is a throwable device that sticks to walls, so it can be hidden in places where fear can fester. Fenrir comes equipped with 5 mines and can activate 3 at a time anywhere on the map.
+The F-Natt Dread Mine is a throwable device that sticks to surfaces, so it can be hidden in places where fear can fester. Fenrir comes equipped with 5 mines and can activate 3 at a time anywhere on the map.
 
 ### Strategies/Synergies
 
