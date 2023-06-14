@@ -8,5 +8,30 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__fuze r6data__operator__ability__cluster_charge"
   id="cluster_charge"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <g id="leg-mask">
+        <path fill="black" d="M135 153a1 1 0 0013-14 1 1 0 00-13 14" />
+        <path fill="black" d="M148 168q13-3 15-16l64 60L206 234l-58-66" />
+      </g>
+      <use href="#leg-mask" transform="rotate(90 258 264)" />
+      <use href="#leg-mask" transform="rotate(180 258 264)" />
+      <use href="#leg-mask" transform="rotate(270 258 264)" />
+    </mask>
+  </defs>
+  <path fill-rule="evenodd" mask="url(#mask)" d="M129 262a1 1 0 00264 0 1 1 0 00-264 0m68 0a1 1 0 00128 0 1 1 0 00-128 0m10 0a1 1 0 00108 0 1 1 0 00-108 0m16 0a1 1 0 0076 0 1 1 0 00-76 0" />
+  <g id="leg">
+    <path mask="url(#mask)" d="M128 160a1 1 0 0027-28 1 1 0 00-27 28" />
+    <path mask="url(#mask)" d="M155 132l41 40-28 29-40-41" />
+  </g>
+  <use href="#leg" transform="rotate(90 258 264)" />
+  <use href="#leg" transform="rotate(180 258 264)" />
+  <use href="#leg" transform="rotate(270 258 264)" />
+  <path d="M167 128 188 112 197 51 243 98 255 96 291 16 302 102 322 109 353 93 360 123 342 140A150 150 0 00180 140Z" />
+  <path d="M396 170C410 193 420 234 422 255L496 291 419 305C414 324 408 342 398 359L384 346C397 326 402 310 407 291L438 281 409 270C411 242 402 213 385 181Z" />
+  <path d="M408 166l65-16-51 52Z" />
+  <path d="M341 388 349 399 360 475 308 422C265 430 210 430 169 396L178 387C224 418 292 422 341 388" />
+  <path d="M218 430 248 435 231 496Z" />
+  <path d="M132 337 119 360 16 395 87 319 28 313 93 273C91 255 93 234 98 217L52 180 122 175 134 187 101 191 122 213C111 246 110 279 121 313L83 353Z" />
 </svg>
