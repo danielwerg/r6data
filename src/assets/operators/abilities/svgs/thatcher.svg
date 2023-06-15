@@ -8,5 +8,17 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__thatcher r6data__operator__ability__emp_grenade"
   id="emp_grenade"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M16 424H433V440H16Z" />
+      <path fill="black" d="M16 456H433V472H16Z" />
+      <path fill="black" d="M16 16H496V166H16Z" />
+      <path fill="black" d="M333 181 279 270 314 332 174 415 226 317 196 263Z" />
+    </mask>
+  </defs>
+  <path d="M154 40l16-24H342l16 24Z" />
+  <path d="M138 48H154V118H138ZM170 48H201V118H170ZM217 48H248V118H217ZM264 48H295V118H264ZM311 48H342V118H311ZM358 48H374V118H358Z" />
+  <path d="M138 126H374v24H138Z" />
+  <path mask="url(#mask)" d="M81 295C81 389 154 496 256 496 358 496 431 389 431 295 431 201 358 94 256 94 154 94 81 201 81 295" />
 </svg>
