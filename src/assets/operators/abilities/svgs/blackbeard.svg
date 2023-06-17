@@ -8,5 +8,10 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__blackbeard r6data__operator__ability__rifle_shield"
   id="rifle_shield"
 >
-  <path d="" />
+  <g id="left">
+    <path d="M16 235l19-24 44-5-11 157-49-70Z" />
+    <path d="M98 196l62-75-14 284-59-23Z" />
+  </g>
+  <use href="#left" transform="translate(512) scale(-1 1)" />
+  <path fill-rule="evenodd" d="M183 104h146l14 305-41-11-12-76h-68l-12 76-41 11ZM239 176H273V192H239ZM222 200H290V216H222ZM238 232H274V247H238Z" />
 </svg>
