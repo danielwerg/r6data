@@ -8,5 +8,12 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__valkyrie r6data__operator__ability__black_eye"
   id="black_eye"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M64 256C64 209 124 126 256 126 388 126 448 209 448 256H472A1 1 0 0040 256Z" />
+    </mask>
+  </defs>
+  <path fill-rule="evenodd" d="M16 256a1 1 0 00480 0 1 1 0 00-480 0M40 256a1 1 0 00432 0 1 1 0 00-432 0" />
+  <path mask="url(#mask)" fill-rule="evenodd" d="M64 256a1 1 0 00384 0 1 1 0 00-384 0M163 346a1 1 0 00178 0 1 1 0 00-178 0M193 315a1 1 0 0048 0 1 1 0 00-48 0M343 241a1 1 0 0042 0 1 1 0 00-42 0" />
 </svg>

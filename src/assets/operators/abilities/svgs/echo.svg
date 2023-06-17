@@ -8,5 +8,48 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__echo r6data__operator__ability__yokai"
   id="yokai"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" id="mask-top-left-1" d="M70 257V220L38 133C31 114 30 108 47 91L69 69 91 47C108 30 114 31 138 40L220 70H257V257Z" />
+      <use href="#mask-top-left-1" transform="rotate(90 256 256)" />
+      <use href="#mask-top-left-1" transform="rotate(180 256 256)" />
+      <use href="#mask-top-left-1" transform="rotate(270 256 256)" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <g id="mask-2-top-left-1">
+        <path fill="black" fill-rule="evenodd" d="M102 102a1 1 0 0084 84 1 1 0 00-84-84" />
+        <path fill="black" d="M191 179  242 230l-12 12L179 191Z" />
+      </g>
+      <use href="#mask-2-top-left-1" transform="rotate(90 256 256)" />
+      <use href="#mask-2-top-left-1" transform="rotate(180 256 256)" />
+      <use href="#mask-2-top-left-1" transform="rotate(270 256 256)" />
+      <path fill="black" d="M229 229h54v54h-54Z" />
+    </mask>
+    <mask id="mask-3">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M99 126 104 104 126 99 144 144Z" />
+    </mask>
+  </defs>
+  <g mask="url(#mask-1)">
+    <path id="top-left-1" d="M58 257V220L26 133C18 111 19 103 37 85L61 61 85 37C103 19 111 18 138 28L220 58H257V257Z" />
+    <use href="#top-left-1" transform="rotate(90 256 256)" />
+    <use href="#top-left-1" transform="rotate(180 256 256)" />
+    <use href="#top-left-1" transform="rotate(270 256 256)" />
+  </g>
+  <g mask="url(#mask-2)">
+    <path id="top-left-2" d="M90 257V220l-39-105 32-32 32-32 105 39h37V257Z" />
+    <use href="#top-left-2" transform="rotate(90 256 256)" />
+    <use href="#top-left-2" transform="rotate(180 256 256)" />
+    <use href="#top-left-2" transform="rotate(270 256 256)" />
+  </g>
+  <g id="top-left-3">
+    <path fill-rule="evenodd" d="M110 110a1 1 0 0068 68 1 1 0 00-68-68M116 116a1 1 0 0056 56 1 1 0 00-56-56" />
+    <path id="triangle" d="M129 106 144 144 106 129 112 112Z" />
+    <use href="#triangle" transform="rotate(180 144 144)" />
+  </g>
+  <use href="#top-left-3" transform="rotate(90 256 256)" />
+  <use href="#top-left-3" transform="rotate(180 256 256)" />
+  <use href="#top-left-3" transform="rotate(270 256 256)" />
 </svg>

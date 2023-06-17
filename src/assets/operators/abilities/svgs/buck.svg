@@ -8,5 +8,22 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__buck r6data__operator__ability__skeleton_key"
   id="skeleton_key"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M190 380V197h0 132v183Z" />
+    </mask>
+  </defs>
+  <g mask="url(#mask)">
+    <path d="M126 246a1 1 0 00260 0 1 1 0 00-260 0" />
+    <path d="M190 358 155 327 92 340 135 292 132 281H16L127 243 128 229 110 207 137 196 142 185 77 115 162 157 220 122 227 56 255 117 267 117 299 61 302 125 341 149 439 90 365 176 371 187 406 182 378 208 381 281 434 326 364 316 361 320 427 407 337 347l9 47-24-14Z" />
+  </g>
+  <path d="M144 107l-32-52 55 36Z" />
+  <path d="M402 235l94 23-96 12Z" />
+  <path d="M206 213h16v167h-16Z" />
+  <path d="M230 213h22v167h-22Z" />
+  <path d="M260 213h22v167h-22Z" />
+  <path d="M290 213h16v167h-16Z" />
+  <path d="M207 389h100v40h-100Z" />
+  <path d="M195 436h122v24h-122Z" />
 </svg>
