@@ -11,11 +11,18 @@
   <defs>
     <mask id="mask">
       <rect fill="white" x="0" y="0" width="512" height="512" />
-      <path fill="black" fill-rule="evenodd" d="M181 256a1 1 0 00150 0 1 1 0 00-150 0M226 256a1 1 0 0060 0 1 1 0 00-60 0" />
+      <path
+        fill="black"
+        fill-rule="evenodd"
+        d="M181 256a1 1 0 00150 0 1 1 0 00-150 0M226 256a1 1 0 0060 0 1 1 0 00-60 0"
+      />
     </mask>
   </defs>
   <g mask="url(#mask)">
-    <path id="wing" d="M185 164l-64-95Q119 66 122 64c83-54 42-51 205.873 38.203Q331 104 330.5 107.2L322 160V256H185Z" />
+    <path
+      id="wing"
+      d="M185 164l-64-95Q119 66 122 64c83-54 42-51 205.873 38.203Q331 104 330.5 107.2L322 160V256H185Z"
+    />
     <use href="#wing" transform="rotate(72 256 256)" />
     <use href="#wing" transform="rotate(144 256 256)" />
     <use href="#wing" transform="rotate(216 256 256)" />

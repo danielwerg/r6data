@@ -14,10 +14,18 @@
   <g stroke-width="0.5">
     <path d="M68 18H154M174 37V123M27 44V116M35 41V119M40 41V119" />
   </g>
-  <path fill="#000000" fill-rule="evenodd" d="M43 80A1 1 0 00179 80 1 1 0 0043 80M51 80A1 1 0 00171 80 1 1 0 0051 80" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M43 80A1 1 0 00179 80 1 1 0 0043 80M51 80A1 1 0 00171 80 1 1 0 0051 80"
+  />
   <g id="optic">
     <ellipse fill="currentColor" stroke="none" cx="111" cy="80" rx="1" />
     <ellipse stroke="currentColor" cx="111" cy="80" rx="13" />
-    <path stroke="currentColor" stroke-linecap="round" d="M98 80h5M111 67v5M124 80h-5M111 93v-5" />
+    <path
+      stroke="currentColor"
+      stroke-linecap="round"
+      d="M98 80h5M111 67v5M124 80h-5M111 93v-5"
+    />
   </g>
 </svg>

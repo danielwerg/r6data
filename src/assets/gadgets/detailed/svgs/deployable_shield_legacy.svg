@@ -21,13 +21,29 @@
   <use id="line_2.2" href="#line_2.1" transform="translate(35, 3.8)" />
   <use href="#line_2.2" transform="translate(200) scale(-1 1)" />
   <use href="#line_2.1" transform="translate(200) scale(-1 1)" />
-  <path id="dot_line_3_1.1" stroke-width="0.5" d="M29 22A1 1 0 0029 24 1 1 0 0029 22M29 36A1 1 0 0029 38 1 1 0 0029 36M29 50A1 1 0 0029 52 1 1 0 0029 50" />
-  <use id="dot_line_middle_1" href="#dot_line_3_1.1" transform="translate(71 8)" />
+  <path
+    id="dot_line_3_1.1"
+    stroke-width="0.5"
+    d="M29 22A1 1 0 0029 24 1 1 0 0029 22M29 36A1 1 0 0029 38 1 1 0 0029 36M29 50A1 1 0 0029 52 1 1 0 0029 50"
+  />
+  <use
+    id="dot_line_middle_1"
+    href="#dot_line_3_1.1"
+    transform="translate(71 8)"
+  />
   <use href="#dot_line_3_1.1" transform="translate(200) scale(-1 1)" />
-  <use id="dot_line_3_2.1" href="#dot_line_3_1.1" transform="translate(-2, 55)" />
+  <use
+    id="dot_line_3_2.1"
+    href="#dot_line_3_1.1"
+    transform="translate(-2, 55)"
+  />
   <use href="#dot_line_middle_1" transform="translate(0 55)" />
   <use href="#dot_line_3_2.1" transform="translate(200) scale(-1 1)" />
-  <path id="dot_line_4" stroke-width="0.5" d="M24 130A1 1 0 0024 132 1 1 0 0024 130M24 143A1 1 0 0024 145 1 1 0 0024 143M24 156A1 1 0 0024 158 1 1 0 0024 156M24 169A1 1 0 0024 171 1 1 0 0024 169" />
+  <path
+    id="dot_line_4"
+    stroke-width="0.5"
+    d="M24 130A1 1 0 0024 132 1 1 0 0024 130M24 143A1 1 0 0024 145 1 1 0 0024 143M24 156A1 1 0 0024 158 1 1 0 0024 156M24 169A1 1 0 0024 171 1 1 0 0024 169"
+  />
   <use href="#dot_line_4" transform="translate(76 8)" />
   <use href="#dot_line_4" transform="translate(200) scale(-1 1)" />
 </svg>

@@ -7,12 +7,18 @@
   <style>#optic { color: #0bad56 }</style>
   <path fill="#000000" d="M21 141H17V97H21" />
   <path fill="#000000" d="M139 42H165V126H143" />
-  <path fill="#000000" fill-rule="evenodd" d="M21 45Q82 0 143 45V141H21ZM32 50Q82 15 132 50V123H32Z" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M21 45Q82 0 143 45V141H21ZM32 50Q82 15 132 50V123H32Z"
+  />
   <g id="optic">
     <path fill="currentColor" stroke="none" d="M82 78l2 4h-4l2-4" />
   </g>
   <g fill="#000000">
-    <path d="M173 62H179V122C186 173 175 182 152 174L154 170C176 179 179 157 173 122" />
+    <path
+      d="M173 62H179V122C186 173 175 182 152 174L154 170C176 179 179 157 173 122"
+    />
     <path d="M32 179V141H132V179H120L128 171 115 158H49L36 171 44 179Z" />
     <path d="M32 151H24V175H32Z" />
     <path d="M17 147H24V179H17Z" />

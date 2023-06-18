@@ -6,7 +6,11 @@
 >
   <style>#optic { color: #ff0b2f }</style>
   <path fill="#000000" d="M161 70 166 75 168 99H161M39 70 34 75 32 99H39" />
-  <path fill="#000000" fill-rule="evenodd" d="M39 27 54 12H146L161 27V91L168 99V172L154 190H124V182H76V190H46L32 172V99L39 91ZM47 29 56 20H144L153 29V89L123 99H77L47 89Z" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M39 27 54 12H146L161 27V91L168 99V172L154 190H124V182H76V190H46L32 172V99L39 91ZM47 29 56 20H144L153 29V89L123 99H77L47 89Z"
+  />
   <g id="optic">
     <ellipse fill="currentColor" stroke="none" cx="100" cy="59" rx="1" />
     <path stroke="currentColor" d="M92 59h-13M108 59h13" />
@@ -22,7 +26,9 @@
     <path d="M151 101h8M155 97v8" />
     <path d="M41 147h8M45 143v8" />
     <path d="M151 147h8M155 143v8" />
-    <path d="M43 121 57 103 80 110H120L143 103 157 121V127L143 145 120 138H80L57 145 43 127Z" />
+    <path
+      d="M43 121 57 103 80 110H120L143 103 157 121V127L143 145 120 138H80L57 145 43 127Z"
+    />
     <path d="M49 122 60 108 77 114V133L59 139 49 126Z" />
     <rect x="90" y="115" width="20" height="18" />
     <path d="M151 122 140 108 123 114V133L141 139 151 126Z" />

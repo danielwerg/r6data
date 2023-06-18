@@ -4,12 +4,11 @@
   height="500"
   viewBox="0 0 500 500"
 >
-  <g
-    fill="none"
-    stroke-width="10"
-    stroke-linejoin="round"
-  >
-    <path stroke="#c8c8c8" d="M391 111c5.5 0 10 4.5 10 10v22c0 5.5-4.5 10-10 10h-282c-5.5 0-10-4.5-10-10v-22c0-5.5 4.5-10 10-10z" />
+  <g fill="none" stroke-width="10" stroke-linejoin="round">
+    <path
+      stroke="#c8c8c8"
+      d="M391 111c5.5 0 10 4.5 10 10v22c0 5.5-4.5 10-10 10h-282c-5.5 0-10-4.5-10-10v-22c0-5.5 4.5-10 10-10z"
+    />
     <path stroke="#231F20" opacity="0.25" d="M206 111H294" />
     <g stroke="#ffffff">
       <path d="M250 110l-52-49 23-30h58l23 30Z" />
@@ -23,25 +22,55 @@
     </clipPath>
     <path id="line1" d="M175 434l30 20M325 434l-30 20" />
     <use href="#line1" stroke="#c8c8c8" />
-    <use href="#line1" stroke="#000000" opacity="0.25" clip-path="url(#shadow-clip-1)" />
+    <use
+      href="#line1"
+      stroke="#000000"
+      opacity="0.25"
+      clip-path="url(#shadow-clip-1)"
+    />
     <clipPath id="shadow-clip-2">
       <path d="M128 378l92 51-30 7L128 401ZM372 378l-92 51 30 7L372 401Z" />
     </clipPath>
     <path id="path-1" d="M384 145v308l-134-31-134 31v-308Z" />
     <use href="#path-1" fill="#0cbf9d" />
-    <use href="#path-1" clip-path="url(#shadow-clip-2)" fill="#000000" opacity="0.25" />
-    <path fill="#231F20" opacity="0.25" d="M128 202v10h-12v-10zM384 202v10h-12v-10z" />
+    <use
+      href="#path-1"
+      clip-path="url(#shadow-clip-2)"
+      fill="#000000"
+      opacity="0.25"
+    />
+    <path
+      fill="#231F20"
+      opacity="0.25"
+      d="M128 202v10h-12v-10zM384 202v10h-12v-10z"
+    />
     <path id="path-2" d="M372 144v236l-122 71-122-71v-236Z" />
     <use href="#path-2" fill="#79bbae" />
     <path fill="#64998f" d="M372 144v38h-244v-38Z" />
-    <path fill="#79bbae" opacity="0.25" d="M128 144h16v38h-16ZM356 144h16v38h-16Z" />
+    <path
+      fill="#79bbae"
+      opacity="0.25"
+      d="M128 144h16v38h-16ZM356 144h16v38h-16Z"
+    />
     <clipPath id="shadow-clip-3">
-      <path d="M140 182l10-6 10 6v220h-20ZM190 167l10-6 10 6v265h-20ZM240 167l10-6 10 6v290h-20ZM291 167l10-6 10 6v265h-20ZM341 182l10-6 10 6v220h-20Z" />
+      <path
+        d="M140 182l10-6 10 6v220h-20ZM190 167l10-6 10 6v265h-20ZM240 167l10-6 10 6v290h-20ZM291 167l10-6 10 6v265h-20ZM341 182l10-6 10 6v220h-20Z"
+      />
     </clipPath>
     <use href="#path-2" clip-path="url(#shadow-clip-3)" fill="#aad9d1" />
-    <path stroke="#231F20" opacity="0.25" d="M178 197h-8q-6 0-6-6v-26q0-12 12-12h148q12 0 12 12v26q0 6-6 6h-8" />
-    <path stroke="#ffffff" d="M178 176h-8q-6 0-6-6V144q0-12 12-12H324q12 0 12 12V170q0 6-6 6h-8" />
-    <path stroke="#c8c8c8" d="M193 446l12 8v-28l33-18Q250 404.5 262 408L295 426v28l12-8" />
+    <path
+      stroke="#231F20"
+      opacity="0.25"
+      d="M178 197h-8q-6 0-6-6v-26q0-12 12-12h148q12 0 12 12v26q0 6-6 6h-8"
+    />
+    <path
+      stroke="#ffffff"
+      d="M178 176h-8q-6 0-6-6V144q0-12 12-12H324q12 0 12 12V170q0 6-6 6h-8"
+    />
+    <path
+      stroke="#c8c8c8"
+      d="M193 446l12 8v-28l33-18Q250 404.5 262 408L295 426v28l12-8"
+    />
     <path fill="#ffffff" d="M128 380 250 455 372 380 250 451Z" />
     <g>
       <path fill="#231F20" opacity="0.25" d="M126 270l124-73 124 73-124-63Z" />
@@ -62,7 +91,13 @@
   <g>
     <path fill="#000000" opacity="0.25" d="M317 319v91l-67 39-67-39V319Z" />
     <path fill="#000000" d="M323 144v245l-73 42-73-42V144Z" />
-    <path fill="#79bbae" d="M250 186l14 42h43l-35 25 14 42-35-25-35 25 14-42-35-25h43Z" />
-    <path fill="#ffffff" d="M211 332l39-23 39 23-9 5-30-18-30 18ZM177 312l73 42 73-42v10l-73 42-73-42Zm0 20 73 42 73-42v10l-73 42-73-42Zm0 20 73 42 73-42v10l-73 42-73-42Z" />
+    <path
+      fill="#79bbae"
+      d="M250 186l14 42h43l-35 25 14 42-35-25-35 25 14-42-35-25h43Z"
+    />
+    <path
+      fill="#ffffff"
+      d="M211 332l39-23 39 23-9 5-30-18-30 18ZM177 312l73 42 73-42v10l-73 42-73-42Zm0 20 73 42 73-42v10l-73 42-73-42Zm0 20 73 42 73-42v10l-73 42-73-42Z"
+    />
   </g>
 </svg>

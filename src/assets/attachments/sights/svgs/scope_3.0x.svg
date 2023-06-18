@@ -11,18 +11,50 @@
     <path d="M124 160V180H72V160Z" />
     <path d="M46 138H20Q17 138 17 135V69Q17 66 20 66H46Z" />
   </g>
-  <path fill="#000000" fill-rule="evenodd" d="M34 102A1 1 0 00162 102 1 1 0 0034 102M50 102a1 1 0 0096 0 1 1 0 00-96 0" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M34 102A1 1 0 00162 102 1 1 0 0034 102M50 102a1 1 0 0096 0 1 1 0 00-96 0"
+  />
   <g id="optic">
-    <rect fill="currentColor" stroke="none" x="97.75" y="101.75" width="0.5" height="0.5" />
-    <path stroke="#00000054" stroke-width="0.5" d="M95 102h2.75M98 99v2.75M101 102h-2.75M98 105v-2.75" />
-    <path stroke="#000000A8" stroke-width="0.75" d="M92 102h2M98 96v2M104 102h-2M98 108v-2" />
+    <rect
+      fill="currentColor"
+      stroke="none"
+      x="97.75"
+      y="101.75"
+      width="0.5"
+      height="0.5"
+    />
+    <path
+      stroke="#00000054"
+      stroke-width="0.5"
+      d="M95 102h2.75M98 99v2.75M101 102h-2.75M98 105v-2.75"
+    />
+    <path
+      stroke="#000000A8"
+      stroke-width="0.75"
+      d="M92 102h2M98 96v2M104 102h-2M98 108v-2"
+    />
     <path stroke="#000000" d="M98 91v4" />
     <path stroke="#000000A8" d="M87 102h4M109 102h-4" />
-    <path stroke="#000000" stroke-width="0.75" d="M98 131v-22M96 119h4M95 113h6M94 109h8" />
-    <path stroke="#000000" stroke-width="0.75" d="M88 108A10.5 10.5 0 0188 96M92 92A10.5 10.5 0 01104 92M108 96A10.5 10.5 0 01108 108" />
+    <path
+      stroke="#000000"
+      stroke-width="0.75"
+      d="M98 131v-22M96 119h4M95 113h6M94 109h8"
+    />
+    <path
+      stroke="#000000"
+      stroke-width="0.75"
+      d="M88 108A10.5 10.5 0 0188 96M92 92A10.5 10.5 0 01104 92M108 96A10.5 10.5 0 01108 108"
+    />
     <path stroke="#000000" d="M69 102h17M98 73v17M127 102h-17" />
     <path stroke="#000000A8" d="M61 102h5M98 65v5M135 102h-5M98 139v-5" />
-    <path stroke="#00000054" stroke-width="2.5" stroke-linecap="round" d="M62 99a38 38 0 0133-33M101 66a38 38 0 0133 33M134 105a38 38 0 01-33 33M95 138a38 38 0 01-33-33" />
+    <path
+      stroke="#00000054"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      d="M62 99a38 38 0 0133-33M101 66a38 38 0 0133 33M134 105a38 38 0 01-33 33M95 138a38 38 0 01-33-33"
+    />
     <path stroke="#00000054" d="M55 102h2M98 59v2M141 102h-2M98 145v-2" />
   </g>
   <path stroke-width="0.5" d="M61 23H135M178 66V138M20 138V66M32 138V66" />

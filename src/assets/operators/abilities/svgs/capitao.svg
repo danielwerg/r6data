@@ -16,7 +16,9 @@
   </defs>
   <g id="left-wing">
     <path mask="url(#mask-1)" d="M208 238h20v234h-20Z" />
-    <path d="M228 238v20C160 257 114 271 52 310L228 375v20L16 317C44 293 110 234 228 238" />
+    <path
+      d="M228 238v20C160 257 114 271 52 310L228 375v20L16 317C44 293 110 234 228 238"
+    />
   </g>
   <use href="#left-wing" transform="translate(512) scale(-1 1)" />
   <path d="M172 223 256 16 340 223 256 171Z" />

@@ -5,7 +5,11 @@
   stroke="#ffffff"
 >
   <style>#optic { color: #ff0b2f }</style>
-  <path fill="#000000" fill-rule="evenodd" d="M41 65A59.151 59.15 0 01159 65V185Q159 190 154 190H46Q41 190 41 185ZM51 75A1 1 0 00149 75 1 1 0 0051 75" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M41 65A59.151 59.15 0 01159 65V185Q159 190 154 190H46Q41 190 41 185ZM51 75A1 1 0 00149 75 1 1 0 0051 75"
+  />
   <g id="optic">
     <ellipse fill="currentColor" stroke="none" cx="100" cy="75" rx="1" />
     <ellipse stroke="currentColor" cx="100" cy="75" rx="11" />
@@ -13,7 +17,9 @@
   </g>
   <path d="M41 140Q41 135 46 135H154Q159 135 159 140" />
   <g stroke-width="0.5">
-    <path d="M55 135Q55 131 59 131H93Q97 131 97 135M103 135Q103 131 107 131H141Q145 131 145 135" />
+    <path
+      d="M55 135Q55 131 59 131H93Q97 131 97 135M103 135Q103 131 107 131H141Q145 131 145 135"
+    />
     <path d="M55 190V145H55 97V190M103 190V145H145V190" />
   </g>
 </svg>

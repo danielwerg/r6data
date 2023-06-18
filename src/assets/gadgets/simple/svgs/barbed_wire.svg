@@ -8,16 +8,32 @@
 >
   <defs>
     <clipPath id="cut">
-      <path d="M491 256A1 1 0 0056 256 1 1 0 00491 256M208 256a1 1 90 01249 0 1 1 90 01-249 0" />
+      <path
+        d="M491 256A1 1 0 0056 256 1 1 0 00491 256M208 256a1 1 90 01249 0 1 1 90 01-249 0"
+      />
     </clipPath>
   </defs>
-  <path fill-rule="evenodd" clip-path="url(#cut)" d="M56 256a1 1 0 00226 0 1 1 0 00-226 0m16 0a1 1 0 00194 0 1 1 0 00-194 0" />
-  <path fill-rule="evenodd" d="M220 256a1 1 0 00226 0 1 1 0 00-226 0m16 0a1 1 0 00194 0 1 1 0 00-194 0" />
-  <path id="spike" d="M206 157 209 132 213 152 224 141 216 162 213 183 209 168 197 175Z" />
+  <path
+    fill-rule="evenodd"
+    clip-path="url(#cut)"
+    d="M56 256a1 1 0 00226 0 1 1 0 00-226 0m16 0a1 1 0 00194 0 1 1 0 00-194 0"
+  />
+  <path
+    fill-rule="evenodd"
+    d="M220 256a1 1 0 00226 0 1 1 0 00-226 0m16 0a1 1 0 00194 0 1 1 0 00-194 0"
+  />
+  <path
+    id="spike"
+    d="M206 157 209 132 213 152 224 141 216 162 213 183 209 168 197 175Z"
+  />
   <use href="#spike" transform="rotate(144 169 256)" />
   <use href="#spike" transform="rotate(216 169 256)" />
   <use href="#spike" transform="rotate(288 169 256)" />
-  <use id="spike-2" href="#spike" transform="rotate(45 333 256) translate(165)" />
+  <use
+    id="spike-2"
+    href="#spike"
+    transform="rotate(45 333 256) translate(165)"
+  />
   <use href="#spike-2" transform="rotate(72 333 256)" />
   <use href="#spike-2" transform="rotate(144 333 256)" />
   <use href="#spike-2" transform="rotate(216 333 256)" />

@@ -6,7 +6,10 @@
   fill="none"
   stroke="#ffffff"
 >
-  <path fill="#000000" d="M55 13H145V30C144 41 128 38 130 55Q136 113 129 170l2 2v12Q100 192 69 184V172L71 170Q66 113 70 55C72 38 56 41 55 30Z" />
+  <path
+    fill="#000000"
+    d="M55 13H145V30C144 41 128 38 130 55Q136 113 129 170l2 2v12Q100 192 69 184V172L71 170Q66 113 70 55C72 38 56 41 55 30Z"
+  />
   <path d="M55 30Q100 36 145 30M100 58V173M71 170Q100 177 129 170" />
   <g stroke-width="0.5">
     <line x1="72" y1="58" x2="128" y2="58" />
@@ -32,6 +35,14 @@
     <line x1="72" y1="158" x2="128" y2="158" />
     <line x1="72" y1="163" x2="128" y2="163" />
   </g>
-  <rect fill="#ffffff" stroke="none" x="98" y="21" width="4" height="4" transform="rotate(45 100 23)" />
+  <rect
+    fill="#ffffff"
+    stroke="none"
+    x="98"
+    y="21"
+    width="4"
+    height="4"
+    transform="rotate(45 100 23)"
+  />
   <path d="M100 17 105 20 105 26 100 29 95 26 95 20 100 17Z" />
 </svg>
