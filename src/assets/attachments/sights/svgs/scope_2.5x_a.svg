@@ -8,24 +8,41 @@
 >
   <style>#optic { color: #ff0b2f }</style>
   <defs>
-    <linearGradient id="gradient" gradientTransform="rotate(90)" >
+    <linearGradient id="gradient" gradientTransform="rotate(90)">
       <stop id="optic" offset="30%" stop-color="currentColor" />
       <stop offset="50%" stop-color="#000000" />
     </linearGradient>
     <mask id="mask">
       <path d="M93 108l2-3 2 3" />
-      <path stroke-width="0.5" d="M95 142v-33.5M94 142h2M94 126h2M94 120h2M93.5 115h3M93 111h4" />
-      <path stroke-width="0.2" d="M98.4 111.4h-.85l.65-1 0 1.3M98.35 119.5c0-.5-1-.5-1 .2v.55a.5.5 0 001 0 .5.5 0 00-1 0" />
+      <path
+        stroke-width="0.5"
+        d="M95 142v-33.5M94 142h2M94 126h2M94 120h2M93.5 115h3M93 111h4"
+      />
+      <path
+        stroke-width="0.2"
+        d="M98.4 111.4h-.85l.65-1 0 1.3M98.35 119.5c0-.5-1-.5-1 .2v.55a.5.5 0 001 0 .5.5 0 00-1 0"
+      />
     </mask>
   </defs>
-  <g fill="#000000" >
+  <g fill="#000000">
     <path d="M80 32V28H110V32" />
     <path d="M167 81H186V144H166" />
   </g>
-  <path fill="#000000" fill-rule="evenodd" d="M63 53V37Q63 32 68 32V32H122Q127 32 127 37V53H150Q160 53 160 63V76C185 86 185 139 160 149V162Q160 172 150 172H40Q30 172 30 162V149C8 139 8 86 30 76V63Q30 53 40 53ZM50 105A1 1 0 00140 105 1 1 0 0050 105" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M63 53V37Q63 32 68 32V32H122Q127 32 127 37V53H150Q160 53 160 63V76C185 86 185 139 160 149V162Q160 172 150 172H40Q30 172 30 162V149C8 139 8 86 30 76V63Q30 53 40 53ZM50 105A1 1 0 00140 105 1 1 0 0050 105"
+  />
   <path d="M43 105A1 1 0 00147 105 1 1 0 0043 105" />
   <g id="optic">
-    <rect fill="url(#gradient)" mask="url(#mask)" x="92" y="103.5" width="7" height="40" />
+    <rect
+      fill="url(#gradient)"
+      mask="url(#mask)"
+      x="92"
+      y="103.5"
+      width="7"
+      height="40"
+    />
   </g>
   <g stroke-width="0.5">
     <ellipse cx="41" cy="64" rx="8" />

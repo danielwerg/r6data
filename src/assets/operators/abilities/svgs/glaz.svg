@@ -18,14 +18,27 @@
     </mask>
   </defs>
   <g mask="url(#mask)">
-    <path fill-rule="evenodd" d="M130 256a1 1 0 00252 0 1 1 0 00-252 0M146 256a1 1 0 00220 0 1 1 0 00-220 0" />
+    <path
+      fill-rule="evenodd"
+      d="M130 256a1 1 0 00252 0 1 1 0 00-252 0M146 256a1 1 0 00220 0 1 1 0 00-220 0"
+    />
     <path d="M183 198a1 1 0 0024 0 1 1 0 00-24 0" />
-    <path fill-rule="evenodd" d="M211 256a1 1 0 0090 0 1 1 0 00-90 0M231 256a1 1 0 0050 0 1 1 0 00-50 0" />
-    <path id="top" fill-rule="evenodd" d="M238 53h36v132H264V212H248V185h-10Z" />
+    <path
+      fill-rule="evenodd"
+      d="M211 256a1 1 0 0090 0 1 1 0 00-90 0M231 256a1 1 0 0050 0 1 1 0 00-50 0"
+    />
+    <path
+      id="top"
+      fill-rule="evenodd"
+      d="M238 53h36v132H264V212H248V185h-10Z"
+    />
     <use href="#top" transform="rotate(90 256 256)" />
     <use href="#top" transform="rotate(180 256 256)" />
     <use href="#top" transform="rotate(270 256 256)" />
-    <path id="left" d="M16 256C51 218 113 175 147 165 104 225 104 287 147 347 113 337 51 294 16 256" />
+    <path
+      id="left"
+      d="M16 256C51 218 113 175 147 165 104 225 104 287 147 347 113 337 51 294 16 256"
+    />
     <use href="#left" transform="rotate(180 256 256)" />
   </g>
 </svg>

@@ -8,9 +8,14 @@
   class="r6data__action r6data__action__drone"
   id="drone"
 >
-  <path d="M65 78H135V122H65ZM100 118a1 1 0 000-35 1 1 0 000 35M120 90a1 1 0 000-8 1 1 0 000 8" />
+  <path
+    d="M65 78H135V122H65ZM100 118a1 1 0 000-35 1 1 0 000 35M120 90a1 1 0 000-8 1 1 0 000 8"
+  />
   <ellipse cx="98" cy="94" rx="3" />
   <path d="M49 78h10v44h-10ZM141 78h10v44h-10Z" />
-  <path id="wheel" d="M12 77q2-11 14-7ZM36 73q4-1 6 3v3l-30 14v-8ZM42 86v9l-30 14v-8ZM42 102v9l-30 14v-8ZM19 130 42 119V124Q41 129 36 130Z" />
+  <path
+    id="wheel"
+    d="M12 77q2-11 14-7ZM36 73q4-1 6 3v3l-30 14v-8ZM42 86v9l-30 14v-8ZM42 102v9l-30 14v-8ZM19 130 42 119V124Q41 129 36 130Z"
+  />
   <use href="#wheel" transform="translate(200) scale(-1, 1)" />
 </svg>

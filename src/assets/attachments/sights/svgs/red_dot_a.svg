@@ -13,7 +13,11 @@
     <path d="M133 50H154V184H15V122H27A1 1 0 00133 68Z" />
   </g>
   <path d="M182 50V179" />
-  <path fill="#000000" fill-rule="evenodd" d="M10 96A1 1 0 00150 96 1 1 0 0010 96M30 96A1 1 0 00130 96 1 1 0 0030 96" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M10 96A1 1 0 00150 96 1 1 0 0010 96M30 96A1 1 0 00130 96 1 1 0 0030 96"
+  />
   <g id="optic">
     <ellipse fill="currentColor" stroke="none" cx="80" cy="96" rx="1" />
   </g>

@@ -7,11 +7,21 @@
   id="reflex_a"
 >
   <style>#optic { color: #0bad56 }</style>
-  <path fill="#000000" fill-rule="evenodd" d="M21 28C21 24 22 9 39 12Q100 30 161 12C178 9 179 24 179 28V115H21ZM40 60A80 80 0 01160 60V105Q160 110 155 110H45Q40 110 40 105Z" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M21 28C21 24 22 9 39 12Q100 30 161 12C178 9 179 24 179 28V115H21ZM40 60A80 80 0 01160 60V105Q160 110 155 110H45Q40 110 40 105Z"
+  />
   <g id="optic">
     <path fill="currentColor" stroke="none" d="M100 75l3 5h-6Z" />
   </g>
-  <path fill="#000000" d="M16 120Q16 115 21 115H179Q184 115 184 120V185Q184 190 179 190H21Q16 190 16 185Z" />
+  <path
+    fill="#000000"
+    d="M16 120Q16 115 21 115H179Q184 115 184 120V185Q184 190 179 190H21Q16 190 16 185Z"
+  />
   <path d="M16 162H184" />
-  <path stroke-width="0.5" d="M16 162H184M25 27V113M175 27V113M20 123V154M180 123V154" />
+  <path
+    stroke-width="0.5"
+    d="M16 162H184M25 27V113M175 27V113M20 123V154M180 123V154"
+  />
 </svg>

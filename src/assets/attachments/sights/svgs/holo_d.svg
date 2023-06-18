@@ -8,7 +8,11 @@
 >
   <style>#optic { color: #ff0b2f }</style>
   <path fill="#000000" d="M50 95V90H46V158H50" />
-  <path fill="#000000" fill-rule="evenodd" d="M50 95 61 20Q62 11 70 11H134Q142 11 143 20L154 95V163L157 176V189H47V176L50 163ZM68 31Q69 22 78 21H126Q135 22 136 31V79Q135 88 126 89H78Q69 88 68 79Z" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M50 95 61 20Q62 11 70 11H134Q142 11 143 20L154 95V163L157 176V189H47V176L50 163ZM68 31Q69 22 78 21H126Q135 22 136 31V79Q135 88 126 89H78Q69 88 68 79Z"
+  />
   <g id="optic">
     <ellipse stroke="currentColor" cx="102" cy="55" rx="6" />
     <path stroke="currentColor" d="M101 55h-4M103 55h4M102 56v4" />

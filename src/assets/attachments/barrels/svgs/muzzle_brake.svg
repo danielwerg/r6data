@@ -8,7 +8,11 @@
   class="r6data__attachment r6data__attachment__barrel r6data__attachment__barrel__muzzle_brake"
   id="muzzle_brake"
 >
-  <path fill="#000000" fill-rule="evenodd" d="M10 78Q10 75 13 75H187Q190 75 190 78V122Q190 125 187 125H13Q10 125 10 122ZM108 85Q108 82 111 82H145Q148 82 148 85V115Q148 118 145 118H111Q108 118 108 115ZM154 85Q154 82 157 82H176Q179 82 179 85V115Q179 118 176 118H157Q154 118 154 116Z" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M10 78Q10 75 13 75H187Q190 75 190 78V122Q190 125 187 125H13Q10 125 10 122ZM108 85Q108 82 111 82H145Q148 82 148 85V115Q148 118 145 118H111Q108 118 108 115ZM154 85Q154 82 157 82H176Q179 82 179 85V115Q179 118 176 118H157Q154 118 154 116Z"
+  />
   <rect fill="#000000" x="21" y="66" width="28" height="68" rx="3" />
   <path fill="#ffffff" stroke="none" d="M21 71H49V78H21Z" />
   <g stroke-width="0.5">

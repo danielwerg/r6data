@@ -6,19 +6,22 @@
   class="r6data__rank r6data__rank__v3 r6data__rank__v3__copper_4"
   id="copper_4"
 >
-  <g
-    fill="none"
-    stroke-width="10"
-    stroke-linejoin="round"
-  >
-    <path stroke="#c8c8c8" d="M391 111c5.5 0 10 4.5 10 10v22c0 5.5-4.5 10-10 10h-282c-5.5 0-10-4.5-10-10v-22c0-5.5 4.5-10 10-10z" />
+  <g fill="none" stroke-width="10" stroke-linejoin="round">
+    <path
+      stroke="#c8c8c8"
+      d="M391 111c5.5 0 10 4.5 10 10v22c0 5.5-4.5 10-10 10h-282c-5.5 0-10-4.5-10-10v-22c0-5.5 4.5-10 10-10z"
+    />
     <g stroke="#c8c8c8">
       <path d="M250 110l-28-40 28-16 28 16-28 40Z" />
     </g>
     <path fill="#910300" d="M384 145v229l-134 73-134-73V145Z" />
     <path id="path-1" d="M372 144v236l-122 71-122-71v-236Z" />
     <use href="#path-1" fill="#910300" />
-    <path fill="#bd3321" opacity="0.25" d="M128 144h16v38h-16ZM356 144h16v38h-16Z" />
+    <path
+      fill="#bd3321"
+      opacity="0.25"
+      d="M128 144h16v38h-16ZM356 144h16v38h-16Z"
+    />
     <clipPath id="shadow-clip-1">
       <path d="M128 182h16v197l31 30h-47ZM356 182h16v227h-47l31-30Z" />
     </clipPath>
@@ -28,6 +31,9 @@
   <g>
     <path fill="#000000" opacity="0.25" d="M317 319v18l-67 39-67-39v-18Z" />
     <path fill="#000000" d="M323 144v173l-73 42-73-42v-173Z" />
-    <path fill="#ffffff" d="M223 205v93h-18v-93ZM275 265l10-60h17l-17 93h-20l-17-93h17Z" />
+    <path
+      fill="#ffffff"
+      d="M223 205v93h-18v-93ZM275 265l10-60h17l-17 93h-20l-17-93h17Z"
+    />
   </g>
 </svg>

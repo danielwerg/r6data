@@ -8,14 +8,29 @@
   class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__barbed_wire"
   id="barbed_wire"
 >
-  <path fill="#000000" d="M12 101A1 1 0 00112 101 1 1 0 0012 101M18 101A1 1 0 01106 101 1 1 0 0118 101" />/
-  <path fill="#000000" d="M84 101A1 1 0 00184 101 1 1 0 0084 101M90 101A1 1 0 01178 101 1 1 0 0190 101" />
-  <path id="wire" fill="#000000" d="M14 67 24 73 29 80 28 73 35 72 28 69 21 62 24 69Z" />
+  <path
+    fill="#000000"
+    d="M12 101A1 1 0 00112 101 1 1 0 0012 101M18 101A1 1 0 01106 101 1 1 0 0118 101"
+  />
+  /
+  <path
+    fill="#000000"
+    d="M84 101A1 1 0 00184 101 1 1 0 0084 101M90 101A1 1 0 01178 101 1 1 0 0190 101"
+  />
+  <path
+    id="wire"
+    fill="#000000"
+    d="M14 67 24 73 29 80 28 73 35 72 28 69 21 62 24 69Z"
+  />
   <use href="#wire" transform="rotate(72 62 101)" />
   <use href="#wire" transform="rotate(144 62 101)" />
   <use href="#wire" transform="rotate(216 62 101)" />
   <use href="#wire" transform="rotate(288 62 101)" />
-  <use id="wire2" href="#wire" transform="translate(65 46) rotate(40 134 101)" />
+  <use
+    id="wire2"
+    href="#wire"
+    transform="translate(65 46) rotate(40 134 101)"
+  />
   <use href="#wire2" transform="rotate(72 134 101)" />
   <use href="#wire2" transform="rotate(144 134 101)" />
   <use href="#wire2" transform="rotate(216 134 101)" />

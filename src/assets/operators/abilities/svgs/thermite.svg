@@ -8,9 +8,15 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__thermite r6data__operator__ability__exothermic_charge"
   id="exothermic_charge"
 >
-  <path fill-rule="evenodd" d="M72 46l30-30H410l30 30V466l-30 30H102l-30-30ZM104 48H408V464H104Z" />
+  <path
+    fill-rule="evenodd"
+    d="M72 46l30-30H410l30 30V466l-30 30H102l-30-30ZM104 48H408V464H104Z"
+  />
   <path d="M128 72H384l-128 162Z" />
-  <path fill-rule="evenodd" d="M128 115l77 97h102l77-97v282l-77-97h-102l-77 97ZM207 236h48v20h50v20h-98ZM267 236h52v8h-52Z" />
+  <path
+    fill-rule="evenodd"
+    d="M128 115l77 97h102l77-97v282l-77-97h-102l-77 97ZM207 236h48v20h50v20h-98ZM267 236h52v8h-52Z"
+  />
   <path d="M128 440l128-162 128 162Z" />
   <path d="" />
 </svg>

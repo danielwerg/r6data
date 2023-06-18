@@ -29,8 +29,9 @@
   "prettier": "@danielwerg/prettier-config",
   "devDependencies": {
     "@danielwerg/eslint-config": "^0.1.0",
-    "@danielwerg/prettier-config": "^0.0.0",
+    "@danielwerg/prettier-config": "^1.0.0",
     "@danielwerg/tsconfig": "^0.1.0",
+    "@prettier/plugin-xml": "^2.2.0",
     "@types/node": "^20.2.5",
     "@types/sharp": "^0.32.0",
     "@typescript-eslint/eslint-plugin": "^5.59.8",

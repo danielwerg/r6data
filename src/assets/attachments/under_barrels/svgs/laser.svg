@@ -10,10 +10,22 @@
 >
   <path fill="#000000" d="M10 84H24V83H53V111H24V110H10Z" />
   <path fill="#000000" stroke-width="0.5" d="M32 78H48V116H31V114H40V80H32Z" />
-  <path fill="#000000" stroke-width="0.5" d="M84 82Q84 79 87 79H96Q99 79 99 82V112Q99 115 96 115H95V119H88V115H87Q84 115 84 113Z" />
+  <path
+    fill="#000000"
+    stroke-width="0.5"
+    d="M84 82Q84 79 87 79H96Q99 79 99 82V112Q99 115 96 115H95V119H88V115H87Q84 115 84 113Z"
+  />
   <rect fill="#000000" x="52" y="82" width="54" height="30" rx="3" />
   <rect fill="#000000" x="106" y="92" width="7" height="10" />
-  <rect fill="#000000" stroke-width="0.5" x="37" y="85" width="58" height="24" rx="3" />
+  <rect
+    fill="#000000"
+    stroke-width="0.5"
+    x="37"
+    y="85"
+    width="58"
+    height="24"
+    rx="3"
+  />
   <path stroke="#ff0b2f" d="M119 97h68" />
   <ellipse fill="#ff0b2f" stroke="none" cx="187" cy="97" rx="2.5" />
   <ellipse stroke-width="0.5" cx="23" cy="98" rx="5" />

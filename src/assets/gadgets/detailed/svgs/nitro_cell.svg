@@ -14,9 +14,18 @@
     <path d="M109 22H141V187H109Z" />
     <path d="M61 26H95V185H61Z" />
   </g>
-  <path fill="#000000" d="M59 68 143 48V70L59 89ZM59 91 143 94V117L59 114ZM59 149 143 131V153L59 171Z" />
-  <path fill="#000000" d="M126 31 127 12Q127 11 128 11L134 12Q134.54 12.11 134.5 13L133 48" />
-  <path fill="#000000" d="M123 27C136 34 134 49 132 83L129 119 126 155Q125.6 159 122 159L83 156Q78.6 156 79 152L82 113 85 79C87 46 92 30 105 25Z" />
+  <path
+    fill="#000000"
+    d="M59 68 143 48V70L59 89ZM59 91 143 94V117L59 114ZM59 149 143 131V153L59 171Z"
+  />
+  <path
+    fill="#000000"
+    d="M126 31 127 12Q127 11 128 11L134 12Q134.54 12.11 134.5 13L133 48"
+  />
+  <path
+    fill="#000000"
+    d="M123 27C136 34 134 49 132 83L129 119 126 155Q125.6 159 122 159L83 156Q78.6 156 79 152L82 113 85 79C87 46 92 30 105 25Z"
+  />
   <g stroke-width="0.5">
     <ellipse cx="106" cy="43" rx="9" />
     <ellipse cx="124" cy="45" rx="2.5" />
@@ -27,7 +36,10 @@
       <use href="#key_left" transform="translate(-0.5, 5)" />
       <use href="#key_left" transform="translate(-1, 10)" />
       <use href="#key_left" transform="translate(-1.5, 15)" />
-      <path id="key_middle" d="M102.04 116.9l8.873.721-.286 3.005-8.831-.726z" />
+      <path
+        id="key_middle"
+        d="M102.04 116.9l8.873.721-.286 3.005-8.831-.726z"
+      />
       <use href="#key_middle" transform="translate(-0.5, 5)" />
       <use href="#key_middle" transform="translate(-1, 10)" />
       <use href="#key_middle" transform="translate(-1.5, 15)" />

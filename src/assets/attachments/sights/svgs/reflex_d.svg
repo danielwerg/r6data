@@ -9,12 +9,22 @@
   <style>#optic { color: #f7fc0a }</style>
   <path fill="#000000" d="M53 184H43V166H53Z" />
   <path stroke-width="0.5" d="M53 168H43M53 172H43M53 177H43M53 181H43" />
-  <path fill="#000000" d="M157 178V184L153 187H117L125 181M53 178V184L57 187H93L85 181" />
+  <path
+    fill="#000000"
+    d="M157 178V184L153 187H117L125 181M53 178V184L57 187H93L85 181"
+  />
   <path fill="#000000" d="M70 15Q70 20 75 20H135Q140 20 140 15" />
-  <path fill="#000000" fill-rule="evenodd" d="M53 15H157V178Q157 181 154 181H56Q53 181 53 178ZM70 15H140V64A58 58 0 0170 64Z" />
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M53 15H157V178Q157 181 154 181H56Q53 181 53 178ZM70 15H140V64A58 58 0 0170 64Z"
+  />
   <g id="optic">
     <ellipse fill="currentColor" stroke="none" cx="105" cy="46" rx="1" />
-    <path stroke="currentColor" d="M100 45a5 5 0 014-4m2 0a5 5 0 014 4m0 2a5 5 0 01-4 4m-2 0a5 5 0 01-4-4" />
+    <path
+      stroke="currentColor"
+      d="M100 45a5 5 0 014-4m2 0a5 5 0 014 4m0 2a5 5 0 01-4 4m-2 0a5 5 0 01-4-4"
+    />
   </g>
   <path fill="#000000" d="M57 15V13H66V15ZM144 15V13H153V15Z" />
   <g stroke-width="0.5">

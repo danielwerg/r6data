@@ -19,7 +19,9 @@
   <ellipse cx="99.5" cy="43" rx="11" />
   <ellipse fill="#ffffff" cx="96" cy="40" rx="3.5" />
   <g id="leg" fill="#000000">
-    <path d="M50 120 84 176 83 185 77 179 47 128ZM44 120 10 176 11 185 17 179 47 128Z" />
+    <path
+      d="M50 120 84 176 83 185 77 179 47 128ZM44 120 10 176 11 185 17 179 47 128Z"
+    />
     <ellipse cx="47" cy="122" rx="6" />
   </g>
   <use href="#leg" transform="translate(104)" />

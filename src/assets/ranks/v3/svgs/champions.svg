@@ -6,24 +6,29 @@
   class="r6data__rank r6data__rank__v3 r6data__rank__v3__champions"
   id="champions"
 >
-  <g
-    fill="none"
-    stroke-width="10"
-    stroke-linejoin="round"
-  >
+  <g fill="none" stroke-width="10" stroke-linejoin="round">
     <path stroke="#dac0d2" d="M384 114l24 24-24 24H116l-24-24 24-24Z" />
-    <path stroke="#ffffff" d="M250 97H203l-16-52 34 17 29-44 29 44 34-17-16 52Z" />
+    <path
+      stroke="#ffffff"
+      d="M250 97H203l-16-52 34 17 29-44 29 44 34-17-16 52Z"
+    />
     <path stroke="#ffffff" d="M250 100V132" />
     <linearGradient id="linear-gradient-1" gradientTransform="rotate(45)">
       <stop offset="0" stop-color="#d03c9e" />
       <stop offset="1" stop-color="#d03c72" />
     </linearGradient>
-    <path stroke="url(#linear-gradient-1)" d="M384 212h48v106l-182 147-182-147v-106Z" />
+    <path
+      stroke="url(#linear-gradient-1)"
+      d="M384 212h48v106l-182 147-182-147v-106Z"
+    />
     <linearGradient id="linear-gradient-2" gradientTransform="rotate(45)">
       <stop offset="0" stop-color="#e895ce" />
       <stop offset="1" stop-color="#e895b7" />
     </linearGradient>
-    <path stroke="url(#linear-gradient-2)" d="M406 186v193l-117 95V387H211V474l-117-95V186Z" />
+    <path
+      stroke="url(#linear-gradient-2)"
+      d="M406 186v193l-117 95V387H211V474l-117-95V186Z"
+    />
     <linearGradient id="linear-gradient-3" gradientTransform="rotate(45)">
       <stop offset="0" stop-color="#cf0782" />
       <stop offset="1" stop-color="#cf0739" />
@@ -55,8 +60,14 @@
       </g>
       <use href="#stripe-1" transform="translate(500, 0) scale(-1, 1)" />
       <g id="stripe-2">
-        <path fill="url(#linear-gradient-4-rotate-45)" d="M134 228l43-23v30l-43 24Z" />
-        <path fill="url(#linear-gradient-5-rotate-45" d="M134 228l43-23v7l-43 22Z" />
+        <path
+          fill="url(#linear-gradient-4-rotate-45)"
+          d="M134 228l43-23v30l-43 24Z"
+        />
+        <path
+          fill="url(#linear-gradient-5-rotate-45"
+          d="M134 228l43-23v7l-43 22Z"
+        />
       </g>
       <use href="#stripe-2" transform="translate(0, 57)" />
       <use href="#stripe-2" transform="translate(0, 114)" />
@@ -69,15 +80,25 @@
     <path fill="#bc62a1" d="M384 145v32h-268v-32Z" />
     <clipPath id="shadow-clip-1">
       <path d="M343 145V429l-25 19h-136l-25-19V145Z" />
-      <path d="M160 175l-9 9 15 17-7 7-18-19c-3-3-3-7 0-10l18-19M341 160l18 19c3 3 3 7 0 10l-18 19-7-7 15-17-9-9" />
+      <path
+        d="M160 175l-9 9 15 17-7 7-18-19c-3-3-3-7 0-10l18-19M341 160l18 19c3 3 3 7 0 10l-18 19-7-7 15-17-9-9"
+      />
     </clipPath>
-    <use href="#path-1" clip-path="url(#shadow-clip-1)" fill="#231f20" opacity="0.5" />
+    <use
+      href="#path-1"
+      clip-path="url(#shadow-clip-1)"
+      fill="#231f20"
+      opacity="0.5"
+    />
     <path stroke="#ffffff" d="M169 181l-24-24 24-24H330l24 24-24 24Z" />
     <linearGradient id="linear-gradient-6" gradientTransform="rotate(45)">
       <stop offset="0" stop-color="#df1893" />
       <stop offset="1" stop-color="#de1857" />
     </linearGradient>
-    <path fill="url(#linear-gradient-6)" d="M323 145V415L250 476 177 415V145Z" />
+    <path
+      fill="url(#linear-gradient-6)"
+      d="M323 145V415L250 476 177 415V145Z"
+    />
     <g>
       <path fill="#f099cf" d="M301 168v11l-51 43-51-43v-11Z" />
       <path fill="#ffc4e6" d="M301 168V179l-51 43-51-43V168L250 211Z" />
@@ -92,6 +113,14 @@
   </g>
   <g class="r6data__rank__v3__champions__position-banner" id="champions__position-banner">
     <path fill="#000000" d="M116 227H384V363H116Z" />
-    <text id="position-value" fill="#ffffff" x="250" y="305" text-anchor="middle" dominant-baseline="middle"  style="font: bold 120px sans-serif"> </text>
+    <text
+      id="position-value"
+      fill="#ffffff"
+      x="250"
+      y="305"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      style="font: bold 120px sans-serif"
+    />
   </g>
 </svg>

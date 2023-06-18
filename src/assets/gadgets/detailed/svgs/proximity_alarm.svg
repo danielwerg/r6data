@@ -8,21 +8,39 @@
   class="r6data__gadget r6data__gadget__detailed r6data__gadget__detailed__proximity_alarm"
   id="proximity_alarm"
 >
-  <path fill="#000000" d="M130 36 162 18C174 11 200 58 188 65L156 83 127 135V172C127 185.9 73 185.9 73 172V135L44 83 12 65C0 58 27 11 39 18L71 36Z" />
+  <path
+    fill="#000000"
+    d="M130 36 162 18C174 11 200 58 188 65L156 83 127 135V172C127 185.9 73 185.9 73 172V135L44 83 12 65C0 58 27 11 39 18L71 36Z"
+  />
   <g stroke-width="0.5">
-    <path d="M128 42 162 22C172 17 195 57 185 62L151 82 123 130V170C123 182 77 182 77 170V130L49 82 15 62C5 57 28 17 38 22L72 42Z" />
+    <path
+      d="M128 42 162 22C172 17 195 57 185 62L151 82 123 130V170C123 182 77 182 77 170V130L49 82 15 62C5 57 28 17 38 22L72 42Z"
+    />
     <ellipse cx="100" cy="139" rx="2" />
     <ellipse cx="55" cy="59" rx="2" />
     <ellipse cx="145" cy="59" rx="2" />
     <path id="arch" d="M42 78Q45 54 65 38" />
     <use href="#arch" transform="rotate(120 100 84.8)" />
     <use href="#arch" transform="rotate(240 100 84.8)" />
-    <path id="lines" d="M44.48 66.752 14.045 49.026M45.381 64.184 14.946 46.458M53.577 49.527l-30.05-18.166M55.416 47.251l-30.05-18.166" />
+    <path
+      id="lines"
+      d="M44.48 66.752 14.045 49.026M45.381 64.184 14.946 46.458M53.577 49.527l-30.05-18.166M55.416 47.251l-30.05-18.166"
+    />
     <use href="#lines" transform="rotate(120 100 84.8)" />
     <use href="#lines" transform="rotate(240 100 84.8)" />
   </g>
-  <pattern id="dots" x="2" y="4" width="7" height="7" patternUnits="userSpaceOnUse">
+  <pattern
+    id="dots"
+    x="2"
+    y="4"
+    width="7"
+    height="7"
+    patternUnits="userSpaceOnUse"
+  >
     <circle cx="3.5" cy="3.5" r="2.5" />
   </pattern>
-  <path fill="url(#dots)" d="M124 48Q146 58 143 83L119 125Q100 141 81 125L58 85Q54 58 76 48Z" />
+  <path
+    fill="url(#dots)"
+    d="M124 48Q146 58 143 83L119 125Q100 141 81 125L58 85Q54 58 76 48Z"
+  />
 </svg>

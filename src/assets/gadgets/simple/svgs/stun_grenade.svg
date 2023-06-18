@@ -8,5 +8,8 @@
   class="r6data__gadget r6data__gadget__simple r6data__gadget__simple__stun_grenade"
   id="stun_grenade"
 >
-  <path fill-rule="evenodd" d="M115 16H276L397 161V340l-24-24V173L303 89H251l33 40h16v80h-16v212h16v75h-160v-75h16v-212h-16v-80H156l33-40ZM220 213l26 26-26 26-26-26Zm0 76 26 26-26 26-26-26Zm0 76 26 26-26 26-26-26Z" />
+  <path
+    fill-rule="evenodd"
+    d="M115 16H276L397 161V340l-24-24V173L303 89H251l33 40h16v80h-16v212h16v75h-160v-75h16v-212h-16v-80H156l33-40ZM220 213l26 26-26 26-26-26Zm0 76 26 26-26 26-26-26Zm0 76 26 26-26 26-26-26Z"
+  />
 </svg>

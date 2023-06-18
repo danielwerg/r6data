@@ -8,8 +8,15 @@
   id="charm"
 >
   <ellipse cx="50" cy="36" rx="12" />
-  <ellipse fill="none" stroke="currentColor" stroke-width="4" cx="50" cy="36" rx="18" />
-  <path d="M25 33V39Q12 39 12 50V56Q12 66 25 66H75Q88 66 88 56V50Q88 39 75 39V33Q95 33 95 50V56Q95 73 75 73H70V81Q70 84 67 84H33Q30 84 30 81V73H25Q5 73 5 56V50Q5 33 25 33Z" />
+  <ellipse
+    fill="none"
+    stroke="currentColor"
+    stroke-width="4"
+    cx="50"
+    cy="36"
+    rx="18"
+  />
+  <path
+    d="M25 33V39Q12 39 12 50V56Q12 66 25 66H75Q88 66 88 56V50Q88 39 75 39V33Q95 33 95 50V56Q95 73 75 73H70V81Q70 84 67 84H33Q30 84 30 81V73H25Q5 73 5 56V50Q5 33 25 33Z"
+  />
 </svg>
-
-
