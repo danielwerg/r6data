@@ -8,5 +8,30 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__zofia r6data__operator__ability__ks79_lifeline"
   id="ks79_lifeline"
 >
-  <path d="" />
+  <defs>
+    <g id="lifeline">
+      <path mask="url(#mask-1)" d="M23 80A1 1 0 00173 144 1 1 0 0023 80" />
+      <path
+        mask="url(#mask-2)"
+        d="M113 16 399 110C518 99 503 330 365 295 443 271 471 189 415 125 434 167 424 204 409 237L177 161V127C163 184 109 226 60 201 136 210 204 72 110 15Z"
+      />
+    </g>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M46 87A1 1 0 00196 151 1 1 0 0046 87" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        d="M253 57c51 58 32 109 11 139L241 191C262 161 281 110 230 52Z"
+      />
+    </mask>
+    <mask id="mask-3">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M300 285H471V347H300Z" />
+    </mask>
+  </defs>
+  <use href="#lifeline" mask="url(#mask-3)" />
+  <use href="#lifeline" transform="translate(15 196)" />
 </svg>

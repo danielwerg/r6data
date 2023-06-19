@@ -8,5 +8,18 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__jackal r6data__operator__ability__eyenox_model_iii"
   id="eyenox_model_iii"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M494 256A1 1 0 0018 256Z" />
+    </mask>
+  </defs>
+  <path
+    fill-rule="evenodd"
+    d="M46 256a1 1 0 00420 0 1 1 0 00-420 0M74 256a1 1 0 00364 0 1 1 0 00-364 0"
+  />
+  <path d="M46 256 37 496 285 464 114 405Z" />
+  <path mask="url(#mask)" d="M466 256l9-240-248 32 171 59Z" />
+  <path d="M233 302c4-29-30-47-30-94 0-55 26-99 56-99 77-1 78 134 45 202Z" />
+  <path d="M228 326l71 9c1 41-22 80-53 73-27-9-31-50-18-82" />
 </svg>

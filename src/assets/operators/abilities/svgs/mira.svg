@@ -8,5 +8,17 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__mira r6data__operator__ability__black_mirror"
   id="black_mirror"
 >
-  <path d="" />
+  <mask id="mask">
+    <rect fill="white" x="0" y="0" width="512" height="512" />
+    <path fill="black" d="M162 297H318V369H162Z" />
+  </mask>
+  <path
+    fill-rule="evenodd"
+    mask="url(#mask)"
+    d="M0 119H480V333H0M24 143H456V309H24Z"
+  />
+  <path fill-rule="evenodd" d="M174 305H306V361H174ZM186 317H294V349H186Z" />
+  <path d="M58 310 174 151H260L144 310Z" />
+  <path d="M199 297 305 151H359L253 297Z" />
+  <path d="M298 297 405 151H427L320 297Z" />
 </svg>
