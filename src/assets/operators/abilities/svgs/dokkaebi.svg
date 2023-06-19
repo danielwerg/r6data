@@ -8,5 +8,18 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__dokkaebi r6data__operator__ability__logic_bomb"
   id="logic_bomb"
 >
-  <path d="" />
+  <path
+    id="outer-left"
+    d="M102 64C29 174 29 284 102 394-12 284-12 174 102 64"
+  />
+  <use href="#outer-left" transform="translate(512) scale(-1 1)" />
+  <path
+    fill-rule="evenodd"
+    d="M129 64Q129 40 153 40H359Q383 40 383 64V104C447 189 447 270 383 354V448Q383 472 359 472H153Q129 472 129 448V354C65 270 65 188 129 104ZM153 64H359V134C413 197 413 262 359 324V394H153V324C99 261 99 197 153 134ZM235 434a1 1 0 0042 0 1 1 0 00-42 0M246 434a1 1 0 0020 0 1 1 0 00-20 0"
+  />
+  <path
+    id="inner-left"
+    d="M195 158C173 206 173 253 195 300 131 269 131 189 195 158"
+  />
+  <use href="#inner-left" transform="translate(512) scale(-1 1)" />
 </svg>

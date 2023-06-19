@@ -8,5 +8,37 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__lesion r6data__operator__ability__gu_mines"
   id="gu_mines"
 >
-  <path d="" />
+  <defs>
+    <path id="stick-1" d="M145 485l75-246 147-211-75 246Z" />
+    <use id="stick-2" href="#stick-1" transform="rotate(-134 256 256)" />
+    <use id="stick-3" href="#stick-1" transform="rotate(124 256 256)" />
+    <path id="stick-1-big" d="M433-106l-118 394-234 334 118-394Z" />
+    <use
+      id="stick-2-big"
+      href="#stick-1-big"
+      transform="rotate(-134 256 256)"
+    />
+    <use id="stick-3-big" href="#stick-1-big" transform="rotate(124 256 256)" />
+    <mask id="mask-1">
+      <rect fill="white" x="256" y="0" width="256" height="512" />
+      <use fill="black" href="#stick-1-big" />
+      <use fill="black" href="#stick-3-big" />
+      <rect fill="white" x="0" y="0" width="250" height="512" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <use fill="black" href="#stick-1-big" />
+      <use fill="black" href="#stick-2-big" />
+      <rect fill="white" x="0" y="250" width="512" height="512" />
+    </mask>
+  </defs>
+  <use href="#stick-1" />
+  <path
+    d="M293 135 263 102 305 118ZM353 73 393 91 348 89ZM227 367 252 397 217 381ZM164 424 133 420 169 407Z"
+  />
+  <use href="#stick-2" mask="url(#mask-1)" />
+  <path
+    d="M61 312 45 275 78 303ZM419 190 426 150 443 186ZM150 312 143 357 128 316Z"
+  />
+  <use href="#stick-3" mask="url(#mask-2)" />
 </svg>
