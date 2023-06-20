@@ -8,5 +8,31 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__lion r6data__operator__ability__ee-one-d"
   id="ee-one-d"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        id="arm-shadow"
+        fill="black"
+        d="M58 316C46 316 28 298 28 280V232C28 214 46 196 58 196"
+      />
+      <use href="#arm-shadow" transform="rotate(90 256 256)" />
+      <use href="#arm-shadow" transform="rotate(180 256 256)" />
+      <use href="#arm-shadow" transform="rotate(270 256 256)" />
+    </mask>
+  </defs>
+  <path
+    fill-rule="evenodd"
+    mask="url(#mask)"
+    d="M16 256a1 1 0 00480 0 1 1 0 00-480 0M48 256a1 1 0 00416 0 1 1 0 00-416 0"
+  />
+  <path
+    id="top-left"
+    d="M53 232q0-12 12-12H129V292H65q-12 0-12-12M220 170V65q0-12 12-12H280q12 0 12 12V170Z"
+  />
+  <use href="#top-left" transform="rotate(180 256 256)" />
+  <path
+    fill-rule="evenodd"
+    d="M102 256C114 217 196 164 256 164 316 164 398 217 410 256 398 295 316 348 256 348 195 348 114 295 102 256M191 256a1 1 0 00130 0 1 1 0 00-130 0M238 256C219 220 220 219 256 238 292 219 293 220 274 256 293 292 292 293 256 274 220 293 219 292 238 256Z"
+  />
 </svg>

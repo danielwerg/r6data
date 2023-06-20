@@ -8,5 +8,14 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__kaid r6data__operator__ability__rtila_electroclaw"
   id="rtila_electroclaw"
 >
-  <path d="" />
+  <path d="M221 16H291L295 206H217Z" />
+  <path
+    fill-rule="evenodd"
+    d="M169 218h174v231h-174ZM203 300 331 223 278 310 311 365 180 441 229 350Z"
+  />
+  <path id="arrow" d="M146 479 170 434V448H197Z" />
+  <use href="#arrow" transform="rotate(180 256 333.5)" />
+  <path id="leg" d="M16 496l38-70 97-36v44l-9 17-84 9Z" />
+  <use href="#leg" transform="translate(512) scale(-1 1)" />
+  <path d="M228 465h56l-28 31Z" />
 </svg>

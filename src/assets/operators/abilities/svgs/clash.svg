@@ -8,5 +8,13 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__clash r6data__operator__ability__cce_shield"
   id="cce_shield"
 >
-  <path d="" />
+  <path id="top-left" d="M62 168 90 85V388H90 62Z" />
+  <use href="#top-left" transform="translate(512) scale(-1 1)" />
+  <path
+    fill-rule="evenodd"
+    d="M106 50l28-34H378l28 34V388H106ZM179 147 365 36 285 162 340 252 149 366 222 229Z"
+  />
+  <path id="bottom-left" d="M90 416H118V496H90Z" />
+  <use href="#bottom-left" transform="translate(512) scale(-1 1)" />
+  <path d="M134 416H368V496H134Z" />
 </svg>
