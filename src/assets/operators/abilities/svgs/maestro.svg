@@ -8,5 +8,28 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__maestro r6data__operator__ability__evil_eye"
   id="evil_eye"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path id="left" fill="black" d="M80 69h22V392h-22Z" />
+      <use href="#left" transform="translate(512) scale(-1 1)" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M196 256a1 1 0 00116 0 1 1 0 00-116 0" />
+    </mask>
+  </defs>
+  <path
+    fill-rule="evenodd"
+    mask="url(#mask-1)"
+    d="M40 390V214C40-49 472-49 472 214V390ZM114 170C114 139 398 139 398 170V324C398 360 114 360 114 324Z"
+  />
+  <path
+    fill-rule="evenodd"
+    mask="url(#mask-2)"
+    d="M137 185C130 178 137.354 168.455 145 167 185 162 223 159 264 161L380 277V312C380 319 377 323 370 325 347 331 322 334 288 335ZM326 295a1 1 0 0026 0 1 1 0 00-26 0"
+  />
+  <path d="M217 232a1 1 0 0028 0 1 1 0 00-28 0" />
+  <path d="M40 406H472V434H40Z" />
+  <path d="M16 450H496V496H16Z" />
 </svg>

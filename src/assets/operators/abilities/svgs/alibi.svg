@@ -8,5 +8,19 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__alibi r6data__operator__ability__prisma"
   id="prisma"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M207 230l35 38H270l35-38Z" />
+    </mask>
+  </defs>
+  <path
+    fill-rule="evenodd"
+    d="M216 37H306L334 69v84l-33 57-45 21-45-21-33-57V69ZM86 69h340V89H86ZM86 121H86 426V141H86ZM98 173h316l-15 20H113Z"
+  />
+  <path
+    fill-rule="evenodd"
+    mask="url(#mask)"
+    d="M111 251 160 231H352L401 250 362 362 354 475H158L150 362ZM16 267H496l-8 16H23ZM36 319H476l-8 16H44ZM52 371H460V387H52ZM52 423H460V439H52Z"
+  />
 </svg>

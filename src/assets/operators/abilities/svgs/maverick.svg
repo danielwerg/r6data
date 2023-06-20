@@ -8,5 +8,44 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__maverick r6data__operator__ability__breaching_torch"
   id="breaching_torch"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        d="M175 130C175 84 280 84 280 130 280 176 175 176 175 130Z"
+      />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        d="M432 182C415 161 445 140 463 163L477 181C494 202 464 223 446 200Z"
+      />
+    </mask>
+  </defs>
+  <path
+    mask="url(#mask-1)"
+    d="M16 130C64 104 129 70 178 70 245 70 272 97 272 130 272 163 244 190 178 190 129 190 64 156 16 130Z"
+  />
+  <path d="M252 130l23-15v-10H291V155H275v-10Z" />
+  <path d="M299 111H349V151H299Z" />
+  <path d="M269 159H349v16H275Z" />
+  <path
+    fill-rule="evenodd"
+    mask="url(#mask-2)"
+    d="M353 35H404V103H462V175H353ZM367 52H391V111L367 117Z"
+  />
+  <path
+    mask="url(#mask-2)"
+    d="M415 177c-27-34 21-67 50-30l22 29c27 34-21 67-50 30Z"
+  />
+  <path d="M452 194a1 1 0 0024 0 1 1 0 00-24 0" />
+  <path
+    d="M450 205 455 200 458 203 453 208ZM470 204 473 201 479 205 476 208Z"
+  />
+  <path
+    fill-rule="evenodd"
+    d="M337 187h66v14c24 0 39 26 39 54v166C442 445 415 478 370 478 325 477 298 445 298 421V255C298 227 313 201 337 201ZZM310 287H430V418C430 438 407 466 370 466 332 465 310 438 310 418Z"
+  />
 </svg>

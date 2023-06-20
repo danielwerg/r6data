@@ -8,5 +8,17 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__finka r6data__operator__ability__adrenal_surge"
   id="adrenal_surge"
 >
-  <path d="" />
+  <mask id="mask">
+    <rect fill="white" x="0" y="0" width="512" height="512" />
+    <path fill="black" d="M340 163h72v72h72v72h-72v72h-72v-72h-72v-72h72Z" />
+  </mask>
+  <path
+    fill-rule="evenodd"
+    mask="url(#mask)"
+    d="M246 76C294 44 306 42 337 42 419 42 476 122 476 188 476 296 358 377 246 470 134 377 16 296 16 188 16 122 73 42 155 42 186 42 198 44 246 76ZM246 92C290 63 301 61 330 61 405 61 458 135 458 195 458 294 349 369 246 454 143 369 34 294 34 195 34 135 87 61 162 61 191 61 202 63 246 92ZM246 128C272 99 296 88 327 88 395 88 433 134 433 196 432 260 322 352 246 418 170 352 60 260 59 196 59 134 97 89 165 88 196 88 220 99 246 128Z"
+  />
+  <path
+    mask="url(#mask)"
+    d="M328 151h96v72h72V319H424v72H328v-72h-72V223h73Z"
+  />
 </svg>
