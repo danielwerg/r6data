@@ -8,5 +8,66 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__kali r6data__operator__ability__lv_explosive_lance"
   id="lv_explosive_lance"
 >
-  <path d="" />
+  <defs>
+    <path id="circle-1" d="M198 256a1 1 0 00116 0 1 1 0 00-116 0" />
+    <path id="circle-2" d="M160 256a1 1 0 00192 0 1 1 0 00-192 0" />
+    <path id="circle-3" d="M127 256a1 1 0 00258 0 1 1 0 00-258 0" />
+    <path id="circle-4" d="M109 256a1 1 0 00294 0 1 1 0 00-294 0" />
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <use fill="black" href="#circle-1" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <use fill="black" href="#circle-2" />
+    </mask>
+    <mask id="mask-3">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <use fill="black" href="#circle-4" />
+    </mask>
+    <mask id="mask-4">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <use fill="black" href="#circle-2" />
+      <path fill="black" d="M313 182l41-15-22 36Z" />
+    </mask>
+    <clipPath id="clip-path-1">
+      <use href="#circle-3" />
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <use href="#circle-3" />
+    </clipPath>
+  </defs>
+  <path
+    id="arm"
+    fill-rule="evenodd"
+    mask="url(#mask-1)"
+    d="M16 251H21Q21 248 29 248V244C28 244 24.8 239.3 29 239L98 234 105 236 147 235 151 231 204 231V281H151L147 277 105 276 98 278 29 273C24.8 272.7 28 268 29 268V264Q21 264 21 261H16ZM41 251 175 250V262L41 261Z"
+  />
+  <use href="#arm" transform="rotate(90 256 256)" />
+  <use href="#arm" transform="rotate(180 256 256)" />
+  <use href="#arm" transform="rotate(270 256 256)" />
+  <path id="wave-1" d="M77 198C85 119 125 83 200 76 145 94 99 134 77 198" />
+  <use href="#wave-1" transform="rotate(180 256 256)" />
+  <path
+    id="wave-2"
+    d="M121 198C120 158 151 124 200 120 169 132 135 162 121 198"
+  />
+  <use href="#wave-2" transform="rotate(180 256 256)" />
+  <path
+    clip-path="url(#clip-path-2)"
+    mask="url(#mask-4)"
+    d="M307 205V137H375V205Z"
+  />
+  <path mask="url(#mask-4)" d="M307 139V109L336 69 316 164 426 101 356 190Z" />
+  <path mask="url(#mask-3)" d="M383 183 431 170 392 202Z" />
+  <path
+    clip-path="url(#clip-path-1)"
+    mask="url(#mask-2)"
+    d="M137 307H205V375H138Z"
+  />
+  <path d="M90 307H138L205 374 176 443 179 345 83 402 156 317Z" />
+  <path
+    fill-rule="evenodd"
+    d="M217 256a1 1 0 0078 0 1 1 0 00-78 0M236 256a1 1 0 0040 0 1 1 0 00-40 0"
+  />
 </svg>

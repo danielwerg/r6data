@@ -8,5 +8,12 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__amaru r6data__operator__ability__garra_hook"
   id="garra_hook"
 >
-  <path d="" />
+  <g transform="rotate(45 256 256)">
+    <path
+      d="M1 268-40 237-35 208 197 80 256 59 315 80 547 209 552 237 511 268 519 241 268 122V145L320 171 286 249 279 325H232L226 249 192 171 244 145V122L-7 241Z"
+    />
+    <path
+      d="M218 356 234 346H278L294 356 292 438 286 441V566Q256 577 226 566V441L220 438Z"
+    />
+  </g>
 </svg>

@@ -8,5 +8,21 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__mozzie r6data__operator__ability__pest_launcher"
   id="pest_launcher"
 >
-  <path d="" />
+  <g id="leg" transform="rotate(45 256 256)">
+    <path d="M250-72l6-6 6 6V-49C262-43 250-43 250-49Z" />
+    <path d="M243-35C251-28 261-28 269-35l31 43C314 28 198 28 212 8Z" />
+    <path
+      d="M200 54C189 44 198 33 205 35 239 44 273 44 307 35 314 33 323 44 312 54V100C323 110 314 121 307 119 273 128 239 128 205 119 198 121 189 110 200 100Z"
+    />
+    <path
+      d="M211 140C241 148 271 148 301 140 292 150 281 154 273 156V170H239V156C231 154 220 150 211 140"
+    />
+  </g>
+  <use href="#leg" transform="rotate(90 256 256)" />
+  <use href="#leg" transform="rotate(180 256 256)" />
+  <use href="#leg" transform="rotate(270 256 256)" />
+  <path
+    fill-rule="evenodd"
+    d="M317 281.3 281.3 317 230.7 317 195 281.3 195 230.7 230.7 195 281.3 195 317 230.7ZM222 242a1 1 0 0068 0 1 1 0 00-68 0M238 242a1 1 0 0036 0 1 1 0 00-36 0"
+  />
 </svg>

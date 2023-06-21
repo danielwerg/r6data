@@ -8,5 +8,37 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__warden r6data__operator__ability__glance_smart_glasses"
   id="glance_smart_glasses"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        id="hexagon"
+        d="M172.7224 228.5l-14.7224 8.5-14.7224-8.5 0-17 14.7224-8.5 14.7224 8.5Z"
+      />
+      <use href="#hexagon" transform="translate(38)" />
+      <use href="#hexagon" transform="translate(76)" />
+      <use href="#hexagon" transform="translate(-19 34)" />
+      <use href="#hexagon" transform="translate(19 34)" />
+      <use href="#hexagon" transform="translate(56 34)" />
+      <use href="#hexagon" transform="translate(-38 68)" />
+      <use href="#hexagon" transform="translate(0 68)" />
+      <use href="#hexagon" transform="translate(38 68)" />
+      <use href="#hexagon" transform="translate(-19 102)" />
+      <use href="#hexagon" transform="translate(19 102)" />
+      <use href="#hexagon" transform="translate(19 -34)" />
+      <use href="#hexagon" transform="translate(56 -34)" />
+    </mask>
+  </defs>
+  <g id="left">
+    <path
+      fill-rule="evenodd"
+      d="M37 189C42 179 48 169 76 168L214 164C228 164 239 175 245 184H257V282C244 282 230 311 219 328 212 338 195 351 178 349L59 331C42 327 32 314 29 298L19 228C14 195 21 197 37 189ZM39 216C37 202 47 189 66 188L205 181C227 180 258 217 237 261L205 315C199 325 185 333 171 331L73 317C59 314 51 306 49 295Z"
+    />
+    <path
+      mask="url(#mask)"
+      d="M54 225C53 216 56 204 68 203L202 196C233 192 230 245 226 252L184 314 85 305C72 303 64 295 62 285Z"
+    />
+  </g>
+  <use href="#left" transform="translate(512) scale(-1 1)" />
 </svg>

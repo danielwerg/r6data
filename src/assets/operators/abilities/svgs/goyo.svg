@@ -8,5 +8,35 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__goyo r6data__operator__ability__volcan_shield"
   id="volcan_shield"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        d="M166 207Q166 177 196 177H316Q346 177 346 207V373Q346 403 316 403H196Q166 403 166 373Z"
+      />
+      <path
+        id="arm"
+        fill="black"
+        d="M168 198 132 162C120 150 140 130 152 142L188 178Z"
+      />
+      <use href="#arm" transform="translate(512) scale(-1 1)" />
+      <use href="#arm" transform="rotate(180 256 290)" />
+      <use
+        href="#arm"
+        transform="translate(512) scale(-1 1) rotate(180 256 290)"
+      />
+    </mask>
+  </defs>
+  <path d="M83 58 118 40 143 46 133 69 137 80Q117 84 103 98Z" />
+  <path d="M180 76 198 25H332Q311 33 303 45H233L220 76Z" />
+  <path
+    fill-rule="evenodd"
+    mask="url(#mask)"
+    d="M97 153Q97 93 157 93H263C309 93 312 35 360 35 402 35 415 69 415 93V427Q415 487 355 487H157Q97 487 97 427Z"
+  />
+  <path
+    fill-rule="evenodd"
+    d="M182 223Q182 193 212 193H300Q330 193 330 223V357Q330 387 300 387H212Q182 387 182 357ZM237 369C193 348 184 307 223 260 223 275 226 284 232 290 225 260 236 230 271 205 258 275 364 298 281 367 302 322 256 312 263 279 249 294 242 305 249 335 241 331 236 326 231 316 225 334 227 351 237 369"
+  />
 </svg>
