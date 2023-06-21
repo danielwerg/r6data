@@ -8,5 +8,63 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__nokk r6data__operator__ability__hel_presence_reduction"
   id="hel_presence_reduction"
 >
-  <path d="" />
+  <defs>
+    <clipPath id="clip-path">
+      <path
+        d="M20 245C20 51 102 18 256 24 429 6 487 0 488 244 489 349 554 533 256 487-53 517 34 377 20 245"
+      />
+    </clipPath>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M60 256a1 1 0 00392 0 1 1 0 00-392 0" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path id="mask-2-top" fill="black" d="M162 103 220 201H284L342 103Z" />
+      <use href="#mask-2-top" transform="rotate(180 256 256)" />
+    </mask>
+  </defs>
+  <g clip-path="url(#clip-path)" mask="url(#mask-1)">
+    <path id="line" d="M-144 248h800v16h-800Z" />
+    <use href="#line" transform="rotate(7.2 256 256)" />
+    <use href="#line" transform="rotate(14.4 256 256)" />
+    <use href="#line" transform="rotate(21.6 256 256)" />
+    <use href="#line" transform="rotate(28.8 256 256)" />
+    <use href="#line" transform="rotate(36 256 256)" />
+    <use href="#line" transform="rotate(43.2 256 256)" />
+    <use href="#line" transform="rotate(50.4 256 256)" />
+    <use href="#line" transform="rotate(57.6 256 256)" />
+    <use href="#line" transform="rotate(64.8 256 256)" />
+    <use href="#line" transform="rotate(72 256 256)" />
+    <use href="#line" transform="rotate(79.2 256 256)" />
+    <use href="#line" transform="rotate(86.4 256 256)" />
+    <use href="#line" transform="rotate(93.6 256 256)" />
+    <use href="#line" transform="rotate(100.8 256 256)" />
+    <use href="#line" transform="rotate(108 256 256)" />
+    <use href="#line" transform="rotate(115.2 256 256)" />
+    <use href="#line" transform="rotate(122.4 256 256)" />
+    <use href="#line" transform="rotate(129.6 256 256)" />
+    <use href="#line" transform="rotate(136.8 256 256)" />
+    <use href="#line" transform="rotate(144 256 256)" />
+    <use href="#line" transform="rotate(151.2 256 256)" />
+    <use href="#line" transform="rotate(158.4 256 256)" />
+    <use href="#line" transform="rotate(165.6 256 256)" />
+    <use href="#line" transform="rotate(172.8 256 256)" />
+  </g>
+  <path
+    fill-rule="evenodd"
+    d="M40 256A1 1 0 00471 256 1 1 0 0040 256M60 256a1 1 0 00392 0 1 1 0 00-392 0"
+  />
+  <path
+    fill-rule="evenodd"
+    mask="url(#mask-2)"
+    d="M106 256a1 1 0 00300 0 1 1 0 00-300 0M130 256a1 1 0 00252 0 1 1 0 00-252 0"
+  />
+  <path
+    fill-rule="evenodd"
+    mask="url(#mask-2)"
+    d="M147 256a1 1 0 00218 0 1 1 0 00-218 0M171 256a1 1 0 00170 0 1 1 0 00-170 0"
+  />
+  <path d="M221 256a1 1 0 0070 0 1 1 0 00-70 0" />
+  <path d="M237 285h38v128h-38Z" />
 </svg>

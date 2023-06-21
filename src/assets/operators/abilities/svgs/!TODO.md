@@ -7,14 +7,6 @@ Update `goals.md` file
 
 M0 512H512V0H0ZM16 16H496V496H16Z
 
-Mozzie Y4S1
-Gridlock Y4S1
-Warden Y4S2
-Nøkk Y4S2
-Goyo Y4S3
-Amaru Y4S3
-Wamai Y4S4
-Kali Y4S4
 Oryx Y5S1
 Iana Y5S1
 Melusi Y5S2
