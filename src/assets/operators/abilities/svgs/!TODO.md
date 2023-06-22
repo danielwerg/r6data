@@ -7,12 +7,6 @@ Update `goals.md` file
 
 M0 512H512V0H0ZM16 16H496V496H16Z
 
-Oryx Y5S1
-Iana Y5S1
-Melusi Y5S2
-Ace Y5S2
-Zero Y5S3
-Aruni Y5S4
 Flores Y6S1
 Thunderbird Y6S2
 Osa Y6S3

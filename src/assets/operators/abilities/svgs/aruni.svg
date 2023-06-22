@@ -8,5 +8,12 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__aruni r6data__operator__ability__surya_gate"
   id="surya_gate"
 >
-  <path d="" />
+  <path d="M195 16H317L280 57H232Z" />
+  <path
+    fill-rule="evenodd"
+    d="M16 71 71 16H153L217 88H295L359 16H441L496 71 471 441 416 496H96L41 441ZM42 81 82 41H142L206 114H306L370 41H430L470 81 446 431 405 471H107L66 431Z"
+  />
+  <path id="left" d="M84 74 91 67H130L141 79 139 446H118L113 441Z" />
+  <use href="#left" transform="translate(512) scale(-1 1)" />
+  <path d="M229 139H283L269 446H243Z" />
 </svg>

@@ -8,5 +8,27 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__iana r6data__operator__ability__gemini_replicator"
   id="gemini_replicator"
 >
-  <path d="" />
+  <defs>
+    <path id="eye-left" d="M136 310h52c8 0 19 3 32 25h-52c-7 0-29-6-32-25" />
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M138 281l108-25v20l-108 25Z" />
+      <use fill="black" href="#eye-left" />
+    </mask>
+  </defs>
+  <path
+    mask="url(#mask)"
+    d="M121 460C68 430 36 374 16 335L55 233V202C83 70 159 33 244 33V480L163 410C135 386 132 252 155 184 107 257 109 348 126 433 118 429 111 425 105 417 107 430 114 445 121 460Z"
+  />
+  <use href="#eye-left" transform="translate(512) scale(-1 1) translate(16)" />
+  <path d="M256 33C276 33 304 33 323 49H256Z" />
+  <path d="M256 65H394L432 101H256Z" />
+  <path d="M256 117H396L415 155H256Z" />
+  <path d="M256 171H438L448 211H256Z" />
+  <path d="M256 227H396L256 265Z" />
+  <path d="M400 227H484L496 265H412Z" />
+  <path d="M378 281H467L482 319H385Z" />
+  <path d="M358 335H457L433 374H354Z" />
+  <path d="M392 390H467L436 428H384Z" />
+  <path d="M386 444H404L379 465Z" />
 </svg>

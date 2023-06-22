@@ -8,5 +8,63 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__ace r6data__operator__ability__s.e.l.m.a._aqua_breacher"
   id="s.e.l.m.a._aqua_breacher"
 >
-  <path d="" />
+  <defs>
+    <g id="triangles">
+      <path d="M361 152l12-23c2-5 6-5 7 1l5 25Z" />
+      <path d="M436 231l13 9c2 1 2 4-1 4l-16 3Z" />
+    </g>
+    <clipPath id="clip-path-1">
+      <path d="M281 217a1 1 0 00184 0 1 1 0 00-184 0" />
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect x="16" y="133" width="462" height="300" rx="60" />
+    </clipPath>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <rect fill="black" x="53" y="149" width="388" height="268" rx="56" />
+      <rect fill="white" x="67" y="163" width="360" height="240" rx="48" />
+      <rect fill="black" x="109" y="181" width="276" height="204" rx="56" />
+      <rect fill="white" x="123" y="195" width="248" height="176" rx="48" />
+      <rect fill="black" x="149" y="217" width="196" height="132" rx="32" />
+      <path fill="black" d="M398 131 398 160 435 202 436 224H484V130Z" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M179 256q0-10 10-10h21v74h-21q-10 0-10-10Z" />
+    </mask>
+    <mask id="mask-3">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M305 217a1 1 0 00136 0 1 1 0 00-136 0" />
+      <path fill="black" d="M349 155l-15-27h-82v201h205v-64l-29-21Z" />
+      <use fill="black" href="#triangles" />
+    </mask>
+    <mask id="mask-4">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <use fill="black" href="#triangles" />
+    </mask>
+  </defs>
+  <rect
+    clip-path="url(#clip-path-1)"
+    mask="url(#mask-3)"
+    x="0"
+    y="0"
+    width="512"
+    height="512"
+  />
+  <g
+    mask="url(#mask-4)"
+    stroke="#ffffff"
+    stroke-width="4"
+    stroke-linejoin="round"
+  >
+    <path
+      d="M349 151l-21-36 29 24 24-64 10 64 36 8 30-12-16 26 12 18 38 2-31 17-2 32 43 17-45 5-18-96-79-15"
+    />
+    <path d="M407 123l21-19 0 28Z" />
+  </g>
+  <g clip-path="url(#clip-path-2)" mask="url(#mask-1)">
+    <path id="arm" d="M16 107 523 402 478 459-29 164Z" />
+    <use href="#arm" transform="rotate(-60 247 283)" />
+  </g>
+  <rect mask="url(#mask-2)" x="161" y="229" width="172" height="108" rx="28" />
 </svg>
