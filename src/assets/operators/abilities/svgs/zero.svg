@@ -8,5 +8,14 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__zero r6data__operator__ability__argus_launcher"
   id="argus_launcher"
 >
-  <path d="" />
+  <path id="top" d="M261 44v80l23 18 11 73-39-67-39 67 19-68-14-10Z" />
+  <use href="#top" transform="rotate(120 256 320)" />
+  <use href="#top" transform="rotate(240 256 320)" />
+  <path
+    fill-rule="evenodd"
+    d="M140 386 256 187 372 386ZM223 271a1 1 0 0066 0 1 1 0 00-66 0M180 342a1 1 0 0066 0 1 1 0 00-66 0M266 342a1 1 0 0066 0 1 1 0 00-66 0"
+  />
+  <path
+    d="M223 251a1 1 0 0022 0 1 1 0 00-22 0M180 322a1 1 0 0022 0 1 1 0 00-22 0M266 322a1 1 0 0022 0 1 1 0 00-22 0"
+  />
 </svg>

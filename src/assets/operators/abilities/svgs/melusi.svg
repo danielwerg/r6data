@@ -8,5 +8,16 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__melusi r6data__operator__ability__banshee_sonic_defense"
   id="banshee_sonic_defense"
 >
-  <path d="" />
+  <g id="one-third">
+    <path
+      transform="translate(0 )"
+      d="M174 72c39-67 125-67 164 0l-5 6c-35-37-119-37-154 0Z"
+    />
+    <path d="M201 106c28-40 82-40 110 0l-4 4c-28-23-74-23-102 0Z" />
+    <path d="M142 408H370L256 490Z" />
+    <path d="M126 390 187 344H325L386 390Z" />
+    <path d="M245 122h20L260 200h-8Z" />
+  </g>
+  <use href="#one-third" transform="rotate(120 256 292) translate(0)" />
+  <use href="#one-third" transform="rotate(240 256 292) translate(0)" />
 </svg>
