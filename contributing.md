@@ -20,10 +20,28 @@ To get ready to work on the codebase, please do the following:
 ## Seasonal update checklist
 
 - Add new season
-- Add new operator (don't forget to import in `src/opeators/index.ts`, icon too)
-- Possibly update gadgets (icons too)
-- Possibly add/update guns (icons too)
+  - Append to `SEASONS` in `src/seasons.ts`
+  - Add `src/assets/seasons/SEASON_SHORTHAND.jpg`
+- Add new operator
+  - Add `src/opeators/OPERATOR_SLUG`
+  - Update `OperatorSlug` in `src/operators/types.ts`
+  - After import in `src/opeators/index.ts`
+  - Add icon to `src/assets/operators/icons/svgs/OPERATOR_SLUG.svg`
+  - Add unique ability to `src/assets/operators/abilities/svgs/UNIQUE_ABILITY_SLUG.svg`
+  - Add `src/assets/operators/bodies/OPERATOR_SLUG.EXT`
+  - Add `src/assets/operators/figures/OPERATOR_SLUG.EXT`
+  - Add `src/assets/operators/cards/OPERATOR_SLUG.EXT`
+- Possibly update gadgets
+  - Add/Update in `src/gadgets.ts`
+  - Add/Update icon in `src/assets/gadgets/simple/svgs/GADGET_SLUG.svg`
+  - Update `GadgetSlug` in `src/types.ts`
+- Possibly add/update weapons
+  - Add/Update `src/weapons/WEAPON_CATEGORY_SLUG/WEAPON_SLUG.ts`
+  - Add/Update icon in `src/assets/weapons/simple/WEAPON_SLUG.svg`
 - Possibly add/update maps
+  - Append to `src/maps.ts`
+  - Add `src/assets/maps/thumbnails/MAP_SLUG.EXT`
+  - Add `src/assets/maps/backgrounds/MAP_SLUG.EXT`
 - Optionally update operator notes using [Rainbow Six Wiki](https://rainbowsix.fandom.com/wiki/Special:RecentChanges?hidebots=1&hidelog=1&limit=3000&days=90&enhanced=1&hidecategorization=1&urlversion=2) <!-- Last updated: 2023-06-12 -->
 - Update `LAST_UPDATED` variable in `src/meta.ts`
 
