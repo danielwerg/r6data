@@ -7,10 +7,6 @@ Update `goals.md` file
 
 M0 512H512V0H0ZM16 16H496V496H16Z
 
-Flores Y6S1
-Thunderbird Y6S2
-Osa Y6S3
-Thorn Y6S4
 Azami Y7S1
 Sens Y7S2
 Grim Y7S3
