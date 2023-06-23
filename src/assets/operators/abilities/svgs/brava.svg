@@ -8,5 +8,43 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__brava r6data__operator__ability__kludge_drone"
   id="kludge_drone"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M198 234 201 191 220 178 372 193 368 267Z" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M36 320a1 1 0 00108 0 1 1 0 00-108 0" />
+    </mask>
+  </defs>
+  <path
+    mask="url(#mask-1)"
+    d="M106 122 110 121 429 191 432 194 421 244 417 246 98 177 95 173Z"
+  />
+  <path
+    mask="url(#mask-1)"
+    d="M84 159 80 178 91 189 103 193 200 214 198 234 73 206 67 201 76 161Z"
+  />
+  <path d="M211 236 213 198 224 191 358 206 356 247 320 258 222 255V239Z" />
+  <g id="wheel">
+    <g mask="url(#mask-2)">
+      <path id="wheel-1" d="M129 347 152 349 154 358 130 365 117 355Z" />
+      <use href="#wheel-1" transform="rotate(72 90 320)" />
+      <use href="#wheel-1" transform="rotate(144 90 320)" />
+      <use href="#wheel-1" transform="rotate(216 90 320)" />
+      <use href="#wheel-1" transform="rotate(288 90 320)" />
+
+      <path id="wheel-2" d="M106 360l19 16 0 4-5 6-18-5-17-11Z" />
+      <use href="#wheel-2" transform="rotate(72 90 320)" />
+      <use href="#wheel-2" transform="rotate(144 90 320)" />
+      <use href="#wheel-2" transform="rotate(216 90 320)" />
+      <use href="#wheel-2" transform="rotate(288 90 320)" />
+    </g>
+    <path d="M57 320a1 1 0 0066 0 1 1 0 00-66 0" />
+  </g>
+  <use href="#wheel" transform="rotate(12 422 320) translate(332)" />
+  <path
+    d="M177 286H213L221 274H321L329 286H359L361 287 342 304C337 309 342 322 354 329L347 350C345 356 347 360 353 364H332L323 352H224L216 364H161C166 350 164 338 147 338L158 329 171 309 169 299Z"
+  />
 </svg>

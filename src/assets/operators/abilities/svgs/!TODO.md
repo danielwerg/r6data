@@ -11,5 +11,3 @@ Azami Y7S1
 Sens Y7S2
 Grim Y7S3
 Solis Y7S4
-Brava Y8S1
-Fenrir Y8S2

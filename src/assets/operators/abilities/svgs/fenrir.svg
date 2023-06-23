@@ -8,5 +8,65 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__fenrir r6data__operator__ability__f-natt_dread_mine"
   id="f-natt_dread_mine"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M83 280a1 1 0 00346 0 1 1 0 00-346 0" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M117 280a1 1 0 00278 0 1 1 0 00-278 0" />
+      <path id="mask-2-bottom" fill="black" d="M247 454l0-37 18 0 0 37Z" />
+      <use href="#mask-2-bottom" transform="rotate(72 256 280)" />
+      <use href="#mask-2-bottom" transform="rotate(125 256 280)" />
+      <use href="#mask-2-bottom" transform="rotate(-72 256 280)" />
+      <use href="#mask-2-bottom" transform="rotate(-125 256 280)" />
+    </mask>
+    <mask id="mask-3">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        id="eye"
+        fill="black"
+        d="M175 256C175 240 188 229 195 232L237 249C241 251 242 253 242 257L243 274C244 283 240 284 229 284 215 284 175 276 175 256Z"
+      />
+      <use fill="black" href="#eye" transform="translate(512) scale(-1 1)" />
+    </mask>
+  </defs>
+  <path
+    id="top"
+    mask="url(#mask-1)"
+    d="M138 134l35-75q8-16 25-16h116q17 0 25 16l35 75Z"
+  />
+  <use href="#top" transform="rotate(120 256 280)" />
+  <use href="#top" transform="rotate(240 256 280)" />
+  <path mask="url(#mask-1)" d="M67 280a1 1 0 00378 0 1 1 0 00-378 0" />
+  <path
+    mask="url(#mask-2)"
+    fill-rule="evenodd"
+    d="M107 280a1 1 0 00298 0 1 1 0 00-298 0"
+  />
+  <path
+    id="bottom"
+    mask="url(#mask-2)"
+    fill-rule="evenodd"
+    d="M236 454l0-37 40 0 0 37Z"
+  />
+  <use href="#bottom" transform="rotate(72 256 280)" />
+  <use href="#bottom" transform="rotate(125 256 280)" />
+  <use href="#bottom" transform="rotate(-72 256 280)" />
+  <use href="#bottom" transform="rotate(-125 256 280)" />
+  <path
+    mask="url(#mask-3)"
+    d="M162 207 171 199 180 197 181 198 203 180H237L242 186H270L275 180H309L331 198 332 197 341 199 350 207 348 220 346 292 319 309 304 296 276 298 269 303H265L257 290H255L247 303H243L236 298 208 296 193 309 166 292 164 220Z"
+  />
+  <g id="left">
+    <path d="M154 335c-8-10 11-25 19-15l28 36c8 10-11 25-19 15Z" />
+    <path
+      d="M193 317 210 304 235 306 242 309 247 309 252 312 248 317V325L239 340V346L243 345V362L210 352 204 329 193 322Z"
+    />
+  </g>
+  <use href="#left" transform="translate(512) scale(-1 1)" />
+  <path
+    d="M212 361 243 370 244 374C245 372 248 361 256 361 264 361 267 372 268 374L269 370 300 361 293 380 283 391C275 397 237 397 229 391L219 380Z"
+  />
 </svg>
