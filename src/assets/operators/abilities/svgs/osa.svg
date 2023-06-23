@@ -8,5 +8,11 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__osa r6data__operator__ability__talon-8_clear_shield"
   id="talon-8_clear_shield"
 >
-  <path d="" />
+  <path
+    fill-rule="evenodd"
+    d="M27 33 47 19 85 30 101 16 167 43H345L411 16 427 30 465 19 485 33V481L466 496 348 476H164L46 496 27 481ZM62 47 138 66V454L59 463 60 265 86 232V178L61 149ZM160 66 230 67l26 26L282 67 352 66V454H160ZM450 47 374 66V454L453 463 452 265 426 232V178L451 149Z"
+  />
+  <path
+    d="M94 445 122 408 122 441ZM180 331 332 126V160L180 361ZM180 400 332 198V272L207 438H180ZM390 76l10-2-10 13ZM390 106 416 71 426 69V131L390 178Z"
+  />
 </svg>
