@@ -8,5 +8,50 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__azami r6data__operator__ability__kiba_barrier"
   id="kiba_barrier"
 >
-  <path d="" />
+  <defs>
+    <g id="knife">
+      <path
+        fill-rule="evenodd"
+        d="M208 0a1 1 0 0058 0 1 1 0 00-58 0M220 0a1 1 0 0034 0 1 1 0 00-34 0"
+      />
+      <path mask="url(#mask-1)" d="M221 26h32v79h-32Z" />
+      <path
+        mask="url(#mask-2)"
+        d="M214 105c15 5 31 5 46 0l32 66-55 231-55-231Z"
+      />
+    </g>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M208 2a1 1 0 0058 0 1 1 0 00-58 0" />
+      <path
+        fill="black"
+        d="M220 33h34v2h-34ZM220 51h34v2h-34ZM220 69h34v2h-34ZM220 87h34v2h-34Z"
+      />
+      <path
+        fill="black"
+        d="M220 31h1q0 2 2 2v2q-2 0-2 2h-1ZM220 49h1q0 2 2 2v2q-2 0-2 2h-1ZM220 67h1q0 2 2 2v2q-2 0-2 2h-1ZM220 85h1q0 2 2 2v2q-2 0-2 2h-1ZM254 31h-1q0 2-2 2v2q2 0 2 2h1ZM254 49h-1q0 2-2 2v2q2 0 2 2h1ZM254 67h-1q0 2-2 2v2q2 0 2 2h1ZM254 85h-1q0 2-2 2v2q2 0 2 2h1Z"
+      />
+      <path fill="black" d="M214 101c15 5 31 5 46 0v5h-46Z" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M207 179l30-52 30 52-30 56-30-56" />
+      <path fill="black" d="M181 167l56 20 56-20 4 6-60 21-60-21Z" />
+      <path fill="black" d="M198 191l31 47v45l-7-18h-9Z" />
+      <path fill="black" d="M276 191l-15 74h-9l-7 18v-45Z" />
+      <path
+        fill="black"
+        d="M206 274H215l22 52 22-52H268V279H260l-23 54-23-54H206Z"
+      />
+      <path fill="black" d="M235 328H239L237 388Z" />
+    </mask>
+  </defs>
+  <path
+    d="M256-28V563M-47 256H637M60 164C-6 433 253 584 455 439L451 435C221 515 71 402 64 165Z"
+  />
+  <use href="#knife" transform="rotate(39 256 256)" />
+  <use
+    href="#knife"
+    transform="scale(0.7) translate(107 107) translate(210 100) rotate(39 256 256) rotate(-21 256 256)"
+  />
 </svg>
