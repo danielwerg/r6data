@@ -8,5 +8,36 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__sens r6data__operator__ability__r.o.u._projector_system"
   id="r.o.u._projector_system"
 >
-  <path d="" />
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        d="M22 13a1 1 0 0078 0 1 1 0 00-78 0m78 0a1 1 0 0078 0 1 1 0 00-78 0m78 0a1 1 0 0078 0 1 1 0 00-78 0m78 0a1 1 0 0078 0 1 1 0 00-78 0m78 0a1 1 0 0078 0 1 1 0 00-78 0m78 0a1 1 0 0078 0 1 1 0 00-78 0"
+      />
+      <path
+        fill="black"
+        d="M35 80a1 1 0 0052 0 1 1 0 00-52 0m78 0a1 1 0 0052 0 1 1 0 00-52 0m78 0a1 1 0 0052 0 1 1 0 00-52 0m78 0a1 1 0 0052 0 1 1 0 00-52 0m78 0a1 1 0 0052 0 1 1 0 00-52 0m78 0a1 1 0 0052 0 1 1 0 00-52 0"
+      />
+      <path
+        fill="black"
+        d="M125 122a1 1 0 0028 0 1 1 0 00-28 0m78 0a1 1 0 0028 0 1 1 0 00-28 0m78 0a1 1 0 0028 0 1 1 0 00-28 0m78 0a1 1 0 0028 0 1 1 0 00-28 0"
+      />
+      <path
+        fill="black"
+        d="M131 146a1 1 0 0016 0 1 1 0 00-16 0m78 0a1 1 0 0016 0 1 1 0 00-16 0m78 0a1 1 0 0016 0 1 1 0 00-16 0m78 0a1 1 0 0016 0 1 1 0 00-16 0"
+      />
+      <path
+        fill="black"
+        d="M134 50h10v96h-10Zm78 0h10v96h-10Zm78 0h10v96h-10Zm78 0h10v96h-10Z"
+      />
+      <path
+        fill="black"
+        d="M219 350 197 263 246 339 241 202 266 339 346 188 293 350V415H219Z"
+      />
+    </mask>
+  </defs>
+  <path mask="url(#mask)" d="M74 102h-8V16h380V102h-8L256 413Z" />
+  <path d="M162 458l66-93h18V443H266V365h18L350 458Z" />
+  <path d="M255 458v20 16M162 478H350L335 494H176Z" />
 </svg>

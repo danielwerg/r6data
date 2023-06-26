@@ -7,7 +7,5 @@ Update `goals.md` file
 
 M0 512H512V0H0ZM16 16H496V496H16Z
 
-Azami Y7S1
-Sens Y7S2
 Grim Y7S3
 Solis Y7S4
