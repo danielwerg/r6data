@@ -8,5 +8,19 @@
   class="r6data__operator r6data__operator__ability r6data__operator__ability__grim r6data__operator__ability__kawan_hive_launcher"
   id="kawan_hive_launcher"
 >
-  <path d="" />
+  <defs>
+    <path
+      id="bee"
+      d="M17 214C17 195 46 187 80 187 103 187 132 192 155 197 165 188 180 190 180 185 180 174 189 163 197 163 205 163 208 166 208 168H226C226 161 250 161 250 168H262C262 161 286 161 286 168H304C304 166 307 163 315 163 323 163 332 174 332 185 332 190 347 188 357 197 380 192 409 187 432 187 466 187 495 195 495 214 495 239 437 273 408 273 379 273 351 243 351 225H341V213L332 220V234L308 264V285C309 294 333 296 333 309 323 354 280 349 285 330 294 342 308 332 310 326H202C204 332 218 342 227 330 232 349 189 354 179 309 179 296 203 294 204 285V264L180 234V220L171 213V225H161C161 243 133 273 104 273 76 273 17 239 17 214Z"
+    />
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M218 252l18-18H276l18 18V288l-18 18H236l-18-18Z" />
+    </mask>
+  </defs>
+  <use href="#bee" mask="url(#mask)" />
+  <path d="M237 250H275V290H237Z" />
+  <use href="#bee" transform="scale(.55) translate(165 -110)" />
+  <use href="#bee" transform="scale(.3) translate(175 1070)" />
+  <use href="#bee" transform="scale(.45) translate(475 735)" />
 </svg>
