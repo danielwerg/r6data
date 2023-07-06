@@ -4,7 +4,6 @@ Good place to start contributing!
 
 ## Operator Unique Ability
 
-- icon svg ([#9](https://github.com/danielwerg/r6data/issues/9))
 - `isElectronic`?
 <!-- - `subType`? (ex: Brava: `type: 'count'`, `subType: 'recharge_count'`) -->
 
@@ -26,6 +25,8 @@ Rework, realign, clean up svgs and add classes and ids (very low priority)
 <details>
 <summary>Completed</summary>
 
+- Operator Unique Ability
+  - icon svg ([#9](https://github.com/danielwerg/r6data/issues/9))
 - Operarator Weapon Attachments
   - Icon svg
   - primary, secondary, slug, sights, barrels, grips, under barrels
