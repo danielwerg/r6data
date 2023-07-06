@@ -23,8 +23,6 @@ Rework, realign, clean up svgs and add classes and ids (very low priority)
 
 ---
 
----
-
 <details>
 <summary>Completed</summary>
 
