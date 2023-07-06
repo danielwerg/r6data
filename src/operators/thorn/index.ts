@@ -31,7 +31,7 @@ export const thorn = {
     primary: [
       {
         slug: 'uzk50gi',
-        sights: COMMON_SIGHTS_1X,
+        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
         barrels: COMMON_BARRELS_ALL,
         grips: COMMON_GRIPS,
         underBarrels: ['laser']

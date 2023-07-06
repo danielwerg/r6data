@@ -27,12 +27,6 @@ Vigil comes equipped with his ERC-7 Video Disruptor, which will erase him from v
   - Affected surveillance tools will emit a white light.
   - Due to only editing the visual camera feed, Vigil can still be heard by drones or cameras.
   - The ERC-7 will not have any effect with friendly gadgets, until they are hacked by Dokkaebi. Defenders will be able to see Vigil on their point of view within cameras, but Attackers will not.
-- Vigil's movements will not trigger the pings from Lion's EE-ONE-D.
-  - If Vigil triggered the pings from the EE-ONE-D before activating the ERC-7, activating ERC-7 will have no effect.
-  - Vigil can activate the ERC-7 both before and during the scan, as long as he hasn't been detected.
-- Performing any actions will automatically deactivate the ERC-7, such as meleeing.
-  - External sources of interference will not force the ERC-7 to deactivate. Concussion effects, stun effects, explosives, fire, or even Smoke's Gas Canisters and Smoke Grenades will not interfere with the ERC-7.
-    - Friendly gadgets will not interfere with the ERC-7, such as Mute's Signal Jammers.
 
 ### Counters
 
