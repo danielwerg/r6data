@@ -1,7 +1,7 @@
 import { getAssetURL, getSVGString } from '../utils';
 
 export const getWeaponSVGString = async (path: string) =>
-  getSVGString(`/weapons/${path}`);
+  getSVGString(`/weapons/detailed${path}`);
 
 export const getWeaponAssetURL = (path: string) =>
-  getAssetURL(`/weapons${path}`);
+  getAssetURL(`/weapons/detailed${path}`);
