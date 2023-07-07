@@ -1,11 +1,13 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="100"
-  height="100"
-  viewBox="0 0 100 100"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
   fill="currentColor"
   class="r6data__loadout r6data__loadout__primary"
   id="primary"
 >
-  <path d="M5 50A1 1 0 0095 50 1 1 0 005 50M35 25H61V75H47V35H35Z" />
+  <path
+    d="M16 256a5 5 90 00480 0 5 5 90 00-480 0m153-128h133v256h-71v-205h-62Z"
+  />
 </svg>

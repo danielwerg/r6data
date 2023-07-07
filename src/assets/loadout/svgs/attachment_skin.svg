@@ -1,22 +1,31 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="100"
-  height="100"
-  viewBox="0 0 100 100"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
   fill="currentColor"
   class="r6data__loadout r6data__loadout__attachment_skins"
   id="attachment_skins"
 >
-  <mask id="mask">
-    <rect fill="#ffffff" width="100%" height="100%" />
-    <path fill="black" d="M33 80C41 78 77 66 38 15" />
-  </mask>
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        d="M133-57l136 244c87 179-78 237-136 237-57 0-207-57-122-237Z"
+      />
+      <path
+        fill="black"
+        d="M358 112q15 16-1 32l-113 113 110 116q16 16 0 32l57-57q-16 16-31 0l-80-80q-16-15 0-30l76-77q16-16 32 0Z"
+      />
+    </mask>
+  </defs>
   <path
     fill-rule="evenodd"
-    d="M26 7 45 41C57 66 34 74 26 74 18 74-3 66 9 41ZM11 60A17.2 17.2 0 1039 41 17.2 17.2 0 0111 60"
+    d="M133 36l97 174c62 128-56 169-97 169-41 0-148-41-87-169ZM56 307A88 88 90 10200 210 88 88 90 0156 307"
   />
   <path
     mask="url(#mask)"
-    d="M38 15 48 5Q51 3 54 6L69 21Q72 24 69 27L53 43M79 31 95 47Q98 50 95 53L80 68Q77 71 74 68L58 52Q55 49 58 46L73 31Q76 28 79 31M55 58 69 73Q72 76 69 79L53 95Q50 97 47 94L33 80"
+    d="M14 258l232-232Q261 15 276 31L486 241Q502 256 486 271L271 486Q256 497 241 481Z"
   />
 </svg>

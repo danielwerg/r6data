@@ -1,12 +1,12 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="100"
-  height="100"
-  viewBox="0 0 100 100"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
   fill="currentColor"
   class="r6data__loadout r6data__loadout__attachment"
   id="attachment"
 >
-  <path d="M5 31H19L37 60H63L81 31H95V75H5Z" />
-  <path d="M23 25H77L59 54H41Z" />
+  <path d="M16 159H97L189 307H323L415 159H496V384H16Z" />
+  <path d="M118 128H394L302 276H210Z" />
 </svg>

@@ -1,13 +1,13 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="100"
-  height="100"
-  viewBox="0 0 100 100"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
   fill="currentColor"
   class="r6data__loadout r6data__loadout__secondary"
   id="secondary"
 >
   <path
-    d="M5 50A1 1 0 0095 50 1 1 0 005 50M30 41C30 25 46 23 57 25 70 28 71 37 71 39 71 54 50 56 43 64H71V76H30C30 46 57 48 57 41 57 35 46 33 43 41Z"
+    d="M16 256a5 5 90 00480 0 5 5 90 00-480 0m128-46c0-82 82-92 138-82 67 15 72 61 72 72 0 77-108 87-143 128h143v61h-210c0-154 138-143 138-179 0-31-56-41-72 0Z"
   />
 </svg>
