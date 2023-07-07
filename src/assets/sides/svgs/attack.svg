@@ -1,0 +1,27 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  fill="#ffffff"
+  stroke="none"
+>
+  <defs>
+    <path
+      id="blade"
+      d="M16 16H61l291 296L352 354 312 357l-296-291ZM268 380l102-115L383 277l-103 116Z"
+    />
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        d="M22 22h61l393 400 0 57-54 4-400-393Z"
+        transform="translate(512) scale(-1 1)"
+      />
+    </mask>
+  </defs>
+  <use href="#blade" mask="url(#mask)" />
+  <path id="hilt" d="M439 496V458l-76-77 16-2L379 360l76 77H496V496Z" />
+  <use href="#blade" transform="translate(512) scale(-1 1)" />
+  <use href="#hilt" transform="translate(512) scale(-1 1)" />
+</svg>
