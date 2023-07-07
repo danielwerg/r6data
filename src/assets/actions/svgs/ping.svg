@@ -1,14 +1,15 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="200"
-  height="200"
-  viewBox="0 0 200 200"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
   class="r6data__action r6data__action__ping"
   id="ping"
 >
   <path
-    d="M100 180l-46-89c-56-108 148-108 92 0ZM67 63h66M100 30a1 1 0 000 66 1 1 0 000-66"
+    fill-rule="evenodd"
+    d="M256 16c90 0 155 51 155 158 0 68-54 147-155 322-101-175-155-254-155-322 0-107 65-158 155-158M173 174a1 1 0 00166 0 1 1 0 00-166 0"
   />
 </svg>

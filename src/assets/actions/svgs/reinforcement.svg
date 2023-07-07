@@ -1,21 +1,54 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="200"
-  height="200"
-  viewBox="0 0 200 200"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
   class="r6data__action r6data__action__reinforcement"
   id="reinforcement"
 >
-  <path d="M82 26l39 39-15 15-5-5 10-10-34-34Z" />
-  <path d="M96 90l-11 11 38 36-16 16-5-5 11-11-38-36 16-16Z" />
-  <path d="M92 158l5 5-11 11-5-5Z" />
-  <path d="M120 31l-13 13-5-5 13-13Z" />
-  <path d="M91 50l5 5-10 10 36 36-15 15-5-5 10-10-36-36Z" />
-  <path d="M115 176l-39-39 15-15 5 5-10 10 34 34Z" />
+  <defs>
+    <path
+      id="line-1-left"
+      d="M211 60l109 102-100 97 99 96-100 97h-32l100-97-99-96 100-97-109-102Z"
+    />
+    <use
+      id="line-1-right"
+      href="#line-1-left"
+      transform="translate(512) scale(-1 1)"
+    />
+    <path
+      id="line-2-left"
+      d="M227 60l109 102-100 97 99 96-100 97h-64l100-97-99-96 100-97-109-102Z"
+    />
+    <use
+      id="line-2-right"
+      href="#line-2-left"
+      transform="translate(512) scale(-1 1)"
+    />
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <use fill="black" href="#line-2-right" />
+      <path fill="white" d="M16 72H496V144H16Z" />
+      <path fill="white" d="M16 268H496V340H16Z" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <use fill="black" href="#line-2-left" />
+      <path fill="white" d="M16 168H496V244H16Z" />
+      <path fill="white" d="M16 364H496V440H16Z" />
+    </mask>
+    <mask id="mask-3">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M87 243H425V305H87Z" />
+    </mask>
+  </defs>
+  <use href="#line-1-left" mask="url(#mask-1)" />
+  <use href="#line-1-right" mask="url(#mask-2)" />
   <path
-    d="M10 23h180v8h-180ZM10 59h180v8h-180ZM10 133h180v8h-180ZM10 169h180v8h-180Z"
+    mask="url(#mask-3)"
+    d="M16 48H496V72H16ZM16 144H496V168H16ZM16 244H496V268H16ZM16 340H496V364H16ZM16 440H496V464H16Z"
   />
-  <path d="M10 97h25v8h-25ZM43 97h114v20h-114ZM165 97h25v8h-25Z" />
+  <path d="M103 244H409V304H103Z" />
 </svg>

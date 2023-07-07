@@ -1,15 +1,17 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="200"
-  height="200"
-  viewBox="0 0 200 200"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
   class="r6data__action r6data__action__camera"
   id="camera"
 >
-  <path d="M190 41v19q0 8-8 8h-164q-8 0-8-8v-20Z" />
-  <path d="M169 78c7 0 7 12 0 12h-138c-7 0-7-12 0-12Z" />
-  <path d="M162 99c0 81-124 81-124 0ZM100 153a1 1 0 000-48 1 1 0 000 48" />
-  <ellipse cx="100" cy="124" rx="5" />
+  <path d="M16 97H496V143q0 32-32 32H48q-32 0-32-32Z" />
+  <path d="M438 199C460 199 460 229 438 229H74C52 229 52 199 74 199Z" />
+  <path
+    fill-rule="evenodd"
+    d="M421 253c0 216-330 216-330 0ZM195 328a1 1 0 00122 0 1 1 0 00-122 0M237 320a1 1 0 0036 0 1 1 0 00-36 0"
+  />
 </svg>

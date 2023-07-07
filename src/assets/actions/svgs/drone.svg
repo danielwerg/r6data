@@ -1,21 +1,29 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="200"
-  height="200"
-  viewBox="0 0 200 200"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
   class="r6data__action r6data__action__drone"
   id="drone"
 >
+  <defs>
+    <mask id="mask">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M15 199l58-27H107L15 215Z" />
+      <path fill="black" d="M15 241l86-40V217l-86 40Z" />
+      <path fill="black" d="M15 283 101 243V259L15 299Z" />
+      <path fill="black" d="M15 325 101 285V301L15 341Z" />
+    </mask>
+  </defs>
+  <g id="left">
+    <rect mask="url(#mask)" x="16" y="173" width="84" height="167" rx="24" />
+    <path d="M116 197h32v122h-32Z" />
+  </g>
+  <use href="#left" transform="translate(512) scale(-1 1)" />
   <path
-    d="M65 78H135V122H65ZM100 118a1 1 0 000-35 1 1 0 000 35M120 90a1 1 0 000-8 1 1 0 000 8"
+    fill-rule="evenodd"
+    d="M164 197h184v122h-184ZM214 258a1 1 0 0096 0 1 1 0 00-96 0M246 240a1 1 0 0026 0 1 1 0 00-26 0M309 217a1 1 0 0024 0 1 1 0 00-24 0"
   />
-  <ellipse cx="98" cy="94" rx="3" />
-  <path d="M49 78h10v44h-10ZM141 78h10v44h-10Z" />
-  <path
-    id="wheel"
-    d="M12 77q2-11 14-7ZM36 73q4-1 6 3v3l-30 14v-8ZM42 86v9l-30 14v-8ZM42 102v9l-30 14v-8ZM19 130 42 119V124Q41 129 36 130Z"
-  />
-  <use href="#wheel" transform="translate(200) scale(-1, 1)" />
 </svg>
