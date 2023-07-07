@@ -14,6 +14,7 @@ export const MARKSMANS = [
     capacity: 20,
     ammo: 161,
     reloadTime: { empty: 3.3, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/417.png')
@@ -33,6 +34,7 @@ export const MARKSMANS = [
     capacity: 15,
     ammo: 76,
     reloadTime: { empty: 3.4, tactical: 2.7 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/ots-03.png')
@@ -52,6 +54,7 @@ export const MARKSMANS = [
     capacity: 20,
     ammo: 161,
     reloadTime: { empty: 3.4, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/camrs.png')
@@ -71,6 +74,7 @@ export const MARKSMANS = [
     capacity: 20,
     ammo: 101,
     reloadTime: { empty: 3.5, tactical: 2.9 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/sr-25.png')
@@ -90,6 +94,7 @@ export const MARKSMANS = [
     capacity: 20,
     ammo: 101,
     reloadTime: { empty: 3.4, tactical: 3.1 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/mk_14_ebr.png')
@@ -109,6 +114,7 @@ export const MARKSMANS = [
     capacity: 10,
     ammo: 71,
     reloadTime: { empty: 3.1, tactical: 2.2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/ar-15.50.png')
@@ -128,6 +134,7 @@ export const MARKSMANS = [
     capacity: 5,
     ammo: 36,
     reloadTime: { empty: 3.1, tactical: 2.5 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/csrx_300.png')

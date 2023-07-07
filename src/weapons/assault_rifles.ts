@@ -14,6 +14,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 241,
     reloadTime: { empty: 3.3, tactical: 2.7 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/l85a2.png')
@@ -32,6 +33,7 @@ export const ASSAULT_RIFLES = [
     capacity: 25,
     ammo: 201,
     reloadTime: { empty: 3.3, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/ar33.png')
@@ -51,6 +53,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 341,
     reloadTime: { empty: 3.3, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/g36c.png')
@@ -70,6 +73,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 341,
     reloadTime: { empty: 3.4, tactical: 2.7 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/r4-c.png')
@@ -89,6 +93,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 341,
     reloadTime: { empty: 3.7, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/556xi.png')
@@ -108,6 +113,7 @@ export const ASSAULT_RIFLES = [
     capacity: 25,
     ammo: 201,
     reloadTime: { empty: 3.1, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/f2.png')
@@ -127,6 +133,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 341,
     reloadTime: { empty: 3.4, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/ak-12.png')
@@ -146,6 +153,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 341,
     reloadTime: { empty: 3.3, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/aug_a2.png')
@@ -165,6 +173,7 @@ export const ASSAULT_RIFLES = [
     capacity: 0,
     ammo: 341,
     reloadTime: { empty: 3.1, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/552_commando.png')
@@ -184,6 +193,7 @@ export const ASSAULT_RIFLES = [
     capacity: 25,
     ammo: 201,
     reloadTime: { empty: 3.4, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/416-c_carbine.png')
@@ -202,6 +212,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 341,
     reloadTime: { empty: 2.9, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/c8-sfw.png')
@@ -221,6 +232,7 @@ export const ASSAULT_RIFLES = [
     capacity: 20,
     ammo: 161,
     reloadTime: { empty: 3.1, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/mk17_cqb.png')
@@ -240,6 +252,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 341,
     reloadTime: { empty: 3.3, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/para-308.png')
@@ -258,6 +271,7 @@ export const ASSAULT_RIFLES = [
     capacity: 20,
     ammo: 181,
     reloadTime: { empty: 3.3, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/type-89.png')
@@ -277,6 +291,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 176,
     reloadTime: { empty: 2.7, tactical: 2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/c7e.png')
@@ -296,6 +311,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 241,
     reloadTime: { empty: 3.3, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/m762.png')
@@ -315,6 +331,7 @@ export const ASSAULT_RIFLES = [
     capacity: 50,
     ammo: 201,
     reloadTime: { empty: 3.3, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/v308.png')
@@ -334,6 +351,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 241,
     reloadTime: { empty: 3.3, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/spear_.308.png')
@@ -353,6 +371,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 181,
     reloadTime: { empty: 3.4, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/m4.png')
@@ -372,6 +391,7 @@ export const ASSAULT_RIFLES = [
     capacity: 40,
     ammo: 281,
     reloadTime: { empty: 3.4, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/ak-74m.png')
@@ -391,6 +411,7 @@ export const ASSAULT_RIFLES = [
     capacity: 20,
     ammo: 181,
     reloadTime: { empty: 3.4, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/arx200.png')
@@ -410,6 +431,7 @@ export const ASSAULT_RIFLES = [
     capacity: 30,
     ammo: 211,
     reloadTime: { empty: 3.1, tactical: 2.2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/f90.png')
@@ -428,6 +450,7 @@ export const ASSAULT_RIFLES = [
     capacity: 25,
     ammo: 176,
     reloadTime: { empty: 2.5, tactical: 2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/commando_9.png')
@@ -447,6 +470,7 @@ export const ASSAULT_RIFLES = [
     capacity: 25,
     ammo: 176,
     reloadTime: { empty: 3.4, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/sc3000k.png')
@@ -466,6 +490,7 @@ export const ASSAULT_RIFLES = [
     capacity: 50,
     ammo: 201,
     reloadTime: { empty: 3.4, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/pof9.png')

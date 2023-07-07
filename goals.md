@@ -5,12 +5,10 @@ Good place to start contributing!
 ## Operator Unique Ability
 
 - `isElectronic`?
-<!-- - `subType`? (ex: Brava: `type: 'count'`, `subType: 'recharge_count'`) -->
 
 ## Weapons
 
 - icon svg
-- `slot` value (ex: `'primary' | 'secondary'` or array for future proof)
 
 ## Rank Icons v1
 
@@ -25,6 +23,8 @@ Rework, realign, clean up svgs and add classes and ids (very low priority)
 <details>
 <summary>Completed</summary>
 
+- Weapons
+  - `slot` value
 - Operator Unique Ability
   - icon svg ([#9](https://github.com/danielwerg/r6data/issues/9))
 - Operarator Weapon Attachments

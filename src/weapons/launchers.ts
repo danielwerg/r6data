@@ -14,6 +14,7 @@ export const LAUNCHERS = [
     capacity: 1,
     ammo: 1,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'secondary',
     icon: {
       toSVG: async () => getWeaponSVGString('/svgs/gonne-6.svg'),
       png: getWeaponAssetURL('/pngs/gonne-6.png')

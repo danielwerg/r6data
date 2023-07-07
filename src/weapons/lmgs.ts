@@ -14,6 +14,7 @@ export const LMGS = [
     capacity: 100,
     ammo: 301,
     reloadTime: { empty: 8.5, tactical: 8.5 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/6p41.png')
@@ -33,6 +34,7 @@ export const LMGS = [
     capacity: 50,
     ammo: 251,
     reloadTime: { empty: 3.9, tactical: 3 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/g8a1.png')
@@ -52,6 +54,7 @@ export const LMGS = [
     capacity: 100,
     ammo: 301,
     reloadTime: { empty: 7.6, tactical: 7.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/m249.png')
@@ -71,6 +74,7 @@ export const LMGS = [
     capacity: 80,
     ammo: 241,
     reloadTime: { empty: 3, tactical: 2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/t-95_lsw.png')
@@ -90,6 +94,7 @@ export const LMGS = [
     capacity: 150,
     ammo: 300,
     reloadTime: { empty: 6.5, tactical: 7.1 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/lmg-e.png')
@@ -109,6 +114,7 @@ export const LMGS = [
     capacity: 80,
     ammo: 240,
     reloadTime: { empty: 5.7, tactical: 6.2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/alda_5.56.png')
@@ -128,6 +134,7 @@ export const LMGS = [
     capacity: 60,
     ammo: 241,
     reloadTime: { empty: 4.5, tactical: 3.3 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/m249_saw.png')
@@ -147,6 +154,7 @@ export const LMGS = [
     capacity: 70,
     ammo: 211,
     reloadTime: { empty: 4.6, tactical: 4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/dp27.png')

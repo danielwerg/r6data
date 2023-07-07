@@ -14,6 +14,7 @@ export const SHIELDS = [
     capacity: 0,
     ammo: 0,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/le_roc_shield.png')
@@ -32,6 +33,7 @@ export const SHIELDS = [
     capacity: 0,
     ammo: 0,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/ballistic_shield.png')
@@ -51,6 +53,7 @@ export const SHIELDS = [
     capacity: 0,
     ammo: 0,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/g52-tactical_shield.png')
@@ -70,6 +73,7 @@ export const SHIELDS = [
     capacity: 0,
     ammo: 0,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/cce_shield.png')

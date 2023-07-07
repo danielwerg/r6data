@@ -14,6 +14,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 181,
     reloadTime: { empty: 3, tactical: 2.2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/fmg-9.png')
@@ -32,6 +33,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 181,
     reloadTime: { empty: 2.8, tactical: 2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/mp5k.png')
@@ -50,6 +52,7 @@ export const SMGS = [
     capacity: 25,
     ammo: 176,
     reloadTime: { empty: 2.9, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/ump45.png')
@@ -69,6 +72,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 181,
     reloadTime: { empty: 2.9, tactical: 2.2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/mp5.png')
@@ -88,6 +92,7 @@ export const SMGS = [
     capacity: 50,
     ammo: 251,
     reloadTime: { empty: 2.9, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/p90.png')
@@ -107,6 +112,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 181,
     reloadTime: { empty: 3.2, tactical: 2.3 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/9x19vsn.png')
@@ -126,6 +132,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 181,
     reloadTime: { empty: 2.8, tactical: 2.2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/mp7.png')
@@ -145,6 +152,7 @@ export const SMGS = [
     capacity: 34,
     ammo: 205,
     reloadTime: { empty: 2.6, tactical: 1.9 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/9mm_c1.png')
@@ -164,6 +172,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 181,
     reloadTime: { empty: 3.1, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/mpx.png')
@@ -183,6 +192,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 181,
     reloadTime: { empty: 3, tactical: 2.2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/m12.png')
@@ -202,6 +212,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 181,
     reloadTime: { empty: 2.9, tactical: 2.2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/mp5sd.png')
@@ -221,6 +232,7 @@ export const SMGS = [
     capacity: 25,
     ammo: 176,
     reloadTime: { empty: 2.8, tactical: 2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/vector_.45_acp.png')
@@ -240,6 +252,7 @@ export const SMGS = [
     capacity: 50,
     ammo: 301,
     reloadTime: { empty: 3.4, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/pdw9.png')
@@ -259,6 +272,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 241,
     reloadTime: { empty: 3, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/t-5_smg.png')
@@ -277,6 +291,7 @@ export const SMGS = [
     capacity: 40,
     ammo: 251,
     reloadTime: { empty: 3, tactical: 2.1 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/scorpion_evo_3_a1.png')
@@ -296,6 +311,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 341,
     reloadTime: { empty: 3, tactical: 2.7 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/k1a.png')
@@ -315,6 +331,7 @@ export const SMGS = [
     capacity: 30,
     ammo: 181,
     reloadTime: { empty: 3.1, tactical: 2.8 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/mx4_storm.png')
@@ -334,6 +351,7 @@ export const SMGS = [
     capacity: 31,
     ammo: 218,
     reloadTime: { empty: 3.3, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/aug_a3.png')
@@ -352,6 +370,7 @@ export const SMGS = [
     capacity: 15,
     ammo: 181,
     reloadTime: { empty: 2.7, tactical: 1.7 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/p10_roni.png')
@@ -371,6 +390,7 @@ export const SMGS = [
     capacity: 22,
     ammo: 177,
     reloadTime: { empty: 2.9, tactical: 2.2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/uzk50gi.png')

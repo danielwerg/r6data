@@ -14,6 +14,7 @@ export const SHOTGUNS = [
     capacity: 7,
     ammo: 36,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/m590a1.png')
@@ -32,6 +33,7 @@ export const SHOTGUNS = [
     capacity: 8,
     ammo: 33,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/m1014.png')
@@ -51,6 +53,7 @@ export const SHOTGUNS = [
     capacity: 7,
     ammo: 36,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/sg-cqb.png')
@@ -70,6 +73,7 @@ export const SHOTGUNS = [
     capacity: 10,
     ammo: 51,
     reloadTime: { empty: 2.8, tactical: 3.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/sasg-12.png')
@@ -89,6 +93,7 @@ export const SHOTGUNS = [
     capacity: 7,
     ammo: 36,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/m870.png')
@@ -108,6 +113,7 @@ export const SHOTGUNS = [
     capacity: 8,
     ammo: 33,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/super_90.png')
@@ -126,6 +132,7 @@ export const SHOTGUNS = [
     capacity: 7,
     ammo: 36,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/spas-12.png')
@@ -145,6 +152,7 @@ export const SHOTGUNS = [
     capacity: 6,
     ammo: 37,
     reloadTime: { empty: 3.2, tactical: 2.1 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/spas-15.png')
@@ -164,6 +172,7 @@ export const SHOTGUNS = [
     capacity: 7,
     ammo: 55,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/supernova.png')
@@ -183,6 +192,7 @@ export const SHOTGUNS = [
     capacity: 8,
     ammo: 41,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/ita12l.png')
@@ -202,6 +212,7 @@ export const SHOTGUNS = [
     capacity: 5,
     ammo: 26,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'secondary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/ita12s.png')
@@ -221,6 +232,7 @@ export const SHOTGUNS = [
     capacity: 6,
     ammo: 36,
     reloadTime: { empty: 2.6, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/six12.png')
@@ -240,6 +252,7 @@ export const SHOTGUNS = [
     capacity: 36,
     ammo: 6,
     reloadTime: { empty: 2.6, tactical: 2.6 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/six12_sd.png')
@@ -259,6 +272,7 @@ export const SHOTGUNS = [
     capacity: 10,
     ammo: 51,
     reloadTime: { empty: 2.3, tactical: 3.3 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/fo-12.png')
@@ -278,6 +292,7 @@ export const SHOTGUNS = [
     capacity: 2,
     ammo: 61,
     reloadTime: { empty: 3, tactical: 2.4 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/bosg.12.2.png')
@@ -297,6 +312,7 @@ export const SHOTGUNS = [
     capacity: 30,
     ammo: 91,
     reloadTime: { empty: 2.7, tactical: 2 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/acs12.png')
@@ -316,6 +332,7 @@ export const SHOTGUNS = [
     capacity: 10,
     ammo: 121,
     reloadTime: { empty: 3.2, tactical: 2.5 },
+    slot: 'primary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/tcsg12.png')
@@ -335,6 +352,7 @@ export const SHOTGUNS = [
     capacity: 3,
     ammo: 45,
     reloadTime: { empty: 0, tactical: 0 },
+    slot: 'secondary',
     icon: {
       toSVG: null,
       png: getWeaponAssetURL('/pngs/super_shorty.png')
