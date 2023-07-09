@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-Kali is equipped with the CSRX 300 rifle, a powerful bolt-action sniper rifle which can pierce through multiple breakable walls, and destroy wooden barricades within a single shot. It can down an enemy with one shot (unless they are 3 health with Rook's armor) to the chest or can kill them instantly with a headshot. The CSRX 300 comes equipped with interchangable sights that are labled 5x and 12x in-game.
+Kali is equipped with the CSRX 300 rifle, a powerful bolt-action sniper rifle which can pierce through multiple breakable walls, and destroy wooden barricades within a single shot. It can down an enemy with one shot (unless they are 3 health with Rook's armor) to the chest or can kill them instantly with a headshot. The CSRX 300 comes equipped with interchangeable sights that are labeled 5x and 12x in-game.
 
 The rifle is also equipped with an under-barrel launcher that fires LV Explosive Lances. These burrow into walls, even indestructible walls, pushing an explosive charge through the wall to the other side, and create an explosion on both sides of the wall. The explosion causes minimal damage to Defenders but will destroy any gadgets in the vicinity, making it useful for lowering defenses.
 

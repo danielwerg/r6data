@@ -6,11 +6,11 @@ Twitch can deploy up to two Shock Drones. The Shock Drones are specialized that 
 
 - Twitch deploys a regular Drone during the Prep Phase, which can be picked up and re-deployed during the Action Phase. Two Shock Drones are given during the Action Phase.
 - The Shock Drones make a distinct, low-humming noise different from that of normal drones.
-- Like normal drones, Shock Drones have lights intalled in its front. When operated or viewed through by any Attacker, the lights will glow.
+- Like normal drones, Shock Drones have lights installed in its front. When operated or viewed through by any Attacker, the lights will glow.
 - Shock Drones can fire lasers that can destroy enemy electronic gadgets and deal small damage.
   - Both Shock Drones start with 3 lasers. Once a laser is used, they recharge one laser per 15 seconds.
   - Each laser deals 5 damage.
-  - The laser has an umlimited range.
+  - The laser has an unlimited range.
   - Most electronic gadgets (e.g. CCTV Cameras, Signal Disruptors, Nitro Cells) will be destroyed in one hit by the Shock Drone's lasers.
   - The lasers can destroy the gas canisters on Mira's Black Mirrors, thus opening the Black Mirror, as well as Goyo's Volcan Shields by hitting its red canister.
   - The lasers are incapable of disabling or interfering with Clash's CCE Shield.

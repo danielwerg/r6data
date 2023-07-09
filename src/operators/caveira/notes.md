@@ -11,7 +11,7 @@ Caveira's "ability" is made up of three parts: her Silent Step, her special hand
 Silent Step, as its name indicates, allows Caveira to move quietly, making it nearly impossible to detect her movements by sound.
 
 - The Silent Step ability runs on a charge system; it has infinite uses but limited duration and charge. It can be manually deactivated while active.
-  - Silent Step can be active continously for up to 10 seconds.
+  - Silent Step can be active continuously for up to 10 seconds.
   - Silent Step recharges when it is deactivated. The recharge rate is twice as fast as the depletion rate, so the maximum recharge time is 5 seconds.
   - Caveira can activate Silent Step as long as it is at least 25% charged.
 - While Silent Step is active, Caveira gains the following attributes:

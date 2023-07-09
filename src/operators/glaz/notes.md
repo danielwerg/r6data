@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-Glaz's unique gadget is an HDS Flip Sight for his OTs-03 marksman rifle. Whilse aiming down sights with it, it also comes with a Thermal Feedback System which can outline long-range marks even through smoke for easier shooting.
+Glaz's unique gadget is an HDS Flip Sight for his OTs-03 marksman rifle. While aiming down sights with it, it also comes with a Thermal Feedback System which can outline long-range marks even through smoke for easier shooting.
 
 - Glaz spawns with the Flip Sight down. Pressing the gadget key will make Glaz flip up the Flip Sight, allowing its effects to apply when aiming down sights on the OTs-03.
 - With the Flip Sight on, the OTs-03 has an increased level of zoom when aiming down sights.
@@ -25,5 +25,5 @@ Glaz's unique gadget is an HDS Flip Sight for his OTs-03 marksman rifle. Whilse 
 
 ### Counters
 
-- Warden's Smart Glasses will be able to see through the smoke that glaz may use.
+- Warden's Smart Glasses will be able to see through the smoke that Glaz may use.
 - Jäger's ADS can intercept smoke grenades. Smoke grenades are a key part of Glaz's kit.

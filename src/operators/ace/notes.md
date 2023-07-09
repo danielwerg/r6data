@@ -15,7 +15,7 @@ Ace's Unique Gadget is the SELMA Breaching Device. When thrown onto a breachable
 
 ### Strategies/Synergies
 
-- The SELMA's extendable arms can destroy any Defender gadget in the vicinity as they expand, meaning Ace can use one to lower defences from a distance.
+- The SELMA's extendable arms can destroy any Defender gadget in the vicinity as they expand, meaning Ace can use one to lower defenses from a distance.
 - Gadgets such as Thatcher's EMP Grenades, Twitch's Shock Drone, Kali's LV Lances, Zero's Argus Cameras, Flores' RCE-RATERO drone, can assist Ace by taking out Defender gadgets which prevent SELMAs from operating.
 
 ### Counters

@@ -33,7 +33,7 @@ Maestro comes equipped with two Compact Laser Emplacements (CLE-Vs), otherwise k
 
 ### Strategies/Synergies
 
-- An Evil Eye will do 105 damage if all 21 shots land on an Operator before overheating which usualy will land a kill on planting Attacker in late round.
+- An Evil Eye will do 105 damage if all 21 shots land on an Operator before overheating which usually will land a kill on planting Attacker in late round.
 - In the shattered state, Maestro can regain some vision without fully revealing the Evil Eye's weak point by tapping the aim button constantly.
 - Turning turret directly up right before Thatcher throw of EMP will make it almost impossible to destroy turret.
 

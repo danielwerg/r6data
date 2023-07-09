@@ -40,7 +40,7 @@ Mute is equipped with four GC90 "Moni" Signal Disruptors, jamming communications
 - Ace's SELMA's will not activate when inside the effective range of a Signal Disruptor.
 - Nomad's Airjabs placed within the Disruptors' effective range are disabled and cannot be triggered.
 - Defenders within the proximity of a Signal Disruptor are immune to the phone buzz hack from Dokkaebi's Logic Bomb. If a Defender's phone is already buzzing, the buzzing will automatically cease if they move into the range of a Signal Disruptor.
-- Grim's Kawan Hive doesn't effect Defenders inside of a range of Mute's Signal Disruptor, similar to Dokkaebi's Logic Bimb if Defenders already pinged by Grim they can enter jammers are of effect to remove the pings.
+- Grim's Kawan Hive doesn't effect Defenders inside of a range of Mute's Signal Disruptor, similar to Dokkaebi's Logic Bomb if Defenders already pinged by Grim they can enter jammers are of effect to remove the pings.
 
 ### Strategies/Synergies
 

@@ -17,7 +17,7 @@ Solis' Unique Gadget is the SPEC-IO Electro-Sensor, an augmented reality headset
 
 ### Strategies/Synergies
 
-- Solis works well with Defenders who specialise in disabling Attacker gadgets and breaching devices, such as Mute, Bandit and Kaid.
+- Solis works well with Defenders who specialize in disabling Attacker gadgets and breaching devices, such as Mute, Bandit and Kaid.
 - Electro-Sensor can detect dropped or planting defuser.
 
 ### Counters

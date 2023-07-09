@@ -8,19 +8,19 @@ Osa's Unique Gadget is the Talon-8 Clear Shield, a rectangular shield made of bu
   - The Talon Shields however have opening on the bottom while carried. Even crouching cannot close this gap.
   - Osa cannot run or go prone with the Talon Shield. Doing such actions will put the shield away.
   - Osa cannot use weapons or melee while carrying the Talon Shield.
-- While rappeling, Osa can switch to her Talon Shield.
+- While rappelling, Osa can switch to her Talon Shield.
   - Osa cannot initiate a rappel, or climb up the grapple's end, while holding the Shield.
-  - While rappeling upright, Osa holds the shield horizontally rotated.
-  - While rappeling upside down, Osa holds the shield in the normal position.
+  - While rappelling upright, Osa holds the shield horizontally rotated.
+  - While rappelling upside down, Osa holds the shield in the normal position.
   - Osa can deploy Talon Shields on windows while rappelling, upright or upside down.
-  - When rappeling in, the carry stance will change back from horizontal to vertical.
+  - When rappelling in, the carry stance will change back from horizontal to vertical.
 - Osa can't vault while holding her shield.
 - When placed, Talon Shields will instantly destroy any Barricades in place, regardless of the number of hit required.
   - Around halfway through the deployment sequence, the barricade is destroyed. At that point Osa can cancel the deployment sequence and return to carry the shield.
 - Talon Shields will crack when taking fire, both when deployed and when being held out before placement.
 - Talon Shields can be picked up at any time, but the damage to the shield will remain.
 - Talon Shields are not tall enough to cover the entirety of a doorway or windows, and would leave a space open to fire or move through.
-  - If Osa is rappeling upside down, the Shield's positioning will also be upside down, with the canister at the top and the opening at the bottom.
+  - If Osa is rappelling upside down, the Shield's positioning will also be upside down, with the canister at the top and the opening at the bottom.
 - The Talon Shield is deployed slightly forward from the holding position, before extending its wing diagonally backward.
   - On doors, a placement of Talon Shield exposes Osa diagonally.
     - Once deployed however, the shield will fit the door frame
@@ -39,7 +39,7 @@ Osa's Unique Gadget is the Talon-8 Clear Shield, a rectangular shield made of bu
 
 ### Strategies/Synergies
 
-- Talon Shields could be used to quicly open barricades.
+- Talon Shields could be used to quickly open barricades.
 - Talon Shields could be used to disabled Aruni's Surya Laser Gates.
 - While Osa carries the Talon Shield, she takes reduced damage from explosives. Potentially even surviving a close-range Nitro Cell is positioned correctly.
 

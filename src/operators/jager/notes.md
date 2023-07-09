@@ -39,6 +39,6 @@ Jäger's unique gadget is the ADS-MKIV "Magpie", which can intercept live grenad
   - Zero can destroy the ADSs if not destroyed prior.
   - Flores can destroy up ADSs safely.
 - In some cases, sacrificing a couple of projectiles such as Stun Grenades can be done to use up an Active Defense System, allowing for more important gadgets, like Frag Grenades, Zofia's Impact Grenades, or Ash's Breaching Rounds to activate unimpeded
-- Capitão's Incendiary Bolts and Micro Smoke Grenades can't be catched by ADS
+- Capitão's Incendiary Bolts and Micro Smoke Grenades can't be caught by ADS
 - Ying has the ability to place her Candela on a breachable surface releasing all 6 Flash Charges. This drains all three ADSs.
 - Fuze's Cluster charges can waste Jäger's ADS total interceptions.

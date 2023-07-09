@@ -19,11 +19,11 @@ Dokkaebi comes equipped with her Ballistic Armor Military Laptop, Logic Bomb. Th
   - Dokkaebi only needs to perform this action once. Further hacks yields no additional access.
   - IQ can detect dropped phones with her Electronics Detector.
   - The dropped phones are destroyable by any source of damage.
-  - Hacking a Defender's phone is seperate from the Logic Bomb.
+  - Hacking a Defender's phone is separate from the Logic Bomb.
   - Attackers do not gain control over Defender gadgets controlled through the camera menu, namely Echo's Yokai, Maestro's Evil Eyes, and drones hacked by Mozzie.
     - Their controls all remain exclusive to their owners.
     - Attackers will be able to view the camera even if the gadget moves.
-- Defenders can now destroy their camera gadgets without incuring penalties.
+- Defenders can now destroy their camera gadgets without incurring penalties.
 
 ### Strategies/Synergies
 

@@ -10,7 +10,7 @@ Buck's unique gadget is an underbarrel shotgun mounted under his weapon known as
   - The Skeleton Key is not considered as a gadget with unique ammo, so ammo boxes in respective gamemodes will refill its reserves.
   - The Skeleton Key has low recoil and can easily destroy walls and eliminate enemies.
     - The Skeleton Key is significantly more destructive than other shotguns, with each pellet able to destroy large pieces of a destructible surface.
-  - The Skeleton Key has a maximum damage of approximately 60 per pellet. Compared to other shotguns, the Skeleton Key's damage dropoff is greater, reaching 15 damage per pellet by 14m.
+  - The Skeleton Key has a maximum damage of approximately 60 per pellet. Compared to other shotguns, the Skeleton Key's damage drop-off is greater, reaching 15 damage per pellet by 14m.
 
 ### Strategies/Synergies
 

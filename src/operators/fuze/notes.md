@@ -12,7 +12,7 @@ Fuze carries four APM-6 "Matryoshka" Cluster Charges capable of clearing rooms b
     - This includes any electrical damage such as Bandit's Shock Wires and Kaid's Electroclaw.
     - The Cluster Charge can be destroyed if the surface it is deployed on is destroyed.
   - When a Cluster Charge is activated, it punches a hole with a tube on the surface it is deployed on, at its deployed location.
-    - Cluster Charge's tube which comes out in other side of the surface can be shot, if surface is reinfoced 1 charge will always get through before Defenders will be able to shot the tube.
+    - Cluster Charge's tube which comes out in other side of the surface can be shot, if surface is reinforced 1 charge will always get through before Defenders will be able to shot the tube.
   - Fuze cannot activate the Cluster Charge when in a DBNO state.
   - The Cluster Charge is remotely activated, so they cannot be activated if either the charge or Fuze himself are in the effect range of Mute's Signal Disruptors.
 - A Cluster Charge's sub-grenades are launched in a line in front of the charge, going from right to left, before detonating in the order they were launched in.

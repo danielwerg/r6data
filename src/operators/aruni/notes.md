@@ -68,5 +68,5 @@ Aruni's Unique Gadget is the Surya Laser Gate. When this device is launched onto
   - For example, each individual Trax Stinger deployed by Gridlock can effectively disable a Surya Gate without needing to sacrifice the whole Canister of Trax Stingers. Other Gadgets with this property includes Fuze's Cluster Charges, Hibana's X-KAIROS Pellets and Ying's Candelas.
 - Iana can use her Gemini Replicator to take the Surya Gate's heat, disabling it for 30 seconds.
 - Thatcher can disable the Surya Gate with his EMP Grenades for up to 15 seconds, but the Surya Gate will return to whichever state it was in afterwards. If a EMP grenade is thrown directly into the gate however, it will be disabled for 30 seconds.
-- Impact EMP Grenades can disable Surya Gate for 9 seconds, hower it is better to throw them at it instead to disable it for 30 seconds instead.
+- Impact EMP Grenades can disable Surya Gate for 9 seconds, however it is better to throw them at it instead to disable it for 30 seconds instead.
 - Osa could disable Surya Gate for 30 seconds using her Talon Shields.

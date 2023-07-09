@@ -25,7 +25,7 @@ Castle is equipped with four Universal Tactical Panels (Armor Panels). These spe
 - Armor Panels are bullet-proof, not explosive-proof. Breach Charges and Frag Grenades can take down these barricades with ease.
   - Sledge's Breaching Hammer, Ash's Breaching Rounds and Zofia's Impact Grenades from her Lifeline can also destroy them instantly.
 - Some weapons and gadgets can penetrate the Armor Panels:
-  - Fuze's Cluster Charges can be deployed on Armor Panels similary to reinforced walls and will punch out a sizable hole on the Armor Panel after being detonated.
+  - Fuze's Cluster Charges can be deployed on Armor Panels similarly to reinforced walls and will punch out a sizable hole on the Armor Panel after being detonated.
   - Like Fuze, Ying's Candelas can also be deployed on Armor Panels, but the hole created is much smaller.
   <!-- - The 707th SMB's BOSG.12.2 can shoot out one layer out of the three layers that make up an Armor Panel. They can create a peek hole by shooting out all three layers. With 3 holes made (9 layers in total), they can even completely destroy an Armor Panel. -->
   - Maverick can burn holes through an Armor Panel. With enough damage, the Armor Panel will be completely destroyed.

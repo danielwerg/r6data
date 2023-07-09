@@ -4,9 +4,9 @@
 
 Sens' Unique Gadget is the ROU Projector, a wheel-like device which deposits small projectors on the ground. When thrown or sent rolling, the ROU drops a line of projectors behind it, which activate to create a wall of light. This light wall completely obscures anything behind it, making it ideal for cutting off the Defender's line of sight, and providing cover for the Attackers.
 
-- R.O.U. takes 5 seconds to fully deploy making a projection wall of rougly 13 meters made of 10 sections
+- R.O.U. takes 5 seconds to fully deploy making a projection wall of roughly 13 meters made of 10 sections
 - Each section of a projection wall lasts for 13 seconds
-- Could be slowed down by barbed wire which will decress total length of a wall
+- Could be slowed down by barbed wire which will decrees total length of a wall
 - While rolling, the R.O.U. can ricochet off walls and travel in a different direction unlike Ying's Candelas.
 
 ### Strategies/Synergies

@@ -14,7 +14,7 @@ His Unique Gadget is the Shumikha Launcher. An antique grenade launcher that lau
 
 ### Strategies/Synergies
 
-- Tachanka works well with intel gathering Defenders such as Valkyrie and Echo. They can ping targets using their respetive cameras, allowing Tachanka to more accurately strike with his Shumikha grenades.
+- Tachanka works well with intel gathering Defenders such as Valkyrie and Echo. They can ping targets using their respective cameras, allowing Tachanka to more accurately strike with his Shumikha grenades.
 - Smoke and Goyo can help maximize effective area denial.
 - Melusi can aid Tachanka by providing an oppressive gadget (her Banshees) that will slow down Attackers caught in the fire.
 - When paired with Maestro and his LMG, they can provide large suppressive fire. The two of them anchoring an objective makes a powerful duo.

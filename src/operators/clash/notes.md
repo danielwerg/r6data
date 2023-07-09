@@ -46,5 +46,5 @@ Clash comes equipped with a special Crowd Control Electro Shield. When in use, i
 - Nomad's Airjabs can easily knock Clash on the ground leaving her vulnerable to attackers.
 - Gridlock's Trax Stingers can force her to move back to avoid taking damage, as she cannot shoot while the CCE Shield is deployed.
 - Thatcher's EMP Grenades will disable the taser function on the CCE for a duration of 15 seconds.
-- Impact EMP Grenades will disable the taser funtion on the CCE for 9 seconds
+- Impact EMP Grenades will disable the taser function on the CCE for 9 seconds
 - Flores' RCE-RATERO drone can deal high damage when close enough to Clash, despite the explosion damage reduction.

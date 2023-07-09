@@ -18,7 +18,7 @@ Rook comes with a bag of five R1N "Rhino" Armor Plates. These Armor Plates can b
   - Despite the armor being only applied to the chest during the animation; the armor affects all parts of the body (except the head).
   - Explosives will deal less damage when an Armor Plate is applied to an Operator.
 - Armor Plates guarantee that the Operator wearing it is downed instead of killed when their health depletes. However, headshots are still instantly lethal.
-  - Being downed while wearing the Armor Plate sets bleedout timer to 60 seconds regardles if Operator stopping the bleed or not while if Operator not wearing Armor Plate it is only 30 seconds and 60 seconds if Operator is stopping the bleed.
+  - Being downed while wearing the Armor Plate sets bleed out timer to 60 seconds regardless if Operator stopping the bleed or not while if Operator not wearing Armor Plate it is only 30 seconds and 60 seconds if Operator is stopping the bleed.
   - When downed, the Operator will lose their Armor Plate. Operator can equip armor only once per round.
   - While the Armor Plate ensures that the Operator is downed, the DBNO policy of "can only be downed once per round" applies.
 

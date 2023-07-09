@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-Melusi's Unique Gadget is the Banshee Sonic Defence device. When deployed on a wall or floor, the Banshee will emit a low buzzing noise whenever an Attacker enters its radius and line of sight. As well as alerting Defenders with its noise, the Banshee also slows down the movement of any Attacker within its radius, giving Melusi and other Defenders a prime chance to attack.
+Melusi's Unique Gadget is the Banshee Sonic Defense device. When deployed on a wall or floor, the Banshee will emit a low buzzing noise whenever an Attacker enters its radius and line of sight. As well as alerting Defenders with its noise, the Banshee also slows down the movement of any Attacker within its radius, giving Melusi and other Defenders a prime chance to attack.
 
 - The Banshee operates corresponding with the certain Operator's speed type: Fast, Medium, and Slow.
   - The Banshee's effect grows stronger the closer an Attacker is to the device

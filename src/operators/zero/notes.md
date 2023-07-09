@@ -4,13 +4,13 @@
 
 Zero's gadget is the ARGUS Launcher, which launches small cameras. These cameras can burrow into any surface, including reinforced walls and hatches, and provide a camera view on both sides of the deployed surface.
 
-Each ARGUS Camera can fire an unlimited amount of projectiles, which can be used to destroy Defender gadgets and defences, or injure defenders themselves.
+Each ARGUS Camera can fire an unlimited amount of projectiles, which can be used to destroy Defender gadgets and defenses, or injure defenders themselves.
 
 - The ARGUS Camera's lasers have a recharge rate of 15 seconds with only 1 shot before having to recharge.
 - The ARGUS Launcher is considered a separate weapon like Amaru's Garra Hook.
   - Zero is exposed when using the ARGUS Launcher.
   - In order to access whichever weapon you were using before, you must hit the switch weapon button.
-- The ARGUS camera reticle displays two arrows facing upwards and downwards whenever the camera is able to view both sides of the desired surface; If only the downards arrow displayed, the camera will only view one side; If no arrows are displayed, the camera will not land on a surface.
+- The ARGUS camera reticle displays two arrows facing upwards and downwards whenever the camera is able to view both sides of the desired surface; If only the downwards arrow displayed, the camera will only view one side; If no arrows are displayed, the camera will not land on a surface.
 - ARGUS cameras can drill into indestructible walls and floors, but will only see one side.
 - ARGUS cameras can drill into any surface unless electrified by Bandit or Kaid.
   - Once deployed, the ARGUS Camera's feed becomes accessible by all Attackers.
@@ -58,7 +58,7 @@ Each ARGUS Camera can fire an unlimited amount of projectiles, which can be used
 
 ### Counters
 
-- When an ARGUS cam is deployed, it makes a distinctive sound when burrowing into a wall or floor, alerting Defenders of an ARGUS deployment. Along with a noticable light that can be spotted when an ARGUS camera is being used.
+- When an ARGUS cam is deployed, it makes a distinctive sound when burrowing into a wall or floor, alerting Defenders of an ARGUS deployment. Along with a noticeable light that can be spotted when an ARGUS camera is being used.
 - As ARGUS cams are considered projectiles, they can be intercepted by Jäger's ADS and Wamai's Mag-NETs.
 - ARGUS cams are destroyed if deployed on a surface electrified by Bandit's Shock Wires or Kaid's Electroclaws.
   - Electrifying gadgets can be destroyed by the ARGUS' laser, if deployed at a safe distance.
