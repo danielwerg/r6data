@@ -510,9 +510,7 @@ Shield
 CCE
 Shield
 GONNE-6
-#
-Gadget
-names
+# Gadget names
 Deployable
 Shield
 Nitro
@@ -542,9 +540,7 @@ Charge
 Impact
 EMP
 Grenade
-#
-Map
-names
+# Map names
 House
 Oregon
 Hereford
