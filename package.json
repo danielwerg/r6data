@@ -24,6 +24,7 @@
     "postversion": "git push --follow-tags",
     "lint": "eslint src scripts",
     "lint:fix": "eslint src scripts --fix",
+    "spell": "cspell --show-context \"**/*.md\"",
     "prepare": "npm run build:prepare"
   },
   "prettier": "@danielwerg/prettier-config",
@@ -36,6 +37,7 @@
     "@types/sharp": "^0.32.0",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
+    "cspell": "^6.31.1",
     "eslint": "^8.42.0",
     "eslint-plugin-import": "^2.27.5",
     "gen-esm-wrapper": "^1.1.3",

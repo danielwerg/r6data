@@ -224,7 +224,7 @@ export const GADGETS = [
     description:
       'Non-damaging impact grenade that temporarily deactivates nearby opponent electronic devices.',
     notes:
-      '1.8 meters spherical range, disables electronical gadgets for 9 seconds.',
+      '1.8 meters spherical range, disables electronic gadgets for 9 seconds.',
     icon: {
       toSVG: async () =>
         getGadgetSVGString('/simple/svgs/emp_impact_grenade.svg'),

@@ -27,7 +27,7 @@ Rework, realign, clean up svgs and add classes and ids (very low priority)
   - `slot` value
 - Operator Unique Ability
   - icon svg ([#9](https://github.com/danielwerg/r6data/issues/9))
-- Operarator Weapon Attachments
+- Operator Weapon Attachments
   - Icon svg
   - primary, secondary, slug, sights, barrels, grips, under barrels
 

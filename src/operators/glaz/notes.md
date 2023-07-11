@@ -21,7 +21,7 @@ Glaz's unique gadget is an HDS Flip Sight for his OTs-03 marksman rifle. While a
 
 - Glaz works well with any Attacker that comes equipped with a Smoke Grenade in their arsenal, allowing a wider range of coverage for Glaz to work with.
   - Capitão works especially well with Glaz because his Micro Smoke Grenades cover a much larger area than normal Smoke Grenades.
-- Sens can cover Glaz with their R.O.U. Projector System, and Glaz is also the only attacker that can see through the ROU's light walls clearly, allowing him to target enemies while remaining in the R.O.U.'s cover.
+- Sens can cover Glaz with their R.O.U. Projector System, and Glaz is also the only attacker that can see through the R.O.U.'s light walls clearly, allowing him to target enemies while remaining in the R.O.U.'s cover.
 
 ### Counters
 

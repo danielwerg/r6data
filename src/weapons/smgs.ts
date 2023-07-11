@@ -324,7 +324,7 @@ export const SMGS = [
     name: 'Mx4 Storm',
     category: 'smg',
     description:
-      'Renowned 9mm submachine gun in an elegant package that possesses a high rate of fire. An extended barrel upgradeincreases its range.',
+      'Renowned 9mm submachine gun in an elegant package that possesses a high rate of fire. An extended barrel upgrade increases its range.',
     damage: 26,
     fireRate: 950,
     mobility: 50,

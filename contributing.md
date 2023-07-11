@@ -23,9 +23,9 @@ To get ready to work on the codebase, please do the following:
   - Append to `SEASONS` in `src/seasons.ts`
   - Add `src/assets/seasons/SEASON_SHORTHAND.jpg`
 - Add new operator
-  - Add `src/opeators/OPERATOR_SLUG`
+  - Add `src/operators/OPERATOR_SLUG`
   - Update `OperatorSlug` in `src/operators/types.ts`
-  - After import in `src/opeators/index.ts`
+  - After import in `src/operators/index.ts`
   - Add icon to `src/assets/operators/icons/svgs/OPERATOR_SLUG.svg`
   - Add unique ability to `src/assets/operators/abilities/svgs/UNIQUE_ABILITY_SLUG.svg`
   - Add `src/assets/operators/bodies/OPERATOR_SLUG.EXT`

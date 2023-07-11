@@ -311,8 +311,8 @@ export const BARRELS = [
       'Reduces speed at which the muzzle moves upwards while shooting.',
     icon: {
       toSVG: async () =>
-        getAttachmentSVGString('/barrels/svgs/flash_hidder.svg'),
-      png: getAttachmentAssetURL('/barrels/pngs/flash_hidder.png')
+        getAttachmentSVGString('/barrels/svgs/flash_hider.svg'),
+      png: getAttachmentAssetURL('/barrels/pngs/flash_hider.png')
     }
   },
   {

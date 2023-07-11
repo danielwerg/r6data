@@ -10,7 +10,7 @@ The following Defender Gadgets can be hacked by Brava, converting them to Attack
 - Aruni's Surya Gates
 - Echo's Yokai Drone
 - Ela's Grzmot Mines
-- Jäger's Active Defence Systems
+- Jäger's Active Defense Systems
 - Kapkan's Entry Denial Devices
 - Lesion's Gu Mines
 - Maestro's Evil Eyes

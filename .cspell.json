@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": [
+    "project-dict",
+    "gaming-terms",
+    "software-terms",
+    "fullstack",
+    "typescript",
+    "node",
+    "html"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-dict",
+      "path": "./.cspell/project-dict.txt",
+      "addWords": true
+    }
+  ],
+  "useGitignore": true,
+  "ignoreRegExpList": ["Urls", "Email", "UUID", "CSSHexValue"],
+  "ignorePaths": ["node_modules", "./.cspell/project-dict.txt"]
+}

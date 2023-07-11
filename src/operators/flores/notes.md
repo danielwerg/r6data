@@ -14,7 +14,7 @@ Flores' Unique Gadget is the RCE-RATERO Drone, an explosive drone device which c
   - Whenever the drone is set into its bulletproof armor stage, it will attach itself to the nearest wall or floor, and produce an explosion.
   - If Flores disengages manual control of the RCE-RATERO before it enters its bulletproof state, it will keep going forward in a straight line and enter the bulletproof state automatically once the timer runs out. It will also be impossible to regain control of the deployed RCE-RATERO once this action occurs.
   - The explosion will deal heavy damage to both allies and enemies. The damage caused by the RCE-RATERO's explosion is similar to a Nitro Cell.
-  - The RCE-RETERO will not affect Mira's Black Mirror.
+  - The RCE-RATERO will not affect Mira's Black Mirror.
 - The explosion has a radius of 3 meters.
 - In addition to destroying enemy gadgets, it will also destroy friendly gadgets.
 - If the drone latches onto an unreinforced wall, it will create an Impact Grenade sized hole once it has detonated.

@@ -5,8 +5,8 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
-  class="r6data__attachment r6data__attachment__barrel r6data__attachment__barrel__flash_hidder"
-  id="flash_hidder"
+  class="r6data__attachment r6data__attachment__barrel r6data__attachment__barrel__flash_hider"
+  id="flash_hider"
 >
   <rect fill="#000000" x="12" y="61" width="25" height="78" rx="3" />
   <path

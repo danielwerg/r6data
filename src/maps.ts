@@ -281,7 +281,7 @@ export const MINI_MAPS = [
     bombSites: [
       '2F Master Bedroom / 2F Office',
       '1F Bar / 1F Gaming Room',
-      'B Wine Cellar / B Snowobile Garage',
+      'B Wine Cellar / B Snowmobile Garage',
       '1F Kitchen / 1F Trophy Room'
     ],
     thumbnail: getMapAssetURL('/thumbnails/chalet.webp'),
@@ -561,10 +561,10 @@ export const MINI_MAPS = [
       '1F Bar / 1F Lounge',
       '1F Dining / 1F Kitchen'
     ],
-    thumbnail: getMapAssetURL('/thumbnails/emeral_plains.webp'),
+    thumbnail: getMapAssetURL('/thumbnails/emerald_plains.webp'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1IGW5GG24TGEv3q8bRc9aJ/03c212485df256206bbb13bb5f96ea21/r6s_maps_emeraldplains_thumbnail.jpg.png',
-    background: getMapAssetURL('/backgrounds/emeral_plains.webp'),
+    background: getMapAssetURL('/backgrounds/emerald_plains.webp'),
     backgroundOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7chYwYhW5QNnKgSq1djzI5/a9fd78d3cdd1a4ef6071eefafe123d9a/r6s-maps-header-emerald-2.jpg',
     location: 'Ireland',
@@ -606,7 +606,7 @@ export const MINI_MAPS = [
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/67793C12axhuCuRqJdPOa/99675971ab45f3fab7b06ebcbb58f886/r6s-maps-header-stadium.jpg',
     location: 'Greece',
     content:
-      'Re-discover Stadium! The iconic map from Road to SI 2021 Event has been polished to make its definitive entry into the game. It features unbreakable glass walls that create an unsual degree of transparency between attackers and defenders in certain places. And the Gantry spawn high over the main structure let attackers approach with style. Once inside make use of the color-coded areas.'
+      'Re-discover Stadium! The iconic map from Road to SI 2021 Event has been polished to make its definitive entry into the game. It features unbreakable glass walls that create an unusual degree of transparency between attackers and defenders in certain places. And the Gantry spawn high over the main structure let attackers approach with style. Once inside make use of the color-coded areas.'
   },
   {
     slug: 'nighthaven_labs',

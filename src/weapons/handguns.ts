@@ -307,7 +307,7 @@ export const HANDGUNS = [
     name: 'RG15',
     category: 'handgun',
     description:
-      'Customized 9mm semi-automatic handgun, equipped with a Romeol Reflex.',
+      'Customized 9mm semi-automatic handgun, equipped with a Romeo1 Reflex.',
     damage: 38,
     fireRate: 550,
     mobility: 45,
