@@ -21,18 +21,12 @@ Vigil comes equipped with his ERC-7 Video Disruptor, which will erase him from v
     - Zero's Argus Cameras
     - Flores' RCE-RATERO Drones
   - The Video Disruptor has an unlimited effective range, but takes a second before making Vigil fully invisible to cameras and drones.
-    - Within 12 meters of Vigil's active ERC-7 a drone or camera will begin to see the interference border.
-  - Any camera feed that is under the effects of the ERC-7 will have a unique interference border around the edge of the screen when Vigil is within range.
-    - The interference border gets bigger the closer Vigil is.
+  - Vigil will be visible on any camera as distortion glitches if he sprints, fires weapons, takes damage, melee Barricades, flashed or pushed. Vigil will know when he is glitching as the peripherals of his screen will have a yellow interference.
+    - Reloading, swapping weapons, walking and crouching will not cause the mosaic glitches.
   - Affected surveillance tools will emit a white light.
   - Due to only editing the visual camera feed, Vigil can still be heard by drones or cameras.
   - The ERC-7 will not have any effect with friendly gadgets, until they are hacked by Dokkaebi. Defenders will be able to see Vigil on their point of view within cameras, but Attackers will not.
-- Vigil's movements will not trigger the pings from Lion's EE-ONE-D.
-  - If Vigil triggered the pings from the EE-ONE-D before activating the ERC-7, activating ERC-7 will have no effect.
-  - Vigil can activate the ERC-7 both before and during the scan, as long as he hasn't been detected.
-- Performing any actions will automatically deactivate the ERC-7, such as meleeing.
-  - External sources of interference will not force the ERC-7 to deactivate. Concussion effects, stun effects, explosives, fire, or even Smoke's Gas Canisters and Smoke Grenades will not interfere with the ERC-7.
-    - Friendly gadgets will not interfere with the ERC-7, such as Mute's Signal Jammers.
+  - The ERC-7 Video Disruptor will not be deactivated when performing certain actions, such as shooting, and instead will trigger the glitch effect on cameras.
 
 ### Counters
 
@@ -40,3 +34,4 @@ Vigil comes equipped with his ERC-7 Video Disruptor, which will erase him from v
 - IQ will be able to detect the ERC-7 whenever Vigil activates the ability. Specifically, IQ will detect the ERC-7 pack itself.
 - Gridlock's Trax Stingers can impede Vigil's strong roaming capabilities.
 - Jackal is still able to detect Vigil's footprints, as the ERC-7 only protects him from visual electronic monitoring.
+- Vigil won't be immune to Lion's EE-ONE-D and Grim's Kawan Hive. Both gadgets will detect him, but he can prevent being pinged by activating the ERC-7.

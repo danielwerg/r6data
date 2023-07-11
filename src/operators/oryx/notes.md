@@ -18,7 +18,7 @@ Oryx also possesses the ability to vault up though any open ceiling hatches, all
   - Oryx can breach a maximum of 24 walls with all given health (if revived).
   - Dashing through a wall can open up an immediate line of sight for other Defenders to take advantage of.
   - When using his Remah Dash, Oryx can still be meleed even when he has direct contact into an enemy. This can only be achieved by the enemy meleeing Oryx in the chest.
-- When ascending hatches, Oryx will hang on the ledge, allowing him the choice of either ascending or dropping back down. Jumping fully up a hatch takes 5 seconds.
+- When ascending hatches, Oryx will hang on the ledge, allowing him the choice of either ascending or dropping back down. Jumping fully up a hatch takes 3.5 seconds.
 - While dashing and jumping up hatches, Oryx will not have access to his weapons for the duration and for a brief moment after, leaving him vulnerable for a short period of time.
 - Oryx's Remah Dash and his ability to climb up hatches are completely independent of each other; he can climb up hatches no matter how many charges he has and it doesn't use up a charge or increase the time taken to replenish each charge.
 - Charging into Barricades will not inflict any damage on Oryx, including Castle's Armor Panels.
