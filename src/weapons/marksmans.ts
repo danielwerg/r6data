@@ -16,7 +16,7 @@ export const MARKSMANS = [
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/417.png')
     },
     iconOfficial:
@@ -36,7 +36,7 @@ export const MARKSMANS = [
     reloadTime: { empty: 3.4, tactical: 2.7 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/ots-03.png')
     },
     iconOfficial:
@@ -56,7 +56,7 @@ export const MARKSMANS = [
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/camrs.png')
     },
     iconOfficial:
@@ -76,7 +76,7 @@ export const MARKSMANS = [
     reloadTime: { empty: 3.5, tactical: 2.9 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/sr-25.png')
     },
     iconOfficial:
@@ -96,7 +96,7 @@ export const MARKSMANS = [
     reloadTime: { empty: 3.4, tactical: 3.1 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/mk_14_ebr.png')
     },
     iconOfficial:
@@ -116,7 +116,7 @@ export const MARKSMANS = [
     reloadTime: { empty: 3.1, tactical: 2.2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/ar-15.50.png')
     },
     iconOfficial:
@@ -136,7 +136,7 @@ export const MARKSMANS = [
     reloadTime: { empty: 3.1, tactical: 2.5 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/csrx_300.png')
     },
     iconOfficial:

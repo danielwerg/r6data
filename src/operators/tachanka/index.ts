@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/tachanka.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/shumikha_launcher.svg';
+import notes from './notes.md?raw';
 
 export const tachanka = {
   slug: 'tachanka',
   name: 'Tachanka',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/tachanka.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/tachanka.png')
   },
   iconOfficial:
@@ -78,10 +82,11 @@ export const tachanka = {
       'Launches incendiary grenades that create a fire on detonation.',
     info: 'Magazine size: 5',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/shumikha_launcher.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/37wX75QnY7XA6KbjM4aF5n/0ab116d398cf71463e11d43913818ec1/Shumikha-Launcher.png'
-  }
+  },
+  notes
 } satisfies Operator;

@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/glaz.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/flip_sight.svg';
+import notes from './notes.md?raw';
 
 export const glaz = {
   slug: 'glaz',
   name: 'Glaz',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/glaz.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/glaz.png')
   },
   iconOfficial:
@@ -81,10 +85,11 @@ export const glaz = {
       'Magnifying scope that\'s equipped onto the primary weapon to outline opponents and see through smoke.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/flip_sight.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/73bNPGhlIuhlWvi497sYqE/b68414436088f62f9da44cd42f702df7/Flip-Sight.png'
-  }
+  },
+  notes
 } satisfies Operator;

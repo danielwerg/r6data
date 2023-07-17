@@ -1,13 +1,17 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import { COMMON_BARRELS_HANDGUN_OR_MARKSMAN } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/montagne.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/extendable_shield.svg';
+import notes from './notes.md?raw';
 
 export const montagne = {
   slug: 'montagne',
   name: 'Montagne',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/montagne.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/montagne.png')
   },
   iconOfficial:
@@ -61,10 +65,11 @@ export const montagne = {
       'Shield that can be extended for full frontal protection to gather intel and provide cover for teammates.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/extendable_shield.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/254sLdgp9a9DMExPZFK0ai/95e8b1c2865f0923fd80e15d8830eb46/Extendable-Shield.png'
-  }
+  },
+  notes
 } satisfies Operator;

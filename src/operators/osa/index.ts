@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -7,13 +8,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/osa.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/talon-8_clear_shield.svg';
+import notes from './notes.md?raw';
 
 export const osa = {
   slug: 'osa',
   name: 'Osa',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/osa.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/osa.png')
   },
   iconOfficial:
@@ -71,10 +75,11 @@ export const osa = {
       'Transparent, bulletproof shield that can be carried or deployed on the ground and entryways.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/talon-8_clear_shield.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/71VBmyDtBAx788WnNJfEgo/1e6d78a81f8dc381bf4244b87970038f/r6s-operator-ability-osa.png'
-  }
+  },
+  notes
 } satisfies Operator;

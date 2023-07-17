@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/grim.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/kawan_hive_launcher.svg';
+import notes from './notes.md?raw';
 
 export const grim = {
   slug: 'grim',
   name: 'Grim',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/grim.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/grim.png')
   },
   iconOfficial:
@@ -72,10 +76,11 @@ export const grim = {
       'Launcher that fires a canister, releasing a swarm of bots that reveals opponents passing through it for a limited time.',
     info: 'Each Kawan Hive drops a canister that releases a swarm of bots.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/kawan_hive_launcher.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2Ws6ae13XPN5rcsw0WVt3d/d338fc7e22de9c2f620137d85ac4e29b/r6s-operator-ability-grim.png'
-  }
+  },
+  notes
 } satisfies Operator;

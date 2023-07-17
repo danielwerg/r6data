@@ -1,7 +1,6 @@
-import fs from 'node:fs/promises';
-import { join } from 'node:path';
+import { load } from 'cheerio';
 
-import type { Season } from './types';
+import type { Season, Svg, SvgAttributes } from './types';
 
 export const getSeasonShorthand = (id: number) => {
   const [whole, decimal] = ((id + 4) / 4).toFixed(2).split('.').map(Number) as [
@@ -59,10 +58,53 @@ export interface InRangeOptions {
 export const inRange = ({ range: [start, end], point }: InRangeOptions) =>
   start <= point && point <= end;
 
-export const getSVGString = async (path: string) =>
-  fs.readFile(join(__dirname, './assets', path), 'utf8');
-
 export const getAssetURL = (path: string) =>
   `https://raw.githubusercontent.com/danielwerg/r6data/master/src/assets${path}`;
 
 export const getISODate = (date: string) => new Date(date).toISOString();
+
+export type ConditionalClasses = (
+  | string
+  | number
+  | undefined
+  | null
+  | false
+  | Record<string, unknown>
+)[];
+export const classNames = (...conditionalClasses: ConditionalClasses) =>
+  conditionalClasses
+    .map(conditionalClass =>
+      typeof conditionalClass === 'string' ||
+      typeof conditionalClass === 'number'
+        ? conditionalClass
+        : conditionalClass &&
+          Object.entries(conditionalClass)
+            .filter(([, value]) => value)
+            .map(([key]) => key)
+            .join(' ')
+    )
+    .filter(Boolean)
+    .join(' ');
+
+export const attributesToString = (attributes: SvgAttributes) =>
+  Object.keys(attributes)
+    .map(key => `${key}="${attributes[key]!}"`)
+    .join(' ');
+
+export const parseSvgString = (svg: string) => {
+  const $ = load(svg);
+  return {
+    contents: $('svg').html() ?? '',
+    attributes: $('svg').attr() ?? {}
+  } as Svg;
+};
+export type ParseSvgStringOutput = ReturnType<typeof parseSvgString>;
+
+export const svgToString = (svg: Svg, attributes?: SvgAttributes) => {
+  const nextAttributes = {
+    ...svg.attributes,
+    ...attributes,
+    class: classNames(svg.attributes['class'], attributes?.['class'] ?? '')
+  };
+  return `<svg ${attributesToString(nextAttributes)}>${svg.contents}</svg>`;
+};

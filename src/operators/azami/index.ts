@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/azami.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/kiba_barrier.svg';
+import notes from './notes.md?raw';
 
 export const azami = {
   slug: 'azami',
   name: 'Azami',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/azami.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/azami.png')
   },
   iconOfficial:
@@ -64,10 +68,11 @@ export const azami = {
       'Throwable device that sticks to surfaces and creates a bulletproof barrier that blocks entryways and line of sight.',
     info: '1 Kiba charges over time, up to a maximum of 5.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/kiba_barrier.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1UDhKrAXnm0thdHhsTTAyo/03f6b0b4879208d963e6d551b86ad3a6/r6s-operator-ability-azami.png'
-  }
+  },
+  notes
 } satisfies Operator;

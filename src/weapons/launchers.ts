@@ -1,5 +1,7 @@
-import { getWeaponAssetURL, getWeaponSVGString } from './utils';
+import { getWeaponAssetURL } from './utils';
 import type { Weapon } from './types';
+import { parseSvgString } from '../utils';
+import gonne6Icon from '../assets/weapons/detailed/svgs/gonne-6.svg';
 
 export const LAUNCHERS = [
   {
@@ -16,7 +18,7 @@ export const LAUNCHERS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'secondary',
     icon: {
-      toSVG: async () => getWeaponSVGString('/svgs/gonne-6.svg'),
+      svg: parseSvgString(gonne6Icon),
       png: getWeaponAssetURL('/pngs/gonne-6.png')
     },
     iconOfficial:

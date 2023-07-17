@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/sens.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/r.o.u._projector_system.svg';
+import notes from './notes.md?raw';
 
 export const sens = {
   slug: 'sens',
   name: 'Sens',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/sens.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/sens.png')
   },
   iconOfficial:
@@ -84,10 +88,11 @@ export const sens = {
       'Throwable device that rolls and drops projectors to create a screen that blocks line of sight.',
     info: 'Each R.O.U. device drops projectors that stay active for 13 seconds.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/r.o.u._projector_system.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4iEpghBKHF6bcQxAxRKsYU/0291dc89b6f7730720d1ea5650392a81/r6s-operator-ability-sens.png'
-  }
+  },
+  notes
 } satisfies Operator;

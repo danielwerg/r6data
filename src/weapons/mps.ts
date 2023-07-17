@@ -16,7 +16,7 @@ export const MPS = [
     reloadTime: { empty: 2.9, tactical: 2 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/smg-11.png')
     },
     iconOfficial:
@@ -36,7 +36,7 @@ export const MPS = [
     reloadTime: { empty: 2.7, tactical: 1.9 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/bearing_9.png')
     },
     iconOfficial:
@@ -56,7 +56,7 @@ export const MPS = [
     reloadTime: { empty: 2.7, tactical: 1.9 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/c75_auto.png')
     },
     iconOfficial:
@@ -76,7 +76,7 @@ export const MPS = [
     reloadTime: { empty: 3, tactical: 2 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/smg-12.png')
     },
     iconOfficial:
@@ -95,7 +95,7 @@ export const MPS = [
     reloadTime: { empty: 2.7, tactical: 2.2 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/spsmg9.png')
     },
     iconOfficial:

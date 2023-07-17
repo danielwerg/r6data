@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/lesion.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/gu_mines.svg';
+import notes from './notes.md?raw';
 
 export const lesion = {
   slug: 'lesion',
   name: 'Lesion',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/lesion.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/lesion.png')
   },
   iconOfficial:
@@ -65,10 +69,11 @@ export const lesion = {
       'Cloaked toxic mines that inject a chemical compound to slow and injure opponents.',
     info: '1 GU charges over time, up to a maximum of 8.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/gu_mines.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6PJv86R8CtQCWA7a24sJE2/24f3751b2ed941ce80a4c1ef394ab7d5/Gu-mines.png'
-  }
+  },
+  notes
 } satisfies Operator;

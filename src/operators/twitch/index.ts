@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/twitch.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/shock_drones.svg';
+import notes from './notes.md?raw';
 
 export const twitch = {
   slug: 'twitch',
   name: 'Twitch',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/twitch.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/twitch.png')
   },
   iconOfficial:
@@ -85,10 +89,11 @@ export const twitch = {
       'Drone that manually fires lasers to clear rooms of opponent devices.',
     info: 'Each drone has 3 laser charges that recharge after use.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/shock_drones.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dZ9kaUfUSF3piuFIUKf2t/7ebfc51caee42a776492b56251d45d92/Shock-Drones.png'
-  }
+  },
+  notes
 } satisfies Operator;

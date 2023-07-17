@@ -1,7 +1,15 @@
 export type NonNullableInterface<T> = { [P in keyof T]-?: NonNullable<T[P]> };
 
+export type SvgAttributes = Record<string, string>;
+export interface Svg {
+  /** SVG contents without HTML tags. */
+  contents: string;
+  /** SVG attributes as an object. */
+  attributes: SvgAttributes;
+}
+
 export interface SVGandPNG {
-  toSVG: (() => Promise<string>) | null;
+  svg: Svg | null;
   png: string | null;
 }
 export type NonNullableSVGandPNG = NonNullableInterface<SVGandPNG>;

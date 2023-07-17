@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/valkyrie.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/black_eye.svg';
+import notes from './notes.md?raw';
 
 export const valkyrie = {
   slug: 'valkyrie',
   name: 'Valkyrie',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/valkyrie.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/valkyrie.png')
   },
   iconOfficial:
@@ -64,10 +68,11 @@ export const valkyrie = {
       'Throwable cameras that stick to surfaces and can be used by Valkyrie and her team to gather intel.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/black_eye.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1EPfd4xeuMpt5nItOYm2Eb/b59223248a508d205264ece3c3553d36/Black-Eye.png'
-  }
+  },
+  notes
 } satisfies Operator;

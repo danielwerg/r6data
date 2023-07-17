@@ -35,6 +35,8 @@ export interface Operator {
   gadgets: OperatorGadgets;
   /** always `null` for recruits */
   uniqueAbility: OperatorUniqueAbility | null;
+  /** Markdown */
+  notes: string;
   isRecruit?: boolean;
 }
 

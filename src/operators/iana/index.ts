@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -7,13 +8,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/iana.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/gemini_replicator.svg';
+import notes from './notes.md?raw';
 
 export const iana = {
   slug: 'iana',
   name: 'Iana',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/iana.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/iana.png')
   },
   iconOfficial:
@@ -65,10 +69,11 @@ export const iana = {
       'Deploys a remote-controlled hologram of lana to deceive opponents and gather intel.',
     info: 'Gauge that empties while in use and has a cooldown time before reactivating.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/gemini_replicator.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/K8E4EHWbD8wTjVqro6wVl/62339b2fbe1d3a2319dcd320f7a0b070/r6s-operator-ability-iana.png'
-  }
+  },
+  notes
 } satisfies Operator;

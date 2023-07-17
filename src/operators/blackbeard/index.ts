@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/blackbeard.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/rifle_shield.svg';
+import notes from './notes.md?raw';
 
 export const blackbeard = {
   slug: 'blackbeard',
   name: 'Blackbeard',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/blackbeard.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/blackbeard.png')
   },
   iconOfficial:
@@ -71,10 +75,11 @@ export const blackbeard = {
       'Primary weapon shield attachment that provides frontal protection from headshots before breaking.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/rifle_shield.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2dZeBTlDDdFQKb4PYb8F5v/162d60178a75cde9f65be362eacc880a/Rifle-Shield.png'
-  }
+  },
+  notes
 } satisfies Operator;

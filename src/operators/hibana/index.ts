@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -7,13 +8,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/hibana.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/x-kairos.svg';
+import notes from './notes.md?raw';
 
 export const hibana = {
   slug: 'hibana',
   name: 'Hibana',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/hibana.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/hibana.png')
   },
   iconOfficial:
@@ -78,10 +82,11 @@ export const hibana = {
       'Fires pellets that are manually detonated to create line of sight or entryways in breakable and reinforced surfaces.',
     info: 'Fires 6, 4 or 2 pellets at a time.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/x-kairos.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1QSzVxpGhswXix3vn8XGKj/c4f64fa0895bdaf164448e3ae49950a0/X-Kairos.png'
-  }
+  },
+  notes
 } satisfies Operator;

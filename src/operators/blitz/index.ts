@@ -1,13 +1,17 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import { COMMON_BARRELS_HANDGUN_OR_MARKSMAN } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/blitz.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/flash_shield.svg';
+import notes from './notes.md?raw';
 
 export const blitz = {
   slug: 'blitz',
   name: 'Blitz',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/blitz.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/blitz.png')
   },
   iconOfficial:
@@ -52,10 +56,11 @@ export const blitz = {
       'Ballistic shield with a flash attachment that can be activated to temporarily blind Operators.',
     info: 'The shield holds 4 flash charges that have a cooldown time between uses.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/flash_shield.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7EXDIOjPFMhPKZWY5OcEQC/f2df48ebe5673dca7773d81efd940b66/Flash-Shield.png'
-  }
+  },
+  notes
 } satisfies Operator;

@@ -1,17 +1,21 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/solis.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/spec-io_electro-sensor.svg';
+import notes from './notes.md?raw';
 
 export const solis = {
   slug: 'solis',
   name: 'Solis',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/solis.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/solis.png')
   },
   iconOfficial:
@@ -63,10 +67,11 @@ export const solis = {
       'Device that identifies opponent electronic devices, then scans them to ping their locations.',
     info: 'Gauge that empties while in use and fills up when ability is inactive. Scan function drains the gauge completely.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/spec-io_electro-sensor.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6yJdnB2YJGY5lMh9mmKIQT/62bb946eb6bd2583b1c78255cab72ac9/r6s-operator-ability-solis.png'
-  }
+  },
+  notes
 } satisfies Operator;

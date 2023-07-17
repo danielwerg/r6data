@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/gridlock.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/trax_stingers.svg';
+import notes from './notes.md?raw';
 
 export const gridlock = {
   slug: 'gridlock',
   name: 'Gridlock',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/gridlock.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/gridlock.png')
   },
   iconOfficial:
@@ -92,10 +96,11 @@ export const gridlock = {
       'Device that deploys barbed mats to slow and injure opponents that walk on them.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/trax_stingers.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/QGVvmZeZ91FC2X4mvMzgn/601fa45e635872aea31f15ffebb9c366/Trax-Stingers.png'
-  }
+  },
+  notes
 } satisfies Operator;

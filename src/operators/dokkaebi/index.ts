@@ -1,17 +1,21 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/dokkaebi.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/logic_bomb.svg';
+import notes from './notes.md?raw';
 
 export const dokkaebi = {
   slug: 'dokkaebi',
   name: 'Dokkaebi',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/dokkaebi.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/dokkaebi.png')
   },
   iconOfficial:
@@ -92,10 +96,11 @@ export const dokkaebi = {
       'Calls Defender phones to compromise their locations, interrupt use of Observation Tools and leave them open to hacking.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/logic_bomb.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ej2g1iCMHdfjn8h8qgfmU/bf07fef4b063a46389ca650ed02b292a/Logic-Bomb.png'
-  }
+  },
+  notes
 } satisfies Operator;

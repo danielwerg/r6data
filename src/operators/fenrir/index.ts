@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_ALL,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/fenrir.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/f-natt_dread_mine.svg';
+import notes from './notes.md?raw';
 
 export const fenrir = {
   slug: 'fenrir',
   name: 'Fenrir',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/fenrir.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/fenrir.png')
   },
   iconOfficial:
@@ -72,10 +76,11 @@ export const fenrir = {
       'Throwable device that sticks to surfaces and releases a fear-inducing gas when it detects nearby opponents.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/f-natt_dread_mine.png')
     },
     iconOfficial:
       'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5JTPi6uZt58wD0GVQJJf2c/6a0e730e2e6a4a1d1d3c878593df07f3/r6s-operator-ability-fenrir.png'
-  }
+  },
+  notes
 } satisfies Operator;

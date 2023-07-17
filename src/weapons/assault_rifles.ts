@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import { getWeaponAssetURL } from './utils';
 import type { Weapon } from './types';
 
@@ -16,7 +17,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.3, tactical: 2.7 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/l85a2.png')
     },
     iconOfficial:
@@ -35,7 +36,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/ar33.png')
     },
     iconOfficial:
@@ -55,7 +56,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.3, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/g36c.png')
     },
     iconOfficial:
@@ -75,7 +76,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.4, tactical: 2.7 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/r4-c.png')
     },
     iconOfficial:
@@ -95,7 +96,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.7, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/556xi.png')
     },
     iconOfficial:
@@ -115,7 +116,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.1, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/f2.png')
     },
     iconOfficial:
@@ -135,7 +136,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/ak-12.png')
     },
     iconOfficial:
@@ -155,7 +156,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/aug_a2.png')
     },
     iconOfficial:
@@ -175,7 +176,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.1, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/552_commando.png')
     },
     iconOfficial:
@@ -195,7 +196,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.4, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/416-c_carbine.png')
     },
     iconOfficial:
@@ -214,7 +215,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 2.9, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/c8-sfw.png')
     },
     iconOfficial:
@@ -234,7 +235,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.1, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/mk17_cqb.png')
     },
     iconOfficial:
@@ -254,7 +255,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/para-308.png')
     },
     iconOfficial:
@@ -273,7 +274,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/type-89.png')
     },
     iconOfficial:
@@ -293,7 +294,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 2.7, tactical: 2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/c7e.png')
     },
     iconOfficial:
@@ -313,7 +314,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/m762.png')
     },
     iconOfficial:
@@ -333,7 +334,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/v308.png')
     },
     iconOfficial:
@@ -353,7 +354,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.3, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/spear_.308.png')
     },
     iconOfficial:
@@ -373,7 +374,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/m4.png')
     },
     iconOfficial:
@@ -393,7 +394,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/ak-74m.png')
     },
     iconOfficial:
@@ -413,7 +414,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/arx200.png')
     },
     iconOfficial:
@@ -433,7 +434,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.1, tactical: 2.2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/f90.png')
     },
     iconOfficial:
@@ -452,7 +453,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 2.5, tactical: 2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/commando_9.png')
     },
     iconOfficial:
@@ -472,7 +473,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/sc3000k.png')
     },
     iconOfficial:
@@ -492,7 +493,7 @@ export const ASSAULT_RIFLES = [
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/pof9.png')
     },
     iconOfficial:

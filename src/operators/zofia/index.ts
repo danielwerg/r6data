@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/zofia.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/ks79_lifeline.svg';
+import notes from './notes.md?raw';
 
 export const zofia = {
   slug: 'zofia',
   name: 'Zofia',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/zofia.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/zofia.png')
   },
   iconOfficial:
@@ -65,10 +69,11 @@ export const zofia = {
       'Launcher that fires two types of grenades to disorient opponents or create entryways in breakable surfaces.',
     info: '2 Impact Grenades and 2 Concussion Grenades.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/ks79_lifeline.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1elqIEWJ6XsXKAbMNd0Cai/0b4c0591bad284d957e652cdae0b706b/KS79-Lifeline.png'
-  }
+  },
+  notes
 } satisfies Operator;

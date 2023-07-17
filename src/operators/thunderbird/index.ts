@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/thunderbird.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/kona_station.svg';
+import notes from './notes.md?raw';
 
 export const thunderbird = {
   slug: 'thunderbird',
   name: 'Thunderbird',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/thunderbird.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/thunderbird.png')
   },
   iconOfficial:
@@ -71,10 +75,11 @@ export const thunderbird = {
       'Device that automatically heals or revives any injured Operators in range, including opponents.',
     info: 'Each K6na Station has 1 heal that recharges after use.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/kona_station.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/67J9QnmuA4TMI3rBxoA3Jz/4ec42d8c1bb61dadc5f36893f93142e8/r6s-operator-ability-thunderbird.png'
-  }
+  },
+  notes
 } satisfies Operator;

@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_BARRELS_NO_EXTENDED_BARREL
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/maestro.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/evil_eye.svg';
+import notes from './notes.md?raw';
 
 export const maestro = {
   slug: 'maestro',
   name: 'Maestro',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/maestro.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/maestro.png')
   },
   iconOfficial:
@@ -74,10 +78,11 @@ export const maestro = {
       'Bulletproof camera with a turret that manually fires lasers to injure opponents or destroy devices.',
     info: 'Each Evil Eye has unlimited ammo but temporarily overheats when firing the turret for too long.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/evil_eye.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/n2rfPidCv630jQEfnEWwb/42d454d0771218eb8f27f6d17d8a073e/Evil-Eye.png'
-  }
+  },
+  notes
 } satisfies Operator;

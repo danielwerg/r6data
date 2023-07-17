@@ -1,6 +1,3 @@
-import { readFileSync } from 'node:fs';
-import { join } from 'node:path';
-
 import type { Operator, OperatorWeaponAttachments } from './types';
 import { getNextPriceDropSeasons, getPrices } from '../utils';
 import { SEASONS } from '../seasons';
@@ -157,11 +154,6 @@ export const MINI_OPERATORS = [
 ];
 
 export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {
-  const notes = readFileSync(
-    join(__dirname, `./${operator.slug}/notes.md`),
-    'utf8'
-  );
-
   const matchAttachments = (attachments: OperatorWeaponAttachments) => ({
     sights:
       attachments.sights?.map(sightSlug =>
@@ -218,8 +210,6 @@ export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {
           SEASONS,
           operator.season.id
         )
-      }),
-    /** Markdown */
-    notes
+      })
   };
 });
