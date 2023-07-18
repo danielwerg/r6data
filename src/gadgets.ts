@@ -1,4 +1,10 @@
-import type { GadgetSlug, OperatorSide, SVGandPNG } from './types';
+import type {
+  GadgetSlug,
+  GadgetSlugAttack,
+  GadgetSlugDefense,
+  OperatorSide,
+  SVGandPNG
+} from './types';
 import { getAssetURL, parseSvgString } from './utils';
 import deployableShieldIcon from './assets/gadgets/simple/svgs/deployable_shield.svg';
 import nitroCellIcon from './assets/gadgets/simple/svgs/nitro_cell.svg';
@@ -18,7 +24,7 @@ import impactEmpGrenadeIcon from './assets/gadgets/simple/svgs/impact_emp_grenad
 export const getGadgetAssetURL = (path: string) =>
   getAssetURL(`/gadgets${path}`);
 
-export interface Gadget {
+export type GadgetBase = {
   slug: GadgetSlug;
   name: string;
   side: OperatorSide;
@@ -27,7 +33,16 @@ export interface Gadget {
   notes: string | null;
   icon: SVGandPNG;
   iconOfficial: string | null;
-}
+};
+export type GadgetDefense = GadgetBase & {
+  slug: GadgetSlugDefense;
+  side: 'defense';
+};
+export type GadgetAttack = GadgetBase & {
+  slug: GadgetSlugAttack;
+  side: 'attack';
+};
+export type Gadget = GadgetDefense | GadgetAttack;
 
 export const GADGETS = [
   {

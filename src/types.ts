@@ -62,14 +62,16 @@ export type SeasonSlug =
   | 'commanding_force'
   | 'dread_factor';
 
-export type GadgetSlug =
+export type GadgetSlugDefense =
   | 'deployable_shield'
   | 'nitro_cell'
   | 'impact_grenade'
   | 'barbed_wire'
   | 'bulletproof_camera'
   | 'proximity_alarm'
-  | 'observation_blocker'
+  | 'observation_blocker';
+
+export type GadgetSlugAttack =
   | 'frag_grenade'
   | 'smoke_grenade'
   | 'stun_grenade'
@@ -77,6 +79,8 @@ export type GadgetSlug =
   | 'hard_breach_charge'
   | 'breach_charge'
   | 'impact_emp_grenade';
+
+export type GadgetSlug = GadgetSlugDefense | GadgetSlugAttack;
 
 export type WeaponSlug =
   | 'l85a2'
