@@ -57,7 +57,12 @@ export const recruitDefense = {
   },
   gadgets: {
     primary: ['nitro_cell', 'impact_grenade', 'proximity_alarm'],
-    secondary: ['bulletproof_camera', 'barbed_wire', 'deployable_shield']
+    secondary: [
+      'bulletproof_camera',
+      'barbed_wire',
+      'deployable_shield',
+      'observation_blocker'
+    ]
   },
   uniqueAbility: null,
   notes,
