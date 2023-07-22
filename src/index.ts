@@ -5,7 +5,7 @@ export * from './attachments';
 export * from './gadgets';
 export * from './maps';
 export * from './meta';
-export * from './ranksSeasons';
+export * from './ranks';
 export * from './seasons';
 export * from './types';
 export * from './utils';

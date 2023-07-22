@@ -15,7 +15,7 @@ import {
 import { GADGETS } from './gadgets';
 import { type MapSlug, MINI_MAPS } from './maps';
 import { OPERATORS, type OperatorSlug } from './operators';
-import { type RankSlug, RANKS_SEASONS } from './ranksSeasons';
+import { type RankSlug, RANKS_SEASONS } from './ranks';
 import { SEASONS } from './seasons';
 import type { GadgetSlug, SeasonSlug, WeaponSlug } from './types';
 import { WEAPONS } from './weapons';
