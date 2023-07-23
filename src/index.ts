@@ -7,6 +7,7 @@ export * from './maps';
 export * from './meta';
 export * from './ranks';
 export * from './seasons';
+export * from './sides';
 export * from './types';
 export * from './utils';
 export * from './validate';

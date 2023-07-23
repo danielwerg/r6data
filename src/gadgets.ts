@@ -2,8 +2,8 @@ import type {
   GadgetSlug,
   GadgetSlugAttack,
   GadgetSlugDefense,
-  OperatorSide,
-  SVGandPNG
+  SVGandPNG,
+  SideSlug
 } from './types';
 import { getAssetURL, parseSvgString } from './utils';
 import deployableShieldIcon from './assets/gadgets/simple/svgs/deployable_shield.svg';
@@ -27,7 +27,7 @@ export const getGadgetAssetURL = (path: string) =>
 export type GadgetBase = {
   slug: GadgetSlug;
   name: string;
-  side: OperatorSide;
+  side: SideSlug;
   amount: number;
   description: string;
   notes: string | null;

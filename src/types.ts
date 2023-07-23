@@ -205,4 +205,4 @@ export type WeaponCategory =
   | 'shield'
   | 'launcher';
 
-export type OperatorSide = 'defense' | 'attack';
+export type SideSlug = 'defense' | 'attack';

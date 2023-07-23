@@ -7,15 +7,15 @@ import type {
 import type {
   GadgetSlug,
   NonNullableSVGandPNG,
-  OperatorSide,
   SVGandPNG,
+  SideSlug,
   WeaponSlug
 } from '../types';
 
 export interface Operator {
   slug: OperatorSlug;
   name: string;
-  side: OperatorSide;
+  side: SideSlug;
   icon: NonNullableSVGandPNG;
   /** always `null` for recruits */
   iconOfficial: string | null;
