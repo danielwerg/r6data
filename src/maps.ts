@@ -577,7 +577,7 @@ export const MINI_MAPS = [
     release: { season: { id: 26 }, date: getISODate('2022-09-06') },
     playlists: ['deathmatch'],
     bombSites: null,
-    thumbnail: getMapAssetURL('/thumbnails/close_quarter.webp'),
+    thumbnail: getMapAssetURL('/thumbnails/close_quarter.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6u3cuepKWT8IFdaGznfc3k/d470334bddf5d6313c15879cde524615/r6s_maps_closequarters.jpg',
     background: getMapAssetURL('/backgrounds/close_quarter.jpg'),
