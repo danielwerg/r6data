@@ -196,7 +196,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 30 }, date: getISODate('2023-05-30') }
     ],
-    playlists: ['ranked', 'unranked', 'casual'],
+    playlists: ['ranked', 'unranked', 'casual', 'deathmatch'],
     bombSites: [
       '2F Consul Office / 2F Meeting Room',
       '1F Exposition Room / 1F Piano Room',
