@@ -9,7 +9,7 @@ export interface Map {
   name: string;
   release: MapRelease;
   reworks?: MapRework[];
-  playlists: MapPlaylist[];
+  playlists: MapPlaylistSlug[];
   bombSites: string[] | null;
   thumbnail: string | null;
   thumbnailOfficial: string | null;
@@ -60,7 +60,7 @@ export interface MapRework {
   date: string;
 }
 
-export type MapPlaylist =
+export type MapPlaylistSlug =
   | 'ranked'
   | 'unranked'
   | 'casual'
