@@ -70,6 +70,57 @@ export type MapPlaylistSlug =
   | 'headshots_only'
   | 'golden_gun';
 
+export interface MapPlaylist {
+  slug: MapPlaylistSlug;
+  name: string;
+  description: string;
+}
+
+export const MAP_PLAYLISTS = [
+  {
+    slug: 'ranked',
+    name: 'Ranked',
+    description: 'Compete each season to improve your Rank.'
+  },
+  {
+    slug: 'unranked',
+    name: 'Unranked',
+    description: 'Play competitively, without impacting Rank.'
+  },
+  {
+    slug: 'casual',
+    name: 'Casual',
+    description: 'Play a variety of game modes.'
+  },
+  {
+    slug: 'free_for_all',
+    name: 'Free For All',
+    description: 'Everyone is opponent, eliminate them.'
+  },
+  {
+    slug: 'deathmatch',
+    name: 'Deathmatch',
+    description: 'Practice your aim in a quick round with respawn.'
+  },
+  {
+    slug: 'snipers_only',
+    name: 'Snipers Only',
+    description: 'Your only weapons are CSRX 300 and .44 Mag Semi-Auto.'
+  },
+  {
+    slug: 'headshots_only',
+    name: 'headshots Only',
+    description:
+      'Only headshots can eliminate opponents, and eliminations are instant. Operators have fixed loadouts and no unique abilities.'
+  },
+  {
+    slug: 'golden_gun',
+    name: 'Golden Gun',
+    description:
+      'Your only weapon is Golden Gun. Every bullet is an instant kill, but you have to reload after every shot.'
+  }
+] satisfies MapPlaylist[];
+
 // NOTE: https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps
 export const MINI_MAPS = [
   {
