@@ -60,7 +60,15 @@ export interface MapRework {
   date: string;
 }
 
-export type MapPlaylist = 'ranked' | 'unranked' | 'casual' | 'deathmatch';
+export type MapPlaylist =
+  | 'ranked'
+  | 'unranked'
+  | 'casual'
+  | 'free_for_all'
+  | 'deathmatch'
+  | 'snipers_only'
+  | 'headshots_only'
+  | 'golden_gun';
 
 // NOTE: https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps
 export const MINI_MAPS = [
@@ -119,7 +127,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 11 }, date: getISODate('2018-09-04') }
     ],
-    playlists: ['casual'],
+    playlists: ['casual', 'snipers_only'],
     bombSites: [
       '3F Ammo Storage / 3F Tractor Storage',
       '2F Master Bedroom / 2F Kids Room',
@@ -196,7 +204,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 30 }, date: getISODate('2023-05-30') }
     ],
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch'],
+    playlists: ['ranked', 'unranked', 'casual', 'free_for_all', 'deathmatch'],
     bombSites: [
       '2F Consul Office / 2F Meeting Room',
       '1F Exposition Room / 1F Piano Room',
@@ -365,7 +373,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 22 }, date: getISODate('2021-06-14') }
     ],
-    playlists: ['casual', 'deathmatch'],
+    playlists: ['casual', 'free_for_all', 'deathmatch', 'golden_gun'],
     bombSites: [
       '3F Packaging Room / 2F Meth Lab',
       '2F Football Bedroom / 2F Football Office',
@@ -389,7 +397,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 20 }, date: getISODate('2020-12-01') }
     ],
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch'],
+    playlists: ['ranked', 'unranked', 'casual', 'deathmatch', 'golden_gun'],
     bombSites: [
       '2F Karaoke / 2F Tea Room',
       '2F Exhibition / 2F Work Office',
@@ -417,7 +425,7 @@ export const MINI_MAPS = [
         date: getISODate('2021-09-07')
       }
     ],
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch'],
+    playlists: ['ranked', 'unranked', 'casual', 'deathmatch', 'headshots_only'],
     bombSites: [
       '2F Hookah Lounge / 2F Billiards Room',
       '2F Penthouse / 2F Theater',
@@ -441,7 +449,14 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 16 }, date: getISODate('2019-12-03') }
     ],
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch'],
+    playlists: [
+      'ranked',
+      'unranked',
+      'casual',
+      'free_for_all',
+      'deathmatch',
+      'headshots_only'
+    ],
     bombSites: [
       '2F Initiation Room / 2F Office',
       '2F Bunk / 2F Day Care',
@@ -483,7 +498,14 @@ export const MINI_MAPS = [
     slug: 'villa',
     name: 'Villa',
     release: { season: { id: 10 }, date: getISODate('2018-06-07') },
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch'],
+    playlists: [
+      'ranked',
+      'unranked',
+      'casual',
+      'free_for_all',
+      'deathmatch',
+      'headshots_only'
+    ],
     bombSites: [
       '2F Aviator Room / 2F Games Room',
       '2F Trophy Room / 2F Statuary Room',
@@ -549,7 +571,14 @@ export const MINI_MAPS = [
     slug: 'emerald_plains',
     name: 'Emerald Plains',
     release: { season: { id: 25 }, date: getISODate('2022-04-19') },
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch'],
+    playlists: [
+      'ranked',
+      'unranked',
+      'casual',
+      'free_for_all',
+      'deathmatch',
+      'golden_gun'
+    ],
     bombSites: [
       '2F Administration / 2F CEO Office',
       '2F Private Gallery / 2F Meeting',
@@ -570,7 +599,7 @@ export const MINI_MAPS = [
     slug: 'close_quarter',
     name: 'Close Quarter',
     release: { season: { id: 26 }, date: getISODate('2022-09-06') },
-    playlists: ['deathmatch'],
+    playlists: ['free_for_all', 'deathmatch', 'headshots_only', 'golden_gun'],
     bombSites: null,
     thumbnail: getMapAssetURL('/thumbnails/close_quarter.jpg'),
     thumbnailOfficial:
@@ -586,7 +615,14 @@ export const MINI_MAPS = [
     slug: 'stadium_bravo',
     name: 'Stadium Bravo',
     release: { season: { id: 27 }, date: getISODate('2022-09-06') },
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch'],
+    playlists: [
+      'ranked',
+      'unranked',
+      'casual',
+      'free_for_all',
+      'deathmatch',
+      'golden_gun'
+    ],
     bombSites: [
       '2F Armory Lockers / 2F Archives',
       '2F Penthouse / 2F VIP Lounge',
@@ -607,7 +643,14 @@ export const MINI_MAPS = [
     slug: 'nighthaven_labs',
     name: 'Nighthaven Labs',
     release: { season: { id: 28 }, date: getISODate('2022-12-06') },
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch'],
+    playlists: [
+      'ranked',
+      'unranked',
+      'casual',
+      'free_for_all',
+      'deathmatch',
+      'headshots_only'
+    ],
     bombSites: [
       '2F Command Center / 2F Servers',
       '1F Kitchen / 1F Cafeteria',
