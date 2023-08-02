@@ -20,6 +20,7 @@ export interface Season {
   slug: SeasonSlug;
   name: string;
   hexColorCode: `#${string}`;
+  description: string | null;
   thumbnail: string | null;
   thumbnailOfficial: string | null;
   releaseDate: string;
