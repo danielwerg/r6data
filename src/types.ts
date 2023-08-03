@@ -19,6 +19,8 @@ export interface Season {
   shorthand: SeasonShorthand;
   slug: SeasonSlug;
   name: string;
+  year: SeasonYear;
+  season: SeasonSeason;
   hexColorCode: `#${string}`;
   description: string | null;
   thumbnail: string | null;
@@ -26,9 +28,10 @@ export interface Season {
   releaseDate: string;
 }
 
-export type SeasonShorthand =
-  | 'Y0S0'
-  | `Y${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8}S${1 | 2 | 3 | 4}`;
+export type SeasonYear = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+export type SeasonSeason = 0 | 1 | 2 | 3 | 4;
+
+export type SeasonShorthand = `Y${SeasonYear}S${SeasonSeason}`;
 
 export type SeasonSlug =
   | 'release'
