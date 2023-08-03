@@ -1,15 +1,20 @@
+import type {
+  BarrelSlug,
+  GadgetSlug,
+  GripSlug,
+  SeasonSlug,
+  SightSlug,
+  UnderBarrelSlug,
+  WeaponSlug
+} from './types';
 import {
   ATTACHMENTS,
   type AttachmentSlug,
   BARRELS,
-  type BarrelSlug,
   GRIPS,
-  type GripSlug,
   type OpticColorSlug,
   OPTIC_COLORS,
   SIGHTS,
-  type SightSlug,
-  type UnderBarrelSlug,
   UNDER_BARRELS
 } from './attachments';
 import { GADGETS } from './gadgets';
@@ -17,7 +22,6 @@ import { type MapSlug, MINI_MAPS } from './maps';
 import { OPERATORS, type OperatorSlug } from './operators';
 import { type RankSlug, RANKS_SEASONS } from './ranks';
 import { SEASONS } from './seasons';
-import type { GadgetSlug, SeasonSlug, WeaponSlug } from './types';
 import { WEAPONS } from './weapons';
 
 export const isMapSlug = (value: string): value is MapSlug =>

@@ -1,6 +1,7 @@
 /* eslint-disable max-lines */
 import type { SVGandPNG } from './types';
 import { getAssetURL, parseSvgString } from './utils';
+/** --- */
 import unrankedv2Icon from './assets/ranks/v2/svgs/unranked.svg';
 import copper1v2Icon from './assets/ranks/v2/svgs/copper_1.svg';
 import copper2v2Icon from './assets/ranks/v2/svgs/copper_2.svg';

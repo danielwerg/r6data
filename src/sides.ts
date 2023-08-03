@@ -1,5 +1,6 @@
 import type { SVGandPNG, SideSlug } from './types';
 import { getAssetURL, parseSvgString } from './utils';
+/** --- */
 import defenseIcon from './assets/sides/svgs/defense.svg';
 import attackIcon from './assets/sides/svgs/attack.svg';
 

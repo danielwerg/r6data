@@ -1,15 +1,13 @@
 import type {
-  BarrelSlug,
-  GripSlug,
-  SightSlug,
-  UnderBarrelSlug
-} from '../attachments';
-import type {
   GadgetSlug,
   NonNullableSVGandPNG,
   SVGandPNG,
   SideSlug,
-  WeaponSlug
+  WeaponSlug,
+  BarrelSlug,
+  GripSlug,
+  SightSlug,
+  UnderBarrelSlug
 } from '../types';
 
 export interface Operator {

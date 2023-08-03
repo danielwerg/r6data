@@ -1,5 +1,6 @@
 import type { SVGandPNG } from './types';
 import { getAssetURL, parseSvgString } from './utils';
+/** --- */
 import observationToolsIcon from './assets/actions/svgs/observation_tools.svg';
 import pingIcon from './assets/actions/svgs/ping.svg';
 import cameraIcon from './assets/actions/svgs/camera.svg';

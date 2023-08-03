@@ -6,6 +6,7 @@ import type {
   SideSlug
 } from './types';
 import { getAssetURL, parseSvgString } from './utils';
+/** --- */
 import deployableShieldIcon from './assets/gadgets/simple/svgs/deployable_shield.svg';
 import nitroCellIcon from './assets/gadgets/simple/svgs/nitro_cell.svg';
 import impactGrenadeIcon from './assets/gadgets/simple/svgs/impact_grenade.svg';

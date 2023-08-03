@@ -207,3 +207,37 @@ export type WeaponCategory =
   | 'launcher';
 
 export type SideSlug = 'defense' | 'attack';
+
+export type SightSlug =
+  | 'red_dot_a'
+  | 'red_dot_b'
+  | 'red_dot_c'
+  | 'red_dot_handgun'
+  | 'holo_a'
+  | 'holo_b'
+  | 'holo_c'
+  | 'holo_d'
+  | 'reflex_a'
+  | 'reflex_b'
+  | 'reflex_c'
+  | 'reflex_d'
+  | 'scope_1.5x'
+  | 'scope_2.0x'
+  | 'scope_2.5x_a'
+  | 'scope_2.5x_b'
+  | 'scope_3.0x_.44_mag'
+  | 'scope_3.0x'
+  | 'scope_4.0x'
+  | 'scope_5.0x'
+  | 'scope_12.0x';
+
+export type BarrelSlug =
+  | 'flash_hider'
+  | 'compensator'
+  | 'muzzle_brake'
+  | 'suppressor'
+  | 'extended_barrel';
+
+export type GripSlug = 'vertical_grip' | 'angled_grip';
+
+export type UnderBarrelSlug = 'laser';

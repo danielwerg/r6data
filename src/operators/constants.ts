@@ -1,4 +1,4 @@
-import type { BarrelSlug, GripSlug, SightSlug } from '../attachments';
+import type { BarrelSlug, GripSlug, SightSlug } from '../types';
 
 export const COMMON_SIGHTS_1X = [
   'holo_a',
