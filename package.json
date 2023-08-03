@@ -14,7 +14,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf dist && npm run lint-tsc",
     "build": "vite build",
     "build:prepare": "path-exists ./dist || npm run build",
     "operatorNotes": "ts-node scripts/operatorNotes.ts",
@@ -22,6 +22,7 @@
     "svg2png": "ts-node scripts/svg2png.ts",
     "preversion": "npm run build",
     "postversion": "git push --follow-tags",
+    "lint-tsc": "tsc --noEmit",
     "lint": "eslint src scripts",
     "lint:fix": "eslint src scripts --fix",
     "spell": "cspell --show-context \"**/*.md\"",
