@@ -1,17 +1,21 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
   COMMON_BARRELS_ALL,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/bandit.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/shock_wire.svg';
+import notes from './notes.md?raw';
 
 export const bandit = {
   slug: 'bandit',
   name: 'Bandit',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/bandit.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/bandit.png')
   },
   iconOfficial:
@@ -64,10 +68,11 @@ export const bandit = {
       'Electrical device that\'s deployed on the ground to electrify nearby metal utility.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/shock_wire.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/129HTNU2A5kIcMj0KZ5UjU/858b60dd0e9b8692e2dc693eded50e14/Shock-Wire.png'
-  }
+  },
+  notes
 } satisfies Operator;

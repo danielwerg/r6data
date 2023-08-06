@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/thatcher.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/emp_grenade.svg';
+import notes from './notes.md?raw';
 
 export const thatcher = {
   slug: 'thatcher',
   name: 'Thatcher',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/thatcher.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/thatcher.png')
   },
   iconOfficial:
@@ -77,10 +81,11 @@ export const thatcher = {
       'Non-damaging grenade that temporarily deactivates nearby opponent electronic devices.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/emp_grenade.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4p4srpOH4sq55OHryHhn5t/d31728d1432ed28c429ea566caf0e083/EMP-Grenade.png'
-  }
+  },
+  notes
 } satisfies Operator;

@@ -1,13 +1,17 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import { COMMON_SIGHTS_1X, COMMON_BARRELS_ALL } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/caveira.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/silent_step.svg';
+import notes from './notes.md?raw';
 
 export const caveira = {
   slug: 'caveira',
   name: 'Caveira',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/caveira.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/caveira.png')
   },
   iconOfficial:
@@ -62,10 +66,11 @@ export const caveira = {
       'Move around quietly to sneak up on opponents and down them, then interrogate them to reveal opponent positions.',
     info: 'Gauge that empties while in use and fills up when ability is inactive.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/silent_step.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6PTsBBBGTT5oixxzvYv1Y4/18e31c74ba1ca73ed2694134acd9c078/Silent-Step.png'
-  }
+  },
+  notes
 } satisfies Operator;

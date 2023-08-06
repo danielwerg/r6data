@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/nomad.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/airjab_launcher.svg';
+import notes from './notes.md?raw';
 
 export const nomad = {
   slug: 'nomad',
   name: 'Nomad',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/nomad.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/nomad.png')
   },
   iconOfficial:
@@ -78,10 +82,11 @@ export const nomad = {
       'Primary weapon attachment that fires a device that detonates and pushes Operators to the ground.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/airjab_launcher.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6d0LN1QWzviEkcYu3mTn6v/e49511a479756f71224f14225ad9cbd8/Airjab-Launcher.png'
-  }
+  },
+  notes
 } satisfies Operator;

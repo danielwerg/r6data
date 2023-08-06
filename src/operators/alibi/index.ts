@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/alibi.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/prisma.svg';
+import notes from './notes.md?raw';
 
 export const alibi = {
   slug: 'alibi',
   name: 'Alibi',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/alibi.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/alibi.png')
   },
   iconOfficial:
@@ -72,10 +76,11 @@ export const alibi = {
       'Deploys holograms of Alibi that reveal an opponent\'s location when fired upon or interacted with.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/prisma.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7sJYir66zAPq2omSvYeT2u/8fbe3370d32fb5433fb6d3a86d46a1b9/Prisma.png'
-  }
+  },
+  notes
 } satisfies Operator;

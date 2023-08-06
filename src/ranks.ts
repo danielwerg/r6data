@@ -1,9 +1,70 @@
 /* eslint-disable max-lines */
 import type { SVGandPNG } from './types';
-import { getAssetURL, getSVGString } from './utils';
+import { getAssetURL, parseSvgString } from './utils';
+/** --- */
+import unrankedv2Icon from './assets/ranks/v2/svgs/unranked.svg';
+import copper1v2Icon from './assets/ranks/v2/svgs/copper_1.svg';
+import copper2v2Icon from './assets/ranks/v2/svgs/copper_2.svg';
+import copper3v2Icon from './assets/ranks/v2/svgs/copper_3.svg';
+import copper4v2Icon from './assets/ranks/v2/svgs/copper_4.svg';
+import bronze1v2Icon from './assets/ranks/v2/svgs/bronze_1.svg';
+import bronze2v2Icon from './assets/ranks/v2/svgs/bronze_2.svg';
+import bronze3v2Icon from './assets/ranks/v2/svgs/bronze_3.svg';
+import bronze4v2Icon from './assets/ranks/v2/svgs/bronze_4.svg';
+import silver1v2Icon from './assets/ranks/v2/svgs/silver_1.svg';
+import silver2v2Icon from './assets/ranks/v2/svgs/silver_2.svg';
+import silver3v2Icon from './assets/ranks/v2/svgs/silver_3.svg';
+import silver4v2Icon from './assets/ranks/v2/svgs/silver_4.svg';
+import gold1v2Icon from './assets/ranks/v2/svgs/gold_1.svg';
+import gold2v2Icon from './assets/ranks/v2/svgs/gold_2.svg';
+import gold3v2Icon from './assets/ranks/v2/svgs/gold_3.svg';
+import gold4v2Icon from './assets/ranks/v2/svgs/gold_4.svg';
+import platinum1v2Icon from './assets/ranks/v2/svgs/platinum_1.svg';
+import platinum2v2Icon from './assets/ranks/v2/svgs/platinum_2.svg';
+import platinum3v2Icon from './assets/ranks/v2/svgs/platinum_3.svg';
+import diamondv2Icon from './assets/ranks/v2/svgs/diamond.svg';
+import unrankedv3Icon from './assets/ranks/v3/svgs/unranked.svg';
+import copper1v3Icon from './assets/ranks/v3/svgs/copper_1.svg';
+import copper2v3Icon from './assets/ranks/v3/svgs/copper_2.svg';
+import copper3v3Icon from './assets/ranks/v3/svgs/copper_3.svg';
+import copper4v3Icon from './assets/ranks/v3/svgs/copper_4.svg';
+import copper5v3Icon from './assets/ranks/v3/svgs/copper_5.svg';
+import bronze1v3Icon from './assets/ranks/v3/svgs/bronze_1.svg';
+import bronze2v3Icon from './assets/ranks/v3/svgs/bronze_2.svg';
+import bronze3v3Icon from './assets/ranks/v3/svgs/bronze_3.svg';
+import bronze4v3Icon from './assets/ranks/v3/svgs/bronze_4.svg';
+import bronze5v3Icon from './assets/ranks/v3/svgs/bronze_5.svg';
+import silver1v3Icon from './assets/ranks/v3/svgs/silver_1.svg';
+import silver2v3Icon from './assets/ranks/v3/svgs/silver_2.svg';
+import silver3v3Icon from './assets/ranks/v3/svgs/silver_3.svg';
+import silver4v3Icon from './assets/ranks/v3/svgs/silver_4.svg';
+import silver5v3Icon from './assets/ranks/v3/svgs/silver_5.svg';
+import gold1v3Icon from './assets/ranks/v3/svgs/gold_1.svg';
+import gold2v3Icon from './assets/ranks/v3/svgs/gold_2.svg';
+import gold3v3Icon from './assets/ranks/v3/svgs/gold_3.svg';
+import gold4v3Icon from './assets/ranks/v3/svgs/gold_4.svg';
+import gold5v3Icon from './assets/ranks/v3/svgs/gold_5.svg';
+import platinum1v3Icon from './assets/ranks/v3/svgs/platinum_1.svg';
+import platinum2v3Icon from './assets/ranks/v3/svgs/platinum_2.svg';
+import platinum3v3Icon from './assets/ranks/v3/svgs/platinum_3.svg';
+import platinum1v2v3Icon from './assets/ranks/v3/svgs/platinum_1_v2.svg';
+import platinum2v2v3Icon from './assets/ranks/v3/svgs/platinum_2_v2.svg';
+import platinum3v2v3Icon from './assets/ranks/v3/svgs/platinum_3_v2.svg';
+import platinum4v2v3Icon from './assets/ranks/v3/svgs/platinum_4_v2.svg';
+import platinum5v2v3Icon from './assets/ranks/v3/svgs/platinum_5_v2.svg';
+import emerald1v3Icon from './assets/ranks/v3/svgs/emerald_1.svg';
+import emerald2v3Icon from './assets/ranks/v3/svgs/emerald_2.svg';
+import emerald3v3Icon from './assets/ranks/v3/svgs/emerald_3.svg';
+import emerald4v3Icon from './assets/ranks/v3/svgs/emerald_4.svg';
+import emerald5v3Icon from './assets/ranks/v3/svgs/emerald_5.svg';
+import diamond1v3Icon from './assets/ranks/v3/svgs/diamond_1.svg';
+import diamond1v2v3Icon from './assets/ranks/v3/svgs/diamond_1_v2.svg';
+import diamond2v2v3Icon from './assets/ranks/v3/svgs/diamond_2_v2.svg';
+import diamond3v2v3Icon from './assets/ranks/v3/svgs/diamond_3_v2.svg';
+import diamond4v2v3Icon from './assets/ranks/v3/svgs/diamond_4_v2.svg';
+import diamond5v2v3Icon from './assets/ranks/v3/svgs/diamond_5_v2.svg';
+import champions1v3Icon from './assets/ranks/v3/svgs/champions_1.svg';
 
-export const getRankSVGString = async (path: string) =>
-  getSVGString(`/ranks/${path}`);
 export const getRankAssetURL = (path: string) => getAssetURL(`/ranks${path}`);
 
 export interface RankSeason {
@@ -71,7 +132,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 0,
         slug: 'unranked',
         name: 'Unranked',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -79,7 +140,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 1,
         slug: 'copper_1',
         name: 'Copper I',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -87,7 +148,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 2,
         slug: 'copper_2',
         name: 'Copper II',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -95,7 +156,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 3,
         slug: 'copper_3',
         name: 'Copper III',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -103,7 +164,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 4,
         slug: 'copper_4',
         name: 'Copper IV',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -111,7 +172,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 5,
         slug: 'bronze_1',
         name: 'Bronze I',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -119,7 +180,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 6,
         slug: 'bronze_2',
         name: 'Bronze II',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -127,7 +188,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 7,
         slug: 'bronze_3',
         name: 'Bronze III',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -135,7 +196,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 8,
         slug: 'bronze_4',
         name: 'Bronze IV',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -143,7 +204,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 9,
         slug: 'silver_1',
         name: 'Silver I',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -151,7 +212,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 10,
         slug: 'silver_2',
         name: 'Silver II',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -159,7 +220,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 11,
         slug: 'silver_3',
         name: 'Silver III',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -167,7 +228,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 12,
         slug: 'silver_4',
         name: 'Silver IV',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -175,7 +236,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 13,
         slug: 'gold_1',
         name: 'Gold I',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -183,7 +244,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 14,
         slug: 'gold_2',
         name: 'Gold II',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -191,7 +252,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 15,
         slug: 'gold_3',
         name: 'Gold III',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -199,7 +260,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 16,
         slug: 'gold_4',
         name: 'Gold IV',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -207,7 +268,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 17,
         slug: 'platinum_1',
         name: 'Platinum I',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -215,7 +276,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 18,
         slug: 'platinum_2',
         name: 'Platinum II',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -223,7 +284,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 19,
         slug: 'platinum_3',
         name: 'Platinum III',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       },
@@ -231,7 +292,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         id: 20,
         slug: 'diamond',
         name: 'Diamond',
-        icon: { toSVG: null, png: null },
+        icon: { svg: null, png: null },
         iconOfficial: null,
         range: null
       }
@@ -246,7 +307,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'unranked',
         name: 'Unranked',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/unranked.svg'),
+          svg: parseSvgString(unrankedv2Icon),
           png: getRankAssetURL('/v2/pngs/unranked.png')
         },
         iconOfficial: null,
@@ -257,7 +318,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_1',
         name: 'Copper I',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/copper_1.svg'),
+          svg: parseSvgString(copper1v2Icon),
           png: getRankAssetURL('/v2/pngs/copper_1.png')
         },
         iconOfficial: null,
@@ -268,7 +329,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_2',
         name: 'Copper II',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/copper_2.svg'),
+          svg: parseSvgString(copper2v2Icon),
           png: getRankAssetURL('/v2/pngs/copper_2.png')
         },
         iconOfficial: null,
@@ -279,7 +340,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_3',
         name: 'Copper III',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/copper_3.svg'),
+          svg: parseSvgString(copper3v2Icon),
           png: getRankAssetURL('/v2/pngs/copper_3.png')
         },
         iconOfficial: null,
@@ -290,7 +351,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_4',
         name: 'Copper IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/copper_4.svg'),
+          svg: parseSvgString(copper4v2Icon),
           png: getRankAssetURL('/v2/pngs/copper_4.png')
         },
         iconOfficial: null,
@@ -301,7 +362,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_1',
         name: 'Bronze I',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/bronze_1.svg'),
+          svg: parseSvgString(bronze1v2Icon),
           png: getRankAssetURL('/v2/pngs/bronze_1.png')
         },
         iconOfficial: null,
@@ -312,7 +373,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_2',
         name: 'Bronze II',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/bronze_2.svg'),
+          svg: parseSvgString(bronze2v2Icon),
           png: getRankAssetURL('/v2/pngs/bronze_2.png')
         },
         iconOfficial: null,
@@ -323,7 +384,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_3',
         name: 'Bronze III',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/bronze_3.svg'),
+          svg: parseSvgString(bronze3v2Icon),
           png: getRankAssetURL('/v2/pngs/bronze_3.png')
         },
         iconOfficial: null,
@@ -334,7 +395,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_4',
         name: 'Bronze IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/bronze_4.svg'),
+          svg: parseSvgString(bronze4v2Icon),
           png: getRankAssetURL('/v2/pngs/bronze_4.png')
         },
         iconOfficial: null,
@@ -345,7 +406,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_1',
         name: 'Silver I',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/silver_1.svg'),
+          svg: parseSvgString(silver1v2Icon),
           png: getRankAssetURL('/v2/pngs/silver_1.png')
         },
         iconOfficial: null,
@@ -356,7 +417,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_2',
         name: 'Silver II',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/silver_2.svg'),
+          svg: parseSvgString(silver2v2Icon),
           png: getRankAssetURL('/v2/pngs/silver_2.png')
         },
         iconOfficial: null,
@@ -367,7 +428,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_3',
         name: 'Silver III',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/silver_3.svg'),
+          svg: parseSvgString(silver3v2Icon),
           png: getRankAssetURL('/v2/pngs/silver_3.png')
         },
         iconOfficial: null,
@@ -378,7 +439,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_4',
         name: 'Silver IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/silver_4.svg'),
+          svg: parseSvgString(silver4v2Icon),
           png: getRankAssetURL('/v2/pngs/silver_4.png')
         },
         iconOfficial: null,
@@ -389,7 +450,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_1',
         name: 'Gold I',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/gold_1.svg'),
+          svg: parseSvgString(gold1v2Icon),
           png: getRankAssetURL('/v2/pngs/gold_1.png')
         },
         iconOfficial: null,
@@ -400,7 +461,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_2',
         name: 'Gold II',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/gold_2.svg'),
+          svg: parseSvgString(gold2v2Icon),
           png: getRankAssetURL('/v2/pngs/gold_2.png')
         },
         iconOfficial: null,
@@ -411,7 +472,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_3',
         name: 'Gold III',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/gold_3.svg'),
+          svg: parseSvgString(gold3v2Icon),
           png: getRankAssetURL('/v2/pngs/gold_3.png')
         },
         iconOfficial: null,
@@ -422,7 +483,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_4',
         name: 'Gold IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/gold_4.svg'),
+          svg: parseSvgString(gold4v2Icon),
           png: getRankAssetURL('/v2/pngs/gold_4.png')
         },
         iconOfficial: null,
@@ -433,7 +494,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_1',
         name: 'Platinum I',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/platinum_1.svg'),
+          svg: parseSvgString(platinum1v2Icon),
           png: getRankAssetURL('/v2/pngs/platinum_1.png')
         },
         iconOfficial: null,
@@ -444,7 +505,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_2',
         name: 'Platinum II',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/platinum_2.svg'),
+          svg: parseSvgString(platinum1v2Icon),
           png: getRankAssetURL('/v2/pngs/platinum_2.png')
         },
         iconOfficial: null,
@@ -455,7 +516,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_3',
         name: 'Platinum III',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/platinum_3.svg'),
+          svg: parseSvgString(platinum1v2Icon),
           png: getRankAssetURL('/v2/pngs/platinum_3.png')
         },
         iconOfficial: null,
@@ -466,7 +527,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond',
         name: 'Diamond',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/diamond.svg'),
+          svg: parseSvgString(diamondv2Icon),
           png: getRankAssetURL('/v2/pngs/diamond.png')
         },
         iconOfficial: null,
@@ -483,7 +544,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'unranked',
         name: 'Unranked',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/unranked.svg'),
+          svg: parseSvgString(unrankedv2Icon),
           png: getRankAssetURL('/v2/pngs/unranked.png')
         },
         iconOfficial: null,
@@ -494,7 +555,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_1',
         name: 'Copper I',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/copper_1.svg'),
+          svg: parseSvgString(copper1v2Icon),
           png: getRankAssetURL('/v2/pngs/copper_1.png')
         },
         iconOfficial: null,
@@ -505,7 +566,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_2',
         name: 'Copper II',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/copper_1.svg'),
+          svg: parseSvgString(copper2v2Icon),
           png: getRankAssetURL('/v2/pngs/copper_1.png')
         },
         iconOfficial: null,
@@ -516,7 +577,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_3',
         name: 'Copper III',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/copper_31.svg'),
+          svg: parseSvgString(copper3v2Icon),
           png: getRankAssetURL('/v2/pngs/copper_31.png')
         },
         iconOfficial: null,
@@ -527,7 +588,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_4',
         name: 'Copper IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/copper_4.svg'),
+          svg: parseSvgString(copper4v2Icon),
           png: getRankAssetURL('/v2/pngs/copper_4.png')
         },
         iconOfficial: null,
@@ -538,7 +599,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_1',
         name: 'Bronze I',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/bronze_1.svg'),
+          svg: parseSvgString(bronze1v2Icon),
           png: getRankAssetURL('/v2/pngs/bronze_1.png')
         },
         iconOfficial: null,
@@ -549,7 +610,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_2',
         name: 'Bronze II',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/bronze_2.svg'),
+          svg: parseSvgString(bronze2v2Icon),
           png: getRankAssetURL('/v2/pngs/bronze_2.png')
         },
         iconOfficial: null,
@@ -560,7 +621,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_3',
         name: 'Bronze III',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/bronze_3.svg'),
+          svg: parseSvgString(bronze3v2Icon),
           png: getRankAssetURL('/v2/pngs/bronze_3.png')
         },
         iconOfficial: null,
@@ -571,7 +632,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_4',
         name: 'Bronze IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/bronze_4.svg'),
+          svg: parseSvgString(bronze4v2Icon),
           png: getRankAssetURL('/v2/pngs/bronze_4.png')
         },
         iconOfficial: null,
@@ -582,7 +643,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_1',
         name: 'Silver I',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/silver_1.svg'),
+          svg: parseSvgString(silver1v2Icon),
           png: getRankAssetURL('/v2/pngs/silver_1.png')
         },
         iconOfficial: null,
@@ -593,7 +654,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_2',
         name: 'Silver II',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/silver_2.svg'),
+          svg: parseSvgString(silver2v2Icon),
           png: getRankAssetURL('/v2/pngs/silver_2.png')
         },
         iconOfficial: null,
@@ -604,7 +665,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_3',
         name: 'Silver III',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/silver_3.svg'),
+          svg: parseSvgString(silver3v2Icon),
           png: getRankAssetURL('/v2/pngs/silver_3.png')
         },
         iconOfficial: null,
@@ -615,7 +676,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_4',
         name: 'Silver IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/silver_4.svg'),
+          svg: parseSvgString(silver4v2Icon),
           png: getRankAssetURL('/v2/pngs/silver_4.png')
         },
         iconOfficial: null,
@@ -626,7 +687,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_1',
         name: 'Gold I',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/gold_1.svg'),
+          svg: parseSvgString(gold1v2Icon),
           png: getRankAssetURL('/v2/pngs/gold_1.png')
         },
         iconOfficial: null,
@@ -637,7 +698,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_2',
         name: 'Gold II',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/gold_2.svg'),
+          svg: parseSvgString(gold2v2Icon),
           png: getRankAssetURL('/v2/pngs/gold_2.png')
         },
         iconOfficial: null,
@@ -648,7 +709,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_3',
         name: 'Gold III',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/gold_3.svg'),
+          svg: parseSvgString(gold3v2Icon),
           png: getRankAssetURL('/v2/pngs/gold_3.png')
         },
         iconOfficial: null,
@@ -659,7 +720,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_4',
         name: 'Gold IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/gold_4.svg'),
+          svg: parseSvgString(gold4v2Icon),
           png: getRankAssetURL('/v2/pngs/gold_4.png')
         },
         iconOfficial: null,
@@ -670,7 +731,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_1',
         name: 'Platinum I',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/platinum_1.svg'),
+          svg: parseSvgString(platinum1v2Icon),
           png: getRankAssetURL('/v2/pngs/platinum_1.png')
         },
         iconOfficial: null,
@@ -681,7 +742,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_2',
         name: 'Platinum II',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/platinum_2.svg'),
+          svg: parseSvgString(platinum2v2Icon),
           png: getRankAssetURL('/v2/pngs/platinum_2.png')
         },
         iconOfficial: null,
@@ -692,7 +753,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_3',
         name: 'Platinum III',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/platinum_3.svg'),
+          svg: parseSvgString(platinum3v2Icon),
           png: getRankAssetURL('/v2/pngs/platinum_3.png')
         },
         iconOfficial: null,
@@ -703,7 +764,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond',
         name: 'Diamond',
         icon: {
-          toSVG: async () => getRankSVGString('/v2/svgs/diamond.svg'),
+          svg: parseSvgString(diamondv2Icon),
           png: getRankAssetURL('/v2/pngs/diamond.png')
         },
         iconOfficial: null,
@@ -720,7 +781,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'unranked',
         name: 'Unranked',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/unranked.svg'),
+          svg: parseSvgString(unrankedv3Icon),
           png: getRankAssetURL('/v3/pngs/unranked.png')
         },
         iconOfficial:
@@ -732,7 +793,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_4',
         name: 'Copper IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_4.svg'),
+          svg: parseSvgString(copper4v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_4.png')
         },
         iconOfficial:
@@ -744,7 +805,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_3',
         name: 'Copper III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_3.svg'),
+          svg: parseSvgString(copper3v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_3.png')
         },
         iconOfficial:
@@ -756,7 +817,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_2',
         name: 'Copper II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_2.svg'),
+          svg: parseSvgString(copper2v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_2.png')
         },
         iconOfficial:
@@ -768,7 +829,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_1',
         name: 'Copper I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_1.svg'),
+          svg: parseSvgString(copper1v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_1.png')
         },
         iconOfficial:
@@ -780,7 +841,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_4',
         name: 'Bronze IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_4.svg'),
+          svg: parseSvgString(bronze4v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_4.png')
         },
         iconOfficial:
@@ -792,7 +853,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_3',
         name: 'Bronze III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_3.svg'),
+          svg: parseSvgString(bronze3v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_3.png')
         },
         iconOfficial:
@@ -804,7 +865,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_2',
         name: 'Bronze II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_2.svg'),
+          svg: parseSvgString(bronze2v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_2.png')
         },
         iconOfficial:
@@ -816,7 +877,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_1',
         name: 'Bronze I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_1.svg'),
+          svg: parseSvgString(bronze1v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_1.png')
         },
         iconOfficial:
@@ -828,7 +889,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_4',
         name: 'Silver IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_4.svg'),
+          svg: parseSvgString(silver4v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_4.png')
         },
         iconOfficial:
@@ -840,7 +901,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_3',
         name: 'Silver III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_3.svg'),
+          svg: parseSvgString(silver3v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_3.png')
         },
         iconOfficial:
@@ -852,7 +913,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_2',
         name: 'Silver II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_2.svg'),
+          svg: parseSvgString(silver2v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_2.png')
         },
         iconOfficial:
@@ -864,7 +925,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_1',
         name: 'Silver I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_1.svg'),
+          svg: parseSvgString(silver1v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_1.png')
         },
         iconOfficial:
@@ -876,7 +937,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_4',
         name: 'Gold IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_4.svg'),
+          svg: parseSvgString(gold4v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_4.png')
         },
         iconOfficial:
@@ -888,7 +949,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_3',
         name: 'Gold III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_3.svg'),
+          svg: parseSvgString(gold3v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_3.png')
         },
         iconOfficial:
@@ -900,7 +961,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_2',
         name: 'Gold II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_2.svg'),
+          svg: parseSvgString(gold2v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_2.png')
         },
         iconOfficial:
@@ -912,7 +973,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_1',
         name: 'Gold I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_1.svg'),
+          svg: parseSvgString(gold1v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_1.png')
         },
         iconOfficial:
@@ -924,7 +985,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_3',
         name: 'Platinum III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_3.svg'),
+          svg: parseSvgString(platinum3v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_3.png')
         },
         iconOfficial: null,
@@ -935,7 +996,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_2',
         name: 'Platinum II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_2.svg'),
+          svg: parseSvgString(platinum2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_2.png')
         },
         iconOfficial: null,
@@ -946,7 +1007,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_1',
         name: 'Platinum I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_1.svg'),
+          svg: parseSvgString(platinum1v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_1.png')
         },
         iconOfficial: null,
@@ -957,8 +1018,8 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond',
         name: 'Diamond',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond.svg'),
-          png: getRankAssetURL('/v3/pngs/diamond.png')
+          svg: parseSvgString(diamond1v3Icon),
+          png: getRankAssetURL('/v3/pngs/diamond-1.png')
         },
         iconOfficial: null,
         range: [4500, Infinity]
@@ -974,7 +1035,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'unranked',
         name: 'Unranked',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/unranked.svg'),
+          svg: parseSvgString(unrankedv3Icon),
           png: getRankAssetURL('/v3/pngs/unranked.png')
         },
         iconOfficial:
@@ -986,7 +1047,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_4',
         name: 'Copper IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_4.svg'),
+          svg: parseSvgString(copper4v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_4.png')
         },
         iconOfficial:
@@ -998,7 +1059,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_3',
         name: 'Copper III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_3.svg'),
+          svg: parseSvgString(copper3v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_3.png')
         },
         iconOfficial:
@@ -1010,7 +1071,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_2',
         name: 'Copper II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_2.svg'),
+          svg: parseSvgString(copper2v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_2.png')
         },
         iconOfficial:
@@ -1022,7 +1083,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_1',
         name: 'Copper I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_1.svg'),
+          svg: parseSvgString(copper1v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_1.png')
         },
         iconOfficial:
@@ -1034,7 +1095,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_4',
         name: 'Bronze IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_4.svg'),
+          svg: parseSvgString(bronze4v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_4.png')
         },
         iconOfficial:
@@ -1046,7 +1107,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_3',
         name: 'Bronze III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_3.svg'),
+          svg: parseSvgString(bronze3v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_3.png')
         },
         iconOfficial:
@@ -1058,7 +1119,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_2',
         name: 'Bronze II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_2.svg'),
+          svg: parseSvgString(bronze2v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_2.png')
         },
         iconOfficial:
@@ -1070,7 +1131,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_1',
         name: 'Bronze I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_1.svg'),
+          svg: parseSvgString(bronze1v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_1.png')
         },
         iconOfficial:
@@ -1082,7 +1143,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_4',
         name: 'Silver IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_4.svg'),
+          svg: parseSvgString(silver4v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_4.png')
         },
         iconOfficial:
@@ -1094,7 +1155,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_3',
         name: 'Silver III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_3.svg'),
+          svg: parseSvgString(silver3v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_3.png')
         },
         iconOfficial:
@@ -1106,7 +1167,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_2',
         name: 'Silver II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_2.svg'),
+          svg: parseSvgString(silver2v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_2.png')
         },
         iconOfficial:
@@ -1118,7 +1179,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_1',
         name: 'Silver I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_1.svg'),
+          svg: parseSvgString(silver1v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_1.png')
         },
         iconOfficial:
@@ -1130,7 +1191,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_4',
         name: 'Gold IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_4.svg'),
+          svg: parseSvgString(gold4v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_4.png')
         },
         iconOfficial:
@@ -1142,7 +1203,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_3',
         name: 'Gold III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_3.svg'),
+          svg: parseSvgString(gold3v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_3.png')
         },
         iconOfficial:
@@ -1154,7 +1215,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_2',
         name: 'Gold II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_2.svg'),
+          svg: parseSvgString(gold2v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_2.png')
         },
         iconOfficial:
@@ -1166,7 +1227,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_1',
         name: 'Gold I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_1.svg'),
+          svg: parseSvgString(gold1v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_1.png')
         },
         iconOfficial:
@@ -1178,7 +1239,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_3',
         name: 'Platinum III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_3_v2.svg'),
+          svg: parseSvgString(platinum3v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_3_v2.png')
         },
         iconOfficial:
@@ -1190,7 +1251,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_2',
         name: 'Platinum II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_2_v2.svg'),
+          svg: parseSvgString(platinum2v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_2_v2.png')
         },
         iconOfficial:
@@ -1202,7 +1263,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_1',
         name: 'Platinum I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_1_v2.svg'),
+          svg: parseSvgString(platinum1v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_1_v2.png')
         },
         iconOfficial:
@@ -1214,7 +1275,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond',
         name: 'Diamond',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond_1_v2.svg'),
+          svg: parseSvgString(diamond1v2v3Icon),
           png: getRankAssetURL('/v3/pngs/diamond_1_v2.png')
         },
         iconOfficial:
@@ -1232,7 +1293,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'unranked',
         name: 'Unranked',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/unranked.svg'),
+          svg: parseSvgString(unrankedv3Icon),
           png: getRankAssetURL('/v3/pngs/unranked.png')
         },
         iconOfficial:
@@ -1244,7 +1305,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_5',
         name: 'Copper V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_5.svg'),
+          svg: parseSvgString(copper5v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_5.png')
         },
         iconOfficial:
@@ -1256,7 +1317,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_4',
         name: 'Copper IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_4.svg'),
+          svg: parseSvgString(copper4v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_4.png')
         },
         iconOfficial:
@@ -1268,7 +1329,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_3',
         name: 'Copper III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_3.svg'),
+          svg: parseSvgString(copper3v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_3.png')
         },
         iconOfficial:
@@ -1280,7 +1341,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_2',
         name: 'Copper II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_2.svg'),
+          svg: parseSvgString(copper2v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_2.png')
         },
         iconOfficial:
@@ -1292,7 +1353,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_1',
         name: 'Copper I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_1.svg'),
+          svg: parseSvgString(copper1v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_1.png')
         },
         iconOfficial:
@@ -1304,7 +1365,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_5',
         name: 'Bronze V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_5.svg'),
+          svg: parseSvgString(bronze5v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_5.png')
         },
         iconOfficial:
@@ -1316,7 +1377,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_4',
         name: 'Bronze IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_4.svg'),
+          svg: parseSvgString(bronze4v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_4.png')
         },
         iconOfficial:
@@ -1328,7 +1389,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_3',
         name: 'Bronze III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_3.svg'),
+          svg: parseSvgString(bronze3v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_3.png')
         },
         iconOfficial:
@@ -1340,7 +1401,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_2',
         name: 'Bronze II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_2.svg'),
+          svg: parseSvgString(bronze2v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_2.png')
         },
         iconOfficial:
@@ -1352,7 +1413,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_1',
         name: 'Bronze I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_1.svg'),
+          svg: parseSvgString(bronze1v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_1.png')
         },
         iconOfficial:
@@ -1364,7 +1425,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_5',
         name: 'Silver V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_5.svg'),
+          svg: parseSvgString(silver5v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_5.png')
         },
         iconOfficial:
@@ -1376,7 +1437,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_4',
         name: 'Silver IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_4.svg'),
+          svg: parseSvgString(silver4v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_4.png')
         },
         iconOfficial:
@@ -1388,7 +1449,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_3',
         name: 'Silver III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_3.svg'),
+          svg: parseSvgString(silver3v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_3.png')
         },
         iconOfficial:
@@ -1400,7 +1461,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_2',
         name: 'Silver II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_2.svg'),
+          svg: parseSvgString(silver2v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_2.png')
         },
         iconOfficial:
@@ -1412,7 +1473,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_1',
         name: 'Silver I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_1.svg'),
+          svg: parseSvgString(silver1v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_1.png')
         },
         iconOfficial:
@@ -1424,7 +1485,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_3',
         name: 'Gold III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_3.svg'),
+          svg: parseSvgString(gold3v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_3.png')
         },
         iconOfficial:
@@ -1436,7 +1497,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_2',
         name: 'Gold II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_2.svg'),
+          svg: parseSvgString(gold2v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_2.png')
         },
         iconOfficial:
@@ -1448,7 +1509,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_1',
         name: 'Gold I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_1.svg'),
+          svg: parseSvgString(gold1v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_1.png')
         },
         iconOfficial:
@@ -1460,7 +1521,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_3',
         name: 'Platinum III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_3_v2.svg'),
+          svg: parseSvgString(platinum3v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_3_v2.png')
         },
         iconOfficial:
@@ -1472,7 +1533,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_2',
         name: 'Platinum II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_2_v2.svg'),
+          svg: parseSvgString(platinum2v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_2_v2.png')
         },
         iconOfficial:
@@ -1484,7 +1545,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_1',
         name: 'Platinum I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_1_v2.svg'),
+          svg: parseSvgString(platinum1v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_1_v2.png')
         },
         iconOfficial:
@@ -1496,7 +1557,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond',
         name: 'Diamond',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond_1_v2.svg'),
+          svg: parseSvgString(diamond1v2v3Icon),
           png: getRankAssetURL('/v3/pngs/diamond_1_v2.png')
         },
         iconOfficial:
@@ -1508,7 +1569,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'champions',
         name: 'Champion',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/champions_1.svg'),
+          svg: parseSvgString(champions1v3Icon),
           png: getRankAssetURL('/v3/pngs/champions_1.png')
         },
         iconOfficial:
@@ -1526,7 +1587,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'unranked',
         name: 'Unranked',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/unranked.svg'),
+          svg: parseSvgString(unrankedv3Icon),
           png: getRankAssetURL('/v3/pngs/unranked.png')
         },
         iconOfficial:
@@ -1538,7 +1599,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_5',
         name: 'Copper V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_5.svg'),
+          svg: parseSvgString(copper5v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_5.png')
         },
         iconOfficial:
@@ -1550,7 +1611,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_4',
         name: 'Copper IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_4.svg'),
+          svg: parseSvgString(copper4v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_4.png')
         },
         iconOfficial:
@@ -1562,7 +1623,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_3',
         name: 'Copper III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_3.svg'),
+          svg: parseSvgString(copper3v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_3.png')
         },
         iconOfficial:
@@ -1574,7 +1635,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_2',
         name: 'Copper II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_2.svg'),
+          svg: parseSvgString(copper2v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_2.png')
         },
         iconOfficial:
@@ -1586,7 +1647,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_1',
         name: 'Copper I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_1.svg'),
+          svg: parseSvgString(copper1v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_1.png')
         },
         iconOfficial:
@@ -1598,7 +1659,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_5',
         name: 'Bronze V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_5.svg'),
+          svg: parseSvgString(bronze5v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_5.png')
         },
         iconOfficial:
@@ -1610,7 +1671,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_4',
         name: 'Bronze IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_4.svg'),
+          svg: parseSvgString(bronze4v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_4.png')
         },
         iconOfficial:
@@ -1622,7 +1683,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_3',
         name: 'Bronze III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_3.svg'),
+          svg: parseSvgString(bronze3v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_3.png')
         },
         iconOfficial:
@@ -1634,7 +1695,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_2',
         name: 'Bronze II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_2.svg'),
+          svg: parseSvgString(bronze2v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_2.png')
         },
         iconOfficial:
@@ -1646,7 +1707,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_1',
         name: 'Bronze I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_1.svg'),
+          svg: parseSvgString(bronze1v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_1.png')
         },
         iconOfficial:
@@ -1658,7 +1719,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_5',
         name: 'Silver V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_5.svg'),
+          svg: parseSvgString(silver5v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_5.png')
         },
         iconOfficial:
@@ -1670,7 +1731,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_4',
         name: 'Silver IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_4.svg'),
+          svg: parseSvgString(silver4v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_4.png')
         },
         iconOfficial:
@@ -1682,7 +1743,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_3',
         name: 'Silver III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_3.svg'),
+          svg: parseSvgString(silver3v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_3.png')
         },
         iconOfficial:
@@ -1694,7 +1755,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_2',
         name: 'Silver II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_2.svg'),
+          svg: parseSvgString(silver2v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_2.png')
         },
         iconOfficial:
@@ -1706,7 +1767,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_1',
         name: 'Silver I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_1.svg'),
+          svg: parseSvgString(silver1v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_1.png')
         },
         iconOfficial:
@@ -1718,7 +1779,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_3',
         name: 'Gold III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_3.svg'),
+          svg: parseSvgString(gold3v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_3.png')
         },
         iconOfficial:
@@ -1730,7 +1791,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_2',
         name: 'Gold II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_2.svg'),
+          svg: parseSvgString(gold2v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_2.png')
         },
         iconOfficial:
@@ -1742,7 +1803,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_1',
         name: 'Gold I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_1.svg'),
+          svg: parseSvgString(gold1v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_1.png')
         },
         iconOfficial:
@@ -1754,7 +1815,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_3',
         name: 'Platinum III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_3_v2.svg'),
+          svg: parseSvgString(platinum3v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_3_v2.png')
         },
         iconOfficial:
@@ -1766,7 +1827,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_2',
         name: 'Platinum II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_2_v2.svg'),
+          svg: parseSvgString(platinum2v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_2_v2.png')
         },
         iconOfficial:
@@ -1778,7 +1839,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_1',
         name: 'Platinum I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_1_v2.svg'),
+          svg: parseSvgString(platinum1v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_1_v2.png')
         },
         iconOfficial:
@@ -1790,7 +1851,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond_3',
         name: 'Diamond III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond_3_v2.svg'),
+          svg: parseSvgString(diamond3v2v3Icon),
           png: getRankAssetURL('/v3/pngs/diamond_3_v2.png')
         },
         iconOfficial:
@@ -1802,7 +1863,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond_2',
         name: 'Diamond II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond_2_v2.svg'),
+          svg: parseSvgString(diamond2v2v3Icon),
           png: getRankAssetURL('/v3/pngs/diamond_2_v2.png')
         },
         iconOfficial:
@@ -1814,7 +1875,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond_1',
         name: 'Diamond I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond_1_v2.svg'),
+          svg: parseSvgString(diamond1v2v3Icon),
           png: getRankAssetURL('/v3/pngs/diamond_1_v2.png')
         },
         iconOfficial:
@@ -1826,7 +1887,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'champions',
         name: 'Champions',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/champions_1.svg'),
+          svg: parseSvgString(champions1v3Icon),
           png: getRankAssetURL('/v3/pngs/champions_1.png')
         },
         iconOfficial:
@@ -1844,7 +1905,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'unranked',
         name: 'Unranked',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/unranked.svg'),
+          svg: parseSvgString(unrankedv3Icon),
           png: getRankAssetURL('/v3/pngs/unranked.png')
         },
         iconOfficial:
@@ -1856,7 +1917,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_5',
         name: 'Copper V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_5.svg'),
+          svg: parseSvgString(copper5v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_5.png')
         },
         iconOfficial:
@@ -1868,7 +1929,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_4',
         name: 'Copper IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_4.svg'),
+          svg: parseSvgString(copper4v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_4.png')
         },
         iconOfficial:
@@ -1880,7 +1941,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_3',
         name: 'Copper III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_3.svg'),
+          svg: parseSvgString(copper3v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_3.png')
         },
         iconOfficial:
@@ -1892,7 +1953,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_2',
         name: 'Copper II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_2.svg'),
+          svg: parseSvgString(copper2v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_2.png')
         },
         iconOfficial:
@@ -1904,7 +1965,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'copper_1',
         name: 'Copper I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/copper_1.svg'),
+          svg: parseSvgString(copper1v3Icon),
           png: getRankAssetURL('/v3/pngs/copper_1.png')
         },
         iconOfficial:
@@ -1916,7 +1977,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_5',
         name: 'Bronze V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_5.svg'),
+          svg: parseSvgString(bronze5v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_5.png')
         },
         iconOfficial:
@@ -1928,7 +1989,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_4',
         name: 'Bronze IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_4.svg'),
+          svg: parseSvgString(bronze4v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_4.png')
         },
         iconOfficial:
@@ -1940,7 +2001,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_3',
         name: 'Bronze III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_3.svg'),
+          svg: parseSvgString(bronze3v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_3.png')
         },
         iconOfficial:
@@ -1952,7 +2013,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_2',
         name: 'Bronze II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_2.svg'),
+          svg: parseSvgString(bronze2v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_2.png')
         },
         iconOfficial:
@@ -1964,7 +2025,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'bronze_1',
         name: 'Bronze I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/bronze_1.svg'),
+          svg: parseSvgString(bronze1v3Icon),
           png: getRankAssetURL('/v3/pngs/bronze_1.png')
         },
         iconOfficial:
@@ -1976,7 +2037,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_5',
         name: 'Silver V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_5.svg'),
+          svg: parseSvgString(silver5v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_5.png')
         },
         iconOfficial:
@@ -1988,7 +2049,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_4',
         name: 'Silver IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_4.svg'),
+          svg: parseSvgString(silver4v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_4.png')
         },
         iconOfficial:
@@ -2000,7 +2061,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_3',
         name: 'Silver III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_3.svg'),
+          svg: parseSvgString(silver3v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_3.png')
         },
         iconOfficial:
@@ -2012,7 +2073,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_2',
         name: 'Silver II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_2.svg'),
+          svg: parseSvgString(silver2v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_2.png')
         },
         iconOfficial:
@@ -2024,7 +2085,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'silver_1',
         name: 'Silver I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/silver_1.svg'),
+          svg: parseSvgString(silver1v3Icon),
           png: getRankAssetURL('/v3/pngs/silver_1.png')
         },
         iconOfficial:
@@ -2036,7 +2097,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_5',
         name: 'Gold V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_5.svg'),
+          svg: parseSvgString(gold5v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_5.png')
         },
         iconOfficial:
@@ -2048,7 +2109,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_4',
         name: 'Gold IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_4.svg'),
+          svg: parseSvgString(gold4v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_4.png')
         },
         iconOfficial:
@@ -2060,7 +2121,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_3',
         name: 'Gold III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_3.svg'),
+          svg: parseSvgString(gold3v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_3.png')
         },
         iconOfficial:
@@ -2072,7 +2133,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_2',
         name: 'Gold II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_2.svg'),
+          svg: parseSvgString(gold2v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_2.png')
         },
         iconOfficial:
@@ -2084,7 +2145,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'gold_1',
         name: 'Gold I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/gold_1.svg'),
+          svg: parseSvgString(gold1v3Icon),
           png: getRankAssetURL('/v3/pngs/gold_1.png')
         },
         iconOfficial:
@@ -2096,7 +2157,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_5',
         name: 'Platinum V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_5_v2.svg'),
+          svg: parseSvgString(platinum5v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_5_v2.png')
         },
         iconOfficial:
@@ -2108,7 +2169,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_4',
         name: 'Platinum IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_4_v2.svg'),
+          svg: parseSvgString(platinum4v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_4_v2.png')
         },
         iconOfficial:
@@ -2120,7 +2181,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_3',
         name: 'Platinum III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_3_v2.svg'),
+          svg: parseSvgString(platinum3v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_3_v2.png')
         },
         iconOfficial:
@@ -2132,7 +2193,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_2',
         name: 'Platinum II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_2_v2.svg'),
+          svg: parseSvgString(platinum2v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_2_v2.png')
         },
         iconOfficial:
@@ -2144,7 +2205,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'platinum_1',
         name: 'Platinum I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/platinum_1_v2.svg'),
+          svg: parseSvgString(platinum1v2v3Icon),
           png: getRankAssetURL('/v3/pngs/platinum_1_v2.png')
         },
         iconOfficial:
@@ -2156,7 +2217,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'emerald_5',
         name: 'Emerald V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/emerald_5.svg'),
+          svg: parseSvgString(emerald5v3Icon),
           png: getRankAssetURL('/v3/pngs/emerald_5.png')
         },
         iconOfficial:
@@ -2168,7 +2229,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'emerald_4',
         name: 'Emerald IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/emerald_4.svg'),
+          svg: parseSvgString(emerald4v3Icon),
           png: getRankAssetURL('/v3/pngs/emerald_4.png')
         },
         iconOfficial:
@@ -2180,7 +2241,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'emerald_3',
         name: 'Emerald III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/emerald_3.svg'),
+          svg: parseSvgString(emerald3v3Icon),
           png: getRankAssetURL('/v3/pngs/emerald_3.png')
         },
         iconOfficial:
@@ -2192,7 +2253,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'emerald_2',
         name: 'Emerald II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/emerald_2.svg'),
+          svg: parseSvgString(emerald2v3Icon),
           png: getRankAssetURL('/v3/pngs/emerald_2.png')
         },
         iconOfficial:
@@ -2204,7 +2265,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'emerald_1',
         name: 'Emerald I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/emerald_1.svg'),
+          svg: parseSvgString(emerald1v3Icon),
           png: getRankAssetURL('/v3/pngs/emerald_1.png')
         },
         iconOfficial:
@@ -2216,7 +2277,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond_5',
         name: 'Diamond V',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond_5_v2.svg'),
+          svg: parseSvgString(diamond5v2v3Icon),
           png: getRankAssetURL('/v3/pngs/diamond_5_v2.png')
         },
         iconOfficial:
@@ -2228,7 +2289,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond_4',
         name: 'Diamond IV',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond_4_v2.svg'),
+          svg: parseSvgString(diamond4v2v3Icon),
           png: getRankAssetURL('/v3/pngs/diamond_4_v2.png')
         },
         iconOfficial:
@@ -2240,7 +2301,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond_3',
         name: 'Diamond III',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond_3_v2.svg'),
+          svg: parseSvgString(diamond3v2v3Icon),
           png: getRankAssetURL('/v3/pngs/diamond_3_v2.png')
         },
         iconOfficial:
@@ -2252,7 +2313,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond_2',
         name: 'Diamond II',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond_2_v2.svg'),
+          svg: parseSvgString(diamond2v2v3Icon),
           png: getRankAssetURL('/v3/pngs/diamond_2_v2.png')
         },
         iconOfficial:
@@ -2264,7 +2325,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'diamond_1',
         name: 'Diamond I',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/diamond_1_v2.svg'),
+          svg: parseSvgString(diamond1v2v3Icon),
           png: getRankAssetURL('/v3/pngs/diamond_1_v2.png')
         },
         iconOfficial:
@@ -2276,7 +2337,7 @@ export const RANKS_SEASONS: RankSeason[] = [
         slug: 'champions',
         name: 'Champions',
         icon: {
-          toSVG: async () => getRankSVGString('/v3/svgs/champions_1.svg'),
+          svg: parseSvgString(champions1v3Icon),
           png: getRankAssetURL('/v3/pngs/champions_1.png')
         },
         iconOfficial:

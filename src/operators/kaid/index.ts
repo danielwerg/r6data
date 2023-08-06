@@ -1,17 +1,21 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
   COMMON_BARRELS_ALL,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/kaid.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/rtila_electroclaw.svg';
+import notes from './notes.md?raw';
 
 export const kaid = {
   slug: 'kaid',
   name: 'Kaid',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/kaid.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/kaid.png')
   },
   iconOfficial:
@@ -71,10 +75,11 @@ export const kaid = {
       'Electrical device that sticks to surfaces and electrifies nearby metal utility.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/rtila_electroclaw.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7rUOk2LhYIUjvYLot7GT8Y/94b72bfbbfdf50c2c807cdbf9f5b276e/Rtila-Electroclaw.png'
-  }
+  },
+  notes
 } satisfies Operator;

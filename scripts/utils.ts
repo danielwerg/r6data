@@ -1,9 +1,6 @@
 import { join } from 'node:path';
 import fs from 'node:fs/promises';
 
-export const isPathExists = async (path: string) =>
-  !!(await fs.stat(path).catch(() => false));
-
 export interface ReaddirRecursiveOptions {
   /** `true` by default */
   directories?: boolean;

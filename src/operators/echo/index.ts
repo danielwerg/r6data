@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/echo.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/yokai.svg';
+import notes from './notes.md?raw';
 
 export const echo = {
   slug: 'echo',
   name: 'Echo',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/echo.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/echo.png')
   },
   iconOfficial:
@@ -72,10 +76,11 @@ export const echo = {
       'Drone that can hover on ceilings and manually fires sonic bursts to stun opponents and interrupt their actions.',
     info: 'Each Yokai has 2 sonic burst charges that recharge after use.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/yokai.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/TdDZyrKpjt9EQo8tHpIJk/d987db4da22046a0663be8be82dcda88/Yokai.png'
-  }
+  },
+  notes
 } satisfies Operator;

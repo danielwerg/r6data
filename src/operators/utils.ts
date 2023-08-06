@@ -1,7 +1,4 @@
-import { getAssetURL, getSVGString } from '../utils';
-
-export const getOperatorSVGString = async (path: string) =>
-  getSVGString(`/operators/${path}`);
+import { getAssetURL } from '../utils';
 
 export const getOperatorAssetURL = (path: string) =>
   getAssetURL(`/operators${path}`);

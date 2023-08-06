@@ -1,17 +1,21 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
   COMMON_BARRELS_ALL,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/vigil.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/erc-7.svg';
+import notes from './notes.md?raw';
 
 export const vigil = {
   slug: 'vigil',
   name: 'Vigil',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/vigil.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/vigil.png')
   },
   iconOfficial:
@@ -76,10 +80,11 @@ export const vigil = {
       'Wipes Vigil\'s image from nearby drones and Observation Tools so he can\'t be scanned.',
     info: 'Gauge that empties while in use and fills up when ability is inactive.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/erc-7.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6WbhiNk0evsKWChPneCES6/af08476e2f917878e0326727d2d5fb8a/ERC-7.png'
-  }
+  },
+  notes
 } satisfies Operator;

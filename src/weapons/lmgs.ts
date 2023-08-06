@@ -16,7 +16,7 @@ export const LMGS = [
     reloadTime: { empty: 8.5, tactical: 8.5 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/6p41.png')
     },
     iconOfficial:
@@ -36,7 +36,7 @@ export const LMGS = [
     reloadTime: { empty: 3.9, tactical: 3 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/g8a1.png')
     },
     iconOfficial:
@@ -56,7 +56,7 @@ export const LMGS = [
     reloadTime: { empty: 7.6, tactical: 7.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/m249.png')
     },
     iconOfficial:
@@ -76,7 +76,7 @@ export const LMGS = [
     reloadTime: { empty: 3, tactical: 2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/t-95_lsw.png')
     },
     iconOfficial:
@@ -96,7 +96,7 @@ export const LMGS = [
     reloadTime: { empty: 6.5, tactical: 7.1 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/lmg-e.png')
     },
     iconOfficial:
@@ -116,7 +116,7 @@ export const LMGS = [
     reloadTime: { empty: 5.7, tactical: 6.2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/alda_5.56.png')
     },
     iconOfficial:
@@ -136,7 +136,7 @@ export const LMGS = [
     reloadTime: { empty: 4.5, tactical: 3.3 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/m249_saw.png')
     },
     iconOfficial:
@@ -156,7 +156,7 @@ export const LMGS = [
     reloadTime: { empty: 4.6, tactical: 4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/dp27.png')
     },
     iconOfficial:

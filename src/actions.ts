@@ -1,8 +1,14 @@
 import type { SVGandPNG } from './types';
-import { getAssetURL, getSVGString } from './utils';
+import { getAssetURL, parseSvgString } from './utils';
+/** --- */
+import observationToolsIcon from './assets/actions/svgs/observation_tools.svg';
+import pingIcon from './assets/actions/svgs/ping.svg';
+import cameraIcon from './assets/actions/svgs/camera.svg';
+import barricadeIcon from './assets/actions/svgs/barricade.svg';
+import reinforcementIcon from './assets/actions/svgs/reinforcement.svg';
+import droneIcon from './assets/actions/svgs/drone.svg';
+import rappelIcon from './assets/actions/svgs/rappel.svg';
 
-export const getActionSVGString = async (path: string) =>
-  getSVGString(`/actions/${path}`);
 export const getActionAssetURL = (path: string) =>
   getAssetURL(`/actions${path}`);
 
@@ -23,7 +29,7 @@ export const ACTIONS = [
     description: null,
     notes: null,
     icon: {
-      toSVG: async () => getActionSVGString('/svgs/observation_tools.svg'),
+      svg: parseSvgString(observationToolsIcon),
       png: getActionAssetURL('/pngs/observation_tools.png')
     }
   },
@@ -34,7 +40,7 @@ export const ACTIONS = [
     description: null,
     notes: null,
     icon: {
-      toSVG: async () => getActionSVGString('/svgs/ping.svg'),
+      svg: parseSvgString(pingIcon),
       png: getActionAssetURL('/pngs/ping.png')
     }
   },
@@ -46,7 +52,7 @@ export const ACTIONS = [
       'Camera feed that provides intel to Defenders from security cameras in the map and Defender camera devices.',
     notes: null,
     icon: {
-      toSVG: async () => getActionSVGString('/svgs/camera.svg'),
+      svg: parseSvgString(cameraIcon),
       png: getActionAssetURL('/pngs/camera.png')
     }
   },
@@ -58,7 +64,7 @@ export const ACTIONS = [
       'Wooden barrier that\'s placed on windows and doors to block line of sight and deny entry.',
     notes: null,
     icon: {
-      toSVG: async () => getActionSVGString('/svgs/barricade.svg'),
+      svg: parseSvgString(barricadeIcon),
       png: getActionAssetURL('/pngs/barricade.png')
     }
   },
@@ -70,7 +76,7 @@ export const ACTIONS = [
       'Metal barrier that\'s placed on breakable walls and hatches to protect against breaches and deny entry.',
     notes: 'Limited resource pool shared by Defenders.',
     icon: {
-      toSVG: async () => getActionSVGString('/svgs/reinforcement.svg'),
+      svg: parseSvgString(reinforcementIcon),
       png: getActionAssetURL('/pngs/reinforcement.png')
     }
   },
@@ -82,7 +88,7 @@ export const ACTIONS = [
       'Intel device that\'s used to locate objectives, utility, and opponent positions.',
     notes: null,
     icon: {
-      toSVG: async () => getActionSVGString('/svgs/drone.svg'),
+      svg: parseSvgString(droneIcon),
       png: getActionAssetURL('/pngs/drone.png')
     }
   },
@@ -94,7 +100,7 @@ export const ACTIONS = [
       'Rope that allows Attackers to climb building exteriors and enter through indows or rooftops.',
     notes: null,
     icon: {
-      toSVG: async () => getActionSVGString('/svgs/rappel.svg'),
+      svg: parseSvgString(rappelIcon),
       png: getActionAssetURL('/pngs/rappel.png')
     }
   }

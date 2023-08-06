@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/thorn.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/razorbloom_shell.svg';
+import notes from './notes.md?raw';
 
 export const thorn = {
   slug: 'thorn',
   name: 'Thorn',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/thorn.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/thorn.png')
   },
   iconOfficial:
@@ -71,10 +75,11 @@ export const thorn = {
       'Throwable device that sticks to surfaces and sends out a set of sharp blades when it detects nearby opponents.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/razorbloom_shell.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/38hUQdWTb1vgs0Yg8eQHFC/0d7f05420068a41392342a1b38c57c2e/r6s-operator-ability-thorn.png'
-  }
+  },
+  notes
 } satisfies Operator;

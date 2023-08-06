@@ -1,21 +1,19 @@
 import type {
+  GadgetSlug,
+  NonNullableSVGandPNG,
+  SVGandPNG,
+  SideSlug,
+  WeaponSlug,
   BarrelSlug,
   GripSlug,
   SightSlug,
   UnderBarrelSlug
-} from '../attachments';
-import type {
-  GadgetSlug,
-  NonNullableSVGandPNG,
-  OperatorSide,
-  SVGandPNG,
-  WeaponSlug
 } from '../types';
 
 export interface Operator {
   slug: OperatorSlug;
   name: string;
-  side: OperatorSide;
+  side: SideSlug;
   icon: NonNullableSVGandPNG;
   /** always `null` for recruits */
   iconOfficial: string | null;
@@ -35,6 +33,8 @@ export interface Operator {
   gadgets: OperatorGadgets;
   /** always `null` for recruits */
   uniqueAbility: OperatorUniqueAbility | null;
+  /** Markdown */
+  notes: string;
   isRecruit?: boolean;
 }
 

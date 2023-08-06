@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/lion.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/ee-one-d.svg';
+import notes from './notes.md?raw';
 
 export const lion = {
   slug: 'lion',
   name: 'Lion',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/lion.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/lion.png')
   },
   iconOfficial:
@@ -98,10 +102,11 @@ export const lion = {
       'Drone that hovers above the map and scans it for movement to reveal opponent locations.',
     info: 'The drone has a cooldown time between scans.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/ee-one-d.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7fRknnWl2K2qjKle1t79j/0506d25798aeb0691c8a576665050f7d/EE-ONE-D.png'
-  }
+  },
+  notes
 } satisfies Operator;

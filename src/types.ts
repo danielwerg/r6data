@@ -1,7 +1,15 @@
 export type NonNullableInterface<T> = { [P in keyof T]-?: NonNullable<T[P]> };
 
+export type SvgAttributes = Record<string, string>;
+export interface Svg {
+  /** SVG contents without HTML tags. */
+  contents: string;
+  /** SVG attributes as an object. */
+  attributes: SvgAttributes;
+}
+
 export interface SVGandPNG {
-  toSVG: (() => Promise<string>) | null;
+  svg: Svg | null;
   png: string | null;
 }
 export type NonNullableSVGandPNG = NonNullableInterface<SVGandPNG>;
@@ -11,15 +19,19 @@ export interface Season {
   shorthand: SeasonShorthand;
   slug: SeasonSlug;
   name: string;
+  year: SeasonYear;
+  season: SeasonSeason;
   hexColorCode: `#${string}`;
+  description: string | null;
   thumbnail: string | null;
   thumbnailOfficial: string | null;
   releaseDate: string;
 }
 
-export type SeasonShorthand =
-  | 'Y0S0'
-  | `Y${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8}S${1 | 2 | 3 | 4}`;
+export type SeasonYear = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+export type SeasonSeason = 0 | 1 | 2 | 3 | 4;
+
+export type SeasonShorthand = `Y${SeasonYear}S${SeasonSeason}`;
 
 export type SeasonSlug =
   | 'release'
@@ -54,14 +66,16 @@ export type SeasonSlug =
   | 'commanding_force'
   | 'dread_factor';
 
-export type GadgetSlug =
+export type GadgetSlugDefense =
   | 'deployable_shield'
   | 'nitro_cell'
   | 'impact_grenade'
   | 'barbed_wire'
   | 'bulletproof_camera'
   | 'proximity_alarm'
-  | 'observation_blocker'
+  | 'observation_blocker';
+
+export type GadgetSlugAttack =
   | 'frag_grenade'
   | 'smoke_grenade'
   | 'stun_grenade'
@@ -69,6 +83,8 @@ export type GadgetSlug =
   | 'hard_breach_charge'
   | 'breach_charge'
   | 'impact_emp_grenade';
+
+export type GadgetSlug = GadgetSlugDefense | GadgetSlugAttack;
 
 export type WeaponSlug =
   | 'l85a2'
@@ -193,4 +209,38 @@ export type WeaponCategory =
   | 'shield'
   | 'launcher';
 
-export type OperatorSide = 'defense' | 'attack';
+export type SideSlug = 'defense' | 'attack';
+
+export type SightSlug =
+  | 'red_dot_a'
+  | 'red_dot_b'
+  | 'red_dot_c'
+  | 'red_dot_handgun'
+  | 'holo_a'
+  | 'holo_b'
+  | 'holo_c'
+  | 'holo_d'
+  | 'reflex_a'
+  | 'reflex_b'
+  | 'reflex_c'
+  | 'reflex_d'
+  | 'scope_1.5x'
+  | 'scope_2.0x'
+  | 'scope_2.5x_a'
+  | 'scope_2.5x_b'
+  | 'scope_3.0x_.44_mag'
+  | 'scope_3.0x'
+  | 'scope_4.0x'
+  | 'scope_5.0x'
+  | 'scope_12.0x';
+
+export type BarrelSlug =
+  | 'flash_hider'
+  | 'compensator'
+  | 'muzzle_brake'
+  | 'suppressor'
+  | 'extended_barrel';
+
+export type GripSlug = 'vertical_grip' | 'angled_grip';
+
+export type UnderBarrelSlug = 'laser';

@@ -1,21 +1,49 @@
-import type { GadgetSlug, OperatorSide, SVGandPNG } from './types';
-import { getAssetURL, getSVGString } from './utils';
+import type {
+  GadgetSlug,
+  GadgetSlugAttack,
+  GadgetSlugDefense,
+  SVGandPNG,
+  SideSlug
+} from './types';
+import { getAssetURL, parseSvgString } from './utils';
+/** --- */
+import deployableShieldIcon from './assets/gadgets/simple/svgs/deployable_shield.svg';
+import nitroCellIcon from './assets/gadgets/simple/svgs/nitro_cell.svg';
+import impactGrenadeIcon from './assets/gadgets/simple/svgs/impact_grenade.svg';
+import barbedWireIcon from './assets/gadgets/simple/svgs/barbed_wire.svg';
+import bulletproofCameraIcon from './assets/gadgets/simple/svgs/bulletproof_camera.svg';
+import proximityAlarmIcon from './assets/gadgets/simple/svgs/proximity_alarm.svg';
+import observationBlockerIcon from './assets/gadgets/simple/svgs/observation_blocker.svg';
+import fragGrenadeIcon from './assets/gadgets/simple/svgs/frag_grenade.svg';
+import smokeGrenadeIcon from './assets/gadgets/simple/svgs/smoke_grenade.svg';
+import stunGrenadeIcon from './assets/gadgets/simple/svgs/stun_grenade.svg';
+import claymoreIcon from './assets/gadgets/simple/svgs/claymore.svg';
+import hardBreachChargeIcon from './assets/gadgets/simple/svgs/hard_breach_charge.svg';
+import breachChargeIcon from './assets/gadgets/simple/svgs/breach_charge.svg';
+import impactEmpGrenadeIcon from './assets/gadgets/simple/svgs/impact_emp_grenade.svg';
 
-export const getGadgetSVGString = async (path: string) =>
-  getSVGString(`/gadgets/${path}`);
 export const getGadgetAssetURL = (path: string) =>
   getAssetURL(`/gadgets${path}`);
 
-export interface Gadget {
+export type GadgetBase = {
   slug: GadgetSlug;
   name: string;
-  side: OperatorSide;
+  side: SideSlug;
   amount: number;
   description: string;
   notes: string | null;
   icon: SVGandPNG;
   iconOfficial: string | null;
-}
+};
+export type GadgetDefense = GadgetBase & {
+  slug: GadgetSlugDefense;
+  side: 'defense';
+};
+export type GadgetAttack = GadgetBase & {
+  slug: GadgetSlugAttack;
+  side: 'attack';
+};
+export type Gadget = GadgetDefense | GadgetAttack;
 
 export const GADGETS = [
   {
@@ -27,8 +55,7 @@ export const GADGETS = [
       'Bulletproof shield that\'s deployed on the ground or attached to doorframes to provide protective cover.',
     notes: null,
     icon: {
-      toSVG: async () =>
-        getGadgetSVGString('/simple/svgs/deployable_shield.svg'),
+      svg: parseSvgString(deployableShieldIcon),
       png: getGadgetAssetURL('/simple/pngs/deployable_shield.png')
     },
     iconOfficial:
@@ -43,7 +70,7 @@ export const GADGETS = [
       'Throwable C4 that sticks to surfaces and is manually detonated to create a large explosion.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/simple/svgs/nitro_cell.svg'),
+      svg: parseSvgString(nitroCellIcon),
       png: getGadgetAssetURL('/simple/pngs/nitro_cell.png')
     },
     iconOfficial:
@@ -58,7 +85,7 @@ export const GADGETS = [
       'Explosive grenade that detonates on impact to create entryways or line of sight in breakable surfaces.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/simple/svgs/impact_grenade.svg'),
+      svg: parseSvgString(impactGrenadeIcon),
       png: getGadgetAssetURL('/simple/pngs/impact_grenade.png')
     },
     iconOfficial:
@@ -73,7 +100,7 @@ export const GADGETS = [
       'Non-damaging razor wire that slows opponents and creates noise when walked through.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/simple/svgs/barbed_wire.svg'),
+      svg: parseSvgString(barbedWireIcon),
       png: getGadgetAssetURL('/simple/pngs/barbed_wire.png')
     },
     iconOfficial:
@@ -89,8 +116,7 @@ export const GADGETS = [
     notes:
       'EMP bursts has 1 charge and infinite reload with 8 seconds cooldown.',
     icon: {
-      toSVG: async () =>
-        getGadgetSVGString('/simple/svgs/bulletproof_camera.svg'),
+      svg: parseSvgString(bulletproofCameraIcon),
       png: getGadgetAssetURL('/simple/pngs/bulletproof_camera.png')
     },
     iconOfficial:
@@ -105,7 +131,7 @@ export const GADGETS = [
       'Sensor that sticks to surfaces and sounds an alarm when it detects nearby opponents.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/simple/svgs/proximity_alarm.svg'),
+      svg: parseSvgString(proximityAlarmIcon),
       png: getGadgetAssetURL('/simple/pngs/proximity_alarm.png')
     },
     iconOfficial:
@@ -120,8 +146,7 @@ export const GADGETS = [
       'Projects a screen that blocks the line of sight of opponent Observation Tools.',
     notes: 'Maximum width: 5m, height: 2.2m',
     icon: {
-      toSVG: async () =>
-        getGadgetSVGString('/simple/svgs/observation_blocker.svg'),
+      svg: parseSvgString(observationBlockerIcon),
       png: getGadgetAssetURL('/simple/pngs/observation_blocker.png')
     },
     iconOfficial: null
@@ -134,7 +159,7 @@ export const GADGETS = [
     description: 'Explosive grenade that detonates shortly after being thrown.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/simple/svgs/frag_grenade.svg'),
+      svg: parseSvgString(fragGrenadeIcon),
       png: getGadgetAssetURL('/simple/pngs/frag_grenade.png')
     },
     iconOfficial:
@@ -149,7 +174,7 @@ export const GADGETS = [
       'Non-damaging grenade that produces smoke shortly after being thrown to cover advances.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/simple/svgs/smoke_grenade.svg'),
+      svg: parseSvgString(smokeGrenadeIcon),
       png: getGadgetAssetURL('/simple/pngs/smoke_grenade.png')
     },
     iconOfficial:
@@ -164,7 +189,7 @@ export const GADGETS = [
       'Non-damaging grenade that produces a flash explosion shortly after being thrown to disorient opponents.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/simple/svgs/stun_grenade.svg'),
+      svg: parseSvgString(stunGrenadeIcon),
       png: getGadgetAssetURL('/simple/pngs/stun_grenade.png')
     },
     iconOfficial:
@@ -179,7 +204,7 @@ export const GADGETS = [
       'Explosive trap that\'s deployed on the ground and is useful against roaming Defenders.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/simple/svgs/claymore.svg'),
+      svg: parseSvgString(claymoreIcon),
       png: getGadgetAssetURL('/simple/pngs/claymore.png')
     },
     iconOfficial:
@@ -194,8 +219,7 @@ export const GADGETS = [
       'Explosive device that automatically detonates to create entryways in breakable and reinforced surfaces.',
     notes: 'Takes 2 seconds to deploy on a wall and 4 seconds to detonate.',
     icon: {
-      toSVG: async () =>
-        getGadgetSVGString('/simple/svgs/hard_breach_charge.svg'),
+      svg: parseSvgString(hardBreachChargeIcon),
       png: getGadgetAssetURL('/simple/pngs/hard_breach_charge.png')
     },
     iconOfficial:
@@ -210,7 +234,7 @@ export const GADGETS = [
       'Explosive device that\'s deployed on breakable surfaces and is manually detonated to create an entryway.',
     notes: null,
     icon: {
-      toSVG: async () => getGadgetSVGString('/simple/svgs/breach_charge.svg'),
+      svg: parseSvgString(breachChargeIcon),
       png: getGadgetAssetURL('/simple/pngs/breach_charge.png')
     },
     iconOfficial:
@@ -226,8 +250,7 @@ export const GADGETS = [
     notes:
       '1.8 meters spherical range, disables electronic gadgets for 9 seconds.',
     icon: {
-      toSVG: async () =>
-        getGadgetSVGString('/simple/svgs/emp_impact_grenade.svg'),
+      svg: parseSvgString(impactEmpGrenadeIcon),
       png: getGadgetAssetURL('/simple/pngs/emp_impact_grenade.png')
     },
     iconOfficial: null

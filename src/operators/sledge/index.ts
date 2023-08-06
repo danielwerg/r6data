@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/sledge.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/tactical_breaching_hammer.svg';
+import notes from './notes.md?raw';
 
 export const sledge = {
   slug: 'sledge',
   name: 'Sledge',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/sledge.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/sledge.png')
   },
   iconOfficial:
@@ -66,10 +70,11 @@ export const sledge = {
       'Hammer that creates entryways or line of sight in breakable surfaces and destroys bulletproof devices.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/tactical_breaching_hammer.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2Vyo9CrQ1J7IZe43XpT4pV/4bc02e829d1b1745b9a527ff34f8fafb/Tactical-Breaching-Hammer.png'
-  }
+  },
+  notes
 } satisfies Operator;

@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/mira.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/black_mirror.svg';
+import notes from './notes.md?raw';
 
 export const mira = {
   slug: 'mira',
   name: 'Mira',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/mira.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/mira.png')
   },
   iconOfficial:
@@ -71,10 +75,11 @@ export const mira = {
       'Device that\'s deployed on breakable or reinforced walls to create a bulletproof one-way window.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/black_mirror.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1a1w8epOhWE8VtzvvCJG9d/b20cbb221f7d45e5838f839ce042f409/Black-mirror.png'
-  }
+  },
+  notes
 } satisfies Operator;

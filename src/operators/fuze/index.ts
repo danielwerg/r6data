@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/fuze.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/cluster_charge.svg';
+import notes from './notes.md?raw';
 
 export const fuze = {
   slug: 'fuze',
   name: 'Fuze',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/fuze.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/fuze.png')
   },
   iconOfficial:
@@ -92,10 +96,11 @@ export const fuze = {
       'Charge that\'s deployed on breakable and reinforced surfaces to injure opponents and clear devices on the other side.',
     info: 'Each charge releases 4 sub-grenades.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/cluster_charge.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3YaoPPUbFYeVSCemdj57EL/a4a4a8c0a935640f7d9a1d1ea82bc48c/Cluster-Charge.png'
-  }
+  },
+  notes
 } satisfies Operator;

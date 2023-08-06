@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/ace.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/s.e.l.m.a._aqua_breacher.svg';
+import notes from './notes.md?raw';
 
 export const ace = {
   slug: 'ace',
   name: 'Ace',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/ace.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/ace.png')
   },
   iconOfficial:
@@ -64,10 +68,11 @@ export const ace = {
       'Throwable breach charge that creates line of sight or entryways in breakable and reinforced surfaces.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/s.e.l.m.a._aqua_breacher.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2sjKOnwHeOX2xn3iIpja2A/e265f675c905ac25c23ed11fc85589bb/r6s-operator-ability-ace.png'
-  }
+  },
+  notes
 } satisfies Operator;

@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/amaru.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/garra_hook.svg';
+import notes from './notes.md?raw';
 
 export const amaru = {
   slug: 'amaru',
   name: 'Amaru',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/amaru.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/amaru.png')
   },
   iconOfficial:
@@ -84,10 +88,11 @@ export const amaru = {
       'Grappling gun that provides a quick rappel up ledges and windows at limited distances.',
     info: 'Garra Hook has a cooldown time between uses.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/garra_hook.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3WejtMAtiITfpjDMuq6j4t/b52e58da6b2625839aa23f940c8e6639/Garra-Hook.png'
-  }
+  },
+  notes
 } satisfies Operator;

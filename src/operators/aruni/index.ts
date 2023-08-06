@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/aruni.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/surya_gate.svg';
+import notes from './notes.md?raw';
 
 export const aruni = {
   slug: 'aruni',
   name: 'Aruni',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/aruni.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/aruni.png')
   },
   iconOfficial:
@@ -64,10 +68,11 @@ export const aruni = {
       'Laser gate that denies entry and intel by injuring opponents and destroying devices that pass through it.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/surya_gate.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4hLJAAVKrf50wosG0471od/cde1867daf863c03754969f159ac00de/r6s-operator-ability-aruni.png'
-  }
+  },
+  notes
 } satisfies Operator;

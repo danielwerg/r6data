@@ -1,13 +1,17 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import { COMMON_SIGHTS_1X, COMMON_BARRELS_ALL } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/clash.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/cce_shield.svg';
+import notes from './notes.md?raw';
 
 export const clash = {
   slug: 'clash',
   name: 'Clash',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/clash.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/clash.png')
   },
   iconOfficial:
@@ -69,10 +73,11 @@ export const clash = {
       'Extendable electro-shield that protects against incoming rushes by slowing opponents and injuring them over time.',
     info: 'Gauge that empties while in use and fills up when ability is inactive.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/cce_shield.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1jck6fnzAMbMQrUMVsnA0M/d04a60eab0132e6bcc202a4f99186cdd/CCE-Shield.png'
-  }
+  },
+  notes
 } satisfies Operator;

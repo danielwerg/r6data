@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_BARRELS_NO_EXTENDED_BARREL
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/ela.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/grzmot_mine.svg';
+import notes from './notes.md?raw';
 
 export const ela = {
   slug: 'ela',
   name: 'Ela',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/ela.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/ela.png')
   },
   iconOfficial:
@@ -67,10 +71,11 @@ export const ela = {
       'Concussion mine that sticks to surfaces and detonates when it detects nearby opponents to disorient them.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/grzmot_mine.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/10Md7ccaUO0pE0nCWimeoZ/35dddc67a4141e844d7904051a0314dc/Grzmot-Mine.png'
-  }
+  },
+  notes
 } satisfies Operator;

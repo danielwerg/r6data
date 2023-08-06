@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -6,13 +7,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/maverick.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/breaching_torch.svg';
+import notes from './notes.md?raw';
 
 export const maverick = {
   slug: 'maverick',
   name: 'Maverick',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/maverick.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/maverick.png')
   },
   iconOfficial:
@@ -71,10 +75,11 @@ export const maverick = {
       'Blowtorch that quietly burns holes to create line of sight or entryways in breakable and reinforced surfaces.',
     info: 'Breaching Torch has a limited number of fuel tanks, each with a gauge that empties while in use.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/breaching_torch.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4rPBvxDKsKiQCMjt7GxJMw/09e45c68bbc41c1721acbbe0257e2465/Breaching-Torch.png'
-  }
+  },
+  notes
 } satisfies Operator;

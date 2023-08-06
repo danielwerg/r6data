@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -7,13 +8,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/iq.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/electronics_detector.svg';
+import notes from './notes.md?raw';
 
 export const iq = {
   slug: 'iq',
   name: 'IQ',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/iq.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/iq.png')
   },
   iconOfficial:
@@ -79,10 +83,11 @@ export const iq = {
       'Wearable device that locates nearby electronics through objects and surfaces.',
     info: null,
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/electronics_detector.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/23Nk2ie06rb3DcZnStryIY/e06226196dd582c905c33fad87dfdd63/Electronics-Detector.png'
-  }
+  },
+  notes
 } satisfies Operator;

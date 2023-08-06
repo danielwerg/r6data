@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -7,13 +8,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/finka.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/adrenal_surge.svg';
+import notes from './notes.md?raw';
 
 export const finka = {
   slug: 'finka',
   name: 'Finka',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/finka.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/finka.png')
   },
   iconOfficial:
@@ -86,10 +90,11 @@ export const finka = {
       'Gives Finka and her team a health boost or revive and enhances their combat capabilities.',
     info: 'Adrenal Surge has a cooldown time between uses.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/adrenal_surge.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/9xGRNPNznBKssvgQAtQNQ/9352fc88f2911ab40789412856b3e20e/Adrenal-Surge.png'
-  }
+  },
+  notes
 } satisfies Operator;

@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import { getWeaponAssetURL } from './utils';
 import type { Weapon } from './types';
 
@@ -16,7 +17,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/m590a1.png')
     },
     iconOfficial:
@@ -35,7 +36,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/m1014.png')
     },
     iconOfficial:
@@ -55,7 +56,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/sg-cqb.png')
     },
     iconOfficial:
@@ -75,7 +76,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 2.8, tactical: 3.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/sasg-12.png')
     },
     iconOfficial:
@@ -95,7 +96,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/m870.png')
     },
     iconOfficial:
@@ -115,7 +116,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/super_90.png')
     },
     iconOfficial:
@@ -134,7 +135,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/spas-12.png')
     },
     iconOfficial:
@@ -154,7 +155,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 3.2, tactical: 2.1 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/spas-15.png')
     },
     iconOfficial:
@@ -174,7 +175,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/supernova.png')
     },
     iconOfficial:
@@ -194,7 +195,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/ita12l.png')
     },
     iconOfficial:
@@ -214,7 +215,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/ita12s.png')
     },
     iconOfficial:
@@ -234,7 +235,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 2.6, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/six12.png')
     },
     iconOfficial:
@@ -254,7 +255,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 2.6, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/six12_sd.png')
     },
     iconOfficial:
@@ -274,7 +275,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 2.3, tactical: 3.3 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/fo-12.png')
     },
     iconOfficial:
@@ -294,7 +295,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 3, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/bosg.12.2.png')
     },
     iconOfficial:
@@ -314,7 +315,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 2.7, tactical: 2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/acs12.png')
     },
     iconOfficial:
@@ -334,7 +335,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 3.2, tactical: 2.5 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/tcsg12.png')
     },
     iconOfficial:
@@ -354,7 +355,7 @@ export const SHOTGUNS = [
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/super_shorty.png')
     },
     iconOfficial:

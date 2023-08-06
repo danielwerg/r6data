@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/rook.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/armor_pack.svg';
+import notes from './notes.md?raw';
 
 export const rook = {
   slug: 'rook',
   name: 'Rook',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/rook.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/rook.png')
   },
   iconOfficial:
@@ -80,10 +84,11 @@ export const rook = {
       'A pack of armor plates that give teammates additional health and protect them against elimination one time.',
     info: 'Armor Pack has 5 armor plates.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/armor_pack.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/MeoKw7iPY6EFYvjS07CRg/b2d7eba623f3c63d6b7097a8f2253954/Armor-Pack.png'
-  }
+  },
+  notes
 } satisfies Operator;

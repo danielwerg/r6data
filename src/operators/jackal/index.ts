@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
@@ -7,13 +8,16 @@ import {
   COMMON_GRIPS,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/jackal.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/eyenox_model_iii.svg';
+import notes from './notes.md?raw';
 
 export const jackal = {
   slug: 'jackal',
   name: 'Jackal',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/jackal.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/jackal.png')
   },
   iconOfficial:
@@ -79,10 +83,11 @@ export const jackal = {
       'Headgear that can be activated to reveal opponent footprints and scan them to ping the opponent\'s location.',
     info: 'The headgear has limited scans available but no limit on revealing footprints.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/eyenox_model_iii.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2gexf5zLDsa74J7urCoDxk/50da09626395cbe1bf2a58e00a57a514/Eyenox-Model-III.png'
-  }
+  },
+  notes
 } satisfies Operator;

@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_BARRELS_NO_EXTENDED_BARREL
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/wamai.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/mag-net_system.svg';
+import notes from './notes.md?raw';
 
 export const wamai = {
   slug: 'wamai',
   name: 'Wamai',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/wamai.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/wamai.png')
   },
   iconOfficial:
@@ -71,10 +75,11 @@ export const wamai = {
       'Throwable device that captures incoming grenades and projectiles and detonates them after a delay.',
     info: '1 Mag-NET recharges over time, up to a maximum of 6.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/mag-net_system.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1IKNZzLv63AJd9vlbXj3Bo/883371432ffb22e5bf35bc82dd706384/Mag-net_System.png'
-  }
+  },
+  notes
 } satisfies Operator;

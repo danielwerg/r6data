@@ -1,16 +1,13 @@
-import { readFileSync } from 'node:fs';
-import { join } from 'node:path';
-
-import type { Operator, OperatorWeaponAttachments } from './types';
+import type { Season } from '../types';
 import { getNextPriceDropSeasons, getPrices } from '../utils';
 import { SEASONS } from '../seasons';
 import { type Gadget, GADGETS } from '../gadgets';
 import { type Weapon, WEAPONS } from '../weapons';
 import { BARRELS, GRIPS, SIGHTS, UNDER_BARRELS } from '../attachments';
+import type { Operator, OperatorWeaponAttachments } from './types';
 /** --- */
 import { recruitDefense } from './recruit_defense';
 import { recruitAttack } from './recruit_attack';
-import type { Season } from '../types';
 import { smoke } from './smoke';
 import { mute } from './mute';
 import { sledge } from './sledge';
@@ -157,11 +154,6 @@ export const MINI_OPERATORS = [
 ];
 
 export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {
-  const notes = readFileSync(
-    join(__dirname, `./${operator.slug}/notes.md`),
-    'utf8'
-  );
-
   const matchAttachments = (attachments: OperatorWeaponAttachments) => ({
     sights:
       attachments.sights?.map(sightSlug =>
@@ -218,8 +210,6 @@ export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {
           SEASONS,
           operator.season.id
         )
-      }),
-    /** Markdown */
-    notes
+      })
   };
 });

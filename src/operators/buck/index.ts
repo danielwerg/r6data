@@ -1,17 +1,21 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/buck.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/skeleton_key.svg';
+import notes from './notes.md?raw';
 
 export const buck = {
   slug: 'buck',
   name: 'Buck',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/buck.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/buck.png')
   },
   iconOfficial:
@@ -79,10 +83,11 @@ export const buck = {
       'Primary weapon shotgun attachment used to create entryways or line of sight in breakable surfaces.',
     info: 'Amount of ammo for the shotgun attachment.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/skeleton_key.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2w8EQtN4FFtEMa9lBYyWGg/36bbc6d819761c11418c868d2e483991/Skeleton-Key.png'
-  }
+  },
+  notes
 } satisfies Operator;

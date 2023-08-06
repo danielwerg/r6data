@@ -1,12 +1,15 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
+import iconSvg from '../../assets/operators/icons/svgs/recruit_red.svg';
+import notes from './notes.md?raw';
 
 export const recruitAttack = {
   slug: 'recruit_attack',
   name: 'Recruit Attack',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/recruit_red.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/recruit_red.png')
   },
   iconOfficial: null,
@@ -76,5 +79,6 @@ export const recruitAttack = {
     secondary: ['breach_charge', 'stun_grenade', 'claymore']
   },
   uniqueAbility: null,
+  notes,
   isRecruit: true
 } satisfies Operator;

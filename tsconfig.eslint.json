@@ -3,5 +3,5 @@
   "compilerOptions": {
     "noEmit": true
   },
-  "include": ["src", "scripts", ".eslintrc.js"]
+  "include": ["src", "scripts", ".eslintrc.js", "vite.config.ts"]
 }

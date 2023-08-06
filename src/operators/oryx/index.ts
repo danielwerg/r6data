@@ -1,4 +1,5 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_SIGHTS_1X,
@@ -6,13 +7,16 @@ import {
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_GRIPS
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/oryx.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/remah_dash.svg';
+import notes from './notes.md?raw';
 
 export const oryx = {
   slug: 'oryx',
   name: 'Oryx',
   side: 'defense',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/oryx.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/oryx.png')
   },
   iconOfficial:
@@ -72,10 +76,11 @@ export const oryx = {
       'Dash attack that creates entryways in breakable walls, pushes opponents to the ground, and allows for faster roaming.',
     info: 'Remah Dashes recharge after use.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/remah_dash.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3dM2B3qCdU0woydIbiy2xn/55aa99443002ad794d3f78dada26d035/r6s-operator-ability-oryx.png'
-  }
+  },
+  notes
 } satisfies Operator;

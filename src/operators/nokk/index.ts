@@ -1,17 +1,21 @@
-import { getOperatorAssetURL, getOperatorSVGString } from '../utils';
+import { parseSvgString } from '../../utils';
+import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
   COMMON_BARRELS_ALL,
   COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
   COMMON_SIGHTS_1X
 } from '../constants';
+import iconSvg from '../../assets/operators/icons/svgs/nokk.svg';
+import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/hel_presence_reduction.svg';
+import notes from './notes.md?raw';
 
 export const nokk = {
   slug: 'nokk',
   name: 'Nøkk',
   side: 'attack',
   icon: {
-    toSVG: async () => getOperatorSVGString('/icons/svgs/nokk.svg'),
+    svg: parseSvgString(iconSvg),
     png: getOperatorAssetURL('/icons/pngs/nokk.png')
   },
   iconOfficial:
@@ -73,10 +77,11 @@ export const nokk = {
       'Wipes Nøkk\'s image from nearby drones and Observation Tools and muffles the sound of her movement.',
     info: 'Gauge that empties while in use and fills up when ability is inactive.',
     icon: {
-      toSVG: null,
+      svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/hel_presence_reduction.png')
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/57miqbOn8xWBh7ne7za3CV/35364108d49380a0ed33998f970e104f/HEL-Presence-Reduction.png'
-  }
+  },
+  notes
 } satisfies Operator;

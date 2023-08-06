@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import { getWeaponAssetURL } from './utils';
 import type { Weapon } from './types';
 
@@ -16,7 +17,7 @@ export const SMGS = [
     reloadTime: { empty: 3, tactical: 2.2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/fmg-9.png')
     },
     iconOfficial:
@@ -35,7 +36,7 @@ export const SMGS = [
     reloadTime: { empty: 2.8, tactical: 2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/mp5k.png')
     },
     iconOfficial:
@@ -54,7 +55,7 @@ export const SMGS = [
     reloadTime: { empty: 2.9, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/ump45.png')
     },
     iconOfficial:
@@ -74,7 +75,7 @@ export const SMGS = [
     reloadTime: { empty: 2.9, tactical: 2.2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/mp5.png')
     },
     iconOfficial:
@@ -94,7 +95,7 @@ export const SMGS = [
     reloadTime: { empty: 2.9, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/p90.png')
     },
     iconOfficial:
@@ -114,7 +115,7 @@ export const SMGS = [
     reloadTime: { empty: 3.2, tactical: 2.3 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/9x19vsn.png')
     },
     iconOfficial:
@@ -134,7 +135,7 @@ export const SMGS = [
     reloadTime: { empty: 2.8, tactical: 2.2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/mp7.png')
     },
     iconOfficial:
@@ -154,7 +155,7 @@ export const SMGS = [
     reloadTime: { empty: 2.6, tactical: 1.9 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/9mm_c1.png')
     },
     iconOfficial:
@@ -174,7 +175,7 @@ export const SMGS = [
     reloadTime: { empty: 3.1, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/mpx.png')
     },
     iconOfficial:
@@ -194,7 +195,7 @@ export const SMGS = [
     reloadTime: { empty: 3, tactical: 2.2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/m12.png')
     },
     iconOfficial:
@@ -214,7 +215,7 @@ export const SMGS = [
     reloadTime: { empty: 2.9, tactical: 2.2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/mp5sd.png')
     },
     iconOfficial:
@@ -234,7 +235,7 @@ export const SMGS = [
     reloadTime: { empty: 2.8, tactical: 2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/vector_.45_acp.png')
     },
     iconOfficial:
@@ -254,7 +255,7 @@ export const SMGS = [
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/pdw9.png')
     },
     iconOfficial:
@@ -274,7 +275,7 @@ export const SMGS = [
     reloadTime: { empty: 3, tactical: 2.4 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/t-5_smg.png')
     },
     iconOfficial:
@@ -293,7 +294,7 @@ export const SMGS = [
     reloadTime: { empty: 3, tactical: 2.1 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/scorpion_evo_3_a1.png')
     },
     iconOfficial:
@@ -313,7 +314,7 @@ export const SMGS = [
     reloadTime: { empty: 3, tactical: 2.7 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/k1a.png')
     },
     iconOfficial:
@@ -333,7 +334,7 @@ export const SMGS = [
     reloadTime: { empty: 3.1, tactical: 2.8 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/mx4_storm.png')
     },
     iconOfficial:
@@ -353,7 +354,7 @@ export const SMGS = [
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/aug_a3.png')
     },
     iconOfficial:
@@ -372,7 +373,7 @@ export const SMGS = [
     reloadTime: { empty: 2.7, tactical: 1.7 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/p10_roni.png')
     },
     iconOfficial:
@@ -392,7 +393,7 @@ export const SMGS = [
     reloadTime: { empty: 2.9, tactical: 2.2 },
     slot: 'primary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/uzk50gi.png')
     },
     iconOfficial:

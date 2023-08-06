@@ -1,8 +1,43 @@
-import type { SVGandPNG } from './types';
-import { getAssetURL, getSVGString } from './utils';
+import type {
+  BarrelSlug,
+  GripSlug,
+  SVGandPNG,
+  SightSlug,
+  UnderBarrelSlug
+} from './types';
+import { getAssetURL, parseSvgString } from './utils';
+/** --- */
+import sightIcon from './assets/attachments/svgs/sight.svg';
+import barrelIcon from './assets/attachments/svgs/barrel.svg';
+import gripIcon from './assets/attachments/svgs/grip.svg';
+import underBarrelIcon from './assets/attachments/svgs/under_barrel.svg';
+import redDotAIcon from './assets/attachments/sights/svgs/red_dot_a.svg';
+import redDotBIcon from './assets/attachments/sights/svgs/red_dot_b.svg';
+import redDotCIcon from './assets/attachments/sights/svgs/red_dot_c.svg';
+import redDotHandgunIcon from './assets/attachments/sights/svgs/red_dot_handgun.svg';
+import holoAIcon from './assets/attachments/sights/svgs/holo_a.svg';
+import holoBIcon from './assets/attachments/sights/svgs/holo_b.svg';
+import holoCIcon from './assets/attachments/sights/svgs/holo_c.svg';
+import holoDIcon from './assets/attachments/sights/svgs/holo_d.svg';
+import reflexAIcon from './assets/attachments/sights/svgs/reflex_a.svg';
+import reflexBIcon from './assets/attachments/sights/svgs/reflex_b.svg';
+import reflexCIcon from './assets/attachments/sights/svgs/reflex_c.svg';
+import reflexDIcon from './assets/attachments/sights/svgs/reflex_d.svg';
+import scope1dot5xIcon from './assets/attachments/sights/svgs/scope_1.5x.svg';
+import scope2dot0xIcon from './assets/attachments/sights/svgs/scope_2.0x.svg';
+import scope2dot5xAIcon from './assets/attachments/sights/svgs/scope_2.5x_a.svg';
+import scope2dot5xBIcon from './assets/attachments/sights/svgs/scope_2.5x_b.svg';
+import scope3dot0xIcon from './assets/attachments/sights/svgs/scope_3.0x.svg';
+import scope3dot0xdot44MagIcon from './assets/attachments/sights/svgs/scope_3.0x_.44_mag.svg';
+import flashHiderIcon from './assets/attachments/barrels/svgs/flash_hider.svg';
+import compensatorIcon from './assets/attachments/barrels/svgs/compensator.svg';
+import muzzleBrakeIcon from './assets/attachments/barrels/svgs/muzzle_brake.svg';
+import suppressorIcon from './assets/attachments/barrels/svgs/suppressor.svg';
+import extendedBarrelIcon from './assets/attachments/barrels/svgs/extended_barrel.svg';
+import verticalGripIcon from './assets/attachments/grips/svgs/vertical_grip.svg';
+import angledGripIcon from './assets/attachments/grips/svgs/angled_grip.svg';
+import laserIcon from './assets/attachments/under_barrels/svgs/laser.svg';
 
-export const getAttachmentSVGString = async (path: string) =>
-  getSVGString(`/attachments/${path}`);
 export const getAttachmentAssetURL = (path: string) =>
   getAssetURL(`/attachments${path}`);
 
@@ -18,7 +53,7 @@ export const ATTACHMENTS = [
     slug: 'sight',
     name: 'Sight',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/svgs/sight.svg'),
+      svg: parseSvgString(sightIcon),
       png: getAttachmentAssetURL('/pngs/sight.png')
     }
   },
@@ -26,7 +61,7 @@ export const ATTACHMENTS = [
     slug: 'barrel',
     name: 'Barrel',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/svgs/barrel.svg'),
+      svg: parseSvgString(barrelIcon),
       png: getAttachmentAssetURL('/pngs/barrel.png')
     }
   },
@@ -34,7 +69,7 @@ export const ATTACHMENTS = [
     slug: 'grip',
     name: 'Grip',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/svgs/grip.svg'),
+      svg: parseSvgString(gripIcon),
       png: getAttachmentAssetURL('/pngs/grip.png')
     }
   },
@@ -42,7 +77,7 @@ export const ATTACHMENTS = [
     slug: 'under_barrel',
     name: 'Under Barrel',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/svgs/under_barrel.svg'),
+      svg: parseSvgString(underBarrelIcon),
       png: getAttachmentAssetURL('/pngs/under_barrel.png')
     }
   }
@@ -55,28 +90,6 @@ export interface Sight {
   description: string;
   icon: SVGandPNG;
 }
-export type SightSlug =
-  | 'red_dot_a'
-  | 'red_dot_b'
-  | 'red_dot_c'
-  | 'red_dot_handgun'
-  | 'holo_a'
-  | 'holo_b'
-  | 'holo_c'
-  | 'holo_d'
-  | 'reflex_a'
-  | 'reflex_b'
-  | 'reflex_c'
-  | 'reflex_d'
-  | 'scope_1.5x'
-  | 'scope_2.0x'
-  | 'scope_2.5x_a'
-  | 'scope_2.5x_b'
-  | 'scope_3.0x_.44_mag'
-  | 'scope_3.0x'
-  | 'scope_4.0x'
-  | 'scope_5.0x'
-  | 'scope_12.0x';
 
 export const SIGHTS = [
   {
@@ -85,7 +98,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a 1x dot sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/red_dot_a.svg'),
+      svg: parseSvgString(redDotAIcon),
       png: getAttachmentAssetURL('/sights/pngs/red_dot_a.png')
     }
   },
@@ -95,7 +108,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a 1x dot sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/red_dot_b.svg'),
+      svg: parseSvgString(redDotBIcon),
       png: getAttachmentAssetURL('/sights/pngs/red_dot_b.png')
     }
   },
@@ -105,7 +118,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a 1x dot sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/red_dot_c.svg'),
+      svg: parseSvgString(redDotCIcon),
       png: getAttachmentAssetURL('/sights/pngs/red_dot_c.png')
     }
   },
@@ -115,8 +128,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a 1x dot sight.',
     icon: {
-      toSVG: async () =>
-        getAttachmentSVGString('/sights/svgs/red_dot_handgun.svg'),
+      svg: parseSvgString(redDotHandgunIcon),
       png: getAttachmentAssetURL('/sights/pngs/red_dot_handgun.png')
     }
   },
@@ -126,7 +138,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a holographic precision sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/holo_a.svg'),
+      svg: parseSvgString(holoAIcon),
       png: getAttachmentAssetURL('/sights/pngs/holo_a.png')
     }
   },
@@ -136,7 +148,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a holographic precision sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/holo_b.svg'),
+      svg: parseSvgString(holoBIcon),
       png: getAttachmentAssetURL('/sights/pngs/holo_b.png')
     }
   },
@@ -146,7 +158,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a holographic precision sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/holo_c.svg'),
+      svg: parseSvgString(holoCIcon),
       png: getAttachmentAssetURL('/sights/pngs/holo_c.png')
     }
   },
@@ -156,7 +168,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a holographic precision sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/holo_d.svg'),
+      svg: parseSvgString(holoDIcon),
       png: getAttachmentAssetURL('/sights/pngs/holo_d.png')
     }
   },
@@ -166,7 +178,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a 1x triangular reticle sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/reflex_a.svg'),
+      svg: parseSvgString(reflexAIcon),
       png: getAttachmentAssetURL('/sights/pngs/reflex_a.png')
     }
   },
@@ -176,7 +188,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a 1x triangular reticle sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/reflex_b.svg'),
+      svg: parseSvgString(reflexBIcon),
       png: getAttachmentAssetURL('/sights/pngs/reflex_b.png')
     }
   },
@@ -186,7 +198,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a 1x triangular reticle sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/reflex_c.svg'),
+      svg: parseSvgString(reflexCIcon),
       png: getAttachmentAssetURL('/sights/pngs/reflex_c.png')
     }
   },
@@ -196,7 +208,7 @@ export const SIGHTS = [
     magnification: 1,
     description: 'Replaces iron sights with a 1x triangular reticle sight.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/reflex_d.svg'),
+      svg: parseSvgString(reflexDIcon),
       png: getAttachmentAssetURL('/sights/pngs/reflex_d.png')
     }
   },
@@ -206,7 +218,7 @@ export const SIGHTS = [
     magnification: 1.5,
     description: 'Provides a 1.5x magnification for long distance engagements.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/scope_1.5x.svg'),
+      svg: parseSvgString(scope1dot5xIcon),
       png: getAttachmentAssetURL('/sights/pngs/scope_1.5x.png')
     }
   },
@@ -216,7 +228,7 @@ export const SIGHTS = [
     magnification: 2,
     description: 'Provides a 2.0x magnification for long distance engagements.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/scope_2.0x.svg'),
+      svg: parseSvgString(scope2dot0xIcon),
       png: getAttachmentAssetURL('/sights/pngs/scope_2.0x.png')
     }
   },
@@ -226,8 +238,7 @@ export const SIGHTS = [
     magnification: 2.5,
     description: 'Provides a 2.5x magnification for long distance engagements.',
     icon: {
-      toSVG: async () =>
-        getAttachmentSVGString('/sights/svgs/scope_2.5x_a.svg'),
+      svg: parseSvgString(scope2dot5xAIcon),
       png: getAttachmentAssetURL('/sights/pngs/scope_2.5x_a.png')
     }
   },
@@ -237,20 +248,8 @@ export const SIGHTS = [
     magnification: 2.5,
     description: 'Provides a 2.5x magnification for long distance engagements.',
     icon: {
-      toSVG: async () =>
-        getAttachmentSVGString('/sights/svgs/scope_2.5x_b.svg'),
+      svg: parseSvgString(scope2dot5xBIcon),
       png: getAttachmentAssetURL('/sights/pngs/scope_2.5x_b.png')
-    }
-  },
-  {
-    slug: 'scope_3.0x_.44_mag',
-    name: 'Scope 3.0x .44 Mag',
-    magnification: 3,
-    description: 'Provides a 3.0x magnification for long distance engagements.',
-    icon: {
-      toSVG: async () =>
-        getAttachmentSVGString('/sights/svgs/scope_3.0x_.44_mag.svg'),
-      png: getAttachmentAssetURL('/sights/pngs/scope_3.0x_.44_mag.png')
     }
   },
   {
@@ -259,8 +258,18 @@ export const SIGHTS = [
     magnification: 3,
     description: 'Provides a 3.0x magnification for long distance engagements.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/sights/svgs/scope_3.0x.svg'),
+      svg: parseSvgString(scope3dot0xIcon),
       png: getAttachmentAssetURL('/sights/pngs/scope_3.0x.png')
+    }
+  },
+  {
+    slug: 'scope_3.0x_.44_mag',
+    name: 'Scope 3.0x .44 Mag',
+    magnification: 3,
+    description: 'Provides a 3.0x magnification for long distance engagements.',
+    icon: {
+      svg: parseSvgString(scope3dot0xdot44MagIcon),
+      png: getAttachmentAssetURL('/sights/pngs/scope_3.0x_.44_mag.png')
     }
   },
   // NOTE: Glaz's sight
@@ -269,7 +278,7 @@ export const SIGHTS = [
     name: 'Scope 4.0x',
     magnification: 4,
     description: 'Provides a 4.0x magnification for long distance engagements.',
-    icon: { toSVG: null, png: null }
+    icon: { svg: null, png: null }
   },
   // NOTE: Kali's sight
   {
@@ -277,7 +286,7 @@ export const SIGHTS = [
     name: 'Scope 5.0x',
     magnification: 5,
     description: 'Provides a 5.0x magnification for long distance engagements.',
-    icon: { toSVG: null, png: null }
+    icon: { svg: null, png: null }
   },
   // NOTE: Kali's sight
   {
@@ -286,7 +295,7 @@ export const SIGHTS = [
     magnification: 12,
     description:
       'Provides a 12.0x magnification for long distance engagements.',
-    icon: { toSVG: null, png: null }
+    icon: { svg: null, png: null }
   }
 ] satisfies Sight[];
 
@@ -296,12 +305,6 @@ export interface Barrel {
   description: string;
   icon: SVGandPNG;
 }
-export type BarrelSlug =
-  | 'flash_hider'
-  | 'compensator'
-  | 'muzzle_brake'
-  | 'suppressor'
-  | 'extended_barrel';
 
 export const BARRELS = [
   {
@@ -310,8 +313,7 @@ export const BARRELS = [
     description:
       'Reduces speed at which the muzzle moves upwards while shooting.',
     icon: {
-      toSVG: async () =>
-        getAttachmentSVGString('/barrels/svgs/flash_hider.svg'),
+      svg: parseSvgString(flashHiderIcon),
       png: getAttachmentAssetURL('/barrels/pngs/flash_hider.png')
     }
   },
@@ -320,8 +322,7 @@ export const BARRELS = [
     name: 'Compensator',
     description: 'Reduces horizontal movement while shooting.',
     icon: {
-      toSVG: async () =>
-        getAttachmentSVGString('/barrels/svgs/compensator.svg'),
+      svg: parseSvgString(compensatorIcon),
       png: getAttachmentAssetURL('/barrels/pngs/compensator.png')
     }
   },
@@ -330,8 +331,7 @@ export const BARRELS = [
     name: 'Muzzle Brake',
     description: 'Reduces the overall weapon kick of single shot firing.',
     icon: {
-      toSVG: async () =>
-        getAttachmentSVGString('/barrels/svgs/muzzle_brake.svg'),
+      svg: parseSvgString(muzzleBrakeIcon),
       png: getAttachmentAssetURL('/barrels/pngs/muzzle_brake.png')
     }
   },
@@ -341,7 +341,7 @@ export const BARRELS = [
     description:
       'Removes muzzle flash, bullet trails are less visible, and the muffled sound reduces noise.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/barrels/svgs/suppressor.svg'),
+      svg: parseSvgString(suppressorIcon),
       png: getAttachmentAssetURL('/barrels/pngs/suppressor.png')
     }
   },
@@ -351,8 +351,7 @@ export const BARRELS = [
     description:
       'Reduces the rate of damage drop off, allowing you to deal more damage at long range. Increases weapon damage by 12%',
     icon: {
-      toSVG: async () =>
-        getAttachmentSVGString('/barrels/svgs/extended_barrel.svg'),
+      svg: parseSvgString(extendedBarrelIcon),
       png: getAttachmentAssetURL('/barrels/pngs/extended_barrel.png')
     }
   }
@@ -364,7 +363,6 @@ export interface Grip {
   description: string;
   icon: SVGandPNG;
 }
-export type GripSlug = 'vertical_grip' | 'angled_grip';
 
 export const GRIPS = [
   {
@@ -373,8 +371,7 @@ export const GRIPS = [
     description:
       'Reduces speed at which the muzzle moves upwards while shooting.',
     icon: {
-      toSVG: async () =>
-        getAttachmentSVGString('/grips/svgs/vertical_grip.svg'),
+      svg: parseSvgString(verticalGripIcon),
       png: getAttachmentAssetURL('/grips/pngs/vertical_grip.png')
     }
   },
@@ -384,7 +381,7 @@ export const GRIPS = [
     description:
       'Angled grip that accelerates the transition between hip fire and ADS.',
     icon: {
-      toSVG: async () => getAttachmentSVGString('/grips/svgs/angled_grip.svg'),
+      svg: parseSvgString(angledGripIcon),
       png: getAttachmentAssetURL('/grips/pngs/angled_grip.png')
     }
   }
@@ -396,7 +393,6 @@ export interface UnderBarrel {
   description: string;
   icon: SVGandPNG;
 }
-export type UnderBarrelSlug = 'laser';
 
 export const UNDER_BARRELS = [
   {
@@ -404,8 +400,7 @@ export const UNDER_BARRELS = [
     name: 'Laser',
     description: 'Mountable laser sight that increases hip fire accuracy.',
     icon: {
-      toSVG: async () =>
-        getAttachmentSVGString('/under-barrels/svgs/laser.svg'),
+      svg: parseSvgString(laserIcon),
       png: getAttachmentAssetURL('/under-barrels/pngs/laser.png')
     }
   }

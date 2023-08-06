@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import { getWeaponAssetURL } from './utils';
 import type { Weapon } from './types';
 
@@ -16,7 +17,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/p226_mk_25.png')
     },
     iconOfficial:
@@ -36,7 +37,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 1.9, tactical: 1.6 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/m45_meusoc.png')
     },
     iconOfficial:
@@ -56,7 +57,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.4, tactical: 1.9 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/5.7_usg.png')
     },
     iconOfficial:
@@ -76,7 +77,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/p9.png')
     },
     iconOfficial:
@@ -96,7 +97,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 4, tactical: 4 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/lfp586.png')
     },
     iconOfficial:
@@ -116,7 +117,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.3, tactical: 2.1 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/gsh-18.png')
     },
     iconOfficial:
@@ -136,7 +137,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 1.9, tactical: 1.4 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/pmm.png')
     },
     iconOfficial:
@@ -156,7 +157,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.4, tactical: 1.9 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/p12.png')
     },
     iconOfficial:
@@ -176,7 +177,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 1.9, tactical: 1.6 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/mk1_9mm.png')
     },
     iconOfficial:
@@ -196,7 +197,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.5, tactical: 2 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/d-50.png')
     },
     iconOfficial:
@@ -216,7 +217,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.6, tactical: 1.9 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/luison.png')
     },
     iconOfficial:
@@ -236,7 +237,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.6, tactical: 1.9 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/prb92.png')
     },
     iconOfficial:
@@ -256,7 +257,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/p229.png')
     },
     iconOfficial:
@@ -276,7 +277,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/usp40.png')
     },
     iconOfficial:
@@ -296,7 +297,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/q-929.png')
     },
     iconOfficial:
@@ -316,7 +317,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.4, tactical: 1.9 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/rg15.png')
     },
     iconOfficial:
@@ -336,7 +337,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 3.6, tactical: 3.4 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/bailiff_410.png')
     },
     iconOfficial:
@@ -356,7 +357,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 4, tactical: 4 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/keratos_.357.png')
     },
     iconOfficial:
@@ -376,7 +377,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.2, tactical: 1.9 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/1911_tacops.png')
     },
     iconOfficial:
@@ -395,7 +396,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.2, tactical: 1.9 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/p-10c.png')
     },
     iconOfficial:
@@ -415,7 +416,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/.44_mag_semi-auto.png')
     },
     iconOfficial:
@@ -435,7 +436,7 @@ export const HANDGUNS = [
     reloadTime: { empty: 2.2, tactical: 1.4 },
     slot: 'secondary',
     icon: {
-      toSVG: null,
+      svg: null,
       png: getWeaponAssetURL('/pngs/sdp_9mm.png')
     },
     iconOfficial:
