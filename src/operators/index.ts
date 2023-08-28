@@ -76,6 +76,81 @@ import { grim } from './grim';
 import { solis } from './solis';
 import { brava } from './brava';
 import { fenrir } from './fenrir';
+import { ram } from './ram';
+
+export {
+  recruitDefense,
+  recruitAttack,
+  smoke,
+  mute,
+  sledge,
+  thatcher,
+  castle,
+  pulse,
+  ash,
+  thermite,
+  doc,
+  rook,
+  twitch,
+  montagne,
+  kapkan,
+  tachanka,
+  glaz,
+  fuze,
+  jager,
+  bandit,
+  blitz,
+  iq,
+  frost,
+  buck,
+  valkyrie,
+  blackbeard,
+  caveira,
+  capitao,
+  echo,
+  hibana,
+  mira,
+  jackal,
+  lesion,
+  ying,
+  ela,
+  zofia,
+  vigil,
+  dokkaebi,
+  lion,
+  finka,
+  maestro,
+  alibi,
+  clash,
+  maverick,
+  kaid,
+  nomad,
+  mozzie,
+  gridlock,
+  warden,
+  nokk,
+  goyo,
+  amaru,
+  wamai,
+  kali,
+  oryx,
+  iana,
+  melusi,
+  ace,
+  zero,
+  aruni,
+  flores,
+  thunderbird,
+  osa,
+  thorn,
+  azami,
+  sens,
+  grim,
+  solis,
+  brava,
+  fenrir,
+  ram
+};
 
 export * from './utils';
 export * from './types';
@@ -150,7 +225,8 @@ export const MINI_OPERATORS = [
   grim,
   solis,
   brava,
-  fenrir
+  fenrir,
+  ram
 ];
 
 export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {

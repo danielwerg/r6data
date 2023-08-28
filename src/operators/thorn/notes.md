@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-Thorn's Unique Gadget is the Razorbloom Shell, a proximity grenade that can be thrown and attached to any surface. When deployed, any Attacker that enters its radius will start the Razorbloom's timer, followed by a powerful explosion a short moment later
+Thorn's Unique Gadget is the Razorbloom Shell, a proximity grenade that can be thrown and attached to any surface. When deployed, any Attacker that enters its radius will start the Razorbloom's timer, followed by a powerful explosion a short moment later.
 
 ### Strategies/Synergies
 
@@ -12,4 +12,10 @@ Thorn's Unique Gadget is the Razorbloom Shell, a proximity grenade that can be t
 
 - Razorbloom grenades can be destroyed from a distance by explosions, gunfire, and laser devices such as Twitch's Shock Drone and Zero's Argus Cameras.
 - IQ can spot Razorblooms with her Electronics Scanner
-- Razorblooms can be disabled by Thatcher's EMP Grenades.
+- Razorblooms are an electronic gadget, and can thus be:
+  - Detected by IQ's Electronics Detector
+  - Disabled by Thatcher's EMP Grenades for 15 seconds
+  - Disabled by Impact EMP Grenades for 9 seconds
+  - Destroyed by Twitch's Shock Drones
+  - Destroyed by Zero's ARGUS Cameras
+  - Hacked by Brava's Kludge drone

@@ -54,7 +54,7 @@ export const montagne = {
     ]
   },
   gadgets: {
-    secondary: ['smoke_grenade', 'hard_breach_charge', 'impact_emp_grenade']
+    secondary: ['hard_breach_charge', 'smoke_grenade', 'impact_emp_grenade']
   },
   uniqueAbility: {
     slug: 'extendable_shield',

@@ -1,0 +1,72 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  fill="#ffffff"
+  stroke="none"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__maverick r6data__operator__ability__breaching_torch"
+  id="breaching_torch"
+>
+  <defs>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M60 218 174 329 199 304 120 185Z" />
+      <path fill="black" d="M127 296A1 1 0 00210 296 1 1 0 00127 296" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M373 316a1 1 0 00100 0 1 1 0 00-100 0" />
+    </mask>
+  </defs>
+  <path
+    fill-rule="evenodd"
+    d="M87 216 115 197H185L202 190H222L231 178V172H226C216 172 216 157 226 157H238L246 164H407L421 148H442C451 148 451 160 442 160H430L425 164H455L475 175V207q0 13-13 13H419L402 178H244L236 190H320L345 242 330 260 280 210 232 258 185 210 134 262ZM133 220a1 1 0 0014 0 1 1 0 00-14 0M225 220a1 1 0 0014 0 1 1 0 00-14 0M414 178H453L463 183V201q0 6-6 6H426ZM430 202V198C430 189 458 188 458 202Z"
+  />
+  <path d="M151 262 185 226 219 262Z" />
+  <path d="M246 262 280 226 314 262Z" />
+  <path d="M328 190H396L415 240H353Z" />
+  <path d="M422 227H452C466 227 474 218 471 228 469 236 461 250 451 250H432Z" />
+  <g mask="url(#mask-1)">
+    <path
+      fill-rule="evenodd"
+      d="M30 293A1 1 0 00142 293 1 1 0 0030 293M42 293a1 1 0 0088 0 1 1 0 00-88 0"
+    />
+    <path id="wheel-1" d="M31 295 16 300V283L35 270Z" />
+    <use href="#wheel-1" transform="rotate(30 86 293)" />
+    <use href="#wheel-1" transform="rotate(60 86 293)" />
+    <use href="#wheel-1" transform="rotate(90 86 293)" />
+    <use href="#wheel-1" transform="rotate(120 86 293)" />
+    <use href="#wheel-1" transform="rotate(150 86 293)" />
+    <use href="#wheel-1" transform="rotate(180 86 293)" />
+    <use href="#wheel-1" transform="rotate(210 86 293)" />
+    <use href="#wheel-1" transform="rotate(240 86 293)" />
+    <use href="#wheel-1" transform="rotate(270 86 293)" />
+    <use href="#wheel-1" transform="rotate(300 86 293)" />
+    <use href="#wheel-1" transform="rotate(330 86 293)" />
+  </g>
+  <path
+    fill-rule="evenodd"
+    d="M50 293a1 1 0 0072 0 1 1 0 00-72 0M58 293a1 1 0 0056 0 1 1 0 00-56 0"
+  />
+  <path
+    mask="url(#mask-2)"
+    d="M355 250H415L477 268 488 297 485 315 496 314 488 334H468L398 273 346 261Z"
+  />
+  <path
+    fill-rule="evenodd"
+    d="M162 316 183 309 187 290 169 274H342L399 287 391 316 399 339 423 354H219C207 355 201 352 194 346ZM189 289H342L396 302 391 316 399 339H366L356 344H215L182 312Z"
+  />
+  <path
+    fill-rule="evenodd"
+    d="M147 296a1 1 0 0044 0 1 1 0 00-44 0m8 0a1 1 0 0028 0 1 1 0 00-28 0"
+  />
+  <path
+    fill-rule="evenodd"
+    d="M196 325a1 1 0 0054 0 1 1 0 00-54 0m9 0a1 1 0 0036 0 1 1 0 00-36 0M262 325a1 1 0 0054 0 1 1 0 00-54 0m9 0a1 1 0 0036 0 1 1 0 00-36 0M326 325a1 1 0 0054 0 1 1 0 00-54 0m9 0a1 1 0 0036 0 1 1 0 00-36 0"
+  />
+  <path
+    fill-rule="evenodd"
+    d="M385 316a1 1 0 0076 0 1 1 0 00-76 0m12 0a1 1 0 0052 0 1 1 0 00-52 0"
+  />
+</svg>

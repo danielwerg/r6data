@@ -49,7 +49,8 @@ export default defineConfig({
               cleanupIds: false,
               removeHiddenElems: false,
               removeEmptyText: false,
-              removeViewBox: false
+              removeViewBox: false,
+              removeUnknownsAndDefaults: false // Breaks svg mask by removing fill when it's equals to svg fill
             }
           }
         },

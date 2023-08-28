@@ -58,7 +58,7 @@ export const azami = {
       }
     ]
   },
-  gadgets: { secondary: ['impact_grenade', 'barbed_wire'] },
+  gadgets: { secondary: ['barbed_wire', 'impact_grenade'] },
   uniqueAbility: {
     slug: 'kiba_barrier',
     name: 'Kiba Barrier',

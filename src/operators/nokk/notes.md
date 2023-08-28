@@ -4,8 +4,9 @@
 
 Nøkk's unique gadget is the HEL Presence Reduction Device, a gadget that when activated, erases her image from cameras. This, however, comes with some limitations.
 
-- The HEL has infinite uses and runs on charge. The HEL lasts for 20 seconds, with the maximum recharge time being 6 seconds. Nøkk can activate HEL Step as long as she has 25% of the bar charged.
-- With the HEL active, Nøkk gains the following properties:
+- The HEL has infinite uses and runs on charge. The HEL lasts for 20 seconds, with the maximum recharge time being 20 seconds. Nøkk can activate HEL Step as long as she has 25% of the bar charged.
+- HEL has 1 second cooldown between uses.
+- With the HEL active, Nøkk become invisible to observation tools, similar to Vigil but will not show the white bars like Vigil does.
   - Invisibility to cameras, similar to Vigil.
     - Nøkk will be visible on any camera as distortion glitches if she sprints, fires weapons, moves through Barbed Wire, takes damage, melee Barricades, flashed, pushed or performs any actions such as pulling out Lesion's Gu Mine. Nøkk will know when she is glitching as the peripherals of her screen will have a yellow interference.
     - Reloading, swapping weapons, walking and crouching will not cause the mosaic glitches.

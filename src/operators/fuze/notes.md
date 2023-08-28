@@ -4,7 +4,7 @@
 
 Fuze carries four APM-6 "Matryoshka" Cluster Charges capable of clearing rooms by deploying five sub-grenades through destructible structures such as walls, floors, and windows.
 
-- The Cluster Charge can be deployed on any destructible or reinforced surface. When activated, it launches five sub-grenades into a room. When deployed on a reinforced surface, the Cluster Charge will take additional 2 seconds to activate.
+- The Cluster Charge can be deployed on any destructible surfaces, reinforced surface or deployable shields. When activated, it launches five sub-grenades into a room. When deployed on a reinforced surface, the Cluster Charge will take additional 2 seconds to activate.
   - Only one Cluster Charge can be deployed at a time. Attempting to set more down will only result in the original Cluster Charge being detonated.
   - Fuze takes 2 seconds to deploy a Cluster Charge.
   - During the deployment time Fuze can be killed and the Cluster Charge will be immediately removed upon death.
@@ -26,6 +26,7 @@ Fuze carries four APM-6 "Matryoshka" Cluster Charges capable of clearing rooms b
 - Cluster Charges can be used to make holes on Castle's Armored Panels, as they punch a hole on activation similar to reinforced walls, allowing Attackers to see through the otherwise bulletproof Armor Panels.
 - Due to his gadget being an electronic, Fuze works well with Attackers who help remove Mute's Signal Disruptors and Jäger's Active Defense Systems, which would be IQ, Twitch, Thatcher, Zero, and Flores.
 - Cluster Charges could be deployed on Mira's Black Mirror.
+- Cluster Charges could be deployed on deployable shield or Osa's Talon Shield.
 
 ### Counters
 

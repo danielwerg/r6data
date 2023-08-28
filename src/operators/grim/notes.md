@@ -5,6 +5,7 @@
 Grim's Unique Gadget is the Kawan Hive Launcher. It fires canisters which attach to any surface, and release a swarm of nano-bots. Any Defender which enters a swarm will not only be pinged, but the swarm will follow the affected Defender for a period, allowing Grim to track them in real time.
 
 - The launcher features 5 rounds and no reload between shots.
+- The Launcher has the ability to switch between Sticky and Bouncy firing modes, by default Sticky mode will be selected.
 - The Kawan Hive Launcher has equip time of 1 second, fire rate of 70 rpm and cooldown of roughly 1 second.
 - Once Hive Canister lands on surface it takes 0.4s to release the bees.
 - The Kawan Hive lasts 16 seconds before dissipating.

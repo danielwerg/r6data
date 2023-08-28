@@ -62,7 +62,7 @@ export const clash = {
     ]
   },
   gadgets: {
-    secondary: ['barbed_wire', 'impact_grenade', 'observation_blocker']
+    secondary: ['barbed_wire', 'impact_grenade', 'deployable_shield']
   },
   uniqueAbility: {
     slug: 'cce_shield',

@@ -79,7 +79,7 @@ export const twitch = {
       }
     ]
   },
-  gadgets: { secondary: ['smoke_grenade', 'claymore'] },
+  gadgets: { secondary: ['claymore', 'smoke_grenade'] },
   uniqueAbility: {
     slug: 'shock_drones',
     name: 'Shock Drones',

@@ -56,6 +56,13 @@ export const lesion = {
         barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
+      },
+      {
+        slug: 'super_shorty',
+        sights: COMMON_SIGHTS_1X,
+        barrels: null,
+        grips: null,
+        underBarrels: ['laser']
       }
     ]
   },
@@ -66,8 +73,8 @@ export const lesion = {
     type: 'recharge_count',
     startingAmount: 1,
     description:
-      'Cloaked toxic mines that inject a chemical compound to slow and injure opponents.',
-    info: '1 GU charges over time, up to a maximum of 8.',
+      'Toxic mines that inject a compound, injuring opponents and limiting their speed',
+    info: '1 GU charges over time, up to a maximum of 9.',
     icon: {
       svg: parseSvgString(uniqueAbilitySvg),
       png: getOperatorAssetURL('/abilities/pngs/gu_mines.png')

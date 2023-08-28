@@ -55,7 +55,7 @@ export const caveira = {
     ]
   },
   gadgets: {
-    secondary: ['proximity_alarm', 'impact_grenade', 'observation_blocker']
+    secondary: ['impact_grenade', 'proximity_alarm', 'observation_blocker']
   },
   uniqueAbility: {
     slug: 'silent_step',

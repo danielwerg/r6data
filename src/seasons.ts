@@ -1,8 +1,12 @@
+/* eslint-disable max-lines */
 import type { Season } from './types';
 import { getAssetURL, getISODate } from './utils';
 
 export const getSeasonAssetURL = (path: string) =>
   getAssetURL(`/seasons${path}`);
+
+export const getSeasonURL = (slug: string, lang = 'en-gb') =>
+  `https://www.ubisoft.com/${lang}/game/rainbow-six/siege/game-info/seasons/${slug}`;
 
 export const SEASONS = [
   {
@@ -17,7 +21,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y0s0.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/e1RaN16FOlCQAGUvGNKMW/abf69e597205b047c11db79f757843a0/Header_231334.png',
-    releaseDate: getISODate('2015-12-01')
+    releaseDate: getISODate('2015-12-01'),
+    url: null
   },
   {
     id: 1,
@@ -32,7 +37,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y1s1.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/67sZXc4UuXK2YPq8uj0mgE/6d0a5e1c6a342f5219cba2fc89e0ba14/r6s-seasons-y1s1.jpg',
-    releaseDate: getISODate('2016-02-02')
+    releaseDate: getISODate('2016-02-02'),
+    url: getSeasonURL('blackice')
   },
   {
     id: 2,
@@ -47,7 +53,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y1s2.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5u2ecpIe98X528KgYQiEt/5833e27e347176f5e041cc533d48ac95/r6s-seasons-y1s2.jpg',
-    releaseDate: getISODate('2016-05-10')
+    releaseDate: getISODate('2016-05-10'),
+    url: getSeasonURL('dustline')
   },
   {
     id: 3,
@@ -62,7 +69,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y1s3.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2X0s4QopJikcMNN4qg9KPS/5ef0ae117679ee7b1342c776a77c9dd4/r6s-seasons-y1s3.jpg',
-    releaseDate: getISODate('2016-08-02')
+    releaseDate: getISODate('2016-08-02'),
+    url: getSeasonURL('skullrain')
   },
   {
     id: 4,
@@ -77,7 +85,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y1s4.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/66IKfs4aSnSkxaToTmmVBt/1532ccea8dd02b3ea44f254e4fdac27f/r6s-seasons-y1s4.jpg',
-    releaseDate: getISODate('2016-11-17')
+    releaseDate: getISODate('2016-11-17'),
+    url: getSeasonURL('redcrow')
   },
   {
     id: 5,
@@ -92,7 +101,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y2s1.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5OKGWvBbiscdZNmjr0PP9q/f5cff0dae8546193f9601fcf703f7f0e/r6s-seasons-y2s1.jpg',
-    releaseDate: getISODate('2017-02-07')
+    releaseDate: getISODate('2017-02-07'),
+    url: getSeasonURL('velvetshell')
   },
   {
     id: 6,
@@ -107,7 +117,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y2s2.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2w0kuPWW4vZS2MvHxpjgKL/527a78f482f03250f48ee05fabb843a9/r6s-seasons-y2s2.jpg',
-    releaseDate: getISODate('2017-06-07')
+    releaseDate: getISODate('2017-06-07'),
+    url: getSeasonURL('health')
   },
   {
     id: 7,
@@ -122,7 +133,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y2s3.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Is8lRiLLAaU0Uaj46Bu5Z/d46a8652cdf16426b7c9a0d634442be5/r6s-seasons-y2s3.jpg',
-    releaseDate: getISODate('2017-09-05')
+    releaseDate: getISODate('2017-09-05'),
+    url: getSeasonURL('bloodorchid')
   },
   {
     id: 8,
@@ -137,7 +149,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y2s4.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6FvQKw65QzOqhVKxbjBg1Z/70ea9eb8865182504f74cfea10f88c0a/r6s-seasons-y2s4.jpg',
-    releaseDate: getISODate('2017-12-05')
+    releaseDate: getISODate('2017-12-05'),
+    url: getSeasonURL('whitenoise')
   },
   {
     id: 9,
@@ -152,7 +165,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y3s1.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/35ZyIYUW7odr1tiGyGNd8R/8a578688e5c46ed779a382c940bf270b/rainbow6siege-chimera-thumb_318068.jpg',
-    releaseDate: getISODate('2018-03-06')
+    releaseDate: getISODate('2018-03-06'),
+    url: getSeasonURL('chimera')
   },
   {
     id: 10,
@@ -167,7 +181,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y3s2.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/522ZBrBzlJMoTi63hrwuna/3f9007ceaa80b8110fa282937309ac1e/rainbow6siege_parabellum_thumb_323480.jpg',
-    releaseDate: getISODate('2018-06-07')
+    releaseDate: getISODate('2018-06-07'),
+    url: getSeasonURL('parabellum')
   },
   {
     id: 11,
@@ -182,7 +197,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y3s3.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4y07zikRXB4BcyRQy5Anoe/2e6de56c3ea34cadb300326102963340/rainbow6siege_grimsky_thumb_333789.jpg',
-    releaseDate: getISODate('2018-09-04')
+    releaseDate: getISODate('2018-09-04'),
+    url: getSeasonURL('grimsky')
   },
   {
     id: 12,
@@ -197,7 +213,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y3s4.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1VeuGBLdSsadK5MdLfCL9k/b9e213c4aeb8dfe6e1f137968770912a/rainbow6siege_windbastion_thumb_340468.jpg',
-    releaseDate: getISODate('2018-12-04')
+    releaseDate: getISODate('2018-12-04'),
+    url: getSeasonURL('windbastion')
   },
   {
     id: 13,
@@ -212,7 +229,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y4s1.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4J2E0yJ2cZsKgx5OrFGkvR/0f966f31b3d8ad2ef13926b075769334/r6s-seasons-y4s1.jpg',
-    releaseDate: getISODate('2019-03-06')
+    releaseDate: getISODate('2019-03-06'),
+    url: getSeasonURL('burnthorizon')
   },
   {
     id: 14,
@@ -227,7 +245,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y4s2.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/29ze1Zxf173boRuyaFHuQV/c240df821c3ec407b09118c68a1300c0/r6s-seasons-y4s2.jpg',
-    releaseDate: getISODate('2019-06-11')
+    releaseDate: getISODate('2019-06-11'),
+    url: getSeasonURL('phantomsight')
   },
   {
     id: 15,
@@ -242,7 +261,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y4s3.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1JeHAGdUglVNSUUvSkxSia/1c8b76a4256091ca40434e89addaacf2/r6s-seasons-y4s3.jpg',
-    releaseDate: getISODate('2019-09-11')
+    releaseDate: getISODate('2019-09-11'),
+    url: getSeasonURL('emberrise')
   },
   {
     id: 16,
@@ -257,7 +277,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y4s4.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6uZSbKGZiwF7Zv5egr4zks/5597030f075ad99c0a18a1dcea34ef87/r6s-seasons-y4s4.jpg',
-    releaseDate: getISODate('2019-12-03')
+    releaseDate: getISODate('2019-12-03'),
+    url: getSeasonURL('shiftingtides')
   },
   {
     id: 17,
@@ -272,7 +293,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y5s1.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2584xuwMoCH1FJc9n34jLo/9dfec73fd217a889a7bfe66e1f412cd6/r6s-seasons-y5s1.jpg',
-    releaseDate: getISODate('2020-03-10')
+    releaseDate: getISODate('2020-03-10'),
+    url: getSeasonURL('voidedge')
   },
   {
     id: 18,
@@ -287,7 +309,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y5s2.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4soZ80QzL9WoLqvq8Hz647/d8d70312ec2849c276b459c3ef0482cd/r6s-seasons-y5s2.jpg',
-    releaseDate: getISODate('2020-06-16')
+    releaseDate: getISODate('2020-06-16'),
+    url: getSeasonURL('steelwave')
   },
   {
     id: 19,
@@ -303,7 +326,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y5s3.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5H87SAzADrzRmroVnJzuUE/2e73c489074b538055df0f793b4e1639/r6s-seasons-y5s3.jpg',
-    releaseDate: getISODate('2020-09-10')
+    releaseDate: getISODate('2020-09-10'),
+    url: getSeasonURL('shadowlegacy')
   },
   {
     id: 20,
@@ -319,7 +343,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y5s4.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3vRTyOgSmwcUVxiOk60p3w/e2f41521df1f67704dae051d147a32cc/r6s-seasons-y5s4.jpg',
-    releaseDate: getISODate('2020-12-01')
+    releaseDate: getISODate('2020-12-01'),
+    url: getSeasonURL('neondawn')
   },
   {
     id: 21,
@@ -335,7 +360,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y6s1.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7iKoGngda7z0LyYpTT25zM/116efeb1c65cb9a356a3e9a42abe2ae3/R6_live_Y6S1_CrimsonHeist.jpg',
-    releaseDate: getISODate('2021-03-16')
+    releaseDate: getISODate('2021-03-16'),
+    url: getSeasonURL('crimsonheist')
   },
   {
     id: 22,
@@ -351,7 +377,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y6s2.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/38Lml8ltnO932wLqhC5xEA/493665084f757da8c91c01a0b99d2be3/r6s-seasons-y6s2.jpg',
-    releaseDate: getISODate('2021-06-14')
+    releaseDate: getISODate('2021-06-14'),
+    url: getSeasonURL('northstar')
   },
   {
     id: 23,
@@ -366,7 +393,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y6s3.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Rm9sfgVTz9KdTI1Jh4N6w/c2d66a871b6311fe26198553695e0cd1/r6s-seasons-y6s3.jpg',
-    releaseDate: getISODate('2021-09-07')
+    releaseDate: getISODate('2021-09-07'),
+    url: getSeasonURL('crystalguard')
   },
   {
     id: 24,
@@ -381,7 +409,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y6s4.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4ysWCYtrfV6yEC10unxDeM/cdeb45fc738b78da77bb611b14ae7973/r6s-seasons-y6s4.jpg',
-    releaseDate: getISODate('2021-11-30')
+    releaseDate: getISODate('2021-11-30'),
+    url: getSeasonURL('highcalibre')
   },
   {
     id: 25,
@@ -396,7 +425,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y7s1.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6diil0gexoNXNCKtwpPPQZ/ace6f9e6e1e1578a2255ac0e5cb67b7c/r6s-seasons-y7s1.jpg',
-    releaseDate: getISODate('2022-03-15')
+    releaseDate: getISODate('2022-03-15'),
+    url: getSeasonURL('demonveil')
   },
   {
     id: 26,
@@ -411,7 +441,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y7s2.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6aBRsquEEKV2Ix2W7HK8P2/7a808507bcb933364d2dbcd6f80714fd/r6s-vectorglare-thumb.jpg',
-    releaseDate: getISODate('2022-06-14')
+    releaseDate: getISODate('2022-06-14'),
+    url: getSeasonURL('vectorglare')
   },
   {
     id: 27,
@@ -426,7 +457,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y7s3.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/35vqSFGr4xn1JnNVetTsyh/e9c46f34157897dc96988432991a1e52/r6s-seasons-y7s3__2_.jpg',
-    releaseDate: getISODate('2022-09-06')
+    releaseDate: getISODate('2022-09-06'),
+    url: getSeasonURL('brutalswarm')
   },
   {
     id: 28,
@@ -441,7 +473,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y7s4.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1ZSXgYK6dLal6jI7JRN85T/7aa312f549948b8a19c9afb5fae12776/R6S_Live_Y7S4_SolarRaid_Keyart.jpg',
-    releaseDate: getISODate('2022-12-06')
+    releaseDate: getISODate('2022-12-06'),
+    url: getSeasonURL('solarraid')
   },
   {
     id: 29,
@@ -456,7 +489,8 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y8s1.jpg'),
     thumbnailOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3NK3eIKNUG118nXBY0Zskj/e682ab5abf93e5e4ba66de44b3ce1ed8/Y8S1_CommandingForce_IMG_MainKeyArt.jpg',
-    releaseDate: getISODate('2023-03-07')
+    releaseDate: getISODate('2023-03-07'),
+    url: getSeasonURL('commandingforce')
   },
   {
     id: 30,
@@ -471,6 +505,23 @@ export const SEASONS = [
     thumbnail: getSeasonAssetURL('/y8s2.jpg'),
     thumbnailOfficial:
       'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4lkN2v7mOSsyHfr1vDdVM7/4f9323bed51c81e1db1bd8ce0f2c34f9/R6S_Live_Y8S2_DreadFactor.jpg',
-    releaseDate: getISODate('2023-05-30')
+    releaseDate: getISODate('2023-05-30'),
+    url: getSeasonURL('dreadfactor')
+  },
+  {
+    id: 31,
+    shorthand: 'Y8S3',
+    slug: 'heavy_mettle',
+    name: 'Heavy Mettle',
+    year: 8,
+    season: 3,
+    hexColorCode: '#fe7e00',
+    description:
+      'Discover new breaching strategies with South Korean powerhouse, Ram equipped with the deployable BU-GI Auto Breacher, a mini tank capable of forging a path of destruction. Year 8 Season 3 brings exciting new updates to the Siege playlist like the upgraded Quick Match 2.0 and a redesigned Unranked(now called Standard), offering a streamlined Siege experience. Heavy Mettle will also introduce a fresh Player Commendation system allowing players to rate other players on the experience they had playing together, and an all-new Arcade game mode in the form of Weapon Roulette to keep you adapting to your arsenal on the fly!',
+    thumbnail: getSeasonAssetURL('/y8s3.jpg'),
+    thumbnailOfficial:
+      'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7iAgVW713n4GV5TDqPGcaD/0e5f03b91908d1cde48c5b56702c1b23/Y8S3_HeavyMettle_OperatorKeyart.jpg',
+    releaseDate: getISODate('2023-08-29'),
+    url: getSeasonURL('heavymettle')
   }
 ] satisfies Season[];

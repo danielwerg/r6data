@@ -62,13 +62,13 @@ export interface MapRework {
 
 export type MapPlaylistSlug =
   | 'ranked'
-  | 'unranked'
+  | 'standard'
   | 'casual'
   | 'free_for_all'
   | 'deathmatch'
   | 'snipers_only'
-  | 'headshots_only'
-  | 'golden_gun';
+  | 'golden_gun'
+  | 'weapon_roulette';
 
 export interface MapPlaylist {
   slug: MapPlaylistSlug;
@@ -83,8 +83,8 @@ export const MAP_PLAYLISTS = [
     description: 'Compete each season to improve your Rank.'
   },
   {
-    slug: 'unranked',
-    name: 'Unranked',
+    slug: 'standard',
+    name: 'Standard',
     description: 'Play competitively, without impacting Rank.'
   },
   {
@@ -108,16 +108,16 @@ export const MAP_PLAYLISTS = [
     description: 'Your only weapons are CSRX 300 and .44 Mag Semi-Auto.'
   },
   {
-    slug: 'headshots_only',
-    name: 'headshots Only',
-    description:
-      'Only headshots can eliminate opponents, and eliminations are instant. Operators have fixed loadouts and no unique abilities.'
-  },
-  {
     slug: 'golden_gun',
     name: 'Golden Gun',
     description:
       'Your only weapon is Golden Gun. Every bullet is an instant kill, but you have to reload after every shot.'
+  },
+  {
+    slug: 'weapon_roulette',
+    name: 'Weapon Roulette',
+    description:
+      'Play a 5v5 match where all players\' equipped weapons are swapped periodically.'
   }
 ] satisfies MapPlaylist[];
 
@@ -154,7 +154,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 17 }, date: getISODate('2020-03-10') }
     ],
-    playlists: ['ranked', 'unranked', 'casual'],
+    playlists: ['ranked', 'standard'],
     bombSites: [
       '2F Kids\' Dorms / 2F Dorms Main Hall',
       '1F Kitchen / 1F Dining Hall',
@@ -178,7 +178,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 11 }, date: getISODate('2018-09-04') }
     ],
-    playlists: ['casual', 'snipers_only'],
+    playlists: ['snipers_only'],
     bombSites: [
       '3F Ammo Storage / 3F Tractor Storage',
       '2F Master Bedroom / 2F Kids Room',
@@ -211,7 +211,7 @@ export const MINI_MAPS = [
         date: getISODate('2021-09-07')
       }
     ],
-    playlists: ['ranked', 'unranked', 'casual'],
+    playlists: ['ranked', 'standard', 'casual'],
     bombSites: [
       '2F Gym / 2F Bedroom',
       '2F CCTV Room / 2F Cash Room',
@@ -232,7 +232,7 @@ export const MINI_MAPS = [
     slug: 'presidential_plane',
     name: 'Presidential Plane',
     release: { season: { id: 0 }, date: getISODate('2015-12-01') },
-    playlists: ['casual'],
+    playlists: ['standard'],
     bombSites: [
       '2F Meeting Room / 2F Executive Office',
       '2F Staff Section / 2F Executive Bedroom',
@@ -255,7 +255,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 30 }, date: getISODate('2023-05-30') }
     ],
-    playlists: ['ranked', 'unranked', 'casual', 'free_for_all', 'deathmatch'],
+    playlists: ['ranked', 'standard', 'casual', 'free_for_all', 'deathmatch'],
     bombSites: [
       '2F Consul Office / 2F Meeting Room',
       '1F Exposition Room / 1F Piano Room',
@@ -283,7 +283,7 @@ export const MINI_MAPS = [
         date: getISODate('2021-09-07')
       }
     ],
-    playlists: ['ranked', 'unranked', 'casual'],
+    playlists: ['ranked', 'standard', 'casual'],
     bombSites: [
       '2F Executive Lounge / 2F CEO Office',
       '1F Staff Office / 1F Open Area',
@@ -307,7 +307,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 15 }, date: getISODate('2019-09-11') }
     ],
-    playlists: ['ranked', 'unranked', 'casual'],
+    playlists: ['ranked'],
     bombSites: [
       '2F Server Room / 2F Radar Room',
       '1F Security Room / 1F Map Room',
@@ -331,7 +331,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 19 }, date: getISODate('2020-09-10') }
     ],
-    playlists: ['ranked', 'unranked', 'casual'],
+    playlists: ['ranked', 'standard', 'casual'],
     bombSites: [
       '2F Master Bedroom / 2F Office',
       '1F Bar / 1F Gaming Room',
@@ -355,7 +355,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 14 }, date: getISODate('2019-06-11') }
     ],
-    playlists: ['ranked', 'unranked', 'casual'],
+    playlists: ['ranked', 'standard'],
     bombSites: [
       '3F Bar / 3F Cocktail Lounge',
       '2F Fireplace Hall / 2F Mining Room',
@@ -376,7 +376,7 @@ export const MINI_MAPS = [
     slug: 'yacht',
     name: 'Yacht',
     release: { season: { id: 1 }, date: getISODate('2016-02-02') },
-    playlists: ['casual'],
+    playlists: ['standard'],
     bombSites: [
       '4F Maps Room / 4F Cockpit',
       '2F Kitchen / 2F Engine Room',
@@ -400,7 +400,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 21 }, date: getISODate('2021-03-16') }
     ],
-    playlists: ['ranked', 'unranked', 'casual'],
+    playlists: ['ranked', 'standard'],
     bombSites: [
       '1F Customs Inspections / 1F Supply Room',
       '1F Ventilation Room / 1F Workshop',
@@ -424,7 +424,13 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 22 }, date: getISODate('2021-06-14') }
     ],
-    playlists: ['casual', 'free_for_all', 'deathmatch', 'golden_gun'],
+    playlists: [
+      'casual',
+      'free_for_all',
+      'deathmatch',
+      'golden_gun',
+      'weapon_roulette'
+    ],
     bombSites: [
       '3F Packaging Room / 2F Meth Lab',
       '2F Football Bedroom / 2F Football Office',
@@ -448,7 +454,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 20 }, date: getISODate('2020-12-01') }
     ],
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch', 'golden_gun'],
+    playlists: ['ranked', 'deathmatch', 'golden_gun'],
     bombSites: [
       '2F Karaoke / 2F Tea Room',
       '2F Exhibition / 2F Work Office',
@@ -476,7 +482,13 @@ export const MINI_MAPS = [
         date: getISODate('2021-09-07')
       }
     ],
-    playlists: ['ranked', 'unranked', 'casual', 'deathmatch', 'headshots_only'],
+    playlists: [
+      'ranked',
+      'standard',
+      'casual',
+      'deathmatch',
+      'weapon_roulette'
+    ],
     bombSites: [
       '2F Hookah Lounge / 2F Billiards Room',
       '2F Penthouse / 2F Theater',
@@ -500,14 +512,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 16 }, date: getISODate('2019-12-03') }
     ],
-    playlists: [
-      'ranked',
-      'unranked',
-      'casual',
-      'free_for_all',
-      'deathmatch',
-      'headshots_only'
-    ],
+    playlists: ['ranked', 'free_for_all', 'deathmatch', 'weapon_roulette'],
     bombSites: [
       '2F Initiation Room / 2F Office',
       '2F Bunk / 2F Day Care',
@@ -551,11 +556,11 @@ export const MINI_MAPS = [
     release: { season: { id: 10 }, date: getISODate('2018-06-07') },
     playlists: [
       'ranked',
-      'unranked',
+      'standard',
       'casual',
       'free_for_all',
       'deathmatch',
-      'headshots_only'
+      'weapon_roulette'
     ],
     bombSites: [
       '2F Aviator Room / 2F Games Room',
@@ -577,7 +582,7 @@ export const MINI_MAPS = [
     slug: 'fortress',
     name: 'Fortress',
     release: { season: { id: 12 }, date: getISODate('2018-12-04') },
-    playlists: ['casual'],
+    playlists: ['standard'],
     bombSites: [
       '2F Bedroom / 2F Commander\'s Office',
       '2F Dormitory / 2F Briefing Room',
@@ -601,7 +606,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 24 }, date: getISODate('2021-11-30') }
     ],
-    playlists: ['ranked', 'unranked', 'casual'],
+    playlists: ['ranked'],
     bombSites: [
       '2F Laundry / 2F Games Room',
       '2F Party Room / 2F Office',
@@ -622,14 +627,7 @@ export const MINI_MAPS = [
     slug: 'emerald_plains',
     name: 'Emerald Plains',
     release: { season: { id: 25 }, date: getISODate('2022-04-19') },
-    playlists: [
-      'ranked',
-      'unranked',
-      'casual',
-      'free_for_all',
-      'deathmatch',
-      'golden_gun'
-    ],
+    playlists: ['ranked', 'free_for_all', 'deathmatch', 'golden_gun'],
     bombSites: [
       '2F Administration / 2F CEO Office',
       '2F Private Gallery / 2F Meeting',
@@ -650,7 +648,7 @@ export const MINI_MAPS = [
     slug: 'close_quarter',
     name: 'Close Quarter',
     release: { season: { id: 26 }, date: getISODate('2022-09-06') },
-    playlists: ['free_for_all', 'deathmatch', 'headshots_only', 'golden_gun'],
+    playlists: ['free_for_all', 'deathmatch', 'weapon_roulette', 'golden_gun'],
     bombSites: null,
     thumbnail: getMapAssetURL('/thumbnails/close_quarter.jpg'),
     thumbnailOfficial:
@@ -668,11 +666,10 @@ export const MINI_MAPS = [
     release: { season: { id: 27 }, date: getISODate('2022-09-06') },
     playlists: [
       'ranked',
-      'unranked',
-      'casual',
       'free_for_all',
       'deathmatch',
-      'golden_gun'
+      'golden_gun',
+      'weapon_roulette'
     ],
     bombSites: [
       '2F Armory Lockers / 2F Archives',
@@ -696,11 +693,11 @@ export const MINI_MAPS = [
     release: { season: { id: 28 }, date: getISODate('2022-12-06') },
     playlists: [
       'ranked',
-      'unranked',
+      'standard',
       'casual',
       'free_for_all',
       'deathmatch',
-      'headshots_only'
+      'weapon_roulette'
     ],
     bombSites: [
       '2F Command Center / 2F Servers',

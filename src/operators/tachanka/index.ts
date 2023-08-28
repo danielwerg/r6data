@@ -72,7 +72,9 @@ export const tachanka = {
       }
     ]
   },
-  gadgets: { secondary: ['barbed_wire', 'impact_grenade', 'proximity_alarm'] },
+  gadgets: {
+    secondary: ['barbed_wire', 'deployable_shield', 'proximity_alarm']
+  },
   uniqueAbility: {
     slug: 'shumikha_launcher',
     name: 'Shumikha Launcher',
