@@ -72,7 +72,7 @@ export const castle = {
       }
     ]
   },
-  gadgets: { secondary: ['bulletproof_camera', 'impact_grenade'] },
+  gadgets: { secondary: ['bulletproof_camera', 'proximity_alarm'] },
   uniqueAbility: {
     slug: 'armor_panel',
     name: 'Armor Panel',

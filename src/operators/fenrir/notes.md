@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-Fenrir's Unique Gadget is The F-Natt Dread Mine, a throwable device that sticks to surfaces. While deactivated, the mine is bulletproof, and is activated on Fenrir's command. Once activated, the Dread mine will emit a fear gas cloud whenever an Attacker enters its radius. This gas obscures the vision of any Operator within the cloud, making it impossible to see anything in the distance, and leaving them very vulnerable to attack.
+Fenrir's Unique Gadget is The F-Natt Dread Mine, a throwable device that sticks to surfaces. While deactivated, the mine is bulletproof, and is activated on Fenrir's command. Once activated, the Dread mine will emit a fear gas cloud whenever an Attacker enters its radius. This gas obscures the vision of any Operator within the cloud, making it impossible to see anything in the distance, and leaving them very vulnerable to attack. Fenrir comes equipped with 5 mines and can activate 3 at a time anywhere on the map.
 
 ### Strategies/Synergies
 

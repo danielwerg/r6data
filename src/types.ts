@@ -26,6 +26,7 @@ export interface Season {
   thumbnail: string | null;
   thumbnailOfficial: string | null;
   releaseDate: string;
+  url: string | null;
 }
 
 export type SeasonYear = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
@@ -64,7 +65,8 @@ export type SeasonSlug =
   | 'brutal_swarm'
   | 'solar_raid'
   | 'commanding_force'
-  | 'dread_factor';
+  | 'dread_factor'
+  | 'heavy_mettle';
 
 export type GadgetSlugDefense =
   | 'deployable_shield'

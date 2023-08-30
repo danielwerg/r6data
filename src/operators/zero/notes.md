@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-Zero's gadget is the ARGUS Launcher, which launches small cameras. These cameras can burrow into any surface, including reinforced walls and hatches, and provide a camera view on both sides of the deployed surface.
+Zero's gadget is the ARGUS Launcher, which launches small cameras. These cameras can burrow into any surface, including reinforced walls, hatches and deployable shields, and provide a camera view on both sides of the deployed surface.
 
 Each ARGUS Camera can fire an unlimited amount of projectiles, which can be used to destroy Defender gadgets and defenses, or injure defenders themselves.
 

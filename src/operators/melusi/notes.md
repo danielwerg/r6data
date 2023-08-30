@@ -36,3 +36,4 @@ Melusi's Unique Gadget is the Banshee Sonic Defense device. When deployed on a w
 - Impact EMP Grenades will do the same trick as Thatcher's EMP but for 9 seconds.
 - Twitch can destroy the Banshee with her Shock Drone by shooting at them when they are open.
 - Finka's Adrenal Surge can allow Attackers to move in the Banshee's radius without feeling its effects. However the Banshee will still emit a low noise until the Attacker is out of sight.
+- Brava's Kludge Drone can hack banshees turning them against the defenders.

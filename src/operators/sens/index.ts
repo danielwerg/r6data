@@ -78,7 +78,7 @@ export const sens = {
       }
     ]
   },
-  gadgets: { secondary: ['breach_charge', 'claymore'] },
+  gadgets: { secondary: ['hard_breach_charge', 'claymore'] },
   uniqueAbility: {
     slug: 'r.o.u._projector_system',
     name: 'R.O.U. Projector System',

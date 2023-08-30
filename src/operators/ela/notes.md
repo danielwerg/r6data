@@ -33,4 +33,5 @@ Ela comes equipped with three Grzmot Mines; concussive mines that disorient any 
   - Twitch can scout and take out the Grzmot Mines from a safe distance, allowing them to be destroyed before anyone can be affected.
   - Zero's Argus Camera lasers can destroy Grzmot Mines if carefully aimed.
   - Kali's LV Lances and Flores' RCE-RATERO Drones can destroy Grzmot Mines.
+  - Brava's Kludge Drone can hack Ela's Grzmot Mines, turning them against the defenders.
 - If Finka activates her Adrenal Surge while she or her teammates are affected by the Grzmot, the duration of being concussed by a Grzmot Mine is greatly reduced. This also works when a Grzmot is activated during the duration of the Surge, even if the Surge ends before the effects of the Grzmot does. The rate at which a Surged player recovers from a Grzmot is the same rate at which Ela or Zofia recovers normally.

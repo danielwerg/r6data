@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-Maverick comes equipped with his Exothermic-S "Suri" Torch. It can make holes in any breachable surface, including Reinforced Walls, creating new lines of sight silently.
+Maverick comes equipped with his Exothermic-S "Suri" Torch. It can make holes in any breachable surface, including Reinforced Walls, creating new lines of sight quietly.
 
 - The Breaching Torch is a weapon-type gadget; Maverick needs to holster his weapons to bring up the Breaching Torch which leaves him vulnerable to any sort of damage.
 - Firing the Breaching Torch produces a constant jet of flame with a maximum distance of two meters. The jet of flame destroys breakable surfaces and objects it touches and damages Operators and Hostages it touches.
@@ -39,4 +39,4 @@ Maverick comes equipped with his Exothermic-S "Suri" Torch. It can make holes in
 ### Counters
 
 - Kaid's Electroclaws, unlike Bandit's Shock Wires, can affect many Reinforced Walls and Hatches that are within its range. When placed carefully, Maverick cannot directly destroy them himself.
-  - While Bandit can also do so to a lesser extent, he's less effective at this because his Shock Wires are more predictable to find.
+  - While Bandit can also do so to a lesser extent, he's less effective at this because his Shock Wires are more predictable to find. He must also be near the wall to replace the destroyed Shock Wires, and thus exposed to the murder hole created during the process.

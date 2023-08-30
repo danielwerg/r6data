@@ -64,7 +64,7 @@ export const ying = {
       }
     ]
   },
-  gadgets: { secondary: ['smoke_grenade', 'hard_breach_charge'] },
+  gadgets: { secondary: ['hard_breach_charge', 'smoke_grenade'] },
   uniqueAbility: {
     slug: 'candela',
     name: 'Candela',

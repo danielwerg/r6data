@@ -21,7 +21,7 @@ Vigil comes equipped with his ERC-7 Video Disruptor, which will erase him from v
     - Zero's Argus Cameras
     - Flores' RCE-RATERO Drones
   - The Video Disruptor has an unlimited effective range, but takes a second before making Vigil fully invisible to cameras and drones.
-  - Vigil will be visible on any camera as distortion glitches if he sprints, fires weapons, takes damage, melee Barricades, flashed or pushed. Vigil will know when he is glitching as the peripherals of his screen will have a yellow interference.
+  - The ERC-7 shares the same glitching effect as Nøkk's HEL Presence Reduction under observation tools. If Vigil shoots, sprints, or deploys a gadget while the ERC-7 is active, it will glitch, reveling Vigil's presence to observation tools.
     - Reloading, swapping weapons, walking and crouching will not cause the mosaic glitches.
   - Affected surveillance tools will emit a white light.
   - Due to only editing the visual camera feed, Vigil can still be heard by drones or cameras.

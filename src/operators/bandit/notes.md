@@ -40,11 +40,9 @@ Bandit's unique gadgets are four Crude Electrical Devices, a.k.a. Shock Wires. T
   - Disabled by Thatcher's EMP Grenades for 15 seconds
   - Disabled by Impact EMP Grenades for 9 seconds
   - Destroyed by Twitch's Shock Drones
-  - Destroyed by Kali's LV Lances
-  - Destroyed by Zero's ARGUS Cameras
-  - Destroyed by Flores' RCE-RATERO Drones
 - Maverick's Breaching Torch can cut through Reinforced Walls, regardless whether or not it is electrified by a Shock Wire. As Shock Wires are required to be within close proximity of the Wall to work, they are especially vulnerable if the Breaching Torch cuts at the bottom.
 - Due to the gadget having a very small setup effect, most Attackers would reason that the Shock Wires must be close to the source being electrified.
 - Kali's LV Lances can destroy Shock Wires even through Reinforced Walls.
 - Zero's Argus Camera lasers can destroy Shock Wires if deployed correctly.
 - Flores' RCE-RATERO Drones allows him to destroy Shock Wires and prevent Bandit Tricking from safety.
+- Brava's Kludge Drone will overheat and destroy Shock Wires instead of taking control of them, but will still be destroyed if contacting an electrified surface.

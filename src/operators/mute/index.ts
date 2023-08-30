@@ -65,7 +65,7 @@ export const mute = {
       }
     ]
   },
-  gadgets: { secondary: ['bulletproof_camera', 'nitro_cell'] },
+  gadgets: { secondary: ['nitro_cell', 'bulletproof_camera'] },
   uniqueAbility: {
     slug: 'signal_disruptor',
     name: 'Signal Disruptor',

@@ -5,7 +5,7 @@
 Hibana's unique gadget is the X-KAIROS Launcher, which can fire explosive pellets that can be remotely detonated simultaneously and can pierce reinforced walls.
 
 - Hibana is equipped with the X-KAIROS, a projectile launcher that fires thermal breaching pellets. The launcher has a total of 18 shots.
-- The X-KAIROS initiates a box-reticle that is visible to everyone, showing where her pellets will land. The X-KAIROS Launcher has the ability to switch between the number of pellets it will fire by pressing the same button that changes firing modes on a normal weapon.
+- The X-KAIROS initiates a box-reticle that is visible to everyone, showing where her pellets will land. The X-KAIROS Launcher has the ability to switch between the number of pellets it will fire.
   - The least amount of pellets the X-KAIROS Launcher can fire at a time are 2 pellets, which land on a surface as a 2x1 rectangle.
   - The X-KAIROS Launcher is able to fire 4 pellets, which land on a surface as a 2x2 square.
   - The greatest amount of pellets the X-KAIROS Launcher can fire at a time are 6 pellets, which land on a surface as a 2x3 rectangle.
