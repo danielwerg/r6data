@@ -28,7 +28,7 @@ export const SHOTGUNS = [
     name: 'M1014',
     category: 'shotgun',
     description: 'Medium range semi-automatic shotgun. Lethal at close range.',
-    damage: 34,
+    damage: 28,
     fireRate: 200,
     mobility: 50,
     capacity: 8,
@@ -48,7 +48,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       'Compact pump action 12-gauge shotgun with close range stopping power. Favored by GIGN.',
-    damage: 53,
+    damage: 44,
     fireRate: 85,
     mobility: 50,
     capacity: 7,
@@ -68,7 +68,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       'Semi-automatic shotgun, favored by Spetsnaz. Limited range, large spread decreases accuracy.',
-    damage: 50,
+    damage: 26,
     fireRate: 330,
     mobility: 50,
     capacity: 10,
@@ -88,7 +88,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       '12-gauge pump action shotgun, favored by GSG 9. Large barrel allows for enhanced range.',
-    damage: 60,
+    damage: 42,
     fireRate: 100,
     mobility: 50,
     capacity: 7,
@@ -108,7 +108,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       'Compact 12-gauge semi-automatic shotgun. Effective as a breach tool.',
-    damage: 35,
+    damage: 27,
     fireRate: 200,
     mobility: 50,
     capacity: 8,
@@ -127,7 +127,7 @@ export const SHOTGUNS = [
     name: 'SPAS-12',
     category: 'shotgun',
     description: 'Lightweight customizable 12-gauge semi-automatic shotgun.',
-    damage: 35,
+    damage: 31,
     fireRate: 200,
     mobility: 50,
     capacity: 7,
@@ -147,7 +147,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       'Magazine-fed, semi-automatic shotgun, bringing a modern twist on the SPAS 12.',
-    damage: 30,
+    damage: 24,
     fireRate: 290,
     mobility: 50,
     capacity: 6,
@@ -167,7 +167,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       'Compact pump action 12-gauge shotgun with extra ammunition capacity. Better recoil control than other pump action models.',
-    damage: 55,
+    damage: 48,
     fireRate: 75,
     mobility: 50,
     capacity: 7,
@@ -187,7 +187,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       'Lightweight pump action 12-gauge shotgun with a 22" barrel. Packs a good punch.',
-    damage: 50,
+    damage: 41,
     fireRate: 85,
     mobility: 50,
     capacity: 8,
@@ -207,7 +207,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       'Compact pump action 12-gauge shotgun with close range stopping power. Optimal for CQB.',
-    damage: 70,
+    damage: 29,
     fireRate: 85,
     mobility: 50,
     capacity: 5,
@@ -227,7 +227,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       'Compact 12-gauge bullpup double action revolver shotgun. Good for CQC and fast reload.',
-    damage: 35,
+    damage: 46,
     fireRate: 200,
     mobility: 50,
     capacity: 6,
@@ -247,7 +247,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       'This compact 12-gauge shotgun runs off a six round drum. Includes an integrated suppressor for stealth.',
-    damage: 35,
+    damage: 46,
     fireRate: 200,
     mobility: 50,
     capacity: 36,
@@ -267,7 +267,7 @@ export const SHOTGUNS = [
     category: 'shotgun',
     description:
       '12-gauge semi-automatic, mag-fed combat shotgun. Fast reload and optimal in CQC.',
-    damage: 25,
+    damage: 26,
     fireRate: 400,
     mobility: 50,
     capacity: 10,
