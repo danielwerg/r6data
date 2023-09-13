@@ -171,7 +171,7 @@ export const ASSAULT_RIFLES = [
     damage: 47,
     fireRate: 690,
     mobility: 50,
-    capacity: 0,
+    capacity: 30,
     ammo: 341,
     reloadTime: { empty: 3.1, tactical: 2.4 },
     slot: 'primary',

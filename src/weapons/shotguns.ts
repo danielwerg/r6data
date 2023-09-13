@@ -250,8 +250,8 @@ export const SHOTGUNS = [
     damage: 46,
     fireRate: 200,
     mobility: 50,
-    capacity: 36,
-    ammo: 6,
+    capacity: 6,
+    ammo: 36,
     reloadTime: { empty: 2.6, tactical: 2.6 },
     slot: 'primary',
     icon: {
