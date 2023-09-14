@@ -200,7 +200,7 @@ export type WeaponSlug =
   | 'cce_shield'
   | 'gonne-6';
 
-export type WeaponCategory =
+export type WeaponCategorySlug =
   | 'assault_rifle'
   | 'smg'
   | 'lmg'
