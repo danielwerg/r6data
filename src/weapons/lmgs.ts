@@ -92,7 +92,7 @@ export const LMGS = [
     fireRate: 720,
     mobility: 50,
     capacity: 150,
-    ammo: 300,
+    ammo: 301,
     reloadTime: { empty: 6.5, tactical: 7.1 },
     slot: 'primary',
     icon: {
@@ -112,7 +112,7 @@ export const LMGS = [
     fireRate: 900,
     mobility: 50,
     capacity: 80,
-    ammo: 240,
+    ammo: 241,
     reloadTime: { empty: 5.7, tactical: 6.2 },
     slot: 'primary',
     icon: {
@@ -152,7 +152,7 @@ export const LMGS = [
     fireRate: 550,
     mobility: 50,
     capacity: 70,
-    ammo: 211,
+    ammo: 281,
     reloadTime: { empty: 4.6, tactical: 4 },
     slot: 'primary',
     icon: {

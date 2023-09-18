@@ -13,7 +13,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 670,
     mobility: 50,
     capacity: 30,
-    ammo: 241,
+    ammo: 181,
     reloadTime: { empty: 3.3, tactical: 2.7 },
     slot: 'primary',
     icon: {
@@ -32,7 +32,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 749,
     mobility: 50,
     capacity: 25,
-    ammo: 201,
+    ammo: 176,
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -52,7 +52,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 780,
     mobility: 50,
     capacity: 30,
-    ammo: 341,
+    ammo: 181,
     reloadTime: { empty: 3.3, tactical: 2.4 },
     slot: 'primary',
     icon: {
@@ -72,7 +72,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 860,
     mobility: 50,
     capacity: 30,
-    ammo: 341,
+    ammo: 181,
     reloadTime: { empty: 3.4, tactical: 2.7 },
     slot: 'primary',
     icon: {
@@ -92,7 +92,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 690,
     mobility: 50,
     capacity: 30,
-    ammo: 341,
+    ammo: 181,
     reloadTime: { empty: 3.7, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -112,7 +112,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 980,
     mobility: 50,
     capacity: 25,
-    ammo: 201,
+    ammo: 176,
     reloadTime: { empty: 3.1, tactical: 2.4 },
     slot: 'primary',
     icon: {
@@ -132,7 +132,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 850,
     mobility: 50,
     capacity: 30,
-    ammo: 341,
+    ammo: 181,
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -152,7 +152,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 720,
     mobility: 50,
     capacity: 30,
-    ammo: 341,
+    ammo: 181,
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -172,7 +172,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 690,
     mobility: 50,
     capacity: 30,
-    ammo: 341,
+    ammo: 181,
     reloadTime: { empty: 3.1, tactical: 2.4 },
     slot: 'primary',
     icon: {
@@ -192,7 +192,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 740,
     mobility: 50,
     capacity: 25,
-    ammo: 201,
+    ammo: 176,
     reloadTime: { empty: 3.4, tactical: 2.4 },
     slot: 'primary',
     icon: {
@@ -211,7 +211,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 837,
     mobility: 50,
     capacity: 30,
-    ammo: 341,
+    ammo: 181,
     reloadTime: { empty: 2.9, tactical: 2.4 },
     slot: 'primary',
     icon: {
@@ -231,7 +231,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 585,
     mobility: 50,
     capacity: 20,
-    ammo: 161,
+    ammo: 181,
     reloadTime: { empty: 3.1, tactical: 2.4 },
     slot: 'primary',
     icon: {
@@ -251,7 +251,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 650,
     mobility: 50,
     capacity: 30,
-    ammo: 341,
+    ammo: 181,
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -310,7 +310,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 730,
     mobility: 50,
     capacity: 30,
-    ammo: 241,
+    ammo: 181,
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -350,7 +350,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 700,
     mobility: 50,
     capacity: 30,
-    ammo: 241,
+    ammo: 181,
     reloadTime: { empty: 3.3, tactical: 2.4 },
     slot: 'primary',
     icon: {
@@ -390,7 +390,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 650,
     mobility: 50,
     capacity: 40,
-    ammo: 281,
+    ammo: 201,
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -430,7 +430,7 @@ export const ASSAULT_RIFLES = [
     fireRate: 780,
     mobility: 50,
     capacity: 30,
-    ammo: 211,
+    ammo: 181,
     reloadTime: { empty: 3.1, tactical: 2.2 },
     slot: 'primary',
     icon: {

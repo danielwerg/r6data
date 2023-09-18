@@ -12,7 +12,7 @@ export const MPS = [
     fireRate: 1270,
     mobility: 50,
     capacity: 16,
-    ammo: 97,
+    ammo: 113,
     reloadTime: { empty: 2.9, tactical: 2 },
     slot: 'secondary',
     icon: {
@@ -32,7 +32,7 @@ export const MPS = [
     fireRate: 1100,
     mobility: 50,
     capacity: 25,
-    ammo: 101,
+    ammo: 126,
     reloadTime: { empty: 2.7, tactical: 1.9 },
     slot: 'secondary',
     icon: {
@@ -52,7 +52,7 @@ export const MPS = [
     fireRate: 1000,
     mobility: 50,
     capacity: 26,
-    ammo: 105,
+    ammo: 131,
     reloadTime: { empty: 2.7, tactical: 1.9 },
     slot: 'secondary',
     icon: {
@@ -72,7 +72,7 @@ export const MPS = [
     fireRate: 1270,
     mobility: 50,
     capacity: 32,
-    ammo: 193,
+    ammo: 129,
     reloadTime: { empty: 3, tactical: 2 },
     slot: 'secondary',
     icon: {
@@ -91,7 +91,7 @@ export const MPS = [
     fireRate: 980,
     mobility: 50,
     capacity: 20,
-    ammo: 161,
+    ammo: 121,
     reloadTime: { empty: 2.7, tactical: 2.2 },
     slot: 'secondary',
     icon: {

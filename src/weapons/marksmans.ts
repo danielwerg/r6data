@@ -32,7 +32,7 @@ export const MARKSMANS = [
     fireRate: 380,
     mobility: 36,
     capacity: 15,
-    ammo: 76,
+    ammo: 106,
     reloadTime: { empty: 3.4, tactical: 2.7 },
     slot: 'primary',
     icon: {
@@ -52,7 +52,7 @@ export const MARKSMANS = [
     fireRate: 450,
     mobility: 50,
     capacity: 20,
-    ammo: 161,
+    ammo: 141,
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -72,7 +72,7 @@ export const MARKSMANS = [
     fireRate: 450,
     mobility: 38,
     capacity: 20,
-    ammo: 101,
+    ammo: 141,
     reloadTime: { empty: 3.5, tactical: 2.9 },
     slot: 'primary',
     icon: {
@@ -92,7 +92,7 @@ export const MARKSMANS = [
     fireRate: 450,
     mobility: 50,
     capacity: 20,
-    ammo: 101,
+    ammo: 121,
     reloadTime: { empty: 3.4, tactical: 3.1 },
     slot: 'primary',
     icon: {
@@ -112,7 +112,7 @@ export const MARKSMANS = [
     fireRate: 450,
     mobility: 50,
     capacity: 10,
-    ammo: 71,
+    ammo: 101,
     reloadTime: { empty: 3.1, tactical: 2.2 },
     slot: 'primary',
     icon: {

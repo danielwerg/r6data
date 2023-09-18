@@ -13,7 +13,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 15,
-    ammo: 61,
+    ammo: 97,
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
@@ -33,7 +33,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 7,
-    ammo: 57,
+    ammo: 78,
     reloadTime: { empty: 1.9, tactical: 1.6 },
     slot: 'secondary',
     icon: {
@@ -53,7 +53,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 20,
-    ammo: 81,
+    ammo: 121,
     reloadTime: { empty: 2.4, tactical: 1.9 },
     slot: 'secondary',
     icon: {
@@ -73,7 +73,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 16,
-    ammo: 81,
+    ammo: 113,
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
@@ -93,7 +93,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 6,
-    ammo: 42,
+    ammo: 61,
     reloadTime: { empty: 4, tactical: 4 },
     slot: 'secondary',
     icon: {
@@ -113,7 +113,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 18,
-    ammo: 73,
+    ammo: 109,
     reloadTime: { empty: 2.3, tactical: 2.1 },
     slot: 'secondary',
     icon: {
@@ -133,7 +133,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 8,
-    ammo: 49,
+    ammo: 81,
     reloadTime: { empty: 1.9, tactical: 1.4 },
     slot: 'secondary',
     icon: {
@@ -153,7 +153,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 15,
-    ammo: 76,
+    ammo: 106,
     reloadTime: { empty: 2.4, tactical: 1.9 },
     slot: 'secondary',
     icon: {
@@ -173,7 +173,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 13,
-    ammo: 66,
+    ammo: 105,
     reloadTime: { empty: 1.9, tactical: 1.6 },
     slot: 'secondary',
     icon: {
@@ -193,7 +193,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 7,
-    ammo: 43,
+    ammo: 64,
     reloadTime: { empty: 2.5, tactical: 2 },
     slot: 'secondary',
     icon: {
@@ -233,7 +233,7 @@ export const HANDGUNS = [
     fireRate: 450,
     mobility: 45,
     capacity: 15,
-    ammo: 91,
+    ammo: 106,
     reloadTime: { empty: 2.6, tactical: 1.9 },
     slot: 'secondary',
     icon: {
@@ -253,7 +253,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 12,
-    ammo: 61,
+    ammo: 97,
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
@@ -273,7 +273,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 12,
-    ammo: 61,
+    ammo: 97,
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
@@ -293,7 +293,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 10,
-    ammo: 61,
+    ammo: 101,
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
@@ -313,7 +313,7 @@ export const HANDGUNS = [
     fireRate: 550,
     mobility: 45,
     capacity: 15,
-    ammo: 61,
+    ammo: 106,
     reloadTime: { empty: 2.4, tactical: 1.9 },
     slot: 'secondary',
     icon: {
@@ -333,7 +333,7 @@ export const HANDGUNS = [
     fireRate: 485,
     mobility: 45,
     capacity: 5,
-    ammo: 35,
+    ammo: 46,
     reloadTime: { empty: 3.6, tactical: 3.4 },
     slot: 'secondary',
     icon: {
@@ -353,7 +353,7 @@ export const HANDGUNS = [
     fireRate: 450,
     mobility: 45,
     capacity: 6,
-    ammo: 54,
+    ammo: 61,
     reloadTime: { empty: 4, tactical: 4 },
     slot: 'secondary',
     icon: {
@@ -373,7 +373,7 @@ export const HANDGUNS = [
     fireRate: 450,
     mobility: 45,
     capacity: 8,
-    ammo: 41,
+    ammo: 73,
     reloadTime: { empty: 2.2, tactical: 1.9 },
     slot: 'secondary',
     icon: {
@@ -412,7 +412,7 @@ export const HANDGUNS = [
     fireRate: 450,
     mobility: 45,
     capacity: 7,
-    ammo: 50,
+    ammo: 71,
     reloadTime: { empty: 2.1, tactical: 1.8 },
     slot: 'secondary',
     icon: {
@@ -432,7 +432,7 @@ export const HANDGUNS = [
     fireRate: 450,
     mobility: 45,
     capacity: 16,
-    ammo: 81,
+    ammo: 113,
     reloadTime: { empty: 2.2, tactical: 1.4 },
     slot: 'secondary',
     icon: {

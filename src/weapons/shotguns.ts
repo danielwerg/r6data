@@ -13,7 +13,7 @@ export const SHOTGUNS = [
     fireRate: 85,
     mobility: 50,
     capacity: 7,
-    ammo: 36,
+    ammo: 50,
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
@@ -32,7 +32,7 @@ export const SHOTGUNS = [
     fireRate: 200,
     mobility: 50,
     capacity: 8,
-    ammo: 33,
+    ammo: 49,
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
@@ -52,7 +52,7 @@ export const SHOTGUNS = [
     fireRate: 85,
     mobility: 50,
     capacity: 7,
-    ammo: 36,
+    ammo: 43,
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
@@ -72,7 +72,7 @@ export const SHOTGUNS = [
     fireRate: 330,
     mobility: 50,
     capacity: 10,
-    ammo: 51,
+    ammo: 61,
     reloadTime: { empty: 2.8, tactical: 3.4 },
     slot: 'primary',
     icon: {
@@ -92,7 +92,7 @@ export const SHOTGUNS = [
     fireRate: 100,
     mobility: 50,
     capacity: 7,
-    ammo: 36,
+    ammo: 50,
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
@@ -112,7 +112,7 @@ export const SHOTGUNS = [
     fireRate: 200,
     mobility: 50,
     capacity: 8,
-    ammo: 33,
+    ammo: 49,
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
@@ -131,7 +131,7 @@ export const SHOTGUNS = [
     fireRate: 200,
     mobility: 50,
     capacity: 7,
-    ammo: 36,
+    ammo: 50,
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
@@ -151,7 +151,7 @@ export const SHOTGUNS = [
     fireRate: 290,
     mobility: 50,
     capacity: 6,
-    ammo: 37,
+    ammo: 49,
     reloadTime: { empty: 3.2, tactical: 2.1 },
     slot: 'primary',
     icon: {
@@ -171,7 +171,7 @@ export const SHOTGUNS = [
     fireRate: 75,
     mobility: 50,
     capacity: 7,
-    ammo: 55,
+    ammo: 57,
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
@@ -191,7 +191,7 @@ export const SHOTGUNS = [
     fireRate: 85,
     mobility: 50,
     capacity: 8,
-    ammo: 41,
+    ammo: 57,
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'primary',
     icon: {
@@ -211,7 +211,7 @@ export const SHOTGUNS = [
     fireRate: 85,
     mobility: 50,
     capacity: 5,
-    ammo: 26,
+    ammo: 36,
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'secondary',
     icon: {
@@ -231,7 +231,7 @@ export const SHOTGUNS = [
     fireRate: 200,
     mobility: 50,
     capacity: 6,
-    ammo: 36,
+    ammo: 55,
     reloadTime: { empty: 2.6, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -251,7 +251,7 @@ export const SHOTGUNS = [
     fireRate: 200,
     mobility: 50,
     capacity: 6,
-    ammo: 36,
+    ammo: 55,
     reloadTime: { empty: 2.6, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -271,7 +271,7 @@ export const SHOTGUNS = [
     fireRate: 400,
     mobility: 50,
     capacity: 10,
-    ammo: 51,
+    ammo: 71,
     reloadTime: { empty: 2.3, tactical: 3.3 },
     slot: 'primary',
     icon: {
@@ -311,7 +311,7 @@ export const SHOTGUNS = [
     fireRate: 300,
     mobility: 50,
     capacity: 30,
-    ammo: 91,
+    ammo: 121,
     reloadTime: { empty: 2.7, tactical: 2 },
     slot: 'primary',
     icon: {
@@ -351,7 +351,7 @@ export const SHOTGUNS = [
     fireRate: 85,
     mobility: 50,
     capacity: 3,
-    ammo: 45,
+    ammo: 46,
     reloadTime: { empty: 0, tactical: 0 },
     slot: 'secondary',
     icon: {

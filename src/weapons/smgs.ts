@@ -91,7 +91,7 @@ export const SMGS = [
     fireRate: 970,
     mobility: 50,
     capacity: 50,
-    ammo: 251,
+    ammo: 201,
     reloadTime: { empty: 2.9, tactical: 2.4 },
     slot: 'primary',
     icon: {
@@ -151,7 +151,7 @@ export const SMGS = [
     fireRate: 575,
     mobility: 50,
     capacity: 34,
-    ammo: 205,
+    ammo: 171,
     reloadTime: { empty: 2.6, tactical: 1.9 },
     slot: 'primary',
     icon: {
@@ -251,7 +251,7 @@ export const SMGS = [
     fireRate: 800,
     mobility: 50,
     capacity: 50,
-    ammo: 301,
+    ammo: 201,
     reloadTime: { empty: 3.4, tactical: 2.6 },
     slot: 'primary',
     icon: {
@@ -271,7 +271,7 @@ export const SMGS = [
     fireRate: 900,
     mobility: 50,
     capacity: 30,
-    ammo: 241,
+    ammo: 181,
     reloadTime: { empty: 3, tactical: 2.4 },
     slot: 'primary',
     icon: {
@@ -290,7 +290,7 @@ export const SMGS = [
     fireRate: 1080,
     mobility: 50,
     capacity: 40,
-    ammo: 251,
+    ammo: 201,
     reloadTime: { empty: 3, tactical: 2.1 },
     slot: 'primary',
     icon: {
@@ -310,7 +310,7 @@ export const SMGS = [
     fireRate: 720,
     mobility: 50,
     capacity: 30,
-    ammo: 341,
+    ammo: 181,
     reloadTime: { empty: 3, tactical: 2.7 },
     slot: 'primary',
     icon: {
@@ -350,7 +350,7 @@ export const SMGS = [
     fireRate: 700,
     mobility: 50,
     capacity: 31,
-    ammo: 218,
+    ammo: 187,
     reloadTime: { empty: 3.3, tactical: 2.6 },
     slot: 'primary',
     icon: {
