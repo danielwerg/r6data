@@ -18,6 +18,7 @@
     "prebuild": "rimraf dist && npm run lint-tsc && npm run lint && npm run spell && npm run svg2png",
     "build": "vite build",
     "build:prepare": "path-exists ./dist || npm run build",
+    "prepublishOnly": "npm run build",
     "svg2png": "ts-node scripts/svg2png.ts",
     "preversion": "npm run build",
     "postversion": "git push --follow-tags",
