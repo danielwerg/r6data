@@ -11,7 +11,8 @@ Thermite is equipped with two Brimstone BC-3 Exothermic Charges. These charges c
 - When activated, Exothermic Charges play a roughly 3 second "heat up" animation and then explodes destroying surfaces, even reinforced ones, in a large area.
   - During this "heat up" time, the Exothermic Charges release visible sparks on both sides of the wall, and makes a loud sizzling noise, giving Defenders inside a clear warning to the breach.
   - The explosion radius on the Exothermic Charges is significantly larger than an average breaching charge. This explosion radius of 4 meters can also take out nearby walls or hatches when used properly.
-  - The lethal blast radius ends at 3-4 meters. Beyond five meters, the Exothermic Charges don't do any damage.
+  - The blast from Exothermic Charge is lethal, with damage drop-off radius around 3-4 meters
+    - The blast is also lethal on the deployer side (at point blank), but the damage drop-off radius is much smaller.
 
 ### Strategies/Synergies
 
@@ -19,10 +20,12 @@ Thermite is equipped with two Brimstone BC-3 Exothermic Charges. These charges c
 - Because of the large explosion radius of the Exothermic Charges, they can destroy reinforced surfaces adjacent to the wall they are placed on. This can be used in certain situations to destroy a Reinforced Wall shocked or jammed by Bandit, Kaid, or Mute's gadgets, by detonating an Exothermic Charge on an adjacent, perpendicular wall that is not shocked or jammed.
   - This can also be applied in a few other ways: Detonating an Exothermic Charge on the floor next to a reinforced wall can destroy the bottom of the reinforced wall. Detonating an Exothermic Charge on a wall next to a reinforced hatch will destroy the hatch along with the wall.
 - Thatcher can disable Signal Disruptors, Shock Wires, and Electroclaws, allowing Thermite to plant his Exothermic Charge.
+  - Impact EMP can also disable Electronics, but with less efficiency.
 - Twitch can also destroy Signal Disruptors, Shock Wires, and Electroclaws.
 - Kali can aid Thermite by deploying her LV Lance before the charge is set down to clear anti-breaching gadgets.
 - Zero's ARGUS Cameras can destroy Signal Disruptors, Shock Wires, and Electroclaws.
 - Flores' RCE-RATERO Drones can blow up anti-breaching gadgets.
+- Brava can destroy Shock Wires and Electroclaws, or convert Signal Disruptors. But this costs one of the three hacking charges
 
 ### Counters
 

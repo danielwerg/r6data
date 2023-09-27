@@ -13,6 +13,6 @@ export type SeasonShorthandVersion =
   | `${SeasonShorthand}.${number}`;
 
 export const LAST_UPDATED = {
-  season: { shorthandVersion: 'Y8S3' },
-  date: getISODate('2023-08-29')
+  season: { shorthandVersion: 'Y8S3.2' },
+  date: getISODate('2023-09-27')
 } satisfies LastUpdated;

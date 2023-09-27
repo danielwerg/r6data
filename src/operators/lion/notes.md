@@ -25,4 +25,3 @@ Lion comes with his EE-ONE-D, which flies up above the map to scan for enemy mov
 
 - Being within range of one of Mute's Signal Disruptors will disrupt the EE-ONE-D's scan for anyone within their area of effect.
   - If Lion is within the range of a Signal Disruptor, he will also be unable to activate his drone at all.
-- Vigil's ERC-7 completely immunizes him to the EE-ONE-D. This only works if Vigil had his ERC-7 activated during the scan.

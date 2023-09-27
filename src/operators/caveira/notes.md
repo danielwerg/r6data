@@ -43,7 +43,7 @@ Caveira's "Luison" pistol has several properties that allow Caveira to incapacit
 The ability Interrogation allows Caveira to interact with downed attackers and receive the live location of the enemy's allies.
 
 - Using Interrogation causes Caveira to interrogate the downed Attacker and then kill them in five seconds. The Interrogation requires the player to hold down the interaction key. Caveira is vulnerable in this state as she is forced to look down at her target and cannot react unless she stops interacting.
-  - The Interrogated target cannot move while being interrogated and is forced to look down while in this state.
+  - The Interrogated target cannot move while being interrogated and is forced to look up while in this state.
 - Upon successful Interrogation, all currently alive Attackers will have their identity not only compromised but are also tagged for ten seconds, showing their Operator symbol above their head.
   - Attackers are immediately alerted by a flashing "LOCATION REVEALED BY CAVEIRA" message on their HUD. One of Caveira's Interrogation dialogues will also be heard by the entire Attacking team.
 - Attackers are unable to escape the Interrogation after Caveira begins the process.
