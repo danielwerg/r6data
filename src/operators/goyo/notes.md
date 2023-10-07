@@ -6,7 +6,7 @@ Goyo's unique gadget is the Volcán Canister. The canister explodes when fired u
 
 - Goyo has four Volcán Canisters. He can deploy them on all reachable surfaces including walls, floors, hatches, as well as several types of furniture.
   - Canisters take approximately 4 seconds to deploy.
-  - Canisters cannot be placed on Deployable Shields.
+  - Canisters cannot be placed on Deployable Shields or Osa's Talon Shield.
 - The Volcán Canister will detonate if its red explosive canister is hit by gunfire, explosives, or melee attacks. The rest of the canister is bulletproof but is still susceptible to explosives.
 - If Canister's are placed close enough together and one detonates, a chain reaction will occur and detonate all Canisters within the firsts area of effect.
 - The fire is 4.05m in diameter.
