@@ -56,10 +56,17 @@ export const iana = {
         barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
+      },
+      {
+        slug: 'gonne-6',
+        sights: null,
+        barrels: null,
+        grips: null,
+        underBarrels: null
       }
     ]
   },
-  gadgets: { secondary: ['frag_grenade', 'smoke_grenade'] },
+  gadgets: { secondary: ['stun_grenade', 'smoke_grenade'] },
   uniqueAbility: {
     slug: 'gemini_replicator',
     name: 'Gemini Replicator',

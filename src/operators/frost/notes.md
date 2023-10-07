@@ -9,12 +9,19 @@ Frost comes equipped with three Sterling MK2 LHTs, nicknamed "Welcome Mats." The
 - Each Welcome Mat takes 3 seconds to deploy.
   - Frost's hitbox is vertically smaller while deploying a Welcome Mat, as if she was crouching. This can allow a Frost to place a mat in front of a window during a round, although this is not normally advised.
 - Welcome Mats will immediately put any Attacker stepping on them into a DBNO state.
-  - A trapped attacker cannot move or slow down the bleed rate. Attempting to move will only cause the Attacker to thrash around and create noise.
-  - An Attacker caught in the Trap can only be rescued via manual revive; Finka's Adrenal Surge, Rook's Armor Plating Self-Revive, and Doc's Stim Pistol shots all cannot revive a player downed by the Welcome Mat.
-  - One Welcome Mat can only be triggered once. The Welcome Mat is effectively destroyed once an Attacker is caught in the trap, regardless of if the Attacker is rescued or not.
-    - Though the Welcome Mat appears intact when an Attacker is trapped in it, it cannot be destroyed in this state, and the Attacker cannot be rescued by attempting to destroy the mat itself.
-  - The Welcome Mat can only put an Attacker in a DBNO state, even if that Operator has already been downed before. For example, if an Attacker happens to come across all three Welcome Mats in one game, they will be downed every single time.
-  - An Attacker moving onto a Welcome Mat while downed will be instantly killed.
+  - Attacker can choose to wait for a teammate to perform the revive, if they do so, they will not receive the debuff when leaving the trap. This should grant Frost opportunities to hunt teammates willing to help trapped players while attackers are rewarded for playing as a team.
+  - Trapped players will need 4 seconds to exit the trap regardless of the revive method. This should grant extra time for defenders to finish off trapped enemies before they can stand up.
+  - If players remove the trap by themselves, a debuff will be applied to them. The effects are as follow:
+    - Duration is 60 seconds.
+    - Will move 20% slower
+    - Won't be able to sprint.
+    - Will leave a trail of blood behind them.
+    - Health is set to 20 hp.
+- An Attacker caught in the Trap can only be rescued via manual revive; Finka's Adrenal Surge, Rook's Armor Plating Self-Revive, and Doc's Stim Pistol shots all cannot revive a player downed by the Welcome Mat.
+- One Welcome Mat can only be triggered once. The Welcome Mat is effectively destroyed once an Attacker is caught in the trap, regardless of if the Attacker is rescued or not.
+  - Though the Welcome Mat appears intact when an Attacker is trapped in it, it cannot be destroyed in this state, and the Attacker cannot be rescued by attempting to destroy the mat itself.
+  - Being caught by a Welcome Mat is considered entering the Down But Not Out state. R6 allows DBNO only once per round, this means players that have already been DBNO will immediately die if they fall into a Frost trap..
+- An Attacker moving onto a Welcome Mat while downed will be instantly killed.
 - The Welcome Mat is fairly durable, being able to take a number of gunshots before being destroyed.
   - For the Welcome Mat to be destroyed it needs all 100 health to be depleted.
   - Picking up a Welcome Mat will reset its "health pool".

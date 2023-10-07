@@ -74,18 +74,11 @@ export const gridlock = {
         barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
-      },
-      {
-        slug: 'gonne-6',
-        sights: null,
-        barrels: null,
-        grips: null,
-        underBarrels: null
       }
     ]
   },
   gadgets: {
-    secondary: ['smoke_grenade', 'breach_charge', 'impact_emp_grenade']
+    secondary: ['smoke_grenade', 'frag_grenade', 'impact_emp_grenade']
   },
   uniqueAbility: {
     slug: 'trax_stingers',
