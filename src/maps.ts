@@ -720,7 +720,8 @@ export const MINI_MAPS = [
 export const MAPS = MINI_MAPS.map(map => ({
   ...map,
   release: {
-    season: SEASONS.find(season => season.id === map.release.season.id)!
+    season: SEASONS.find(season => season.id === map.release.season.id)!,
+    date: map.release.date
   },
   ...(map.reworks && {
     reworks: map.reworks.map(rework => ({
