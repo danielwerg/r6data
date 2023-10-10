@@ -148,7 +148,7 @@ export const LMGS = [
     category: 'lmg',
     description:
       'Light Machine Gun fed with a pan magazine, accurate in short to medium range. Its powerful 7.62x54 ammo makes it a highly destructive weapon.',
-    damage: 49,
+    damage: 60,
     fireRate: 550,
     mobility: 50,
     capacity: 70,

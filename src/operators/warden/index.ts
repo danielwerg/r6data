@@ -28,7 +28,7 @@ export const warden = {
   figureOfficial:
     'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6IeUn3ejRrjAngxPvqqsZh/234847c2a25cbdd2cf783ef15caf9738/R6-operator-warden.png',
   body: getOperatorAssetURL('/bodies/warden.png'),
-  ratings: { health: 2, speed: 2 },
+  ratings: { health: 3, speed: 1 },
   specialties: ['anti-gadget', 'intel'],
   season: { id: 14 },
   weapons: {

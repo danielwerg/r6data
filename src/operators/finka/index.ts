@@ -70,17 +70,10 @@ export const finka = {
         barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
-      },
-      {
-        slug: 'gonne-6',
-        sights: null,
-        barrels: null,
-        grips: null,
-        underBarrels: null
       }
     ]
   },
-  gadgets: { secondary: ['smoke_grenade', 'stun_grenade'] },
+  gadgets: { secondary: ['smoke_grenade', 'stun_grenade', 'frag_grenade'] },
   uniqueAbility: {
     slug: 'adrenal_surge',
     name: 'Adrenal Surge',
