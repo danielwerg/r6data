@@ -78,7 +78,7 @@ export const gridlock = {
     ]
   },
   gadgets: {
-    secondary: ['smoke_grenade', 'frag_grenade', 'impact_emp_grenade']
+    secondary: ['smoke_grenade', 'impact_emp_grenade', 'frag_grenade']
   },
   uniqueAbility: {
     slug: 'trax_stingers',
