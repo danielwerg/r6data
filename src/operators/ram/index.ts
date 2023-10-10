@@ -71,7 +71,7 @@ export const ram = {
   },
   uniqueAbility: {
     slug: 'bu-gi_auto-breacher',
-    name: 'Bu-Gi Auto-Breacher',
+    name: 'BU-GI Auto-Breacher',
     type: 'none',
     startingAmount: 4,
     description:
