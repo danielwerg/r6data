@@ -15,7 +15,7 @@ export const recruitDefense = {
   iconOfficial: null,
   card: null,
   cardOfficial: null,
-  figure: null,
+  figure: getOperatorAssetURL('/figures/recruit.png'),
   figureOfficial: null,
   body: getOperatorAssetURL('/bodies/recruit.png'),
   ratings: { health: 2, speed: 2 },
