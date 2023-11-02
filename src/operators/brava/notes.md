@@ -4,7 +4,7 @@
 
 Brava's unique gadget is the Kludge Drone, a remote drone equipped with a electronic laser. When within range and line of sight of an electronic Defender gadget, Brava can hack the gadget, either causing it to self destruct, or turn its effects against Defenders, who would otherwise be unaffected.
 
-The following Defender Gadgets can be hacked by Brava, converting them to Attacker Gadgets:
+The following Gadgets can be converted by Kludge Drone:
 
 - Alibi's Prismas
 - Aruni's Surya Gates
@@ -12,7 +12,6 @@ The following Defender Gadgets can be hacked by Brava, converting them to Attack
 - Ela's Grzmot Mines
 - Jäger's Active Defense Systems
 - Kapkan's Entry Denial Devices
-- Lesion's Gu Mines
 - Maestro's Evil Eyes
 - Melusi's Banshee Devices
 - Mozzie's Pests
@@ -33,6 +32,7 @@ Additionally, the following devices will be destroyed after a short delay once h
 - Thunderbird's Kona Stations
 - Fenrir's F-Natt Dread Mine (when deactivated)
 - Defender's C4s
+- Breach Charge
 
 ### Strategies/Synergies
 

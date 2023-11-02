@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-Lesion comes equipped with his Gu Mines; poison mines that, once triggered by physical contact, the victim will be affected by a gradual loss of health until they are downed or the needle is removed. Up to 9 Gu Mines can be deployed and are gradually built throughout a round.
+Lesion comes equipped with his Gu Mines; poison mines that, once triggered by physical contact, cause the victim to be affected by a gradual loss of health until they are DBNO or the needle is removed. Up to 9 Gu Mines can be deployed, though access to them is staggered throughout the course of the round via a prep timer.
 
 - Gu Mines are throwable devices that deploy on the floor and stick to any attacker who triggers them. They have an effective radius of 1 meter.
   - The Mine will trigger on one Operator but can affect multiple Operators if they are within the Gu Mine's area of effect.

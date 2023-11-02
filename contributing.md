@@ -42,7 +42,7 @@ To get ready to work on the codebase, please do the following:
   - Append to `src/maps.ts`
   - Add `src/assets/maps/thumbnails/MAP_SLUG.EXT`
   - Add `src/assets/maps/backgrounds/MAP_SLUG.EXT`
-- Optionally update operator notes using [Rainbow Six Wiki](https://rainbowsix.fandom.com/wiki/Special:RecentChanges?hidebots=1&hidelog=1&limit=3000&days=90&enhanced=1&hidecategorization=1&urlversion=2) <!-- Last updated: 2023-10-07 -->
+- Optionally update operator notes using [Rainbow Six Wiki](https://rainbowsix.fandom.com/wiki/Special:RecentChanges?hidebots=1&hidelog=1&limit=3000&days=90&enhanced=1&hidecategorization=1&urlversion=2) <!-- Last updated: 2023-11-02 -->
 - Update `LAST_UPDATED` variable in `src/meta.ts`
 
 ---

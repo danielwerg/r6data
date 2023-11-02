@@ -27,4 +27,5 @@ Thunderbird's Unique Gadget is the Kóna Station, an automated dispenser which s
   - IQ can detect the healing stations and manually destroy them by gunfire.
   - Kali's LV Lances will destroy the stations if within range.
   - Zero's Argus Camera lasers can destroy the Kóna Stations easily.
+  - Brava's Kludge Drone can overheat and destroy the Kóna Stations by hacking them.
   - Explosive damage, gunfire, and melee strikes will destroy the Kóna Stations.
