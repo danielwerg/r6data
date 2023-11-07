@@ -36,7 +36,7 @@ export const smoke = {
       {
         slug: 'fmg-9',
         sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
-        barrels: [],
+        barrels: [...COMMON_BARRELS_ALL],
         grips: null,
         underBarrels: ['laser']
       },
