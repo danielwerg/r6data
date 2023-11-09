@@ -4,7 +4,7 @@ import type { Weapon } from './types';
 export const getWeaponAssetURL = (path: string) =>
   getAssetURL(`/weapons/detailed${path}`);
 
-export const hasChamberBullet = (weapon: Weapon) => {
+export const weaponHasChamberBullet = (weapon: Weapon) => {
   if (
     weapon.categorySlug === 'handgun' &&
     ['lfp586', 'bailiff_410', 'keratos_.357'].includes(weapon.slug)
