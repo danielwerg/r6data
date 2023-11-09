@@ -6,7 +6,7 @@ export const SHOTGUNS = [
   {
     slug: 'm590a1',
     name: 'M590A1',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       '12-gauge pump action shotgun favored by S.A.S. optimal at close range.',
     damage: 48,
@@ -26,7 +26,7 @@ export const SHOTGUNS = [
   {
     slug: 'm1014',
     name: 'M1014',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description: 'Medium range semi-automatic shotgun. Lethal at close range.',
     damage: 28,
     fireRate: 200,
@@ -45,7 +45,7 @@ export const SHOTGUNS = [
   {
     slug: 'sg-cqb',
     name: 'SG-CQB',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'Compact pump action 12-gauge shotgun with close range stopping power. Favored by GIGN.',
     damage: 44,
@@ -65,7 +65,7 @@ export const SHOTGUNS = [
   {
     slug: 'sasg-12',
     name: 'SASG-12',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'Semi-automatic shotgun, favored by Spetsnaz. Limited range, large spread decreases accuracy.',
     damage: 26,
@@ -85,7 +85,7 @@ export const SHOTGUNS = [
   {
     slug: 'm870',
     name: 'M870',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       '12-gauge pump action shotgun, favored by GSG 9. Large barrel allows for enhanced range.',
     damage: 42,
@@ -105,7 +105,7 @@ export const SHOTGUNS = [
   {
     slug: 'super_90',
     name: 'Super 90',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'Compact 12-gauge semi-automatic shotgun. Effective as a breach tool.',
     damage: 27,
@@ -125,7 +125,7 @@ export const SHOTGUNS = [
   {
     slug: 'spas-12',
     name: 'SPAS-12',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description: 'Lightweight customizable 12-gauge semi-automatic shotgun.',
     damage: 31,
     fireRate: 200,
@@ -144,7 +144,7 @@ export const SHOTGUNS = [
   {
     slug: 'spas-15',
     name: 'SPAS-15',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'Magazine-fed, semi-automatic shotgun, bringing a modern twist on the SPAS 12.',
     damage: 24,
@@ -164,7 +164,7 @@ export const SHOTGUNS = [
   {
     slug: 'supernova',
     name: 'Supernova',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'Compact pump action 12-gauge shotgun with extra ammunition capacity. Better recoil control than other pump action models.',
     damage: 48,
@@ -184,7 +184,7 @@ export const SHOTGUNS = [
   {
     slug: 'ita12l',
     name: 'ITA12L',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'Lightweight pump action 12-gauge shotgun with a 22" barrel. Packs a good punch.',
     damage: 41,
@@ -204,7 +204,7 @@ export const SHOTGUNS = [
   {
     slug: 'ita12s',
     name: 'ITA12S',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'Compact pump action 12-gauge shotgun with close range stopping power. Optimal for CQB.',
     damage: 29,
@@ -224,7 +224,7 @@ export const SHOTGUNS = [
   {
     slug: 'six12',
     name: 'SIX12',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'Compact 12-gauge bullpup double action revolver shotgun. Good for CQC and fast reload.',
     damage: 46,
@@ -244,7 +244,7 @@ export const SHOTGUNS = [
   {
     slug: 'six12_sd',
     name: 'SIX12 SD',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'This compact 12-gauge shotgun runs off a six round drum. Includes an integrated suppressor for stealth.',
     damage: 46,
@@ -264,7 +264,7 @@ export const SHOTGUNS = [
   {
     slug: 'fo-12',
     name: 'FO-12',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       '12-gauge semi-automatic, mag-fed combat shotgun. Fast reload and optimal in CQC.',
     damage: 26,
@@ -284,7 +284,7 @@ export const SHOTGUNS = [
   {
     slug: 'bosg.12.2',
     name: 'BOSG.12.2',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'Top break, over-under double-barrel shotgun. Long-range and in tactical configuration.',
     damage: 125,
@@ -304,7 +304,7 @@ export const SHOTGUNS = [
   {
     slug: 'acs12',
     name: 'ACS12',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'This 12-gauge combat shotgun is fully automatic and drum-fed. Great for blasting holes in walls and possesses surprisingly low recoil and muzzle rise.',
     damage: 69,
@@ -324,7 +324,7 @@ export const SHOTGUNS = [
   {
     slug: 'tcsg12',
     name: 'TCSG12',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'Semi-automatic shotgun with a 10-round magazine. Optimal for CQB and is suppressor capable.',
     damage: 63,
@@ -344,7 +344,7 @@ export const SHOTGUNS = [
   {
     slug: 'super_shorty',
     name: 'Super Shorty',
-    category: 'shotgun',
+    categorySlug: 'shotgun',
     description:
       'The high maneuverability of this shotgun makes up for its low capacity magazine.',
     damage: 35,

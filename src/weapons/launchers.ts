@@ -7,7 +7,7 @@ export const LAUNCHERS = [
   {
     slug: 'gonne-6',
     name: 'GONNE-6',
-    category: 'launcher',
+    categorySlug: 'launcher',
     description:
       'Shoots explosive projectiles that detonate on impact with surfaces and destroy bulletproof gadgets.',
     damage: 10,

@@ -5,7 +5,7 @@ export const LMGS = [
   {
     slug: '6p41',
     name: '6P41',
-    category: 'lmg',
+    categorySlug: 'lmg',
     description:
       'Spetsnaz LMG. accurate in short to medium range. Capable of long range controlled fire.',
     damage: 46,
@@ -25,7 +25,7 @@ export const LMGS = [
   {
     slug: 'g8a1',
     name: 'G8A1',
-    category: 'lmg',
+    categorySlug: 'lmg',
     description:
       'GSG 9 LMG; accurate in short to medium range. Capable of long-range controlled fire.',
     damage: 37,
@@ -45,7 +45,7 @@ export const LMGS = [
   {
     slug: 'm249',
     name: 'M249',
-    category: 'lmg',
+    categorySlug: 'lmg',
     description:
       'Iconic LMG, accurate in medium range with high ammo capacity and efficient suppressive fire.',
     damage: 48,
@@ -65,7 +65,7 @@ export const LMGS = [
   {
     slug: 't-95_lsw',
     name: 'T-95 LSW',
-    category: 'lmg',
+    categorySlug: 'lmg',
     description:
       'This custom 5.56x45mm caliber LMG is a portable powerhouse of automatic hardware.',
     damage: 46,
@@ -85,7 +85,7 @@ export const LMGS = [
   {
     slug: 'lmg-e',
     name: 'LMG-E',
-    category: 'lmg',
+    categorySlug: 'lmg',
     description:
       'Compact package belt-fed AR, with a 150 round box. Lays down a fierce medium-range suppressive fire.',
     damage: 41,
@@ -105,7 +105,7 @@ export const LMGS = [
   {
     slug: 'alda_5.56',
     name: 'ALDA 5.56',
-    category: 'lmg',
+    categorySlug: 'lmg',
     description:
       'This belt-fed, 5.56 light support monster uses a specialized 80-round box to punish opposing forces.',
     damage: 35,
@@ -125,7 +125,7 @@ export const LMGS = [
   {
     slug: 'm249_saw',
     name: 'M249 SAW',
-    category: 'lmg',
+    categorySlug: 'lmg',
     description:
       'Iconic LMG, accurate in medium range with high ammo capacity and efficient suppressive fire.',
     damage: 48,
@@ -145,7 +145,7 @@ export const LMGS = [
   {
     slug: 'dp27',
     name: 'DP27',
-    category: 'lmg',
+    categorySlug: 'lmg',
     description:
       'Light Machine Gun fed with a pan magazine, accurate in short to medium range. Its powerful 7.62x54 ammo makes it a highly destructive weapon.',
     damage: 60,

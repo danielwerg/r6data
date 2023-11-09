@@ -3,7 +3,7 @@ import type { SVGandPNG, WeaponCategorySlug, WeaponSlug } from '../types';
 export interface Weapon {
   slug: WeaponSlug;
   name: string;
-  category: WeaponCategorySlug;
+  categorySlug: WeaponCategorySlug;
   description: string;
   damage: number;
   fireRate: number;

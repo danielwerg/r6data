@@ -6,21 +6,21 @@ export const getWeaponAssetURL = (path: string) =>
 
 export const hasChamberBullet = (weapon: Weapon) => {
   if (
-    weapon.category === 'handgun' &&
+    weapon.categorySlug === 'handgun' &&
     ['lfp586', 'bailiff_410', 'keratos_.357'].includes(weapon.slug)
   )
     return false;
   else if (
-    weapon.category === 'shotgun' &&
+    weapon.categorySlug === 'shotgun' &&
     !['sasg-12', 'spas-15', 'fo-12', 'acs12', 'tcsg12'].includes(weapon.slug)
   )
     return false;
   else if (
-    weapon.category === 'lmg' &&
+    weapon.categorySlug === 'lmg' &&
     !['g8a1', 't-95_lsw', 'm249_saw'].includes(weapon.slug)
   )
     return false;
-  else if (weapon.category === 'shield') return false;
-  else if (weapon.category === 'launcher') return false;
+  else if (weapon.categorySlug === 'shield') return false;
+  else if (weapon.categorySlug === 'launcher') return false;
   else return true;
 };

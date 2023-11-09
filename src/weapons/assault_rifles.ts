@@ -6,7 +6,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'l85a2',
     name: 'L85A2',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Assault rifle favored by S.A.S for medium to long range combat. Takes 5.56x45mm rounds.',
     damage: 47,
@@ -26,7 +26,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'ar33',
     name: 'AR33',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description: 'Assault rifle used for medium-range encounters.',
     damage: 41,
     fireRate: 749,
@@ -45,7 +45,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'g36c',
     name: 'G36C',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Assault rifle, with medium recoil. takes 5.56mm caliber ammunition.',
     damage: 38,
@@ -65,7 +65,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'r4-c',
     name: 'R4-C',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'FBI SWAT standard issue assault rifle. Highly customizable, for medium to long range',
     damage: 39,
@@ -85,7 +85,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: '556xi',
     name: '556XI',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Short range assault rifle, with low to medium stopping power depending on the caliber.',
     damage: 47,
@@ -105,7 +105,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'f2',
     name: 'F2',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Versatile assault rifle used for medium- to long-range encounters.',
     damage: 37,
@@ -125,7 +125,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'ak-12',
     name: 'AK-12',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Medium range assault rifle, medium to high stopping power based on caliber. Used by Spetsnaz.',
     damage: 40,
@@ -145,7 +145,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'aug_a2',
     name: 'AUG A2',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'GSG 9\'s medium to long range assault rifle with a high rate of fire.',
     damage: 42,
@@ -165,7 +165,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: '552_commando',
     name: '552 Commando',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Medium range carbine, 30 round magazine, medium penetration at optimal range, 690 rounds/min.',
     damage: 47,
@@ -185,7 +185,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: '416-c_carbine',
     name: '416-C CARBINE',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'GSG 9 medium range 5.56 x 45mm caliber assault rifle, with high recoil and rate of fire.',
     damage: 38,
@@ -205,7 +205,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'c8-sfw',
     name: 'C8-SFW',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description: 'Medium to long range assault rifle. takes 5.56mm ammunition.',
     damage: 40,
     fireRate: 837,
@@ -224,7 +224,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'mk17_cqb',
     name: 'MK17 CQB',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       '7.62x51mm caliber assault rifle, adapted for close quarter operations, high damage and severe recoil.',
     damage: 40,
@@ -244,7 +244,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'para-308',
     name: 'PARA-308',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'BOPE PARA-308 is a more compact version of the battle proven FAL with high stopping power.',
     damage: 47,
@@ -264,7 +264,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'type-89',
     name: 'Type-89',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description: 'Classic assault rifle with medium stopping power.',
     damage: 40,
     fireRate: 850,
@@ -283,7 +283,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'c7e',
     name: 'C7E',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Canadian assault rifle with both semi-automatic and fully automatic fire modes. Integrated heavy barrel for good recoil control.',
     damage: 42,
@@ -303,7 +303,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'm762',
     name: 'M762',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Effective medium-range AR with custom shoulder stock, front hand guard, and flat upper rail.',
     damage: 45,
@@ -323,7 +323,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'v308',
     name: 'V308',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'This battle rifle features the same famous system for mitigating muzzle rise seen in its .45 ACP cousin. It is fed from a 50-round drum.',
     damage: 44,
@@ -343,7 +343,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'spear_.308',
     name: 'SPEAR .308',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'A Russian .308 bullpup prototype, composed almost entirely of polymers. It has impressive power and accuracy in a relatively compact format.',
     damage: 42,
@@ -363,7 +363,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'm4',
     name: 'M4',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'This government-issued assault rifle has been customized with additional features.',
     damage: 44,
@@ -383,7 +383,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'ak-74m',
     name: 'AK-74M',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'This more recent variant of the most manufactured gun fires a lighter caliber than its predecessor. Provides adequate range and rate of fire.',
     damage: 44,
@@ -403,7 +403,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'arx200',
     name: 'ARX200',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Heavy hitting, low capacity assault rifle chambered in .308 NATO.',
     damage: 47,
@@ -423,7 +423,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'f90',
     name: 'F90',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Highly modular Australian bullpup assault rifle, chambered in 5.56mm NATO.',
     damage: 38,
@@ -443,7 +443,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'commando_9',
     name: 'Commando 9',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description: 'AR Commando platform customized to 9mm.',
     damage: 36,
     fireRate: 780,
@@ -462,7 +462,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'sc3000k',
     name: 'SC3000K',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Forward ejecting bullpup rifle chambered in .300 Blackout, effective in short to medium range.',
     damage: 45,
@@ -482,7 +482,7 @@ export const ASSAULT_RIFLES = [
   {
     slug: 'pof-9',
     name: 'POF-9',
-    category: 'assault_rifle',
+    categorySlug: 'assault_rifle',
     description:
       'Fully automatic, easy to handle assault rifle with high capacity 9mm magazines.',
     damage: 35,

@@ -6,7 +6,7 @@ export const SMGS = [
   {
     slug: 'fmg-9',
     name: 'FMG-9',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       '9mm close to mid-range submachine gun with recoil and high rate of fire.',
     damage: 34,
@@ -26,7 +26,7 @@ export const SMGS = [
   {
     slug: 'mp5k',
     name: 'MP5K',
-    category: 'smg',
+    categorySlug: 'smg',
     description: 'Close range 9mm submachine gun with a high rate of fire.',
     damage: 30,
     fireRate: 800,
@@ -45,7 +45,7 @@ export const SMGS = [
   {
     slug: 'ump45',
     name: 'UMP45',
-    category: 'smg',
+    categorySlug: 'smg',
     description: 'Submachine gun with high stopping power.',
     damage: 38,
     fireRate: 600,
@@ -64,7 +64,7 @@ export const SMGS = [
   {
     slug: 'mp5',
     name: 'MP5',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Short to medium range submachine gun. High rate of fire and mobility. Favored by GIGN.',
     damage: 27,
@@ -84,7 +84,7 @@ export const SMGS = [
   {
     slug: 'p90',
     name: 'P90',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'GIGN high-capacity submachine gun that uses high-velocity ammunition. Best in close quarters.',
     damage: 22,
@@ -104,7 +104,7 @@ export const SMGS = [
   {
     slug: '9x19vsn',
     name: '9x19VSN',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Close to mid-range 9mm submachine gun with high penetration. Favored by Spetsnaz.',
     damage: 34,
@@ -124,7 +124,7 @@ export const SMGS = [
   {
     slug: 'mp7',
     name: 'MP7',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Close to mid-range submachine gun with high penetration. Favored by GSG 9.',
     damage: 32,
@@ -144,7 +144,7 @@ export const SMGS = [
   {
     slug: '9mm_c1',
     name: '9mm C1',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Classic submachine gun. close to mid-range. Slower rate of fire, with medium stopping power.',
     damage: 36,
@@ -164,7 +164,7 @@ export const SMGS = [
   {
     slug: 'mpx',
     name: 'MPX',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Close to mid-range 9mm submachine gun, medium to high penetration.',
     damage: 26,
@@ -184,7 +184,7 @@ export const SMGS = [
   {
     slug: 'm12',
     name: 'M12',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Close to mid-range 9mm submachine gun with low recoil and a medium fire rate. Favored by BOPE.',
     damage: 40,
@@ -204,7 +204,7 @@ export const SMGS = [
   {
     slug: 'mp5sd',
     name: 'MP5SD',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       '9mm submachine gun with integrated sound suppressor and good recoil control.',
     damage: 30,
@@ -224,7 +224,7 @@ export const SMGS = [
   {
     slug: 'vector_.45_acp',
     name: 'Vector .45 ACP',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Submachine gun with unique proprietary recoil and a muzzle climb mitigation system.',
     damage: 23,
@@ -244,7 +244,7 @@ export const SMGS = [
   {
     slug: 'pdw9',
     name: 'PDW9',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       '9mm AR platform PDW, customized to offer Full-Automatic fire. Equipped with Drum magazine.',
     damage: 34,
@@ -264,7 +264,7 @@ export const SMGS = [
   {
     slug: 't-5_smg',
     name: 'T-5 SMG',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'This open bolt 9mm lightweight submachine gun has a high rate of fire.',
     damage: 28,
@@ -284,7 +284,7 @@ export const SMGS = [
   {
     slug: 'scorpion_evo_3_a1',
     name: 'Scorpion EVO 3 A1',
-    category: 'smg',
+    categorySlug: 'smg',
     description: 'Lightweight 9mm carbine with a 40-round magazine.',
     damage: 29,
     fireRate: 1080,
@@ -303,7 +303,7 @@ export const SMGS = [
   {
     slug: 'k1a',
     name: 'K1A',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Submachine gun in a compact AR package and caliber. Offers medium-range accuracy.',
     damage: 36,
@@ -323,7 +323,7 @@ export const SMGS = [
   {
     slug: 'mx4_storm',
     name: 'Mx4 Storm',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Renowned 9mm submachine gun in an elegant package that possesses a high rate of fire. An extended barrel upgrade increases its range.',
     damage: 26,
@@ -343,7 +343,7 @@ export const SMGS = [
   {
     slug: 'aug_a3',
     name: 'AUG A3',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Assault rifle converted to a 9mm submachine gun. Possesses excellent range for an SMG.',
     damage: 36,
@@ -363,7 +363,7 @@ export const SMGS = [
   {
     slug: 'p10_roni',
     name: 'P10 RONI',
-    category: 'smg',
+    categorySlug: 'smg',
     description: 'Fully automatic PIO pistol in a RONI carbine conversion.',
     damage: 26,
     fireRate: 980,
@@ -382,7 +382,7 @@ export const SMGS = [
   {
     slug: 'uzk50gi',
     name: 'UZK50GI',
-    category: 'smg',
+    categorySlug: 'smg',
     description:
       'Fully automatic SMG that fires .50 pistol cartridges with force.',
     damage: 36,

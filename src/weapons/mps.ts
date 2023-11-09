@@ -5,7 +5,7 @@ export const MPS = [
   {
     slug: 'smg-11',
     name: 'SMG-11',
-    category: 'mp',
+    categorySlug: 'mp',
     description:
       'Small sized submachine gun with a high rate of fire. Lethal package in disciplined hands.',
     damage: 35,
@@ -25,7 +25,7 @@ export const MPS = [
   {
     slug: 'bearing_9',
     name: 'Bearing 9',
-    category: 'mp',
+    categorySlug: 'mp',
     description:
       'Short to medium range submachine gun with high rate of fire and mobility. Best used in close quarters.',
     damage: 33,
@@ -45,7 +45,7 @@ export const MPS = [
   {
     slug: 'c75_auto',
     name: 'C75 Auto',
-    category: 'mp',
+    categorySlug: 'mp',
     description:
       'Fully automatic pistol that is effective at short range, and uses a spare mag as foregrip for more control.',
     damage: 35,
@@ -65,7 +65,7 @@ export const MPS = [
   {
     slug: 'smg-12',
     name: 'SMG-12',
-    category: 'mp',
+    categorySlug: 'mp',
     description:
       'Customized machine pistol that is light, compact, and optimal at short range. Possesses a high rate of fire.',
     damage: 28,
@@ -85,7 +85,7 @@ export const MPS = [
   {
     slug: 'spsmg9',
     name: 'SPSMG9',
-    category: 'mp',
+    categorySlug: 'mp',
     description: 'Fully automatic 9mm machine pistol with a high rate of fire.',
     damage: 33,
     fireRate: 980,

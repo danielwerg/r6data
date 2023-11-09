@@ -5,7 +5,7 @@ export const MARKSMANS = [
   {
     slug: '417',
     name: '417',
-    category: 'marksman',
+    categorySlug: 'marksman',
     description:
       'Semi-automatic marksman rifle with limited magazine capacity. Favored by GIGN.',
     damage: 69,
@@ -25,7 +25,7 @@ export const MARKSMANS = [
   {
     slug: 'ots-03',
     name: 'OTs-03',
-    category: 'marksman',
+    categorySlug: 'marksman',
     description:
       'Semi-automatic long range rifle with a very small magazine. Used by Spetsnaz.',
     damage: 71,
@@ -45,7 +45,7 @@ export const MARKSMANS = [
   {
     slug: 'camrs',
     name: 'CAMRS',
-    category: 'marksman',
+    categorySlug: 'marksman',
     description:
       'Customizable semi-automatic long range designated marksman rifle, deals high damage.',
     damage: 69,
@@ -65,7 +65,7 @@ export const MARKSMANS = [
   {
     slug: 'sr-25',
     name: 'SR-25',
-    category: 'marksman',
+    categorySlug: 'marksman',
     description:
       'Highly customizable semi-automatic rifle. Effective from long to medium range.',
     damage: 61,
@@ -85,7 +85,7 @@ export const MARKSMANS = [
   {
     slug: 'mk_14_ebr',
     name: 'Mk 14 EBR',
-    category: 'marksman',
+    categorySlug: 'marksman',
     description:
       'Classic, hard-hitting .308 Battle Rifle in a lighter and shorter chassis. Effective in long-range battles, devastating short-range.',
     damage: 60,
@@ -105,7 +105,7 @@ export const MARKSMANS = [
   {
     slug: 'ar-15.50',
     name: 'AR-15.50',
-    category: 'marksman',
+    categorySlug: 'marksman',
     description:
       'An AR-15 converted to a .50 caliber upper receiver. Its high caliber results in effective damage and incredible stopping power.',
     damage: 67,
@@ -125,7 +125,7 @@ export const MARKSMANS = [
   {
     slug: 'csrx_300',
     name: 'CSRX 300',
-    category: 'marksman',
+    categorySlug: 'marksman',
     description:
       'Straight-pull bolt-action custom built rifle, with integrated multi-zoom scope. Chambered in .300 Win Mag.',
     damage: 135,
