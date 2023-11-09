@@ -1,4 +1,5 @@
 import { getAssetURL } from '../utils';
+import type { WeaponCategorySlug } from '../types';
 import type { Weapon } from './types';
 
 export const getWeaponAssetURL = (path: string) =>
@@ -24,3 +25,16 @@ export const weaponHasChamberBullet = (weapon: Weapon) => {
   else if (weapon.categorySlug === 'launcher') return false;
   else return true;
 };
+
+export const weaponCategorySlugToName = (slug: WeaponCategorySlug) =>
+  ({
+    assault_rifle: 'Assault Rifle',
+    smg: 'Submachine Gun',
+    lmg: 'Light Machine Gun',
+    marksman: 'Marksman Rifle',
+    handgun: 'Handgun',
+    shotgun: 'Shotgun',
+    mp: 'Machine Pistol',
+    shield: 'Shield',
+    launcher: 'Launcher'
+  }[slug]);
