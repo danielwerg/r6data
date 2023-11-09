@@ -11,6 +11,18 @@ import { LAUNCHERS } from './launchers';
 export * from './utils';
 export * from './types';
 
+export {
+  ASSAULT_RIFLES,
+  SMGS,
+  LMGS,
+  MARKSMANS,
+  HANDGUNS,
+  SHOTGUNS,
+  MPS,
+  SHIELDS,
+  LAUNCHERS
+};
+
 export const WEAPONS = [
   ...ASSAULT_RIFLES,
   ...SMGS,
