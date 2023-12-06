@@ -73,7 +73,7 @@ export const iq = {
       }
     ]
   },
-  gadgets: { secondary: ['breach_charge', 'claymore'] },
+  gadgets: { secondary: ['breach_charge', 'claymore', 'frag_grenade'] },
   uniqueAbility: {
     slug: 'electronics_detector',
     name: 'Electronics Detector',

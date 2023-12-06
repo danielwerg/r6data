@@ -40,3 +40,4 @@ Mira can punch her Black Mirrors through walls, reinforced or not, to create a o
   - Maverick can also create a small hole underneath the Black Mirror, allowing him to shoot the gas canister and eject the black mirror easily.
 - If deployed correctly, Ace's SELMAs will be able to destroy the Black Mirror and provide a larger view port.
 - Zero's ARGUS Camera lasers will destroy the Black Mirrors' gas canister if within view.
+- Ash's Breaching Round or Kali's Explosive Lance can shatter Black Mirror if a projectile drills into it and explodes from the inside.

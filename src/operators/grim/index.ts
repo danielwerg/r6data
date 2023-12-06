@@ -66,7 +66,9 @@ export const grim = {
       }
     ]
   },
-  gadgets: { secondary: ['breach_charge', 'claymore', 'hard_breach_charge'] },
+  gadgets: {
+    secondary: ['impact_emp_grenade', 'claymore', 'hard_breach_charge']
+  },
   uniqueAbility: {
     slug: 'kawan_hive_launcher',
     name: 'Kawan Hive Launcher',

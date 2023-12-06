@@ -66,7 +66,8 @@ export type SeasonSlug =
   | 'solar_raid'
   | 'commanding_force'
   | 'dread_factor'
-  | 'heavy_mettle';
+  | 'heavy_mettle'
+  | 'deep_freeze';
 
 export type GadgetSlugDefense =
   | 'deployable_shield'

@@ -65,7 +65,7 @@ export const blackbeard = {
       }
     ]
   },
-  gadgets: { secondary: ['claymore', 'stun_grenade', 'impact_emp_grenade'] },
+  gadgets: { secondary: ['claymore', 'stun_grenade', 'frag_grenade'] },
   uniqueAbility: {
     slug: 'rifle_shield',
     name: 'Rifle Shield',

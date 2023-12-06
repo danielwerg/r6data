@@ -71,7 +71,9 @@ export const capitao = {
       }
     ]
   },
-  gadgets: { secondary: ['claymore', 'hard_breach_charge'] },
+  gadgets: {
+    secondary: ['claymore', 'hard_breach_charge', 'impact_emp_grenade']
+  },
   uniqueAbility: {
     slug: 'tactical_crossbow',
     name: 'Tactical Crossbow',

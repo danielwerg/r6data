@@ -1,10 +1,11 @@
 # Ram
 
-The BU-GI Drone is a soft-breaching device that can break through floors and barricades, soft walls that aren't reinforced.
+Ram's Unique Gadget is the BU-GI Automatic Breacher, an automated, bulletproof drone equipped with several cutting blades. Once deployed and activated remotely, the BU-GI will automatically move forward, destroying any destructible walls and flooring it touches. This can create several openings for Attackers, and make it easier to attack Defenders from above.
 
 ## Gameplay Description
 
 - BU-GI Drone will self detonate after 10 seconds of deployment.
+- BU-GI will also destroy any Deployable Shields and traps it encounters.
 
 ### Strategies/Synergies
 
@@ -24,6 +25,6 @@ The BU-GI Drone is a soft-breaching device that can break through floors and bar
 - Explosives, such as nitro cell and impact grenade can be used to destroy BU-GI.
 - BU-GI can be destroyed by shooting it in the red tank on a back of it, similar to Mira's Black Mirror.
 - Loud sound from BU-GI drone can mask foot steps of Caveira or Vigil.
-- Mute's Signal Jammer will block the activation of the BU-GI Auto Breacher. However, it will not deactivate the BU-GI once it is already activated, unlike other drones.
+- Mute's Signal Jammer can prevent the activation of the BU-GI Auto Breacher. However, it will not deactivate the BU-GI once it is already activated, unlike other drones.
 - Solis' SPEC-IO Electro-Sensor can detect BU-GI drone.
 - Ram could easily be flanked since the BU-GI drone are very loud.

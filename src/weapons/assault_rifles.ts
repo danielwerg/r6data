@@ -168,7 +168,7 @@ export const ASSAULT_RIFLES = [
     categorySlug: 'assault_rifle',
     description:
       'Medium range carbine, 30 round magazine, medium penetration at optimal range, 690 rounds/min.',
-    damage: 47,
+    damage: 43,
     fireRate: 690,
     mobility: 50,
     capacity: 30,

@@ -26,8 +26,8 @@ Maestro comes equipped with two Compact Laser Emplacements (CLE-Vs), otherwise k
   - The Evil Eyes' laser deals 5 damage per shot, shooting at a rate of 4 shots per second.
   - The lasers can destroy Attacker drones, Claymores, Hard Breach Charges, Breach Charges. The lasers cannot destroy projectiles (i.e. Stun Grenades, Smoke Grenades, etc). The lasers also destroy Thermite's Exothermic Charge, Hibana's X-KAIROS Pellets, and Ace's SELMAs.
   - An Evil Eye can fire a maximum of 21 shots consecutively before overheating. This is tracked by a bar displayed on screen.
-    - When not firing, the bar will recover 20% per second, therefore a maximum of 5 seconds is needed to fully recover an Evil Eye.
-    - When overheated, the turret will automatically close and become disabled for five seconds while the Evil Eye cools.
+    - When not firing, the bar will recover 20% per second, therefore a maximum of 6 seconds is needed to fully recover an Evil Eye.
+    - When overheated, the turret will automatically close and become disabled for 6 seconds while the Evil Eye cools.
   - While the Evil Eye's turret is open and ready to fire, it exposes its internal laser emitter. The laser emitter is not bulletproof; if it is hit by bullets, melee attacks, or Twitch's Shock Drones, the Evil Eye is destroyed.
   - Only Maestro can use the laser turret.
 
@@ -52,3 +52,4 @@ Maestro comes equipped with two Compact Laser Emplacements (CLE-Vs), otherwise k
 - Kali's LV Lances can destroy Evil Eyes.
 - Flores' RCE-RATERO Drones can destroy Evil Eyes.
 - Nøkk's HEL will remove her image from Maestro's Evil Eye cameras.
+- Ash's Breaching Round or Kali's Explosive Lance can shatter the bulletproof glass when exploding if they hit on the glass.

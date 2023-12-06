@@ -43,7 +43,8 @@ export type MapSlug =
   | 'emerald_plains'
   | 'close_quarter'
   | 'stadium_bravo'
-  | 'nighthaven_labs';
+  | 'nighthaven_labs'
+  | 'lair';
 
 export interface MapRelease {
   season: {
@@ -178,7 +179,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 11 }, date: getISODate('2018-09-04') }
     ],
-    playlists: ['snipers_only'],
+    playlists: ['snipers_only', 'casual'],
     bombSites: [
       '3F Ammo Storage / 3F Tractor Storage',
       '2F Master Bedroom / 2F Kids Room',
@@ -232,7 +233,7 @@ export const MINI_MAPS = [
     slug: 'presidential_plane',
     name: 'Presidential Plane',
     release: { season: { id: 0 }, date: getISODate('2015-12-01') },
-    playlists: ['standard'],
+    playlists: ['casual'],
     bombSites: [
       '2F Meeting Room / 2F Executive Office',
       '2F Staff Section / 2F Executive Bedroom',
@@ -307,7 +308,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 15 }, date: getISODate('2019-09-11') }
     ],
-    playlists: ['ranked'],
+    playlists: ['ranked', 'standard'],
     bombSites: [
       '2F Server Room / 2F Radar Room',
       '1F Security Room / 1F Map Room',
@@ -376,7 +377,7 @@ export const MINI_MAPS = [
     slug: 'yacht',
     name: 'Yacht',
     release: { season: { id: 1 }, date: getISODate('2016-02-02') },
-    playlists: ['standard'],
+    playlists: ['casual'],
     bombSites: [
       '4F Maps Room / 4F Cockpit',
       '2F Kitchen / 2F Engine Room',
@@ -454,7 +455,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 20 }, date: getISODate('2020-12-01') }
     ],
-    playlists: ['ranked', 'deathmatch', 'golden_gun'],
+    playlists: ['ranked', 'standard', 'deathmatch', 'golden_gun'],
     bombSites: [
       '2F Karaoke / 2F Tea Room',
       '2F Exhibition / 2F Work Office',
@@ -512,7 +513,13 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 16 }, date: getISODate('2019-12-03') }
     ],
-    playlists: ['ranked', 'free_for_all', 'deathmatch', 'weapon_roulette'],
+    playlists: [
+      'ranked',
+      'standard',
+      'free_for_all',
+      'deathmatch',
+      'weapon_roulette'
+    ],
     bombSites: [
       '2F Initiation Room / 2F Office',
       '2F Bunk / 2F Day Care',
@@ -582,7 +589,7 @@ export const MINI_MAPS = [
     slug: 'fortress',
     name: 'Fortress',
     release: { season: { id: 12 }, date: getISODate('2018-12-04') },
-    playlists: ['standard'],
+    playlists: ['casual'],
     bombSites: [
       '2F Bedroom / 2F Commander\'s Office',
       '2F Dormitory / 2F Briefing Room',
@@ -606,7 +613,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 24 }, date: getISODate('2021-11-30') }
     ],
-    playlists: ['ranked'],
+    playlists: ['ranked', 'standard'],
     bombSites: [
       '2F Laundry / 2F Games Room',
       '2F Party Room / 2F Office',
@@ -627,7 +634,14 @@ export const MINI_MAPS = [
     slug: 'emerald_plains',
     name: 'Emerald Plains',
     release: { season: { id: 25 }, date: getISODate('2022-04-19') },
-    playlists: ['ranked', 'free_for_all', 'deathmatch', 'golden_gun'],
+    playlists: [
+      'ranked',
+      'standard',
+      'casual',
+      'free_for_all',
+      'deathmatch',
+      'golden_gun'
+    ],
     bombSites: [
       '2F Administration / 2F CEO Office',
       '2F Private Gallery / 2F Meeting',
@@ -664,13 +678,7 @@ export const MINI_MAPS = [
     slug: 'stadium_bravo',
     name: 'Stadium Bravo',
     release: { season: { id: 27 }, date: getISODate('2022-09-06') },
-    playlists: [
-      'ranked',
-      'free_for_all',
-      'deathmatch',
-      'golden_gun',
-      'weapon_roulette'
-    ],
+    playlists: ['golden_gun'],
     bombSites: [
       '2F Armory Lockers / 2F Archives',
       '2F Penthouse / 2F VIP Lounge',
@@ -714,6 +722,35 @@ export const MINI_MAPS = [
     location: 'Offshore',
     content:
       'Nighthaven Labs is a competitive map with many entry points and breach points that will make it tricky to hold a position for too long. Be prepared to be flanked in Nighthaven\'s HQ or to surprise your enemies by breaking in the R&D lab. Be careful to always watch your steps Operators!'
+  },
+  {
+    slug: 'lair',
+    name: 'Lair',
+    release: { season: { id: 32 }, date: getISODate('2023-12-06') },
+    playlists: [
+      'ranked',
+      'standard',
+      'casual',
+      'free_for_all',
+      'deathmatch',
+      'golden_gun',
+      'weapon_roulette'
+    ],
+    bombSites: [
+      '2F Master Office / 2F R6 Room',
+      '1F Briefing / 1F Bunks',
+      '1F Weapon Maintenance / 1F Armory',
+      'B Lab / B Lab Support'
+    ],
+    thumbnail: getMapAssetURL('/thumbnails/lair.jpg'),
+    thumbnailOfficial:
+      'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2bKyUztyfsi7HfL9RGtPb9/e990e5fb5a0815187303bed300ee706e/r6s-maps-lair.jpg',
+    background: getMapAssetURL('/backgrounds/lair.jpg'),
+    backgroundOfficial:
+      'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4vLRVclfpUWOfOXeaxWWRo/7e0a6735fc9084538482804f474c1b69/r6s-maps-header-lair.jpg',
+    location: 'Portugal',
+    content:
+      'Lair is a competitive map across three floors with multiple points of entry and breaching opportunities, making verticality a key factor in your strategy. Expect a flank in Armory Hall or to catch your enemies off guard by infiltrating the R6 room. Stay vigilant in the demon\'s den, Operators!'
   }
 ] satisfies Map[];
 

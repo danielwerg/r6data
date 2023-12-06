@@ -523,5 +523,21 @@ export const SEASONS = [
       'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7iAgVW713n4GV5TDqPGcaD/0e5f03b91908d1cde48c5b56702c1b23/Y8S3_HeavyMettle_OperatorKeyart.jpg',
     releaseDate: getISODate('2023-08-29'),
     url: getSeasonURL('heavymettle')
+  },
+  {
+    id: 32,
+    shorthand: 'Y8S4',
+    slug: 'deep_freeze',
+    name: 'Deep Freeze',
+    year: 8,
+    season: 4,
+    hexColorCode: '#55a1aa',
+    description:
+      'Play it cool and control the battle with the new Portuguese Operator, Tubarão. He is equipped with Zoto Canisters, throwable devices that can stick to any surface and freezes the area, temporarily disabling all gadgets affected by the ice. Enemies stepping into the frozen area are slowed and leave footprints, revealing their location to Tubarão. Deep Freeze also introduces a brand new Ranked map, Lair, item trading with the Marketplace (beta), full launch of the Reputation system, balancing updates, and controller remapping.',
+    thumbnail: getSeasonAssetURL('/y8s4.jpg'),
+    thumbnailOfficial:
+      'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1ouwjLobSzyaGPT0FcoQqv/0e81c84fdf2d3f23383b926ac15470be/Y8S4_OPERATOR_KEYART_540.jpg',
+    releaseDate: getISODate('2023-12-06'),
+    url: getSeasonURL('deepfreeze')
   }
 ] satisfies Season[];

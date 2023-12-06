@@ -23,6 +23,7 @@ The rifle is also equipped with an under-barrel launcher that fires LV Explosive
   - LV Lances can also be destroyed by Impact Grenades or Nitro Cells.
   - Mira's Black Mirrors cannot be destroyed by LV Lances.
   - Clash's CCE Shield can be knocked aside by LV Lances, but not destroyed.
+- Explosive Lance can shatter Black Mirror if a projectile drills into it and explodes from the inside.
 
 ### Strategies/Synergies
 

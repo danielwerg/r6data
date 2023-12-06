@@ -109,7 +109,8 @@ export type OperatorSlug =
   | 'solis'
   | 'brava'
   | 'fenrir'
-  | 'ram';
+  | 'ram'
+  | 'tubarao';
 
 export interface OperatorRatings {
   health: OperatorRatingsRating;

@@ -68,17 +68,10 @@ export const sens = {
         barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
-      },
-      {
-        slug: 'gonne-6',
-        sights: null,
-        barrels: null,
-        grips: null,
-        underBarrels: null
       }
     ]
   },
-  gadgets: { secondary: ['hard_breach_charge', 'claymore'] },
+  gadgets: { secondary: ['hard_breach_charge', 'claymore', 'frag_grenade'] },
   uniqueAbility: {
     slug: 'r.o.u._projector_system',
     name: 'R.O.U. Projector System',

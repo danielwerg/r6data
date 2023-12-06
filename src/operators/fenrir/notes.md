@@ -4,6 +4,8 @@
 
 Fenrir's Unique Gadget is The F-Natt Dread Mine, a throwable device that sticks to surfaces. While deactivated, the mine is bulletproof, and is activated on Fenrir's command. Once activated, the Dread mine will emit a fear gas cloud whenever an Attacker enters its radius. This gas obscures the vision of any Operator within the cloud, making it impossible to see anything in the distance, and leaving them very vulnerable to attack. Fenrir comes equipped with 5 mines and can activate 3 at a time anywhere on the map.
 
+- If an F-NATT Dread Mine is destroyed whilst active, you will lose it's activation code, leaving the player unable to replace it with a different one.
+
 ### Strategies/Synergies
 
 - Gadgets that slow down Attackers, such as Clash's Electro Shield, Melusi's Banshee Device, and Lesion's Gu Mines, can help prevent Defenders from escaping the Dread Mine's smoke cloud.
