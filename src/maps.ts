@@ -726,7 +726,7 @@ export const MINI_MAPS = [
   {
     slug: 'lair',
     name: 'Lair',
-    release: { season: { id: 32 }, date: getISODate('2023-11-28') },
+    release: { season: { id: 32 }, date: getISODate('2023-12-06') },
     playlists: [
       'ranked',
       'standard',
