@@ -26,8 +26,8 @@ To get ready to work on the codebase, please do the following:
 - Add new operator
   - Add `src/operators/OPERATOR_SLUG` (once done, import in `src/operators/index.ts`)
   - Update `OperatorSlug` in `src/operators/types.ts`
-  - Add icon to `src/assets/operators/icons/svgs/OPERATOR_SLUG.svg`
-  - Add unique ability to `src/assets/operators/abilities/svgs/UNIQUE_ABILITY_SLUG.svg`
+  - Add icon to `src/assets/operators/icons/svgs/OPERATOR_SLUG.svg` <!-- M0 350H350V0H0ZM45 45h260v260h-260ZM73 73h204v204H73Z -->
+  - Add unique ability to `src/assets/operators/abilities/svgs/UNIQUE_ABILITY_SLUG.svg` <!-- M0 0H512V512H0ZM16 496h480v-480H16Z -->
   - Add `src/assets/operators/bodies/OPERATOR_SLUG.EXT`
   - Add `src/assets/operators/figures/OPERATOR_SLUG.EXT`
   - Add `src/assets/operators/cards/OPERATOR_SLUG.EXT`
@@ -42,7 +42,7 @@ To get ready to work on the codebase, please do the following:
   - Append to `src/maps.ts`
   - Add `src/assets/maps/thumbnails/MAP_SLUG.EXT`
   - Add `src/assets/maps/backgrounds/MAP_SLUG.EXT`
-- Optionally update operator notes using [Rainbow Six Wiki](https://rainbowsix.fandom.com/wiki/Special:RecentChanges?hidebots=1&hidelog=1&limit=3000&days=90&enhanced=1&hidecategorization=1&urlversion=2) <!-- Last updated: 2023-11-02 -->
+- Optionally update operator notes using [Rainbow Six Wiki](https://rainbowsix.fandom.com/wiki/Special:RecentChanges?hidebots=1&hidelog=1&limit=3000&days=90&enhanced=1&hidecategorization=1&urlversion=2) <!-- Last updated: 2023-11-06 -->
 - Update `LAST_UPDATED` variable in `src/meta.ts`
 
 ---

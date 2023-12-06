@@ -77,6 +77,7 @@ import { solis } from './solis';
 import { brava } from './brava';
 import { fenrir } from './fenrir';
 import { ram } from './ram';
+import { tubarao } from './tubarao';
 
 export {
   recruitDefense,
@@ -149,7 +150,8 @@ export {
   solis,
   brava,
   fenrir,
-  ram
+  ram,
+  tubarao
 };
 
 export * from './utils';
@@ -226,7 +228,8 @@ export const MINI_OPERATORS = [
   solis,
   brava,
   fenrir,
-  ram
+  ram,
+  tubarao
 ];
 
 export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {

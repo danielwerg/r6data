@@ -21,6 +21,7 @@ Ash comes equipped with the M120 CREM. It can shoot up to two Breaching Rounds, 
 - The Breaching Rounds can easily destroy Deployable Shields and can injure the Operator behind it.
 - The explosion can destroy Barbed Wire very quickly.
 - Certain destructible walls can't be completely covered by Reinforcements, and an uncovered destructible gap exists at the top of the wall. Ash can easily destroy the gaps with the Breaching Rounds, creating certain angles and allowing projectiles to go through.
+- Breaching Round can shatter Black Mirror if a projectile drills into it and explodes from the inside.
 
 ### Counters
 

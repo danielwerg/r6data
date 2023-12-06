@@ -73,7 +73,7 @@ export const maestro = {
     slug: 'evil_eye',
     name: 'Evil Eye',
     type: 'count',
-    startingAmount: 2,
+    startingAmount: 3,
     description:
       'Bulletproof camera with a turret that manually fires lasers to injure opponents or destroy devices.',
     info: 'Each Evil Eye has unlimited ammo but temporarily overheats when firing the turret for too long.',

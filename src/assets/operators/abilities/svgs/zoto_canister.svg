@@ -1,0 +1,52 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  fill="#ffffff"
+  stroke="none"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__tubarao r6data__operator__ability__zoto_canister"
+  id="zoto_canister"
+>
+  <defs>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        d="M186 177 173 141 238 55 242 76 229 121 261 89 294 113 329 83 344 95 311 125 319 131 334 137 325 187 256 278Z"
+      />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        d="M214 170C214 154 298 154 298 170 298 186 214 186 214 170"
+      />
+      <path fill="black" d="M210 238 218 249V377H210Z" />
+      <path fill="black" d="M226 251 260 261V383L226 373Z" />
+      <path
+        fill="black"
+        d="M268 242C283 242 299 243 314 235V368L306 376H270Z"
+      />
+    </mask>
+  </defs>
+  <path
+    mask="url(#mask-1)"
+    d="M238 29C280 64 325 98 375 125L273 238C231 203 186 169 136 142Z"
+  />
+  <path d="M90 237 78 153 152 182 178 239 173 268 120 221 123 245Z" />
+  <path d="M16 222 175 282 183 395 72 282 89 330 182 425V435L63 342Z" />
+  <path d="M132 489 62 447 121 411 149 424 180 448 148 463 188 471Z" />
+  <path d="M339 236 361 178 440 148 428 233 394 241 400 188 374 201Z" />
+  <path
+    d="M339 277 496 220 448 341 334 430 366 367 417 332 442 277H411L339 317Z"
+  />
+  <path d="M326 468 378 460 400 447 364 425 391 404 454 442 384 489Z" />
+  <g mask="url(#mask-2)">
+    <path d="M196 170C196 142 316 142 316 170 316 198 196 198 196 170" />
+    <path d="M214 170C214 154 298 154 298 170 298 186 214 186 214 170" />
+    <path
+      d="M196 170H316V204l6 6V368l6 6v20l-8 8v28l5 9C325 512 198 512 199 439l5-9v-28l-8-8v-20l6-6V234l-6-6Z"
+    />
+  </g>
+</svg>

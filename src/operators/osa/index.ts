@@ -65,7 +65,7 @@ export const osa = {
       }
     ]
   },
-  gadgets: { secondary: ['smoke_grenade', 'claymore', 'impact_emp_grenade'] },
+  gadgets: { secondary: ['claymore', 'frag_grenade', 'impact_emp_grenade'] },
   uniqueAbility: {
     slug: 'talon-8_clear_shield',
     name: 'TALON-8 Clear Shield',

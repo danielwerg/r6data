@@ -82,17 +82,10 @@ export const lion = {
         barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
         grips: null,
         underBarrels: ['laser']
-      },
-      {
-        slug: 'gonne-6',
-        sights: null,
-        barrels: null,
-        grips: null,
-        underBarrels: null
       }
     ]
   },
-  gadgets: { secondary: ['stun_grenade', 'claymore', 'impact_emp_grenade'] },
+  gadgets: { secondary: ['stun_grenade', 'claymore', 'frag_grenade'] },
   uniqueAbility: {
     slug: 'ee-one-d',
     name: 'EE-ONE-D',
