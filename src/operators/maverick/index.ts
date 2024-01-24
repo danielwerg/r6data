@@ -65,7 +65,7 @@ export const maverick = {
       }
     ]
   },
-  gadgets: { secondary: ['stun_grenade', 'claymore'] },
+  gadgets: { secondary: ['stun_grenade', 'claymore', 'smoke_grenade'] },
   uniqueAbility: {
     slug: 'breaching_torch',
     name: 'Breaching Torch',

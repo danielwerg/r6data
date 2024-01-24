@@ -65,7 +65,7 @@ export const kapkan = {
       }
     ]
   },
-  gadgets: { secondary: ['impact_grenade', 'nitro_cell'] },
+  gadgets: { secondary: ['bulletproof_camera', 'nitro_cell'] },
   uniqueAbility: {
     slug: 'entry_denial_device',
     name: 'Entry Denial Device',

@@ -8,7 +8,7 @@ export const MPS = [
     categorySlug: 'mp',
     description:
       'Small sized submachine gun with a high rate of fire. Lethal package in disciplined hands.',
-    damage: 35,
+    damage: 32,
     fireRate: 1270,
     mobility: 50,
     capacity: 16,
