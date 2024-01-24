@@ -76,7 +76,7 @@ Echo's unique gadgets are two hovering drones called Yokai, which can stick to f
 - IQ and her Electronics Scanner can quickly identify the Yokai's location, as well as Echo himself while he's on his PDA, making her the most dangerous detriment to their survival.
 - Zero's ARGUS Camera and Twitch's Shock Drone lasers can destroy Yokai drones.
 - The latter applies to Kali's LV Lances and Flores' RCE-RATERO Drones.
-- "Cooked" Frag Grenades and using other explosive devices can be useful for destroying Yokai if an approximate location is known, as falling down and moving away takes a considerable amount of time for the Yokai.
+- Using explosive devices can be useful for destroying Yokai if an approximate location is known, as falling down and moving away takes a considerable amount of time for the Yokai.
 - Dokkaebi's Logic Bomb can hack into a Yokai drone as with any other surveillance device. It can also force Echo off his PDA for a short amount of time as Echo must reset his PDA.
 - Nøkk's HEL will remove her image from Echo's drones. Echo's drone will show that she is nearby, however.
 - Finka's Adrenal Surge cleanses the disorientation effect from Echo's Yokai drone.

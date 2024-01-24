@@ -63,7 +63,7 @@ export const tubarao = {
     slug: 'zoto_canister',
     name: 'Zoto Canister',
     type: 'count',
-    startingAmount: 4,
+    startingAmount: 3,
     description:
       'Throwable device that sticks to surfaces and releases a freezing gas, deactivating devices and slowing enemies.',
     info: null,

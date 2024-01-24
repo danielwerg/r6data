@@ -65,7 +65,7 @@ export const thunderbird = {
       }
     ]
   },
-  gadgets: { secondary: ['barbed_wire', 'bulletproof_camera'] },
+  gadgets: { secondary: ['barbed_wire', 'bulletproof_camera', 'deployable_shield'] },
   uniqueAbility: {
     slug: 'kona_station',
     name: 'KÓNA Station',

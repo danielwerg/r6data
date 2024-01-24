@@ -2,7 +2,9 @@
 
 ## Gameplay Description
 
-Tubarão's Unique Gadget is the Zoto Canister, a throwable device that detonates on impact, creating a temporary frozen area which deactivates any electronic or mechanical gadgets in it's radius for 12 seconds, as well as slowing down and leaving the footprints of any Attacker that walks into it.
+Tubarão's Unique Gadget is the Zoto Canister, a throwable device that detonates on impact, creating a temporary frozen area which deactivates any electronic or mechanical gadgets in its radius for 12 seconds, as well as slowing down and leaving the footprints of any Attacker that walks into it.
+
+- Electrical insulation effect remains for 1.5 seconds after Canister destruction. 
 
 ### Strategies/Synergies
 
