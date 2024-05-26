@@ -539,5 +539,21 @@ export const SEASONS = [
       'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1ouwjLobSzyaGPT0FcoQqv/0e81c84fdf2d3f23383b926ac15470be/Y8S4_OPERATOR_KEYART_540.jpg',
     releaseDate: getISODate('2023-12-06'),
     url: getSeasonURL('deepfreeze')
+  },
+  {
+    id: 33,
+    shorthand: 'Y9S1',
+    slug: 'deadly_omen',
+    name: 'Deadly Omen',
+    year: 9,
+    season: 1,
+    hexColorCode: '#f14b37',
+    description:
+      'Operation Deadly Omen marks a historic moment as the first villain Operator, Deimos, joins the roster. Track down your enemies with his DeathMARK gadget, a flying probe which reveals both a designated target and Deimos’ locations until one is eliminated. Year 9 Season 1 also brings an impactful upgrade for attachments & ADS, and revamped shield mechanics to reinforce Siege\'s tactical gameplay. Additionally Deadly Omen introduces player protection improvements as well as an inventory management menu for you to optimize your gear, and much more.',
+    thumbnail: getSeasonAssetURL('/y9s1.jpg'),
+    thumbnailOfficial:
+      'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/JH6jp9ShwXjV3f4nPf7tv/b8ad7620efa32c409be72279a6a369fb/Y9S1_OperatorKeyart_FINAL.jpg',
+    releaseDate: getISODate('2024-03-12'),
+    url: getSeasonURL('deadlyomen')
   }
 ] satisfies Season[];

@@ -12,13 +12,6 @@ Echo's unique gadgets are two hovering drones called Yokai, which can stick to f
   - After a Yokai is deployed, their camera feeds are added to the Defenders' camera pool, inside a separate list to the default Security Cameras.
   - Echo and his teammates can scan and tag enemies with the Yokai drones.
   - All Defenders can use Yokai's cameras, but only Echo can use ultrasonic burst on Yokai drones.
-  - The Yokai drone is an electronic gadget, and can thus be:
-    - Detected by IQ's Electronics Detector
-      - IQ can also detect Echo's PDA whenever Echo is using the PDA.
-    - Disabled by Thatcher's EMP Grenades for 15 seconds or Impact EMP Grenades for 9 seconds; the Yokai will drop to the ground if it was attached to the ceiling when it was hit by the EMP. Vision on the drone will be disrupted and movement will be impaired.
-    - Destroyed by Twitch's Shock Drones.
-    - Hacked by Brava's Kludge Drones.
-      - When hacked Yokai drones are recaptured by Mozzie's Pest or Mozzie operated Kludge Drones, Echo will regain control of the drone.
 - On the ground, Echo can move the Yokai drone horizontally in all four directions, but cannot use its ultrasonic bursts.
   - The Yokai drones are small enough to be able to fit through drone holes.
   - On the ground, the Yokai have the ability to launch itself vertically upwards. During the upward ascent, if the Yokai comes into contact with a flat ceiling (and certain slanted surfaces), it will attach and secure itself, and enter the ceiling mode.
@@ -72,11 +65,15 @@ Echo's unique gadgets are two hovering drones called Yokai, which can stick to f
 
 ### Counters
 
-- Thatcher's EMP Grenades will disable the Yokai for 15 seconds or Impact EMP Grenades for 9 seconds and will force Yokai drones to detach from the ceiling and render them virtually useless.
-- IQ and her Electronics Scanner can quickly identify the Yokai's location, as well as Echo himself while he's on his PDA, making her the most dangerous detriment to their survival.
+- The Yokai drone is an electronic gadget, and can thus be:
+  - IQ and her Electronics Scanner can quickly identify the Yokai's location, as well as Echo himself while he's on his PDA, making her the most dangerous detriment to their survival.
+  - Disabled by Thatcher's EMP Grenades for 15 seconds or Impact EMP Grenades for 9 seconds; the Yokai will drop to the ground if it was attached to the ceiling when it was hit by the EMP. Vision on the drone will be disrupted and movement will be impaired.
+  - Destroyed by Twitch's Shock Drones.
+  - Hacked by Brava's Kludge Drones.
+    - When hacked Yokai drones are recaptured by Mozzie's Pest or Mozzie operated Kludge Drones, Echo will regain control of the drone.
 - Zero's ARGUS Camera and Twitch's Shock Drone lasers can destroy Yokai drones.
-- The latter applies to Kali's LV Lances and Flores' RCE-RATERO Drones.
 - Using explosive devices can be useful for destroying Yokai if an approximate location is known, as falling down and moving away takes a considerable amount of time for the Yokai.
+- The latter applies to Kali's LV Lances and Flores' RCE-RATERO Drones.
 - Dokkaebi's Logic Bomb can hack into a Yokai drone as with any other surveillance device. It can also force Echo off his PDA for a short amount of time as Echo must reset his PDA.
 - Nøkk's HEL will remove her image from Echo's drones. Echo's drone will show that she is nearby, however.
 - Finka's Adrenal Surge cleanses the disorientation effect from Echo's Yokai drone.

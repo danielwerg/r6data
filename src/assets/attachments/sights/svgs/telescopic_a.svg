@@ -3,10 +3,14 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
-  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__scope_2.0x"
-  id="scope_2.0x"
+  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__telescopic_a"
+  id="telescopic_a"
 >
-  <style>#optic { color: #ff0b2f }</style>
+  <style>
+    #optic {
+      color: #ff0b2f
+    }
+  </style>
   <defs>
     <mask id="mask">
       <rect fill="#ffffff" x="108" y="99" width="10" height="10" />

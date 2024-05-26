@@ -1,0 +1,44 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+  stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__grip r6data__attachment__grip__horizontal_grip"
+  id="horizontal_grip"
+>
+  <defs>
+    <mask id="mask">
+      <rect fill="white" width="200" height="200" />
+      <path fill="black" d="M27 116c-2 0-2-4 0-4h42c3 0 3 4 0 4Z" />
+      <path fill="black" d="M83 116c-2 0-2-4 0-4h42c3 0 3 4 0 4Z" />
+    </mask>
+  </defs>
+  <path
+    fill="#000000"
+    mask="url(#mask)"
+    d="M19 103H188V127h-14v-4h-17v4h-14v-4h-17v4h-14v-4h-17v4h-14v-4h-17v4h-14v-4h-17v4h-14Z"
+  />
+  <path fill="#000000" d="M188 123H19" />
+  <path fill="#000000" d="M12 103 29 73H188V104Z" />
+  <path
+    id="hole"
+    d="M35 79c2.5-4.3 10.3.2 7.8 4.5l-8 13.9c-2.5 4.3-10.3-.2-7.8-4.5Z"
+  />
+  <use href="#hole" transform="translate(19)" />
+  <use href="#hole" transform="translate(38)" />
+  <use href="#hole" transform="translate(57)" />
+  <path fill="#000000" d="M27 116c-2 0-2-4 0-4h42c3 0 3 4 0 4Z" />
+  <path fill="#000000" d="M83 116c-2 0-2-4 0-4h42c3 0 3 4 0 4Z" />
+  <path fill="#000000" d="M105 77h78v42h-78Z" />
+  <path
+    fill="#000000"
+    d="M116 81v34m2-34v34M129 81v34m2-34v34M142 81v34m2-34v34M155 81v34m2-34v34"
+  />
+  <path
+    fill="#000000"
+    d="M164 97a1 1 0 0015 0 1 1 0 00-15 0m2 0a1 1 0 0011 0 1 1 0 00-11 0"
+  />
+  <path fill="#000000" d="M170 81h3V115H170Z" />
+</svg>

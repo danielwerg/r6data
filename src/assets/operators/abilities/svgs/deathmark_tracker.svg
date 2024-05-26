@@ -1,0 +1,62 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  fill="#ffffff"
+  stroke="none"
+  class="r6data__operator r6data__operator__ability r6data__operator__ability__deimos r6data__operator__ability__deathmark_tracker"
+  id="deathmark_tracker"
+>
+  <defs>
+    <mask id="mask-1">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <g fill="black">
+        <path d="M177 258 177 252H192L196 258Z" />
+        <path d="M179 263H199L202 268H181Z" />
+        <path d="M183 272h21l3 5h-22Z" />
+        <path d="M187 281h23l2 4h-23Z" />
+        <path d="M191 290h24l3 5h-25Z" />
+      </g>
+      <path fill="black" d="M200 252 242 276H214Z" />
+      <path fill="black" d="M218 282H252L275 295H226Z" />
+    </mask>
+    <mask id="mask-2">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path fill="black" d="M359 241H394V259L359 270Z" />
+    </mask>
+    <mask id="mask-3">
+      <rect fill="white" x="0" y="0" width="512" height="512" />
+      <path
+        fill="black"
+        id="tail_rotor_gap"
+        d="M448 263a16 16 0 0113-22V252L459 256Z"
+      />
+      <use href="#tail_rotor_gap" transform="rotate(120 463 257)" />
+      <use href="#tail_rotor_gap" transform="rotate(240 463 257)" />
+    </mask>
+  </defs>
+  <g id="rotor">
+    <path d="M218 185h40v10h-40Z" />
+    <path
+      d="M265 187 277 184 307 183 448 184 463 188 461 192 305 201 265 191Z"
+    />
+    <path d="M212 187 200 184 170 183 29 184 16 185 19 192 172 201 212 191Z" />
+  </g>
+  <path d="M66 271 143 225 166 225V233H160L160 243 148 249 148 234 99 263Z" />
+  <path
+    d="M92 271 106 267 143 244 143 259 156 253 179 309 173 315 135 313V309H122V312H113L108 303 125 295 112 274 96 280Z"
+  />
+  <path
+    mask='url(#mask-1)'
+    d="M173 218C185 215 202 221 205 229V247L294 292 329 294 305 308 306 331H291L281 308 205 314 198 331H183V315L188 310 162 249 167 236 172 234Z"
+  />
+  <path
+    mask='url(#mask-2)'
+    d="M211 218H225V207C225 198 249 198 249 207V218H273L278 228 405 233V262L337 287 297 284 211 243Z"
+  />
+  <path
+    mask='url(#mask-3)'
+    d="M413 235H474L496 251 488 268 468 278 376 281 413 267Z"
+  />
+</svg>

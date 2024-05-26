@@ -14,7 +14,7 @@
     d="M43 33Q43 12 64 12H150Q171 12 171 33V171H160Q160 182 149 182H134V171H80V182H65Q54 182 54 171H43ZM57 38Q57 27 68 27H146Q157 27 157 38V92Q157 103 146 103H68Q57 103 57 92Z"
   />
   <g id="optic">
-    <ellipse fill="currentColor" stroke="none" cx="107" cy="65" rx="0.5" />
+    <ellipse fill="currentColor" stroke="none" cx="107" cy="65" rx="1" />
     <ellipse stroke="currentColor" cx="107" cy="65" rx="6" />
     <path stroke="currentColor" d="M101 65h-3M107 59v-3M113 65h3M107 71v3" />
   </g>

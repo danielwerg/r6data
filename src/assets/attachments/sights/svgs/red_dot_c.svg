@@ -24,7 +24,7 @@
     />
   </g>
   <g id="optic">
-    <ellipse fill="currentColor" stroke="none" cx="78" cy="97" rx="0.5" />
+    <ellipse fill="currentColor" stroke="none" cx="78" cy="97" rx="1" />
   </g>
   <path
     fill="#000000"

@@ -6,6 +6,7 @@ export const SHIELDS = [
     slug: 'le_roc_shield',
     name: 'Le Roc Shield',
     categorySlug: 'shield',
+    subCategorySlug: [],
     description:
       'Can expand his Extendable Shield to offer full protection while standing.',
     damage: 0,
@@ -26,6 +27,7 @@ export const SHIELDS = [
     slug: 'ballistic_shield',
     name: 'Ballistic Shield',
     categorySlug: 'shield',
+    subCategorySlug: [],
     description: 'Protective shield equipped with a secondary weapon.',
     damage: 0,
     fireRate: 0,
@@ -45,6 +47,7 @@ export const SHIELDS = [
     slug: 'g52-tactical_shield',
     name: 'G52-Tactical Shield',
     categorySlug: 'shield',
+    subCategorySlug: [],
     description:
       'Triggers the flash attached to his ballistic shield to temporarily blind enemies.',
     damage: 0,
@@ -65,6 +68,7 @@ export const SHIELDS = [
     slug: 'cce_shield',
     name: 'CCE Shield',
     categorySlug: 'shield',
+    subCategorySlug: [],
     description:
       'Extendable electro shield capable of slowing down enemies, causing damage over time.',
     damage: 5,

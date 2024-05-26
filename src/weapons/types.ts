@@ -1,9 +1,15 @@
-import type { SVGandPNG, WeaponCategorySlug, WeaponSlug } from '../types';
+import type {
+  SVGandPNG,
+  WeaponSlug,
+  WeaponCategorySlug,
+  WeaponSubCategorySlug
+} from '../types';
 
 export interface Weapon {
   slug: WeaponSlug;
   name: string;
   categorySlug: WeaponCategorySlug;
+  subCategorySlug: (WeaponCategorySlug | WeaponSubCategorySlug)[];
   description: string;
   damage: number;
   fireRate: number;

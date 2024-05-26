@@ -2,10 +2,11 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_BARRELS_NO_EXTENDED_BARREL,
-  COMMON_GRIPS,
-  COMMON_SIGHTS_1X
+  BARRELS_PRECISION,
+  BARRELS_NO_EXTENDED_BARREL,
+  GRIPS,
+  MAGNIFYING_SIGHTS,
+  NON_MAGNIFYING_SIGHTS_COMMON
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/nomad.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/airjab_launcher.svg';
@@ -35,29 +36,23 @@ export const nomad = {
     primary: [
       {
         slug: 'ak-74m',
-        sights: [
-          ...COMMON_SIGHTS_1X,
-          'scope_1.5x',
-          'scope_2.0x',
-          'scope_2.5x_a',
-          'scope_2.5x_b'
-        ],
-        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS_NO_EXTENDED_BARREL,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'arx200',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
-        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
-        grips: COMMON_GRIPS,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS_NO_EXTENDED_BARREL,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
     secondary: [
       {
         slug: '.44_mag_semi-auto',
-        // NOTE: Forced scope_3.0x_.44_mag
+        // NOTE: Forced telescopic_.44_mag_semi-auto
         sights: null,
         barrels: null,
         grips: null,
@@ -66,7 +61,7 @@ export const nomad = {
       {
         slug: 'prb92',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }

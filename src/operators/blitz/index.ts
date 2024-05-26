@@ -1,7 +1,7 @@
 import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
-import { COMMON_BARRELS_HANDGUN_OR_MARKSMAN } from '../constants';
+import { BARRELS_PRECISION } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/blitz.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/flash_shield.svg';
 import notes from './notes.md?raw';
@@ -40,7 +40,7 @@ export const blitz = {
       {
         slug: 'p12',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }

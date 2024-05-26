@@ -29,7 +29,7 @@ export interface Season {
   url: string | null;
 }
 
-export type SeasonYear = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+export type SeasonYear = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 export type SeasonSeason = 0 | 1 | 2 | 3 | 4;
 
 export type SeasonShorthand = `Y${SeasonYear}S${SeasonSeason}`;
@@ -67,7 +67,8 @@ export type SeasonSlug =
   | 'commanding_force'
   | 'dread_factor'
   | 'heavy_mettle'
-  | 'deep_freeze';
+  | 'deep_freeze'
+  | 'deadly_omen';
 
 export type GadgetSlugDefense =
   | 'deployable_shield'
@@ -199,7 +200,8 @@ export type WeaponSlug =
   | 'ballistic_shield'
   | 'g52-tactical_shield'
   | 'cce_shield'
-  | 'gonne-6';
+  | 'gonne-6'
+  | '.44_vendetta';
 
 export type WeaponCategorySlug =
   | 'assault_rifle'
@@ -212,9 +214,12 @@ export type WeaponCategorySlug =
   | 'shield'
   | 'launcher';
 
+export type WeaponSubCategorySlug = 'revolver' | 'slug_shotgun' | 'sniper';
+
 export type SideSlug = 'defense' | 'attack';
 
 export type SightSlug =
+  | 'iron_sight'
   | 'red_dot_a'
   | 'red_dot_b'
   | 'red_dot_c'
@@ -227,15 +232,16 @@ export type SightSlug =
   | 'reflex_b'
   | 'reflex_c'
   | 'reflex_d'
-  | 'scope_1.5x'
-  | 'scope_2.0x'
-  | 'scope_2.5x_a'
-  | 'scope_2.5x_b'
-  | 'scope_3.0x_.44_mag'
-  | 'scope_3.0x'
-  | 'scope_4.0x'
-  | 'scope_5.0x'
-  | 'scope_12.0x';
+  | 'non-magnifying_.44_vendetta'
+  | 'magnified_a'
+  | 'magnified_b'
+  | 'magnified_c'
+  | 'telescopic_a'
+  | 'telescopic_b'
+  | 'telescopic_.44_mag_semi-auto'
+  | 'telescopic_ots-03'
+  | 'telescopic_csrx_300_a'
+  | 'telescopic_csrx_300_b';
 
 export type BarrelSlug =
   | 'flash_hider'
@@ -244,6 +250,6 @@ export type BarrelSlug =
   | 'suppressor'
   | 'extended_barrel';
 
-export type GripSlug = 'vertical_grip' | 'angled_grip';
+export type GripSlug = 'vertical_grip' | 'angled_grip' | 'horizontal_grip';
 
 export type UnderBarrelSlug = 'laser';

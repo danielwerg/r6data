@@ -45,4 +45,4 @@ Bandit's unique gadgets are four Crude Electrical Devices, a.k.a. Shock Wires. T
 - Kali's LV Lances can destroy Shock Wires even through Reinforced Walls.
 - Zero's Argus Camera lasers can destroy Shock Wires if deployed correctly.
 - Flores' RCE-RATERO Drones allows him to destroy Shock Wires and prevent Bandit Tricking from safety.
-- Brava's Kludge Drone will overheat and destroy Shock Wires instead of taking control of them, but will still be destroyed if contacting an electrified surface.
+- Brava's Kludge Drone will cause the shock wire to overheat and be destroyed instead of taking control of them, but will still be destroyed if contacting an electrified surface.

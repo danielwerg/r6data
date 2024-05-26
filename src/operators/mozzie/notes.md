@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-Mozzie is armed with the Pest Launcher, a slingshot that launches small robots called Pests that can hack the Attacking team's drones (including Twitch's Shock Drones) and make them his own.
+Mozzie is armed with the Pest Launcher, a slingshot that launches small robots called Pests that can hack the Attacking team's drones (including Twitch's Shock Drones and and Brava's Kludge Drones) and make them his own.
 
 - Mozzie can only hack Attacker ground recon Drones (i.e. the gadgets specifically named Drones), including Twitch's Shock Drones. Echo's Yokai and Lion's EE-ONE-D are not such drones and do not interact with Pests.
 - Mozzie can hack Attacker drones in two ways: Shoot the Pest directly onto the drone, or shoot it onto a surface and wait for a drone to get in its radius of 3 meters.

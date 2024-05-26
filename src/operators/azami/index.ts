@@ -2,10 +2,11 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS,
-  COMMON_SIGHTS_1X
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS,
+  MAGNIFYING_SIGHTS,
+  NON_MAGNIFYING_SIGHTS_COMMON
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/azami.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/kiba_barrier.svg';
@@ -35,16 +36,16 @@ export const azami = {
     primary: [
       {
         slug: '9x19vsn',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'acs12',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
         barrels: null,
-        grips: COMMON_GRIPS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -52,13 +53,14 @@ export const azami = {
       {
         slug: 'd-50',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }
     ]
   },
   gadgets: { secondary: ['barbed_wire', 'impact_grenade'] },
+  // The Kiba Barrier has health and is vulnerable to bullets. The caliber of the weapon will affect the damage dealt to the barriers.
   uniqueAbility: {
     slug: 'kiba_barrier',
     name: 'Kiba Barrier',

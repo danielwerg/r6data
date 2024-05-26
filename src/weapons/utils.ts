@@ -1,5 +1,5 @@
 import { getAssetURL } from '../utils';
-import type { WeaponCategorySlug } from '../types';
+import type { WeaponCategorySlug, WeaponSubCategorySlug } from '../types';
 import type { Weapon } from './types';
 
 export const getWeaponAssetURL = (path: string) =>
@@ -26,14 +26,20 @@ export const weaponHasChamberBullet = (weapon: Weapon) => {
   else return true;
 };
 
-export const weaponCategorySlugToName = (slug: WeaponCategorySlug) =>
+/** Convert category or sub category `slug` to `name` (ex: smg -> Submachine Gun) */
+export const weaponCategorySlugToName = (
+  slug: WeaponCategorySlug | WeaponSubCategorySlug
+) =>
   ({
     assault_rifle: 'Assault Rifle',
     smg: 'Submachine Gun',
     lmg: 'Light Machine Gun',
     marksman: 'Marksman Rifle',
+    sniper: 'Sniper Rifle',
     handgun: 'Handgun',
+    revolver: 'Revolver',
     shotgun: 'Shotgun',
+    slug_shotgun: 'Slug Shotgun',
     mp: 'Machine Pistol',
     shield: 'Shield',
     launcher: 'Launcher'

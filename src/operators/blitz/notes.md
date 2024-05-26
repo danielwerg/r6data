@@ -2,7 +2,7 @@
 
 ## Gameplay Description
 
-Blitz's unique gadget is the G52-Tactical Shield, a Ballistic Shield loaded with forward-facing flash charges that Blitz can manually detonate, blinding anyone within the Shield's range. Unlike other Shield Operators, Blitz can also wield his shield up while sprinting.
+Blitz's unique gadget is the G52-Tactical Shield, a Ballistic Shield loaded with forward-facing flash charges that Blitz can manually detonate, blinding anyone within the Shield's range.
 
 - Blitz will absorb 66% of damage dealt from any source of explosive damage. This applies to all operators standing behind the shield.
 - Blitz's Flash Shield has 4 charges. When his Shield equipped, Blitz can activate the shield's Flash Charges, blinding anyone in front of him.
@@ -11,8 +11,7 @@ Blitz's unique gadget is the G52-Tactical Shield, a Ballistic Shield loaded with
     - At 7 meters a Flash Charge will cause minimal vision impairment.
   - Facing away from Blitz will not reduce the effects of the flash.
   - There is a 7 second cooldown between flashes.
-- Blitz is able to sprint with his shield up in front of him. This allows him to approach enemies with his head and torso protected. This contrasts other Shield using Operators who lower the shield to the side while sprinting. However, this will leave the lower half of his legs exposed.
-  - Blitz's sprint speed with his shield equipped is equivalent to a regular Heavy Armored Operator's sprint speed. When unequipped, Blitz moves like a regular Medium Armored Operator instead.
+- Blitz's sprint speed with his shield equipped is equivalent to a regular Heavy Armored Operator's sprint speed. When unequipped, Blitz moves like a regular Medium Armored Operator instead.
 
 ### Strategies/Synergies
 

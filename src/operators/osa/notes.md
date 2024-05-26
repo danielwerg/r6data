@@ -49,6 +49,7 @@ Osa's Unique Gadget is the Talon-8 Clear Shield, a rectangular shield made of bu
 - Talon Shields are easily destroyed by explosives, such as Nitro Cells and Impact Grenades.
   - This also includes friendly gadgets, such as Frag Grenades.
 - A melee attack will shatter Talon Shields, preventing both Defenders and Attackers from seeing through them.
+- Oryx is able to Remah Dash directly through the shield and knock back any attackers on the other side, subsequently destroying the shield.
 - Fire (Tachanka's Shumikha Grenade and Goyo's Volcán Canisters) and Smoke's Gas Grenade can force attackers away from the Talon Shield's protection
 - While the Talon Shield is being carried, a melee strike will not render the shield's glass opaque, nor will explosives destroy it. Instead, the shield will sway away from Osa's front to the right and exposing her to attacks.
   - Osa also sway in a similar manner if she is shocked by Clash's CCE Shield.

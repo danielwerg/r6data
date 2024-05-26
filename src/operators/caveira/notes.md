@@ -68,3 +68,4 @@ The ability Interrogation allows Caveira to interact with downed attackers and r
 - Nomad's Airjabs can give away Caveira's position and allow Attackers to take advantage of it.
 - The victim of hers can crawl under a table to prevent interrogation.
 - Caveira cannot begin an Interrogation if the target is in the process of being revived by Finka's Adrenal Surge.
+- Deimos' DeathMARK can find her location and track her every move.

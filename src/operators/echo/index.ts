@@ -2,10 +2,10 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_SIGHTS_1X,
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/echo.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/yokai.svg';
@@ -35,17 +35,17 @@ export const echo = {
     primary: [
       {
         slug: 'supernova',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: ['suppressor'],
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'mp5sd',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         // NOTE: Forced suppressor
         barrels: null,
-        grips: COMMON_GRIPS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -53,14 +53,14 @@ export const echo = {
       {
         slug: 'p229',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'bearing_9',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
         grips: null,
         underBarrels: ['laser']
       }

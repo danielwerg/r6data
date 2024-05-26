@@ -2,10 +2,11 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS,
-  COMMON_SIGHTS_1X
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS,
+  MAGNIFYING_SIGHTS,
+  NON_MAGNIFYING_SIGHTS_COMMON
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/capitao.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/tactical_crossbow.svg';
@@ -35,22 +36,16 @@ export const capitao = {
     primary: [
       {
         slug: 'para-308',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'm249',
-        sights: [
-          ...COMMON_SIGHTS_1X,
-          'scope_1.5x',
-          'scope_2.0x',
-          'scope_2.5x_a',
-          'scope_2.5x_b'
-        ],
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
         barrels: ['flash_hider', 'compensator', 'muzzle_brake'],
-        grips: COMMON_GRIPS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -58,7 +53,7 @@ export const capitao = {
       {
         slug: 'prb92',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       },

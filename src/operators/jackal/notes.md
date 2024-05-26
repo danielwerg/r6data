@@ -17,6 +17,7 @@ Jackal's unique gadget is the Eyenox Model III, which can track enemy footprints
 - The Eyenox will produce temporary vision-disrupting static if Jackal takes damage with it active.
   - Shock damage from Bandit's Shock Wires or Kaid's Electroclaws will cause the entire view to be temporarily obscured in static.
 - Mute's Signal Disruptors prevent the Eyenox from scanning footprints if Jackal is within their range. If the Eyenox is active, the Signal Disruptors will also produce vision-obscuring static that grows in intensity the closer to the Disruptor Jackal is.
+  - This effect is similar to effect produce on drones when near but not disabled
 - If Jackal tracks Caveira, the Eyenox will not produce 3D pings on Caveira's location when her Silent Step is active.
   - Regardless if 3D pings are created or not, Caveira will still be identified for the Attackers when Jackal begins the tracking.
 

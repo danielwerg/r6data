@@ -22,6 +22,6 @@ Grim's Unique Gadget is the Kawan Hive Launcher. It fires canisters which attach
 - Mute's Signal Jammers not only prevent Hive Canisters from deploying their Swarms, they also prevent any Defender within their radius from being detected by the swarm. Defenders who are being tracked by a Swarm can also enter a Signal Jammer's radius to remove the Swarm.
 - Surfaces electrified by Bandit's Shock Wires or Kaid's Electroclaws will destroy any Hive Canisters that touch them.
 - Hive Canisters can be caught and destroyed by Jäger's ADS, Wamai's MAG-NET or Aruni's Surya Gates.
-- Vigil won't be pinged when he leaves the swarm if his ERC-7 is on. However, he still will be pinged when he is inside the swarm regardless of if his cloaking is on.
+- Vigil won't be pinged if his ERC-7 is on.
 - Impact Grenades are a quick and efficient way to get rid of deployed Hives before they activate.
 - Electrified barbed wire can destroy both Grim's Kawan Hive ball and canister.

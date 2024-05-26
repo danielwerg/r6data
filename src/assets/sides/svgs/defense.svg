@@ -5,6 +5,8 @@
   viewBox="0 0 512 512"
   fill="#ffffff"
   stroke="none"
+  class="r6data__sides r6data__sides__defense"
+  id="defense"
 >
   <path d="M130 16H184v34h46v-34h52v34h46v-34H382V103l-126 63-126-63Z" />
   <path d="M256 202 343 157 393 496H119L169 157Z" />
