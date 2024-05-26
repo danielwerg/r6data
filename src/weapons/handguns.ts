@@ -7,6 +7,7 @@ export const HANDGUNS = [
     slug: 'p226_mk_25',
     name: 'P226 MK 25',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'S.A.S. 9mm handgun with a large magazine. Packs a good punch for short to medium range assaults.',
     damage: 50,
@@ -27,6 +28,7 @@ export const HANDGUNS = [
     slug: 'm45_meusoc',
     name: 'M45 MEUSOC',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'Semi-automatic, high caliber pistol with medium stopping power and an extended range.',
     damage: 58,
@@ -47,6 +49,7 @@ export const HANDGUNS = [
     slug: '5.7_usg',
     name: '5.7 USG',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'Semi-automatic pistol with low-caliber, high-velocity rounds. Used by FBI SWAT.',
     damage: 42,
@@ -67,6 +70,7 @@ export const HANDGUNS = [
     slug: 'p9',
     name: 'P9',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       '9mm hand gun favored by GIGN. Short to medium range. 16 round magazine.',
     damage: 45,
@@ -87,6 +91,7 @@ export const HANDGUNS = [
     slug: 'lfp586',
     name: 'LFP586',
     categorySlug: 'handgun',
+    subCategorySlug: ['revolver'],
     description:
       '.357 Magnum revolver, short to medium range handgun, with high stopping power and penetration.',
     damage: 78,
@@ -107,6 +112,7 @@ export const HANDGUNS = [
     slug: 'gsh-18',
     name: 'GSH-18',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'Spetsnaz 9mm short range semi-automatic pistol, with low recoil and low damage.',
     damage: 44,
@@ -127,6 +133,7 @@ export const HANDGUNS = [
     slug: 'pmm',
     name: 'PMM',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       '9mm short range hand gun with high stopping power, favored by Spetsnaz.',
     damage: 61,
@@ -147,6 +154,7 @@ export const HANDGUNS = [
     slug: 'p12',
     name: 'P12',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       '.45 caliber semi-automatic pistol that has a low recoil, best used in mid-range combat.',
     damage: 44,
@@ -167,6 +175,7 @@ export const HANDGUNS = [
     slug: 'mk1_9mm',
     name: 'MK1 9mm',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'Standard issue 9mm hand gun. Effective from short to medium range with medium stopping power.',
     damage: 48,
@@ -187,6 +196,7 @@ export const HANDGUNS = [
     slug: 'd-50',
     name: 'D-50',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       '.50 caliber pistol, short to medium range hand gun with heavy stopping power and penetration.',
     damage: 71,
@@ -207,6 +217,7 @@ export const HANDGUNS = [
     slug: 'luison',
     name: 'Luison',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'Unique PRB92 equipped with a custom suppressor. High knock-down power in close-quarter, but is non-lethal.',
     damage: 65,
@@ -227,6 +238,7 @@ export const HANDGUNS = [
     slug: 'prb92',
     name: 'PRB92',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'Standard issue 9mm hand gun. A classic sidearm, effective from short to medium range with medium stopping power.',
     damage: 42,
@@ -247,6 +259,7 @@ export const HANDGUNS = [
     slug: 'p229',
     name: 'P229',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'A compact semi-automatic pistol with a large magazine. Best used at short to medium range.',
     damage: 51,
@@ -267,6 +280,7 @@ export const HANDGUNS = [
     slug: 'usp40',
     name: 'USP40',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       '.40 caliber semi-automatic pistol that has a low recoil, best used in mid-range combat.',
     damage: 48,
@@ -287,6 +301,7 @@ export const HANDGUNS = [
     slug: 'q-929',
     name: 'Q-929',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'This 9mm semi-automatic pistol is highly accurate and lightweight with low recoil.',
     damage: 60,
@@ -307,6 +322,7 @@ export const HANDGUNS = [
     slug: 'rg15',
     name: 'RG15',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'Customized 9mm semi-automatic handgun, equipped with a Romeo1 Reflex.',
     damage: 38,
@@ -327,6 +343,7 @@ export const HANDGUNS = [
     slug: 'bailiff_410',
     name: 'Bailiff 410',
     categorySlug: 'handgun',
+    subCategorySlug: ['shotgun', 'revolver'],
     description:
       'This .410 bore shotgun in a revolver package is a dual-caliber gun designed with a compact polymer body. It does medium damage with minimal spread.',
     damage: 30,
@@ -347,6 +364,7 @@ export const HANDGUNS = [
     slug: 'keratos_.357',
     name: 'Keratos .357',
     categorySlug: 'handgun',
+    subCategorySlug: ['revolver'],
     description:
       'Designed for high damage at a short-medium range, the vertically-inverted barrel alignment naturally reduces muzzle rise and recoil.',
     damage: 78,
@@ -367,6 +385,7 @@ export const HANDGUNS = [
     slug: '1911_tacops',
     name: '1911 TACOPS',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'This rugged .45 caliber pistol is a classic, but fitted with a custom grip.',
     damage: 55,
@@ -387,6 +406,7 @@ export const HANDGUNS = [
     slug: 'p-10c',
     name: 'P-10C',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description: 'Semi-automatic, proven 9mm pistol with a red dot sight.',
     damage: 40,
     fireRate: 450,
@@ -406,6 +426,7 @@ export const HANDGUNS = [
     slug: '.44_mag_semi-auto',
     name: '.44 Mag Semi-Auto',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'High powered, semi-automatic pistol with a small magazine and mounted low-power scope.',
     damage: 54,
@@ -426,6 +447,7 @@ export const HANDGUNS = [
     slug: 'sdp_9mm',
     name: 'SDP 9mm',
     categorySlug: 'handgun',
+    subCategorySlug: [],
     description:
       'Special Duty Pistol, semi-automatic. A combination of Swiss engineering and American precision manufacturing.',
     damage: 47,
@@ -441,5 +463,25 @@ export const HANDGUNS = [
     },
     iconOfficial:
       'https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/Tgsdyz3XEqmgUYi9aZZgb/6755f4da7af7a7179ffab92acf8d477e/SDP_9mm.png'
+  },
+  {
+    slug: '.44_vendetta',
+    name: '.44 Vendetta',
+    categorySlug: 'handgun',
+    subCategorySlug: ['revolver'],
+    description: 'Custom six-shooter made by Deimos.',
+    damage: 78,
+    fireRate: 450,
+    mobility: 45,
+    capacity: 6,
+    ammo: 66,
+    reloadTime: { empty: 2.5, tactical: 2 },
+    slot: 'secondary',
+    icon: {
+      svg: null,
+      png: getWeaponAssetURL('/pngs/.44_vendetta.png')
+    },
+    iconOfficial:
+      'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2kx8YFXaz4l9A3iJctZ33h/30f25aff1e25daf0dff88d258423adcf/44VENDETTA.png'
   }
 ] satisfies Weapon[];

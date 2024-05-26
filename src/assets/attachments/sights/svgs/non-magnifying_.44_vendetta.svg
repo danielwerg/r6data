@@ -1,0 +1,37 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 200"
+  fill="none"
+  stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__non-magnifying_.44_vendetta"
+  id="non-magnifying_.44_vendetta"
+>
+  <style>
+    #optic {
+      color: #4cb3b6
+    }
+  </style>
+  <g fill="#000000">
+    <path d="M52 157H148V182H52Z" />
+    <path d="M65 188v-13l2-6c-7-4-5-13-5-19H138c0 6 2 15-5 19l2 6v13Z" />
+  </g>
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M25 86a1 1 0 00150 0 1 1 0 00-150 0m15 0a1 1 0 00120 0 1 1 0 00-120 0"
+  />
+  <g>
+    <g stroke="#000000">
+      <ellipse cx="100" cy="86" rx="10" />
+      <path stroke-linecap="round" d="M90 86h4m6-10v4m10 6h-4m-6 10v-4" />
+    </g>
+    <ellipse
+      id="optic"
+      fill="currentColor"
+      stroke="none"
+      cx="100"
+      cy="86"
+      rx="1"
+    />
+  </g>
+</svg>

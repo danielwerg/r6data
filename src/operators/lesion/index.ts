@@ -2,10 +2,10 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_SIGHTS_1X,
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/lesion.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/gu_mines.svg';
@@ -35,7 +35,7 @@ export const lesion = {
     primary: [
       {
         slug: 'six12_sd',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         // NOTE: Forced suppressor
         barrels: null,
         grips: null,
@@ -43,9 +43,9 @@ export const lesion = {
       },
       {
         slug: 't-5_smg',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -53,20 +53,20 @@ export const lesion = {
       {
         slug: 'q-929',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'super_shorty',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: null,
         grips: null,
         underBarrels: ['laser']
       }
     ]
   },
-  gadgets: { secondary: ['impact_grenade', 'bulletproof_camera'] },
+  gadgets: { secondary: ['observation_blocker', 'bulletproof_camera'] },
   uniqueAbility: {
     slug: 'gu_mines',
     name: 'Gu Mines',

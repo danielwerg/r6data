@@ -67,6 +67,7 @@ Hammam
 kasbah
 Kasbah
 Sehkra
+undeployed
 # Operator names
 Recruit
 Smoke

@@ -6,7 +6,6 @@ import type {
   SideSlug
 } from './types';
 import { getAssetURL, parseSvgString } from './utils';
-/** --- */
 import deployableShieldIcon from './assets/gadgets/simple/svgs/deployable_shield.svg';
 import nitroCellIcon from './assets/gadgets/simple/svgs/nitro_cell.svg';
 import impactGrenadeIcon from './assets/gadgets/simple/svgs/impact_grenade.svg';
@@ -83,7 +82,7 @@ export const GADGETS = [
     amount: 2,
     description:
       'Explosive grenade that detonates on impact to create entryways or line of sight in breakable surfaces.',
-    notes: null,
+    notes: 'Deals 40 damage.',
     icon: {
       svg: parseSvgString(impactGrenadeIcon),
       png: getGadgetAssetURL('/simple/pngs/impact_grenade.png')
@@ -144,7 +143,7 @@ export const GADGETS = [
     amount: 3,
     description:
       'Projects a screen that blocks the line of sight of opponent Observation Tools.',
-    notes: 'Maximum width: 5m, height: 2.2m',
+    notes: 'Maximum width: 5m, height: 2.2m.',
     icon: {
       svg: parseSvgString(observationBlockerIcon),
       png: getGadgetAssetURL('/simple/pngs/observation_blocker.png')

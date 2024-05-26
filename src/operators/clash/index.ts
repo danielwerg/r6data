@@ -1,7 +1,7 @@
 import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
-import { COMMON_SIGHTS_1X, COMMON_BARRELS_ALL } from '../constants';
+import { NON_MAGNIFYING_SIGHTS_COMMON, BARRELS } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/clash.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/cce_shield.svg';
 import notes from './notes.md?raw';
@@ -39,15 +39,15 @@ export const clash = {
     secondary: [
       {
         slug: 'super_shorty',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: null,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'spsmg9',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
         grips: null,
         underBarrels: ['laser']
       },
@@ -55,7 +55,7 @@ export const clash = {
         slug: 'p-10c',
         // NOTE: Forced red_dot_handgun
         sights: null,
-        barrels: COMMON_BARRELS_ALL,
+        barrels: BARRELS,
         grips: null,
         underBarrels: ['laser']
       }

@@ -2,9 +2,11 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_SIGHTS_1X
+  BARRELS,
+  BARRELS_PRECISION,
+  MAGNIFYING_SIGHTS,
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  TELESCOPIC_SIGHTS_COMMON
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/buck.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/skeleton_key.svg';
@@ -34,8 +36,8 @@ export const buck = {
     primary: [
       {
         slug: 'c8-sfw',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
-        barrels: COMMON_BARRELS_ALL,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS,
         grips: null,
         // NOTE: Forced under-barrel shotgun
         underBarrels: ['laser']
@@ -43,14 +45,11 @@ export const buck = {
       {
         slug: 'camrs',
         sights: [
-          ...COMMON_SIGHTS_1X,
-          'scope_1.5x',
-          'scope_2.0x',
-          'scope_2.5x_a',
-          'scope_2.5x_b',
-          'scope_3.0x'
+          ...NON_MAGNIFYING_SIGHTS_COMMON,
+          ...MAGNIFYING_SIGHTS,
+          ...TELESCOPIC_SIGHTS_COMMON
         ],
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         // NOTE: Forced under-barrel shotgun
         underBarrels: ['laser']
@@ -60,7 +59,7 @@ export const buck = {
       {
         slug: 'mk1_9mm',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       },

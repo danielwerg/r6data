@@ -30,7 +30,7 @@ Vigil comes equipped with his ERC-7 Video Disruptor, which will erase him from v
 
 ### Counters
 
-- Thatcher's EMP Grenades can disable Vigil's ERC-7 for 15 seconds.
+- Thatcher's EMP Grenades can disable Vigil's ERC-7 for 15 seconds, Impact EMP Grenade for 9s.
 - IQ will be able to detect the ERC-7 whenever Vigil activates the ability. Specifically, IQ will detect the ERC-7 pack itself.
 - Gridlock's Trax Stingers can impede Vigil's strong roaming capabilities.
 - Jackal is still able to detect Vigil's footprints, as the ERC-7 only protects him from visual electronic monitoring.

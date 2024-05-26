@@ -2,10 +2,10 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_SIGHTS_1X,
-  COMMON_GRIPS,
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  GRIPS,
+  BARRELS,
+  BARRELS_PRECISION
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/fenrir.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/f-natt_dread_mine.svg';
@@ -35,16 +35,16 @@ export const fenrir = {
     primary: [
       {
         slug: 'mp7',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'sasg-12',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: ['suppressor'],
-        grips: COMMON_GRIPS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -60,7 +60,7 @@ export const fenrir = {
       {
         slug: '5.7_usg',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }

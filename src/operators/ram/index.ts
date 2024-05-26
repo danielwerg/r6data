@@ -2,11 +2,12 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_SIGHTS_1X,
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS,
-  COMMON_BARRELS_NO_EXTENDED_BARREL
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS,
+  BARRELS_NO_EXTENDED_BARREL,
+  MAGNIFYING_SIGHTS
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/ram.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/bu-gi_auto-breacher.svg';
@@ -36,16 +37,16 @@ export const ram = {
     primary: [
       {
         slug: 'r4-c',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'lmg-e',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
-        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
-        grips: COMMON_GRIPS,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS_NO_EXTENDED_BARREL,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -53,13 +54,13 @@ export const ram = {
       {
         slug: 'mk1_9mm',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'ita12s',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: null,
         grips: null,
         underBarrels: ['laser']

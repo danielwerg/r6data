@@ -2,10 +2,10 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS,
-  COMMON_SIGHTS_1X
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS,
+  NON_MAGNIFYING_SIGHTS_COMMON
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/glaz.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/flip_sight.svg';
@@ -46,8 +46,8 @@ export const glaz = {
           'reflex_a',
           'reflex_b'
         ],
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-        grips: COMMON_GRIPS,
+        barrels: BARRELS_PRECISION,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -55,7 +55,7 @@ export const glaz = {
       {
         slug: 'pmm',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       },
@@ -68,8 +68,8 @@ export const glaz = {
       },
       {
         slug: 'bearing_9',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
         grips: null,
         underBarrels: ['laser']
       }

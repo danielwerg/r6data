@@ -2,10 +2,11 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_BARRELS_NO_EXTENDED_BARREL,
-  COMMON_GRIPS,
-  COMMON_SIGHTS_1X
+  BARRELS_PRECISION,
+  BARRELS_NO_EXTENDED_BARREL,
+  GRIPS,
+  MAGNIFYING_SIGHTS,
+  NON_MAGNIFYING_SIGHTS_COMMON
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/sledge.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/tactical_breaching_hammer.svg';
@@ -35,14 +36,14 @@ export const sledge = {
     primary: [
       {
         slug: 'l85a2',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
-        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
-        grips: COMMON_GRIPS,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS_NO_EXTENDED_BARREL,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'm590a1',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: null,
         grips: null,
         underBarrels: ['laser']
@@ -52,7 +53,7 @@ export const sledge = {
       {
         slug: 'p226_mk_25',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }

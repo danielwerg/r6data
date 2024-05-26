@@ -5,7 +5,6 @@ import { type Gadget, GADGETS } from '../gadgets';
 import { type Weapon, WEAPONS } from '../weapons';
 import { BARRELS, GRIPS, SIGHTS, UNDER_BARRELS } from '../attachments';
 import type { Operator, OperatorWeaponAttachments } from './types';
-/** --- */
 import { recruitDefense } from './recruit_defense';
 import { recruitAttack } from './recruit_attack';
 import { smoke } from './smoke';
@@ -78,6 +77,7 @@ import { brava } from './brava';
 import { fenrir } from './fenrir';
 import { ram } from './ram';
 import { tubarao } from './tubarao';
+import { deimos } from './deimos';
 
 export {
   recruitDefense,
@@ -151,7 +151,8 @@ export {
   brava,
   fenrir,
   ram,
-  tubarao
+  tubarao,
+  deimos
 };
 
 export * from './utils';
@@ -229,7 +230,8 @@ export const MINI_OPERATORS = [
   brava,
   fenrir,
   ram,
-  tubarao
+  tubarao,
+  deimos
 ];
 
 export const OPERATORS = MINI_OPERATORS.map((operator: Operator) => {

@@ -3,10 +3,14 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
-  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__scope_2.5x_a"
-  id="scope_2.5x_a"
+  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__magnified_b"
+  id="magnified_b"
 >
-  <style>#optic { color: #ff0b2f }</style>
+  <style>
+    #optic {
+      color: #ff0b2f
+    }
+  </style>
   <defs>
     <linearGradient id="gradient" gradientTransform="rotate(90)">
       <stop id="optic" offset="30%" stop-color="currentColor" />

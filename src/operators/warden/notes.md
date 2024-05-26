@@ -30,3 +30,4 @@ Warden's unique gadget is a pair of Glance Smart Glasses, special glasses that n
 - Warden's glasses can be disabled for 15 seconds by Thatcher using his EMP grenades.
 - Using the Electronics Detector, IQ can spot and potentially take out Warden through surfaces when Warden's glasses are active.
 - Glaz's Flip Sight also possesses the ability to see through smoke clouds, making him a viable choice at combating Warden.
+  - Whilst warden can see through smoke as well, having to slow done to do so makes him an easier to hit.

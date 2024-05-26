@@ -19,7 +19,7 @@ Finka comes equipped with her specially-designed nanobots. Having them injected 
     - Finka can self-revive, by activating her Adrenal Surge when downed.
 - While active, Adrenal Surge grants all Attackers the following effects:
   - Aim Down Sights speed is increased by 25%.
-  - Reload time for weapons and gadgets is decreased by 15%.
+  - Cleans shields' Suppressive Fire reduces its effect by 50% if applied while affected by the Adrenal Surge.
   - Movement speed in Barbed Wire is increased by 40%, effectively reducing the Barbed Wire's slowing effect to ~10%.
   - The effects of gadgets like Stun Grenades and Ying's Candelas are reduced by 50%, letting Attackers recover from these effects twice as fast.
   - Concussion effects received are reduced by 75%. Double vision, shaking, and sound distortion are all reduced by a great amount.
@@ -27,11 +27,12 @@ Finka comes equipped with her specially-designed nanobots. Having them injected 
   - The Attacker can now be detected by Pulse's Cardiac Sensor from up to 14 meters away (compared to the usual 9 meters).
   - Damage received from Smoke's Remote Gas Grenades are increased by 50%.
   - Performing gamemode interactions, such as planting the Defuser in the Bomb gamemode or picking up the Hostage in the Hostage gamemode, with the Adrenal Boost active won't decrease the time it takes to perform the action.
+- Clears the Shields' Suppressive Fire debuff. Reduces its effect by 50% if applied while affected by Adrenal Surge.
 
 ### Strategies/Synergies
 
 - Because Adrenal Surge is also able to grant an increased resistance to Blinding effects, Ying works well with Finka.
-  - While Ying is already immune to her own Candelas, allied Attackers can make use of Adrenal Surge to recover faster from the Blinding effect as well.
+  - While Ying already immune to her own Candelas, allied Attackers can make use of Adrenal Surge to recover faster from the Blinding effect as well.
 
 ### Counters
 

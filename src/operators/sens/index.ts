@@ -2,10 +2,12 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS,
-  COMMON_SIGHTS_1X
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS,
+  MAGNIFYING_SIGHTS,
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  TELESCOPIC_SIGHTS_COMMON
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/sens.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/r.o.u._projector_system.svg';
@@ -35,29 +37,20 @@ export const sens = {
     primary: [
       {
         slug: 'pof-9',
-        sights: [
-          ...COMMON_SIGHTS_1X,
-          'scope_1.5x',
-          'scope_2.0x',
-          'scope_2.5x_a',
-          'scope_2.5x_b'
-        ],
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: '417',
         sights: [
-          ...COMMON_SIGHTS_1X,
-          'scope_1.5x',
-          'scope_2.0x',
-          'scope_2.5x_a',
-          'scope_2.5x_b',
-          'scope_3.0x'
+          ...NON_MAGNIFYING_SIGHTS_COMMON,
+          ...MAGNIFYING_SIGHTS,
+          ...TELESCOPIC_SIGHTS_COMMON
         ],
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-        grips: COMMON_GRIPS,
+        barrels: BARRELS_PRECISION,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -65,7 +58,7 @@ export const sens = {
       {
         slug: 'sdp_9mm',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }
@@ -76,7 +69,7 @@ export const sens = {
     slug: 'r.o.u._projector_system',
     name: 'R.O.U. Projector System',
     type: 'count',
-    startingAmount: 3,
+    startingAmount: 4,
     description:
       'Throwable device that rolls and drops projectors to create a screen that blocks line of sight.',
     info: 'Each R.O.U. device drops projectors that stay active for 13 seconds.',

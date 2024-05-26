@@ -5,6 +5,7 @@
 Aruni's Unique Gadget is the Surya Laser Gate. When this device is launched onto a doorway, window hatch, or any kind of wall, it creates a laser grid which covers the entrance way, denying entry by the Attackers or destroying projectiles that try to pass through it.
 
 - The Surya Gates automatically deactivate for a brief moment whenever Defenders step near them to let them through safely.
+  - The Surya gates will also automatically deactivate if an Attacker is escorting the Hostage.
   - This does not work for Defender's gadgets. The Surya Gate will instead treat these projectiles like any other thrown projectile, destroying it and temporarily shutting off.
   - A Defender has to be within a vertical range of 1 meter for the Surya Gate to shut off.
   - The horizontal range for the Surya Gate to shut off is far less, enough for it to only switch off when a Defender is standing directly beside it.
@@ -49,7 +50,7 @@ Aruni's Unique Gadget is the Surya Laser Gate. When this device is launched onto
   - Flores' RCE-RATERO Drones
 - Whenever a Surya Gate is activated on a doorway, it covers the majority of the doorway, but leaves a small gap open at the bottom just like a Barricade. Attackers can use this gap to get drones through, or launch projectiles underneath the Surya Gate in order to clear defender utility.
 - If there is a placeable Gadget (such as a Bulletproof Camera or Maestro's Evil Eyes) in the way of the Surya Gate's lasers, the Surya Gate will remain inactive until the wall or doorway is cleared. This includes when a Deployable Shield is placed in a way where it juts under the Surya Gate.
-- Aruni also possesses an augmented melee attack through the use of punching with her prosthetic arm, this however has infinite uses.
+- Aruni also possesses an augmented melee attack through the use of punching with her prosthetic arm. This augmented melee attack has infinite uses.
 - She is able to punch holes into walls, breaking any beams in the process and destroying each layer. Each punch makes a hole as large as being made by one of Hibana's X-KAIROS pellets.
 - Aruni can create large sightlines and rotations in several seconds with no downside.
   - Aruni's punch can destroy hatches and Barricades all in one shot, including Castle's Armor Panels.

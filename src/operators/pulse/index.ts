@@ -2,10 +2,10 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_SIGHTS_1X,
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/pulse.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/heartbeat_sensor.svg';
@@ -35,16 +35,16 @@ export const pulse = {
     primary: [
       {
         slug: 'm1014',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: null,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'ump45',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -52,14 +52,14 @@ export const pulse = {
       {
         slug: 'm45_meusoc',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: '5.7_usg',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }

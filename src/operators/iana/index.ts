@@ -2,11 +2,12 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_BARRELS_NO_EXTENDED_BARREL,
-  COMMON_GRIPS,
-  COMMON_SIGHTS_1X
+  BARRELS,
+  BARRELS_PRECISION,
+  BARRELS_NO_EXTENDED_BARREL,
+  GRIPS,
+  MAGNIFYING_SIGHTS,
+  NON_MAGNIFYING_SIGHTS_COMMON
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/iana.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/gemini_replicator.svg';
@@ -36,16 +37,16 @@ export const iana = {
     primary: [
       {
         slug: 'arx200',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
-        grips: COMMON_GRIPS,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS_NO_EXTENDED_BARREL,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'g36c',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -53,7 +54,7 @@ export const iana = {
       {
         slug: 'mk1_9mm',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       },
@@ -66,7 +67,7 @@ export const iana = {
       }
     ]
   },
-  gadgets: { secondary: ['stun_grenade', 'smoke_grenade'] },
+  gadgets: { secondary: ['impact_emp_grenade', 'smoke_grenade'] },
   uniqueAbility: {
     slug: 'gemini_replicator',
     name: 'Gemini Replicator',

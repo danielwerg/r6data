@@ -6,7 +6,6 @@ Thatcher is equipped with three EG MKO-EMP Grenades. These grenades disable all 
 
 - When an EMP Grenade is tossed, they will let out an electromagnetic pulse after 3 seconds, disabling defender gadgets caught within its 5.2 meter radius for 15 seconds.
   - EMP Grenades use a regular grenade throwing profile.
-  - Unlike Frag Grenades, EMP Grenade cannot be cooked.
   - The EMP will not affect any Attacker gadgets.
   - The EMP passes through surfaces, allowing Thatcher to disable devices on the other side of a wall.
   - EMP Grenades are unaffected by electricity, so throwing an EMP grenade directly at an electrified wall will not destroy the EMP grenade.
@@ -15,7 +14,7 @@ Thatcher is equipped with three EG MKO-EMP Grenades. These grenades disable all 
   - The EMP Grenade can be intercepted by Jäger's ADS and Wamai's Mag-NETs.
 - Aside from Gadgets, the EMP also affects some defender weapon attachments caught in its radius:
   - Defender Electronic Sights (i.e. Red Dot Sight, Reflex Sight, Holographic Sight) caught within the EMP radius will be disabled for 15 seconds, during which their reticle will disappear.
-  - Defender Laser Sights will be disabled for the same duration, with a corresponding decrease in hipfire accuracy.
+  - Defender Laser Sights will be disabled for the same duration, with a corresponding decrease in ADS speed.
 - Thatcher gets points for destroying and disabling gadgets, allowing an EMP grenade to function as a proximity sensor against Pulse and Vigil.
 
 ### Strategies/Synergies

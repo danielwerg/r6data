@@ -37,13 +37,21 @@ To get ready to work on the codebase, please do the following:
   - Add/Update icon in `src/assets/gadgets/simple/svgs/GADGET_SLUG.svg`
 - Possibly add/update weapons
   - Add/Update `src/weapons/WEAPON_CATEGORY_SLUG/WEAPON_SLUG.ts`
+  - Update `WeaponSlug` in `src/types.ts`
   - Add/Update icon in `src/assets/weapons/simple/WEAPON_SLUG.svg`
 - Possibly add/update maps
   - Append to `src/maps.ts`
   - Add `src/assets/maps/thumbnails/MAP_SLUG.EXT`
   - Add `src/assets/maps/backgrounds/MAP_SLUG.EXT`
-- Optionally update operator notes using [Rainbow Six Wiki](https://rainbowsix.fandom.com/wiki/Special:RecentChanges?hidebots=1&hidelog=1&limit=3000&days=90&enhanced=1&hidecategorization=1&urlversion=2) <!-- Last updated: 2024-01-24 UTC -->
+- Optionally update operator notes using [Rainbow Six Wiki](https://rainbowsix.fandom.com/wiki/Special:RecentChanges?hidebots=1&hidelog=1&namespace=all-discussions&invert=1&limit=4000&days=90&enhanced=1&significance__hideminor_color=c3&significance__hidemajor_color=c4&lastRevision__hidelastrevision_color=c2&lastRevision__hidepreviousrevisions_color=c1&changeType__hidenewpages_color=c2&hidecategorization=1&urlversion=2) <!-- Last updated: 2024-05-26 UTC -->
 - Update `LAST_UPDATED` variable in `src/meta.ts`
+
+<!--
+512x template
+M0 0H512V512H0ZM16 496H496V16H16Z
+200x template
+M0 0H200V200H0ZM12 12V188H188V12Z
+-->
 
 ---
 

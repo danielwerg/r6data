@@ -53,3 +53,4 @@ Maestro comes equipped with two Compact Laser Emplacements (CLE-Vs), otherwise k
 - Flores' RCE-RATERO Drones can destroy Evil Eyes.
 - Nøkk's HEL will remove her image from Maestro's Evil Eye cameras.
 - Ash's Breaching Round or Kali's Explosive Lance can shatter the bulletproof glass when exploding if they hit on the glass.
+- Brava can hack it with the use of the Kludge Drone which will grant Brava control over the laser turret and grant the rest of the Attackers the ability use it as a camera.

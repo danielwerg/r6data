@@ -20,8 +20,10 @@ The following Gadgets can be converted by Kludge Drone:
 - Valkyrie's Black Eyes
 - Wamai's Mag-NETs
 - Fenrir's F-Natt Dread Mine (when activated)
-- Defender's Bulletproof Cameras
-- Any default cameras on a stage
+- Bulletproof Camera
+- Proximity Alarm
+- Observation Blocker
+- Default Cameras
 - Any drones or Attacker gadgets that Mozzie has hacked with a hacked Kludge drone
 
 Additionally, the following devices will be destroyed after a short delay once hacked:
@@ -40,7 +42,18 @@ Additionally, the following devices will be destroyed after a short delay once h
 
 ### Counters
 
-- Gadgets hacked by the Kludge drone will have a faint red and blue light surrounding them.
+- Gadgets hacked by the Kludge drone will have a light according to the looking player's team, indicating if it's friendly or the enemy team's.
 - Mozzie's Pests can take control of the Kludge Drone, allowing him to hack into Attacker gadgets and turn them against Attackers.
+  - Mozzie can "re-hack" all Defender devices that were previously hacked by Brava as long as charge there are enough charges left to do so
+  - Attacker gadgets that Mozzie can hack:
+    - Drones (including: Twitch drones and the Brava's Kludge Drones)
+    - Claymores
+    - Zero's Argus Launcher
+    - Nomad's Airjab
+  - Attacker gadgets that self-destruct without damaging environment:
+    - Breach Charge
+    - Thermite's Exothermic Charge
+    - Flores's RCE-Ratero Charge (if it isn't detonating)
+    - Ace's S.E.L.M.A. Aqua Breacher
 - Solis' Electro Scanner can locate and track the Kludge Drone.
 - Mute's Signal Jammers can shut the Kludge drone down, but they can still be hacked if in the drone's line of sight. Additionally, Brava's second Kludge drone can save the first one if it gets jammed.

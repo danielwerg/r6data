@@ -308,7 +308,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 15 }, date: getISODate('2019-09-11') }
     ],
-    playlists: ['ranked', 'standard'],
+    playlists: ['ranked', 'standard', 'casual'],
     bombSites: [
       '2F Server Room / 2F Radar Room',
       '1F Security Room / 1F Map Room',
@@ -356,7 +356,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 14 }, date: getISODate('2019-06-11') }
     ],
-    playlists: ['ranked', 'standard'],
+    playlists: ['ranked', 'standard', 'casual'],
     bombSites: [
       '3F Bar / 3F Cocktail Lounge',
       '2F Fireplace Hall / 2F Mining Room',
@@ -401,7 +401,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 21 }, date: getISODate('2021-03-16') }
     ],
-    playlists: ['ranked', 'standard'],
+    playlists: ['ranked', 'standard', 'casual'],
     bombSites: [
       '1F Customs Inspections / 1F Supply Room',
       '1F Ventilation Room / 1F Workshop',
@@ -613,7 +613,7 @@ export const MINI_MAPS = [
     reworks: [
       { type: 'full', season: { id: 24 }, date: getISODate('2021-11-30') }
     ],
-    playlists: ['ranked', 'standard'],
+    playlists: ['ranked', 'standard', 'casual'],
     bombSites: [
       '2F Laundry / 2F Games Room',
       '2F Party Room / 2F Office',

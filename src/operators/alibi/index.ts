@@ -2,10 +2,11 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_SIGHTS_1X,
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS,
+  MAGNIFYING_SIGHTS
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/alibi.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/prisma.svg';
@@ -35,16 +36,16 @@ export const alibi = {
     primary: [
       {
         slug: 'mx4_storm',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'acs12',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x', 'scope_2.0x'],
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
         barrels: null,
-        grips: COMMON_GRIPS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -52,7 +53,7 @@ export const alibi = {
       {
         slug: 'keratos_.357',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       },

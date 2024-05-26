@@ -42,11 +42,13 @@ Alibi carries three Prismas, special devices that project volumetric displays of
 - As an electronic gadget, the Prismas are susceptible to the same weaknesses as other gadgets of its type.
   - Thatcher's EMP Grenades can disable the Prismas for a duration of 15 seconds.
   - Impact EMP Grenades can disable Prismas for 9 seconds.
-  - Twitch's Shock Drones can destroy the Prismas with ease with a simple hit of their Laser.
+  - Twitch's Shock Drones can destroy the Prismas with ease with a simple hit of their laser.
   - IQ's Electronics Detector can detect the Prismas, but will only outline the device itself, not the display. The real Alibi can stand on top of a Prisma, and the Detector wouldn't be able to discern the difference.
   - Zero's Argus Camera lasers can destroy Prismas if given an angle on the gadget.
   - Kali's LV Lances can destroy the Prisma displays.
   - The latter applies to Flores' RCE-RATERO Drones.
+  - Brava's Kludge Drone can hack the prismas.
+    - Prismas will still display alibi however the effect are revered (as in interaction that effect Attackers now effect defenders and vice versa).
 - Glaz can easily counter Alibi as his Thermal Scope doesn't detect the volumetric displays since they have no thermal reading.
 - Jackal's Eyenox can discern the footprints of Defenders, bypassing Alibi's ability to hide the identities of herself and her allies.
 - Nøkk will not trigger the tracking if she decides to shoot at the volumetric displays or move through the volumetric displays when her gadget is active.

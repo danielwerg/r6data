@@ -1,7 +1,7 @@
 import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
-import { COMMON_SIGHTS_1X, COMMON_BARRELS_ALL } from '../constants';
+import { NON_MAGNIFYING_SIGHTS_COMMON, BARRELS } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/caveira.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/silent_step.svg';
 import notes from './notes.md?raw';
@@ -30,14 +30,14 @@ export const caveira = {
     primary: [
       {
         slug: 'm12',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'spas-15',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: null,
         grips: null,
         underBarrels: ['laser']

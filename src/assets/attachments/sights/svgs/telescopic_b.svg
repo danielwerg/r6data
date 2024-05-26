@@ -3,10 +3,14 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
-  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__scope_3.0x"
-  id="scope_3.0x"
+  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__telescopic_b"
+  id="telescopic_b"
 >
-  <style>#optic { color: #ff0b2f }</style>
+  <style>
+    #optic {
+      color: #ff0b2f
+    }
+  </style>
   <g fill="#000000">
     <path d="M61 50V23Q61 18 66 18H130Q135 18 135 23V50Z" />
     <path d="M150 66H178Q183 66 183 71V133Q183 138 178 138H150Z" />

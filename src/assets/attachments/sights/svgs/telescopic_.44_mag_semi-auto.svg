@@ -3,10 +3,14 @@
   viewBox="0 0 200 200"
   fill="none"
   stroke="#ffffff"
-  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__scope_3.0x_.44_mag"
-  id="scope_3.0x_.44_mag"
+  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__telescopic_.44_mag_semi-auto"
+  id="telescopic_.44_mag_semi-auto"
 >
-  <style>#optic { color: #ff0b2f }</style>
+  <style>
+    #optic {
+      color: #ff0b2f
+    }
+  </style>
   <g fill="#000000">
     <path d="M68 28V18L86 10H136L154 18V28A70 70 0 0068 28" />
     <path d="M163 37H174L182 55V105L174 123H163A70 70 0 00163 37" />

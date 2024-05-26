@@ -32,7 +32,7 @@ export const recruitAttack = {
       },
       {
         slug: 'mk_14_ebr',
-        sights: ['scope_3.0x'],
+        sights: ['telescopic_b'],
         barrels: ['muzzle_brake'],
         grips: ['vertical_grip'],
         underBarrels: null

@@ -2,10 +2,11 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_SIGHTS_1X,
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS,
+  MAGNIFYING_SIGHTS
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/melusi.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/banshee_sonic_defense.svg';
@@ -35,14 +36,14 @@ export const melusi = {
     primary: [
       {
         slug: 'mp5',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'super_90',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: null,
         grips: null,
         underBarrels: ['laser']
@@ -53,7 +54,7 @@ export const melusi = {
         slug: 'rg15',
         // NOTE: Forced red_dot_handgun
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }

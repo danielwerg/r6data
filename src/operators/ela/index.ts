@@ -2,10 +2,10 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_SIGHTS_1X,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS,
-  COMMON_BARRELS_NO_EXTENDED_BARREL
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  BARRELS_PRECISION,
+  GRIPS,
+  BARRELS_NO_EXTENDED_BARREL
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/ela.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/grzmot_mine.svg';
@@ -35,16 +35,16 @@ export const ela = {
     primary: [
       {
         slug: 'scorpion_evo_3_a1',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
-        grips: COMMON_GRIPS,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS_NO_EXTENDED_BARREL,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'fo-12',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: ['suppressor', 'extended_barrel'],
-        grips: COMMON_GRIPS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -53,7 +53,7 @@ export const ela = {
         slug: 'rg15',
         // NOTE: Forced red_dot_handgun
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }

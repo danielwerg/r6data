@@ -17,6 +17,7 @@ Dokkaebi comes equipped with her Ballistic Armor Military Laptop, Logic Bomb. Th
 - Defenders will drop phones upon death. Dokkaebi can hack these phones by interacting with them, giving all Attackers access to all Defender cameras. This process takes 6 seconds.
   - These include the CCTV, Bulletproof Cameras, Valkyrie's Black Eyes, Echo's Yokai, Maestro's Evil Eye, and Attacker drones hacked by Mozzie.
   - Dokkaebi only needs to perform this action once. Further hacks yields no additional access.
+  - Dokkaebi can see dropped defender phones through walls.
   - IQ can detect dropped phones with her Electronics Detector.
   - The dropped phones are destroyable by any source of damage.
   - Hacking a Defender's phone is separate from the Logic Bomb.

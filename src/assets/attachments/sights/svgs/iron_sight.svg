@@ -1,0 +1,32 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 200"
+  fill="none"
+  stroke="#ffffff"
+  class="r6data__attachment r6data__attachment__sight r6data__attachment__sight__iron_sight"
+  id="iron_sight"
+>
+  <defs>
+    <mask id="mask">
+      <rect fill="white" width="200" height="200" />
+      <path fill="black" d="M90 46a1 1 0 0036 0 1 1 0 00-36 0" />
+    </mask>
+  </defs>
+  <path fill="#000000" d="M67 86H149V98H67Z" />
+  <path fill="#000000" d="M37 140H178V188H37Z" />
+  <path fill="#000000" d="M22 148H37V180H22Z" />
+  <path fill="#000000" d="M101 63 105 60V44H111V60L115 63 108 65Z" />
+  <path fill="#0bad56" stroke="none" d="M105 44H111V48H105Z" />
+  <path d="M101 63 105 60V44H111V60L115 63 108 65Z" />
+  <path fill="#000000" mask="url(#mask)" d="M84 188V46A1 1 0 01132 46V188Z" />
+  <path fill="#0bad56" stroke="none" d="M84 44H90V48H84Z" />
+  <path fill="#0bad56" stroke="none" d="M126 44H132V48H126Z" />
+  <path d="M84 188V46A1 1 0 01132 46V188Z" />
+  <path d="M90 46a1 1 0 0036 0 1 1 0 00-36 0" />
+  <path fill="#000000" d="M49 12h18V98H149V12h18V117H49Z" />
+  <path d="M49 42H54q4 0 4 4V80q0 4-4 4H49Z" />
+  <path d="M167 42 162 42Q158 42 158 46L158 80Q158 84 162 84L167 84Z" />
+  <path
+    d="M93 98v13M98 98v13M103 98v13M108 98v13M113 98v13M118 98v13M123 98v13"
+  />
+</svg>

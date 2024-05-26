@@ -2,9 +2,10 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_SIGHTS_1X,
-  COMMON_BARRELS_ALL,
-  COMMON_GRIPS
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  BARRELS,
+  GRIPS,
+  MAGNIFYING_SIGHTS
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/vigil.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/erc-7.svg';
@@ -34,22 +35,16 @@ export const vigil = {
     primary: [
       {
         slug: 'k1a',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'bosg.12.2',
-        sights: [
-          ...COMMON_SIGHTS_1X,
-          'scope_1.5x',
-          'scope_2.0x',
-          'scope_2.5x_a',
-          'scope_2.5x_b'
-        ],
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
         barrels: null,
-        grips: COMMON_GRIPS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ],
@@ -63,9 +58,9 @@ export const vigil = {
       },
       {
         slug: 'smg-12',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: null,
-        grips: COMMON_GRIPS,
+        grips: GRIPS,
         underBarrels: ['laser']
       }
     ]

@@ -2,10 +2,10 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_GRIPS,
-  COMMON_SIGHTS_1X
+  BARRELS,
+  BARRELS_PRECISION,
+  GRIPS,
+  NON_MAGNIFYING_SIGHTS_COMMON
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/thunderbird.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/kona_station.svg';
@@ -35,14 +35,14 @@ export const thunderbird = {
     primary: [
       {
         slug: 'spear_.308',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
-        grips: COMMON_GRIPS,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
+        grips: GRIPS,
         underBarrels: ['laser']
       },
       {
         slug: 'spas-15',
-        sights: COMMON_SIGHTS_1X,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
         barrels: null,
         grips: null,
         underBarrels: ['laser']
@@ -51,21 +51,23 @@ export const thunderbird = {
     secondary: [
       {
         slug: 'bearing_9',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_ALL,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'q-929',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }
     ]
   },
-  gadgets: { secondary: ['barbed_wire', 'bulletproof_camera', 'deployable_shield'] },
+  gadgets: {
+    secondary: ['barbed_wire', 'bulletproof_camera', 'deployable_shield']
+  },
   uniqueAbility: {
     slug: 'kona_station',
     name: 'KÓNA Station',

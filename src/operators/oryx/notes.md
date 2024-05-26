@@ -2,9 +2,9 @@
 
 ## Gameplay Description
 
-Oryx's unique ability is the Remah Dash. When activated, he performs a quick dash, making him move faster than any other Defender for a short period of time. While dashing, Oryx can smash through Barricades and unreinforced walls, and can knock down any Attackers he dashes into, including shield bearers such as Montagne and Blitz.
+Oryx's unique ability is the Remah Dash. When activated, he performs a quick dash, making him move faster than any other Defender for a short period of time. While dashing, Oryx can smash through Barricades and unreinforced walls, Osa's Talon Shields and Deployable Shields. He can also knock down any Attackers he dashes into, including shield bearers such as Montagne, Blitz and Fuze.
 
-Oryx also possesses the ability to vault up though any open ceiling hatches, allowing him to ascend to higher levels quickly.
+Oryx also possesses the ability to vault up through any open ceiling hatches, allowing him to ascend to higher levels quickly.
 
 - Oryx's Remah Dash is powered by charges, recharging over time.
   - Oryx has a maximum of 3 charges. Colliding with soft walls and Barricades will not reset his charges. Dashing into Operators does not deal damage, unless they collide with a wall.
@@ -19,9 +19,10 @@ Oryx also possesses the ability to vault up though any open ceiling hatches, all
   - Dashing through a wall can open up an immediate line of sight for other Defenders to take advantage of.
   - When using his Remah Dash, Oryx can still be meleed even when he has direct contact into an enemy. This can only be achieved by the enemy meleeing Oryx in the chest.
 - When ascending hatches, Oryx will hang on the ledge, allowing him the choice of either ascending or dropping back down. Jumping fully up a hatch takes 3.5 seconds.
+  - Oryx makes noise when landing his hand for hanging and additional noise when climbing or landing on the ground when dropping back down
 - While dashing and jumping up hatches, Oryx will not have access to his weapons for the duration and for a brief moment after, leaving him vulnerable for a short period of time.
 - Oryx's Remah Dash and his ability to climb up hatches are completely independent of each other; he can climb up hatches no matter how many charges he has and it doesn't use up a charge or increase the time taken to replenish each charge.
-- Charging into Barricades will not inflict any damage on Oryx, including Castle's Armor Panels.
+- Charging into Barricades will not inflict any damage on Oryx, including Castle's Armor Panels, Osa's Talon Shields, or Deployable Shield.
 - After breaking a wall with his Remah Dash, the screen will show a weak concussion-like effect that lasts for half a second.
 - In the Bomb gamemode, if Oryx uses his Remah Dash on an Operator planting the Defuser, it will immediately force them out of the defusing process.
 

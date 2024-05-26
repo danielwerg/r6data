@@ -2,10 +2,11 @@ import { parseSvgString } from '../../utils';
 import { getOperatorAssetURL } from '../utils';
 import type { Operator } from '../types';
 import {
-  COMMON_SIGHTS_1X,
-  COMMON_BARRELS_ALL,
-  COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
-  COMMON_BARRELS_NO_EXTENDED_BARREL
+  NON_MAGNIFYING_SIGHTS_COMMON,
+  BARRELS,
+  BARRELS_PRECISION,
+  BARRELS_NO_EXTENDED_BARREL,
+  MAGNIFYING_SIGHTS
 } from '../constants';
 import iconSvg from '../../assets/operators/icons/svgs/wamai.svg';
 import uniqueAbilitySvg from '../../assets/operators/abilities/svgs/mag-net_system.svg';
@@ -35,15 +36,15 @@ export const wamai = {
     primary: [
       {
         slug: 'aug_a2',
-        sights: COMMON_SIGHTS_1X,
-        barrels: COMMON_BARRELS_NO_EXTENDED_BARREL,
+        sights: NON_MAGNIFYING_SIGHTS_COMMON,
+        barrels: BARRELS_NO_EXTENDED_BARREL,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'mp5k',
-        sights: [...COMMON_SIGHTS_1X, 'scope_1.5x'],
-        barrels: COMMON_BARRELS_ALL,
+        sights: [...NON_MAGNIFYING_SIGHTS_COMMON, ...MAGNIFYING_SIGHTS],
+        barrels: BARRELS,
         grips: null,
         underBarrels: ['laser']
       }
@@ -52,14 +53,14 @@ export const wamai = {
       {
         slug: 'keratos_.357',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       },
       {
         slug: 'p12',
         sights: null,
-        barrels: COMMON_BARRELS_HANDGUN_OR_MARKSMAN,
+        barrels: BARRELS_PRECISION,
         grips: null,
         underBarrels: ['laser']
       }
