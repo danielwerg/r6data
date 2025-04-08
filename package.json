@@ -47,9 +47,9 @@
     "prettier": "^2.8.8",
     "rimraf": "^5.0.7",
     "sharp": "^0.33.4",
-    "tsx": "^4.11.0",
+    "tsx": "^4.19.3",
     "typescript": "^5.4.5",
-    "vite": "^5.4.14",
+    "vite": "^6.2.5",
     "vite-plugin-dts": "^3.9.1",
     "vite-plugin-svgo": "^1.4.0"
   },
